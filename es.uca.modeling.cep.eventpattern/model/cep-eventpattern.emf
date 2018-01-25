@@ -28,7 +28,8 @@ class CEPEventPattern {
 }
 
 @gmf.link(label="order", source="operand", target="operator", 
-	source.constraint="self <> oppositeEnd 
+	
+	/*source.constraint="self <> oppositeEnd 
 	and ( 
 	   (self.oclIsKindOf(ComplexEvent) and oppositeEnd.oclIsKindOf(Action))
 	   or ((self.oclIsKindOf(Value) or self.oclIsKindOf(EventProperty) or 
@@ -48,10 +49,15 @@ class CEPEventPattern {
 	   or (self.oclIsTypeOf(EventProperty) and oppositeEnd.oclIsTypeOf(EveryDistinct))
 	   or (self.oclIsKindOf(Event) and oppositeEnd.oclIsKindOf(ComplexEvent)) 
 	   or (self.oclIsTypeOf(EventProperty) and oppositeEnd.oclIsTypeOf(GroupBy))
-	)", 
+	)", */
 	target.constraint="self <> oppositeEnd", 
 	source.decoration="none", target.decoration="arrow", color="110,110,110", 
 	tool.name="Link", tool.description="Add a link")
+	
+	
+
+	
+	
 class Link {
    attr int order;
    
@@ -524,5 +530,76 @@ class Email extends Action {
 	size="30,30", label.placement="none", resizable="false", margin="0", 
 	tool.name="Twitter", tool.description="Add a twitter action")
 class Twitter extends Action {
+
+}
+
+
+/* GEO EXTENTION -- Federico Herrera */
+
+abstract class GeoOperator extends Operator {
+
+}
+
+abstract class GeoArithmeticOperator extends GeoOperator, ConditionOperator {
+
+}
+
+
+abstract class GeoBooleanOperator extends GeoOperator, ConditionOperator {
+
+}
+
+// Union Node
+@gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg",
+	size="30,30", label.placement="none", resizable="false", margin="0", 
+	tool.name="Union", tool.description="Add an union operator")
+class Union extends NaryOperator, GeoArithmeticOperator {
+
+}
+
+// Intersection Node
+@gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg",
+	size="30,30", label.placement="none", resizable="false", margin="0", 
+	tool.name="Intersection", tool.description="Add an intersection operator")
+class Intesection extends NaryOperator, GeoArithmeticOperator {
+
+}
+
+// Diference Node
+@gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg",
+	size="30,30", label.placement="none", resizable="false", margin="0", 
+	tool.name="Diference", tool.description="Add an diference operator")
+class Diference extends NaryOperator, GeoArithmeticOperator {
+
+}
+
+// Contains Node
+
+@gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Contains.svg",
+	size="30,30", label.placement="none", resizable="false", margin="0", 
+	tool.name="Contains", tool.description="Add a Contains operator")
+class Contains extends BinaryOperator, GeoBooleanOperator,LogicalOperator {
+	
+}
+
+// Distance Node
+@gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Distance.svg",
+	size="30,30", label.placement="none", resizable="false", margin="0", 
+	tool.name="Distance", tool.description="Add a distance operator")
+class Distance extends BinaryOperator, GeoBooleanOperator {
+
+}
+// Equals Node
+@gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Equals.svg",
+	size="30,30", label.placement="none", resizable="false", margin="0", 
+	tool.name="Equals", tool.description="Add a equals operator")
+class Equals extends BinaryOperator, GeoBooleanOperator {
+
+}
+// Intersects Node
+@gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Contains.svg",
+	size="30,30", label.placement="none", resizable="false", margin="0", 
+	tool.name="Intersects", tool.description="Add a intersects operator")
+class Intersects extends BinaryOperator, GeoBooleanOperator {
 
 }

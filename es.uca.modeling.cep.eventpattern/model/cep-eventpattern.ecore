@@ -27,7 +27,6 @@
       <details key="label" value="order"/>
       <details key="source" value="operand"/>
       <details key="target" value="operator"/>
-      <details key="source.constraint" value="self &lt;> oppositeEnd &#xD;&#xA;&#x9;and ( &#xD;&#xA;&#x9;   (self.oclIsKindOf(ComplexEvent) and oppositeEnd.oclIsKindOf(Action))&#xD;&#xA;&#x9;   or ((self.oclIsKindOf(Value) or self.oclIsKindOf(EventProperty) or &#xD;&#xA;&#x9;        self.oclIsKindOf(AggregationOperator) or self.oclIsKindOf(ArithmeticOperator)) &#xD;&#xA;&#x9;        and oppositeEnd.oclIsKindOf(ComplexEventProperty)) &#xD;&#xA;&#x9;   or (self.oclIsKindOf(PatternOperand) and oppositeEnd.oclIsKindOf(PatternOperator))&#xD;&#xA;&#x9;   or ((self.oclIsTypeOf(EventProperty) or self.oclIsTypeOf(Value)) &#xD;&#xA;&#x9;      and (oppositeEnd.oclIsKindOf(LogicalOperator) or oppositeEnd.oclIsKindOf(ComparisonOperator) &#xD;&#xA;&#x9;         or oppositeEnd.oclIsKindOf(ArithmeticOperator))) &#xD;&#xA;&#x9;   or (self.oclIsKindOf(ComparisonOperator) and oppositeEnd.oclIsKindOf(LogicalOperator))        &#xD;&#xA;&#x9;   or (self.oclIsKindOf(ArithmeticOperator) and (oppositeEnd.oclIsKindOf(ArithmeticOperator) &#xD;&#xA;&#x9;      or oppositeEnd.oclIsKindOf(ComparisonOperator)))  &#xD;&#xA;&#x9;   or ((self.oclIsTypeOf(EventProperty) or self.oclIsKindOf(ArithmeticOperator)) &#xD;&#xA;&#x9;      and oppositeEnd.oclIsKindOf(AggregationOperator)) &#xD;&#xA;&#x9;   or (self.oclIsKindOf(AggregationOperator) and oppositeEnd.oclIsKindOf(ArithmeticOperator))   &#xD;&#xA;&#x9;   or (self.oclIsKindOf(ComparisonOperator) and oppositeEnd.oclIsTypeOf(While))&#xD;&#xA;&#x9;   or (self.oclIsTypeOf(EventProperty) and oppositeEnd.oclIsTypeOf(EveryDistinct))&#xD;&#xA;&#x9;   or (self.oclIsKindOf(Event) and oppositeEnd.oclIsKindOf(ComplexEvent)) &#xD;&#xA;&#x9;   or (self.oclIsTypeOf(EventProperty) and oppositeEnd.oclIsTypeOf(GroupBy))&#xD;&#xA;&#x9;)"/>
       <details key="target.constraint" value="self &lt;> oppositeEnd"/>
       <details key="source.decoration" value="none"/>
       <details key="target.decoration" value="arrow"/>
@@ -696,6 +695,95 @@
       <details key="margin" value="0"/>
       <details key="tool.name" value="Twitter"/>
       <details key="tool.description" value="Add a twitter action"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GeoOperator" abstract="true" eSuperTypes="#//Operator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GeoArithmeticOperator" abstract="true"
+      eSuperTypes="#//GeoOperator #//ConditionOperator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GeoBooleanOperator" abstract="true"
+      eSuperTypes="#//GeoOperator #//ConditionOperator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Union" eSuperTypes="#//NaryOperator #//GeoArithmeticOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Union"/>
+      <details key="tool.description" value="Add an union operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Intesection" eSuperTypes="#//NaryOperator #//GeoArithmeticOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Intersection"/>
+      <details key="tool.description" value="Add an intersection operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Diference" eSuperTypes="#//NaryOperator #//GeoArithmeticOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Diference"/>
+      <details key="tool.description" value="Add an diference operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Contains" eSuperTypes="#//BinaryOperator #//GeoBooleanOperator #//LogicalOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Contains.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Contains"/>
+      <details key="tool.description" value="Add a Contains operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Distance" eSuperTypes="#//BinaryOperator #//GeoBooleanOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Distance.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Distance"/>
+      <details key="tool.description" value="Add a distance operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Equals" eSuperTypes="#//BinaryOperator #//GeoBooleanOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Equals.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Equals"/>
+      <details key="tool.description" value="Add a equals operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Intersects" eSuperTypes="#//BinaryOperator #//GeoBooleanOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Contains.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Intersects"/>
+      <details key="tool.description" value="Add a intersects operator"/>
     </eAnnotations>
   </eClassifiers>
 </ecore:EPackage>

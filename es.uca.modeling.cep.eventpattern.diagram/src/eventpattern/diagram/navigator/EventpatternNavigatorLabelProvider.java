@@ -214,6 +214,27 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 		case GroupByEditPart.VISUAL_ID:
 			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?GroupBy", //$NON-NLS-1$
 					EventpatternElementTypes.GroupBy_2040);
+		case ContainsEditPart.VISUAL_ID:
+			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Contains", //$NON-NLS-1$
+					EventpatternElementTypes.Contains_2041);
+		case UnionEditPart.VISUAL_ID:
+			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Union", //$NON-NLS-1$
+					EventpatternElementTypes.Union_2042);
+		case IntesectionEditPart.VISUAL_ID:
+			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Intesection", //$NON-NLS-1$
+					EventpatternElementTypes.Intesection_2043);
+		case DiferenceEditPart.VISUAL_ID:
+			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Diference", //$NON-NLS-1$
+					EventpatternElementTypes.Diference_2044);
+		case DistanceEditPart.VISUAL_ID:
+			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Distance", //$NON-NLS-1$
+					EventpatternElementTypes.Distance_2045);
+		case EqualsEditPart.VISUAL_ID:
+			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Equals", //$NON-NLS-1$
+					EventpatternElementTypes.Equals_2046);
+		case IntersectsEditPart.VISUAL_ID:
+			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Intersects", //$NON-NLS-1$
+					EventpatternElementTypes.Intersects_2047);
 		case EventProperty2EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?EventProperty", //$NON-NLS-1$
 					EventpatternElementTypes.EventProperty_3001);
@@ -392,6 +413,48 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 		case GroupBy2EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?GroupBy", //$NON-NLS-1$
 					EventpatternElementTypes.GroupBy_3060);
+		case Contains2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Contains", //$NON-NLS-1$
+					EventpatternElementTypes.Contains_3061);
+		case Union2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Union", //$NON-NLS-1$
+					EventpatternElementTypes.Union_3062);
+		case Intesection2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Intesection", //$NON-NLS-1$
+					EventpatternElementTypes.Intesection_3063);
+		case Diference2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Diference", //$NON-NLS-1$
+					EventpatternElementTypes.Diference_3064);
+		case Distance2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Distance", //$NON-NLS-1$
+					EventpatternElementTypes.Distance_3065);
+		case Equals2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Equals", //$NON-NLS-1$
+					EventpatternElementTypes.Equals_3066);
+		case Intersects2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Intersects", //$NON-NLS-1$
+					EventpatternElementTypes.Intersects_3067);
+		case Contains3EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Contains", //$NON-NLS-1$
+					EventpatternElementTypes.Contains_3068);
+		case Union3EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Union", //$NON-NLS-1$
+					EventpatternElementTypes.Union_3069);
+		case Intesection3EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Intesection", //$NON-NLS-1$
+					EventpatternElementTypes.Intesection_3070);
+		case Diference3EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Diference", //$NON-NLS-1$
+					EventpatternElementTypes.Diference_3071);
+		case Distance3EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Distance", //$NON-NLS-1$
+					EventpatternElementTypes.Distance_3072);
+		case Equals3EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Equals", //$NON-NLS-1$
+					EventpatternElementTypes.Equals_3073);
+		case Intersects3EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Intersects", //$NON-NLS-1$
+					EventpatternElementTypes.Intersects_3074);
 		case LinkEditPart.VISUAL_ID:
 			return getImage("Navigator?Link?www.uca.es/modeling/cep/eventpattern?Link", //$NON-NLS-1$
 					EventpatternElementTypes.Link_4001);
@@ -535,6 +598,20 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 			return getTwitter_2039Text(view);
 		case GroupByEditPart.VISUAL_ID:
 			return getGroupBy_2040Text(view);
+		case ContainsEditPart.VISUAL_ID:
+			return getContains_2041Text(view);
+		case UnionEditPart.VISUAL_ID:
+			return getUnion_2042Text(view);
+		case IntesectionEditPart.VISUAL_ID:
+			return getIntesection_2043Text(view);
+		case DiferenceEditPart.VISUAL_ID:
+			return getDiference_2044Text(view);
+		case DistanceEditPart.VISUAL_ID:
+			return getDistance_2045Text(view);
+		case EqualsEditPart.VISUAL_ID:
+			return getEquals_2046Text(view);
+		case IntersectsEditPart.VISUAL_ID:
+			return getIntersects_2047Text(view);
 		case EventProperty2EditPart.VISUAL_ID:
 			return getEventProperty_3001Text(view);
 		case EventProperty3EditPart.VISUAL_ID:
@@ -655,6 +732,34 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 			return getComplexEventProperty_3059Text(view);
 		case GroupBy2EditPart.VISUAL_ID:
 			return getGroupBy_3060Text(view);
+		case Contains2EditPart.VISUAL_ID:
+			return getContains_3061Text(view);
+		case Union2EditPart.VISUAL_ID:
+			return getUnion_3062Text(view);
+		case Intesection2EditPart.VISUAL_ID:
+			return getIntesection_3063Text(view);
+		case Diference2EditPart.VISUAL_ID:
+			return getDiference_3064Text(view);
+		case Distance2EditPart.VISUAL_ID:
+			return getDistance_3065Text(view);
+		case Equals2EditPart.VISUAL_ID:
+			return getEquals_3066Text(view);
+		case Intersects2EditPart.VISUAL_ID:
+			return getIntersects_3067Text(view);
+		case Contains3EditPart.VISUAL_ID:
+			return getContains_3068Text(view);
+		case Union3EditPart.VISUAL_ID:
+			return getUnion_3069Text(view);
+		case Intesection3EditPart.VISUAL_ID:
+			return getIntesection_3070Text(view);
+		case Diference3EditPart.VISUAL_ID:
+			return getDiference_3071Text(view);
+		case Distance3EditPart.VISUAL_ID:
+			return getDistance_3072Text(view);
+		case Equals3EditPart.VISUAL_ID:
+			return getEquals_3073Text(view);
+		case Intersects3EditPart.VISUAL_ID:
+			return getIntersects_3074Text(view);
 		case LinkEditPart.VISUAL_ID:
 			return getLink_4001Text(view);
 		}
@@ -1078,6 +1183,55 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 	* @generated
 	*/
 	private String getGroupBy_2040Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getContains_2041Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getUnion_2042Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getIntesection_2043Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getDiference_2044Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getDistance_2045Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getEquals_2046Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getIntersects_2047Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
 
@@ -1642,6 +1796,104 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 	* @generated
 	*/
 	private String getGroupBy_3060Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getContains_3061Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getUnion_3062Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getIntesection_3063Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getDiference_3064Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getDistance_3065Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getEquals_3066Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getIntersects_3067Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getContains_3068Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getUnion_3069Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getIntesection_3070Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getDiference_3071Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getDistance_3072Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getEquals_3073Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getIntersects_3074Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
 

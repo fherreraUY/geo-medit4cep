@@ -471,6 +471,41 @@ public class WithinTimerItemProvider
 			(createChildParameter
 				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
 				 EventpatternFactory.eINSTANCE.createValue()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createUnion()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createIntesection()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createDiference()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createContains()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createDistance()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createEquals()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createIntersects()));
 	}
 
 }

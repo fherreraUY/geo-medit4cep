@@ -327,25 +327,13 @@ public class EventpatternBaseItemSemanticEditPolicy extends SemanticEditPolicy {
 		public boolean canExistLink_4001(CEPEventPattern container, Link linkInstance, Operand source,
 				Operator target) {
 			try {
-				if (source == null) {
-					return true;
-				} else {
-					Map<String, EClassifier> env = Collections.<String, EClassifier>singletonMap("oppositeEnd", //$NON-NLS-1$
-							EventpatternPackage.eINSTANCE.getOperator());
-					Object sourceVal = EventpatternOCLFactory
-							.getExpression(0, EventpatternPackage.eINSTANCE.getOperand(), env)
-							.evaluate(source, Collections.singletonMap("oppositeEnd", target)); //$NON-NLS-1$
-					if (false == sourceVal instanceof Boolean || !((Boolean) sourceVal).booleanValue()) {
-						return false;
-					} // else fall-through
-				}
 				if (target == null) {
 					return true;
 				} else {
 					Map<String, EClassifier> env = Collections.<String, EClassifier>singletonMap("oppositeEnd", //$NON-NLS-1$
 							EventpatternPackage.eINSTANCE.getOperand());
 					Object targetVal = EventpatternOCLFactory
-							.getExpression(1, EventpatternPackage.eINSTANCE.getOperator(), env)
+							.getExpression(0, EventpatternPackage.eINSTANCE.getOperator(), env)
 							.evaluate(target, Collections.singletonMap("oppositeEnd", source)); //$NON-NLS-1$
 					if (false == targetVal instanceof Boolean || !((Boolean) targetVal).booleanValue()) {
 						return false;

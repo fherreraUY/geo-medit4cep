@@ -28,9 +28,13 @@ import eventpattern.EventpatternPackage;
 import eventpattern.diagram.edit.parts.Addition3EditPart;
 import eventpattern.diagram.edit.parts.And3EditPart;
 import eventpattern.diagram.edit.parts.Avg2EditPart;
+import eventpattern.diagram.edit.parts.Contains3EditPart;
 import eventpattern.diagram.edit.parts.Count2EditPart;
+import eventpattern.diagram.edit.parts.Diference3EditPart;
+import eventpattern.diagram.edit.parts.Distance3EditPart;
 import eventpattern.diagram.edit.parts.Division3EditPart;
 import eventpattern.diagram.edit.parts.Equal3EditPart;
+import eventpattern.diagram.edit.parts.Equals3EditPart;
 import eventpattern.diagram.edit.parts.Event3EditPart;
 import eventpattern.diagram.edit.parts.EventProperty5EditPart;
 import eventpattern.diagram.edit.parts.Every3EditPart;
@@ -39,6 +43,8 @@ import eventpattern.diagram.edit.parts.FollowedBy3EditPart;
 import eventpattern.diagram.edit.parts.GreaterEqual3EditPart;
 import eventpattern.diagram.edit.parts.GreaterThan3EditPart;
 import eventpattern.diagram.edit.parts.GroupBy2EditPart;
+import eventpattern.diagram.edit.parts.Intersects3EditPart;
+import eventpattern.diagram.edit.parts.Intesection3EditPart;
 import eventpattern.diagram.edit.parts.LessEqual3EditPart;
 import eventpattern.diagram.edit.parts.LessThan3EditPart;
 import eventpattern.diagram.edit.parts.Max2EditPart;
@@ -54,6 +60,7 @@ import eventpattern.diagram.edit.parts.Subtraction3EditPart;
 import eventpattern.diagram.edit.parts.Sum2EditPart;
 import eventpattern.diagram.edit.parts.TimeInterval2EditPart;
 import eventpattern.diagram.edit.parts.TimeSchedule2EditPart;
+import eventpattern.diagram.edit.parts.Union3EditPart;
 import eventpattern.diagram.edit.parts.Until3EditPart;
 import eventpattern.diagram.edit.parts.Value3EditPart;
 import eventpattern.diagram.edit.parts.While3EditPart;
@@ -116,9 +123,16 @@ public class BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCom
 	private boolean isMyDiagramElement(View view) {
 		int visualID = EventpatternVisualIDRegistry.getVisualID(view);
 		switch (visualID) {
+		case Contains3EditPart.VISUAL_ID:
 		case And3EditPart.VISUAL_ID:
 		case Or3EditPart.VISUAL_ID:
 		case Not3EditPart.VISUAL_ID:
+		case Union3EditPart.VISUAL_ID:
+		case Intesection3EditPart.VISUAL_ID:
+		case Diference3EditPart.VISUAL_ID:
+		case Distance3EditPart.VISUAL_ID:
+		case Equals3EditPart.VISUAL_ID:
+		case Intersects3EditPart.VISUAL_ID:
 		case Addition3EditPart.VISUAL_ID:
 		case Subtraction3EditPart.VISUAL_ID:
 		case Multiplication3EditPart.VISUAL_ID:

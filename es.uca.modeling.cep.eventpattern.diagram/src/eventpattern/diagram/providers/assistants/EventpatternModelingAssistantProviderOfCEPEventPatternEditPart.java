@@ -24,10 +24,17 @@ public class EventpatternModelingAssistantProviderOfCEPEventPatternEditPart
 	@Override
 
 	public List<IElementType> getTypesForPopupBar(IAdaptable host) {
-		List<IElementType> types = new ArrayList<IElementType>(40);
+		List<IElementType> types = new ArrayList<IElementType>(47);
+		types.add(EventpatternElementTypes.Contains_2041);
 		types.add(EventpatternElementTypes.And_2001);
 		types.add(EventpatternElementTypes.Or_2002);
 		types.add(EventpatternElementTypes.Not_2003);
+		types.add(EventpatternElementTypes.Union_2042);
+		types.add(EventpatternElementTypes.Intesection_2043);
+		types.add(EventpatternElementTypes.Diference_2044);
+		types.add(EventpatternElementTypes.Distance_2045);
+		types.add(EventpatternElementTypes.Equals_2046);
+		types.add(EventpatternElementTypes.Intersects_2047);
 		types.add(EventpatternElementTypes.Addition_2004);
 		types.add(EventpatternElementTypes.Subtraction_2005);
 		types.add(EventpatternElementTypes.Multiplication_2006);

@@ -8,8 +8,12 @@ import org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest;
 
 import eventpattern.diagram.edit.commands.Addition2CreateCommand;
 import eventpattern.diagram.edit.commands.And2CreateCommand;
+import eventpattern.diagram.edit.commands.Contains2CreateCommand;
+import eventpattern.diagram.edit.commands.Diference2CreateCommand;
+import eventpattern.diagram.edit.commands.Distance2CreateCommand;
 import eventpattern.diagram.edit.commands.Division2CreateCommand;
 import eventpattern.diagram.edit.commands.Equal2CreateCommand;
+import eventpattern.diagram.edit.commands.Equals2CreateCommand;
 import eventpattern.diagram.edit.commands.Event2CreateCommand;
 import eventpattern.diagram.edit.commands.EventProperty4CreateCommand;
 import eventpattern.diagram.edit.commands.Every2CreateCommand;
@@ -17,6 +21,8 @@ import eventpattern.diagram.edit.commands.EveryDistinct2CreateCommand;
 import eventpattern.diagram.edit.commands.FollowedBy2CreateCommand;
 import eventpattern.diagram.edit.commands.GreaterEqual2CreateCommand;
 import eventpattern.diagram.edit.commands.GreaterThan2CreateCommand;
+import eventpattern.diagram.edit.commands.Intersects2CreateCommand;
+import eventpattern.diagram.edit.commands.Intesection2CreateCommand;
 import eventpattern.diagram.edit.commands.LessEqual2CreateCommand;
 import eventpattern.diagram.edit.commands.LessThan2CreateCommand;
 import eventpattern.diagram.edit.commands.Modulus2CreateCommand;
@@ -27,6 +33,7 @@ import eventpattern.diagram.edit.commands.Or2CreateCommand;
 import eventpattern.diagram.edit.commands.Range2CreateCommand;
 import eventpattern.diagram.edit.commands.Repeat2CreateCommand;
 import eventpattern.diagram.edit.commands.Subtraction2CreateCommand;
+import eventpattern.diagram.edit.commands.Union2CreateCommand;
 import eventpattern.diagram.edit.commands.Until2CreateCommand;
 import eventpattern.diagram.edit.commands.Value2CreateCommand;
 import eventpattern.diagram.edit.commands.While2CreateCommand;
@@ -49,6 +56,9 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartmentItemSemanticEdi
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
+		if (EventpatternElementTypes.Contains_3061 == req.getElementType()) {
+			return getGEFWrapper(new Contains2CreateCommand(req));
+		}
 		if (EventpatternElementTypes.And_3003 == req.getElementType()) {
 			return getGEFWrapper(new And2CreateCommand(req));
 		}
@@ -57,6 +67,24 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartmentItemSemanticEdi
 		}
 		if (EventpatternElementTypes.Not_3005 == req.getElementType()) {
 			return getGEFWrapper(new Not2CreateCommand(req));
+		}
+		if (EventpatternElementTypes.Union_3062 == req.getElementType()) {
+			return getGEFWrapper(new Union2CreateCommand(req));
+		}
+		if (EventpatternElementTypes.Intesection_3063 == req.getElementType()) {
+			return getGEFWrapper(new Intesection2CreateCommand(req));
+		}
+		if (EventpatternElementTypes.Diference_3064 == req.getElementType()) {
+			return getGEFWrapper(new Diference2CreateCommand(req));
+		}
+		if (EventpatternElementTypes.Distance_3065 == req.getElementType()) {
+			return getGEFWrapper(new Distance2CreateCommand(req));
+		}
+		if (EventpatternElementTypes.Equals_3066 == req.getElementType()) {
+			return getGEFWrapper(new Equals2CreateCommand(req));
+		}
+		if (EventpatternElementTypes.Intersects_3067 == req.getElementType()) {
+			return getGEFWrapper(new Intersects2CreateCommand(req));
 		}
 		if (EventpatternElementTypes.Addition_3006 == req.getElementType()) {
 			return getGEFWrapper(new Addition2CreateCommand(req));

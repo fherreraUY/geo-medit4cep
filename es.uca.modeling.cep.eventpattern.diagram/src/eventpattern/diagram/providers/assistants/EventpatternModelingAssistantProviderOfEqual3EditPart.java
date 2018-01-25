@@ -11,6 +11,7 @@ import org.eclipse.core.runtime.IAdaptable;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
 import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 
+import eventpattern.diagram.edit.parts.*;
 import eventpattern.diagram.edit.parts.Addition2EditPart;
 import eventpattern.diagram.edit.parts.Addition3EditPart;
 import eventpattern.diagram.edit.parts.AdditionEditPart;
@@ -133,6 +134,9 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 	*/
 	public List<IElementType> doGetRelTypesOnSourceAndTarget(Equal3EditPart source, IGraphicalEditPart targetEditPart) {
 		List<IElementType> types = new LinkedList<IElementType>();
+		if (targetEditPart instanceof ContainsEditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
 		if (targetEditPart instanceof AndEditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
@@ -140,6 +144,24 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof NotEditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof UnionEditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof IntesectionEditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof DiferenceEditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof DistanceEditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof EqualsEditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof IntersectsEditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof AdditionEditPart) {
@@ -223,6 +245,9 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 		if (targetEditPart instanceof ComplexEventEditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
+		if (targetEditPart instanceof Contains2EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
 		if (targetEditPart instanceof And2EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
@@ -230,6 +255,24 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof Not2EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Union2EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Intesection2EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Diference2EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Distance2EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Equals2EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Intersects2EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof Addition2EditPart) {
@@ -286,6 +329,9 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 		if (targetEditPart instanceof While2EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
+		if (targetEditPart instanceof Contains3EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
 		if (targetEditPart instanceof And3EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
@@ -293,6 +339,24 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof Not3EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Union3EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Intesection3EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Diference3EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Distance3EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Equals3EditPart) {
+			types.add(EventpatternElementTypes.Link_4001);
+		}
+		if (targetEditPart instanceof Intersects3EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof Addition3EditPart) {
@@ -389,9 +453,16 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 	public List<IElementType> doGetTypesForTarget(Equal3EditPart source, IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == EventpatternElementTypes.Link_4001) {
+			types.add(EventpatternElementTypes.Contains_2041);
 			types.add(EventpatternElementTypes.And_2001);
 			types.add(EventpatternElementTypes.Or_2002);
 			types.add(EventpatternElementTypes.Not_2003);
+			types.add(EventpatternElementTypes.Union_2042);
+			types.add(EventpatternElementTypes.Intesection_2043);
+			types.add(EventpatternElementTypes.Diference_2044);
+			types.add(EventpatternElementTypes.Distance_2045);
+			types.add(EventpatternElementTypes.Equals_2046);
+			types.add(EventpatternElementTypes.Intersects_2047);
 			types.add(EventpatternElementTypes.Addition_2004);
 			types.add(EventpatternElementTypes.Subtraction_2005);
 			types.add(EventpatternElementTypes.Multiplication_2006);
@@ -419,9 +490,16 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 			types.add(EventpatternElementTypes.Email_2033);
 			types.add(EventpatternElementTypes.Twitter_2039);
 			types.add(EventpatternElementTypes.ComplexEvent_2038);
+			types.add(EventpatternElementTypes.Contains_3061);
 			types.add(EventpatternElementTypes.And_3003);
 			types.add(EventpatternElementTypes.Or_3004);
 			types.add(EventpatternElementTypes.Not_3005);
+			types.add(EventpatternElementTypes.Union_3062);
+			types.add(EventpatternElementTypes.Intesection_3063);
+			types.add(EventpatternElementTypes.Diference_3064);
+			types.add(EventpatternElementTypes.Distance_3065);
+			types.add(EventpatternElementTypes.Equals_3066);
+			types.add(EventpatternElementTypes.Intersects_3067);
 			types.add(EventpatternElementTypes.Addition_3006);
 			types.add(EventpatternElementTypes.Subtraction_3007);
 			types.add(EventpatternElementTypes.Multiplication_3008);
@@ -440,9 +518,16 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 			types.add(EventpatternElementTypes.Range_3021);
 			types.add(EventpatternElementTypes.FollowedBy_3022);
 			types.add(EventpatternElementTypes.While_3023);
+			types.add(EventpatternElementTypes.Contains_3068);
 			types.add(EventpatternElementTypes.And_3027);
 			types.add(EventpatternElementTypes.Or_3028);
 			types.add(EventpatternElementTypes.Not_3029);
+			types.add(EventpatternElementTypes.Union_3069);
+			types.add(EventpatternElementTypes.Intesection_3070);
+			types.add(EventpatternElementTypes.Diference_3071);
+			types.add(EventpatternElementTypes.Distance_3072);
+			types.add(EventpatternElementTypes.Equals_3073);
+			types.add(EventpatternElementTypes.Intersects_3074);
 			types.add(EventpatternElementTypes.Addition_3030);
 			types.add(EventpatternElementTypes.Subtraction_3031);
 			types.add(EventpatternElementTypes.Multiplication_3032);
@@ -507,9 +592,16 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 	public List<IElementType> doGetTypesForSource(Equal3EditPart target, IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == EventpatternElementTypes.Link_4001) {
+			types.add(EventpatternElementTypes.Contains_2041);
 			types.add(EventpatternElementTypes.And_2001);
 			types.add(EventpatternElementTypes.Or_2002);
 			types.add(EventpatternElementTypes.Not_2003);
+			types.add(EventpatternElementTypes.Union_2042);
+			types.add(EventpatternElementTypes.Intesection_2043);
+			types.add(EventpatternElementTypes.Diference_2044);
+			types.add(EventpatternElementTypes.Distance_2045);
+			types.add(EventpatternElementTypes.Equals_2046);
+			types.add(EventpatternElementTypes.Intersects_2047);
 			types.add(EventpatternElementTypes.Addition_2004);
 			types.add(EventpatternElementTypes.Subtraction_2005);
 			types.add(EventpatternElementTypes.Multiplication_2006);
@@ -542,9 +634,16 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 			types.add(EventpatternElementTypes.ComplexEvent_2038);
 			types.add(EventpatternElementTypes.EventProperty_3001);
 			types.add(EventpatternElementTypes.EventProperty_3002);
+			types.add(EventpatternElementTypes.Contains_3061);
 			types.add(EventpatternElementTypes.And_3003);
 			types.add(EventpatternElementTypes.Or_3004);
 			types.add(EventpatternElementTypes.Not_3005);
+			types.add(EventpatternElementTypes.Union_3062);
+			types.add(EventpatternElementTypes.Intesection_3063);
+			types.add(EventpatternElementTypes.Diference_3064);
+			types.add(EventpatternElementTypes.Distance_3065);
+			types.add(EventpatternElementTypes.Equals_3066);
+			types.add(EventpatternElementTypes.Intersects_3067);
 			types.add(EventpatternElementTypes.Addition_3006);
 			types.add(EventpatternElementTypes.Subtraction_3007);
 			types.add(EventpatternElementTypes.Multiplication_3008);
@@ -566,9 +665,16 @@ public class EventpatternModelingAssistantProviderOfEqual3EditPart extends Event
 			types.add(EventpatternElementTypes.Event_3024);
 			types.add(EventpatternElementTypes.EventProperty_3025);
 			types.add(EventpatternElementTypes.Value_3026);
+			types.add(EventpatternElementTypes.Contains_3068);
 			types.add(EventpatternElementTypes.And_3027);
 			types.add(EventpatternElementTypes.Or_3028);
 			types.add(EventpatternElementTypes.Not_3029);
+			types.add(EventpatternElementTypes.Union_3069);
+			types.add(EventpatternElementTypes.Intesection_3070);
+			types.add(EventpatternElementTypes.Diference_3071);
+			types.add(EventpatternElementTypes.Distance_3072);
+			types.add(EventpatternElementTypes.Equals_3073);
+			types.add(EventpatternElementTypes.Intersects_3074);
 			types.add(EventpatternElementTypes.Addition_3030);
 			types.add(EventpatternElementTypes.Subtraction_3031);
 			types.add(EventpatternElementTypes.Multiplication_3032);

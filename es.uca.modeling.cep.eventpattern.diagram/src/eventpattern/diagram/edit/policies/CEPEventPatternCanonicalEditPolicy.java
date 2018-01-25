@@ -107,9 +107,16 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 	private boolean isMyDiagramElement(View view) {
 		int visualID = EventpatternVisualIDRegistry.getVisualID(view);
 		switch (visualID) {
+		case ContainsEditPart.VISUAL_ID:
 		case AndEditPart.VISUAL_ID:
 		case OrEditPart.VISUAL_ID:
 		case NotEditPart.VISUAL_ID:
+		case UnionEditPart.VISUAL_ID:
+		case IntesectionEditPart.VISUAL_ID:
+		case DiferenceEditPart.VISUAL_ID:
+		case DistanceEditPart.VISUAL_ID:
+		case EqualsEditPart.VISUAL_ID:
+		case IntersectsEditPart.VISUAL_ID:
 		case AdditionEditPart.VISUAL_ID:
 		case SubtractionEditPart.VISUAL_ID:
 		case MultiplicationEditPart.VISUAL_ID:
@@ -306,6 +313,13 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
+		case ContainsEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getContains_2041ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
 		case AndEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getAnd_2001ContainedLinks(view));
@@ -323,6 +337,48 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 		case NotEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getNot_2003ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case UnionEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getUnion_2042ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case IntesectionEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getIntesection_2043ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case DiferenceEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getDiference_2044ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case DistanceEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getDistance_2045ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case EqualsEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getEquals_2046ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case IntersectsEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getIntersects_2047ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
@@ -600,6 +656,13 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
+		case Contains2EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getContains_3061ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
 		case And2EditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getAnd_3003ContainedLinks(view));
@@ -617,6 +680,48 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 		case Not2EditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getNot_3005ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Union2EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getUnion_3062ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Intesection2EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getIntesection_3063ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Diference2EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getDiference_3064ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Distance2EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getDistance_3065ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Equals2EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getEquals_3066ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Intersects2EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getIntersects_3067ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
@@ -768,6 +873,13 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
+		case Contains3EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getContains_3068ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
 		case And3EditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getAnd_3027ContainedLinks(view));
@@ -785,6 +897,48 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 		case Not3EditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getNot_3029ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Union3EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getUnion_3069ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Intesection3EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getIntesection_3070ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Diference3EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getDiference_3071ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Distance3EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getDistance_3072ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Equals3EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getEquals_3073ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case Intersects3EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getIntersects_3074ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;

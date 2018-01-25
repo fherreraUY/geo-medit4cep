@@ -59,6 +59,18 @@ var valueTool = objectGroup.tools.selectOne(o|o.title='Value');
 var whileTool = objectGroup.tools.selectOne(o|o.title='While');
 var withinTimerTool = objectGroup.tools.selectOne(o|o.title='Within Timer');
 
+// Ext Geo @federicoH
+var unionTool = objectGroup.tools.selectOne(o|o.title='Union');
+var containsTool = objectGroup.tools.selectOne(o|o.title='Contains');
+
+var equalsTool = objectGroup.tools.selectOne(o|o.title='Equals');
+var interectsTool = objectGroup.tools.selectOne(o|o.title='Intersects');
+var distanceTool = objectGroup.tools.selectOne(o|o.title='Distance');
+
+var intersectionTool = objectGroup.tools.selectOne(o|o.title='Intersection');
+var diferenceTool = objectGroup.tools.selectOne(o|o.title='Diference');
+
+
 
 palette.tools.add(linkTool);
 palette.tools.add(valueTool);
@@ -162,6 +174,32 @@ actionGroup.collapsible = true;
 palette.tools.add(actionGroup); 
 actionGroup.tools.add(emailTool);
 actionGroup.tools.add(twitterTool);
+
+
+
+-- Create geoArithmeticOperatorGroup
+var geoArithmeticOperatorGroup = new GmfTool!ToolGroup; 
+geoArithmeticOperatorGroup.title = 'Geo Arithmetic Operators'; 
+geoArithmeticOperatorGroup.collapsible = true; 
+palette.tools.add(geoArithmeticOperatorGroup); 
+
+geoArithmeticOperatorGroup.tools.add(unionTool);
+geoArithmeticOperatorGroup.tools.add(intersectionTool);
+geoArithmeticOperatorGroup.tools.add(diferenceTool);
+
+
+-- Create geoBooleanOperatorGroup
+var geoBooleanOperatorGroup = new GmfTool!ToolGroup; 
+geoBooleanOperatorGroup.title = 'Geo Boolean Operators'; 
+geoBooleanOperatorGroup.collapsible = true; 
+palette.tools.add(geoBooleanOperatorGroup); 
+
+geoBooleanOperatorGroup.tools.add(containsTool);
+geoBooleanOperatorGroup.tools.add(equalsTool);
+geoBooleanOperatorGroup.tools.add(interectsTool);
+geoBooleanOperatorGroup.tools.add(distanceTool);
+
+
 
 --Delete default groups 
 palette.tools.remove(objectGroup);

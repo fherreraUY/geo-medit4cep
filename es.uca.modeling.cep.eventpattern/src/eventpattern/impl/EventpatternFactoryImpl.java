@@ -104,6 +104,13 @@ public class EventpatternFactoryImpl extends EFactoryImpl implements Eventpatter
 			case EventpatternPackage.VALUE: return createValue();
 			case EventpatternPackage.EMAIL: return createEmail();
 			case EventpatternPackage.TWITTER: return createTwitter();
+			case EventpatternPackage.UNION: return createUnion();
+			case EventpatternPackage.INTESECTION: return createIntesection();
+			case EventpatternPackage.DIFERENCE: return createDiference();
+			case EventpatternPackage.CONTAINS: return createContains();
+			case EventpatternPackage.DISTANCE: return createDistance();
+			case EventpatternPackage.EQUALS: return createEquals();
+			case EventpatternPackage.INTERSECTS: return createIntersects();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -614,6 +621,76 @@ public class EventpatternFactoryImpl extends EFactoryImpl implements Eventpatter
 	}
 
   /**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Union createUnion() {
+		UnionImpl union = new UnionImpl();
+		return union;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Intesection createIntesection() {
+		IntesectionImpl intesection = new IntesectionImpl();
+		return intesection;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Diference createDiference() {
+		DiferenceImpl diference = new DiferenceImpl();
+		return diference;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Contains createContains() {
+		ContainsImpl contains = new ContainsImpl();
+		return contains;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Distance createDistance() {
+		DistanceImpl distance = new DistanceImpl();
+		return distance;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Equals createEquals() {
+		EqualsImpl equals = new EqualsImpl();
+		return equals;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Intersects createIntersects() {
+		IntersectsImpl intersects = new IntersectsImpl();
+		return intersects;
+	}
+
+		/**
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @generated

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created x Federico Herrera -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="30"
+   id="svg3316"
+   version="1.1"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="Union.svg">
+  <title
+     id="title111">Union</title>
+  <defs
+     id="defs3318" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="22.4"
+     inkscape:cx="22.973103"
+     inkscape:cy="15.70935"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3321">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Union</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Federico Herrera</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Federico Herrera</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Federico Herrera</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-791.40609,-499.52753)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="747.41632"
+       y="559.15186"
+       id="text3482"
+       transform="scale(1.0668738,0.93731799)"><tspan
+         sodipodi:role="line"
+         id="tspan3484"
+         x="747.41632"
+         y="559.15186"
+         style="font-weight:bold;font-size:28.93803978px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'Sans Bold';fill:#ffffff">=</tspan></text>
+    <path
+       style="fill:#008000;fill-opacity:0;stroke-width:0.06749156;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 13.881751,29.906334 C 9.1071036,29.593779 4.6625284,26.830015 2.1053788,22.583446 -0.203244,18.749597 -0.58189173,13.773823 1.1073947,9.469032 4.0033533,2.0892906 12.386713,-1.7474287 19.900812,0.86805742 c 7.163991,2.49362198 11.3095,9.91458058 9.700826,17.36564558 -0.777182,3.599753 -3.028474,6.952412 -6.089399,9.068429 -2.054185,1.420056 -4.838561,2.43042 -7.081133,2.569521 -0.441313,0.02738 -0.963102,0.06159 -1.159531,0.07603 -0.196429,0.01444 -0.821849,-0.0042 -1.389824,-0.04134 z M 28.619789,19.111889 v -1.607143 h -9.6875 -9.6874997 v 1.607143 1.607143 h 9.6874997 9.6875 z m 0,-6.071428 v -1.607143 h -9.6875 -9.6874997 v 1.607143 1.607142 h 9.6874997 9.6875 z"
+       id="path10"
+       inkscape:connector-curvature="0"
+       transform="translate(791.40609,499.52753)" />
+    <g
+       id="g89" />
+    <path
+       style="fill:#008000;fill-opacity:1;stroke-width:1.08956087;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path91"
+       sodipodi:type="arc"
+       sodipodi:cx="801.33911"
+       sodipodi:cy="511.35791"
+       sodipodi:rx="7.5223212"
+       sodipodi:ry="7.5446429"
+       sodipodi:start="5.7349204"
+       sodipodi:end="5.319842"
+       d="m 807.75889,507.42559 a 7.5223212,7.5446429 0 0 1 -1.8552,9.92919 7.5223212,7.5446429 0 0 1 -10.03872,-0.8222 7.5223212,7.5446429 0 0 1 -0.2245,-10.09951 7.5223212,7.5446429 0 0 1 9.99222,-1.2701"
+       sodipodi:open="true" />
+    <path
+       style="fill:#008000;fill-opacity:1;stroke-width:0.75590551;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path93"
+       sodipodi:type="arc"
+       sodipodi:cx="798.86145"
+       sodipodi:cy="509.84003"
+       sodipodi:rx="5"
+       sodipodi:ry="6.6517859"
+       sodipodi:start="5.734925"
+       sodipodi:end="5.7366005"
+       d="m 803.12861,506.37309 a 5,6.6517859 0 0 1 0.004,0.01 l -4.27152,3.45742 z" />
+    <path
+       style="fill:#008000;fill-opacity:1;stroke-width:0.75590551;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path95"
+       sodipodi:type="arc"
+       sodipodi:cx="798.45966"
+       sodipodi:cy="506.60342"
+       sodipodi:rx="1.3392857"
+       sodipodi:ry="1.8973215"
+       sodipodi:start="5.734925"
+       sodipodi:end="5.7366005"
+       d="m 799.60265,505.61453 a 1.3392857,1.8973215 0 0 1 0.001,0.003 l -1.14415,0.98617 z" />
+    <path
+       style="fill:#008000;fill-opacity:1;stroke-width:0.75590551;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path97"
+       sodipodi:type="arc"
+       sodipodi:cx="811.40607"
+       sodipodi:cy="512.27307"
+       sodipodi:rx="5.9375"
+       sodipodi:ry="6.2723212"
+       sodipodi:start="5.734925"
+       sodipodi:end="5.3198334"
+       sodipodi:open="true"
+       d="m 816.47332,509.00392 a 5.9375,6.2723212 0 0 1 -1.46436,8.25472 5.9375,6.2723212 0 0 1 -7.92372,-0.68354 5.9375,6.2723212 0 0 1 -0.17723,-8.39633 5.9375,6.2723212 0 0 1 7.88701,-1.05596" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.33333349px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none;"
+       x="804.26324"
+       y="514.349"
+       id="text109"><tspan
+         sodipodi:role="line"
+         id="tspan107"
+         x="804.26324"
+         y="514.349">U</tspan></text>
+  </g>
+</svg>

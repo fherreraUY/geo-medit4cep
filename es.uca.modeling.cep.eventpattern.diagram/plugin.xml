@@ -258,7 +258,7 @@
          </object>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Eventpattern"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3003,3004,3005,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3027,3028,3029,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3060,3056,3057,3058,3059"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2041,2001,2002,2003,2042,2043,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3061,3003,3004,3005,3062,3063,3064,3065,3066,3067,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3068,3027,3028,3029,3069,3070,3071,3072,3073,3074,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3060,3056,3057,3058,3059"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001"/>
       </viewProvider>
    </extension>
@@ -271,7 +271,7 @@
             <method name="getType()" value="Eventpattern"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3003,3004,3005,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3027,3028,3029,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3060,3056,3057,3058,3059"/>
+            <method name="getType()" value="2041,2001,2002,2003,2042,2043,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3061,3003,3004,3005,3062,3063,3064,3065,3066,3067,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3068,3027,3028,3029,3069,3070,3071,3072,3073,3074,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3060,3056,3057,3058,3059"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
             <method name="getType()" value="4001"/>
@@ -293,6 +293,11 @@
          <object class="eventpattern.diagram.edit.parts.CEPEventPatternEditPart" id="CEPEventPattern_1000"/>
          <context elements="CEPEventPattern_1000"/>
       </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfContainsEditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.ContainsEditPart" id="Contains_2041"/>
+         <context elements="Contains_2041"/>
+      </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfAndEditPart">
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.AndEditPart" id="And_2001"/>
@@ -307,6 +312,36 @@
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.NotEditPart" id="Not_2003"/>
          <context elements="Not_2003"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfUnionEditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.UnionEditPart" id="Union_2042"/>
+         <context elements="Union_2042"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntesectionEditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.IntesectionEditPart" id="Intesection_2043"/>
+         <context elements="Intesection_2043"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfDiferenceEditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.DiferenceEditPart" id="Diference_2044"/>
+         <context elements="Diference_2044"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfDistanceEditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.DistanceEditPart" id="Distance_2045"/>
+         <context elements="Distance_2045"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfEqualsEditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.EqualsEditPart" id="Equals_2046"/>
+         <context elements="Equals_2046"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntersectsEditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.IntersectsEditPart" id="Intersects_2047"/>
+         <context elements="Intersects_2047"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfAdditionEditPart">
          <Priority name="Lowest"/>
@@ -503,6 +538,11 @@
          <object class="eventpattern.diagram.edit.parts.EventProperty3EditPart" id="EventProperty_3002"/>
          <context elements="EventProperty_3002"/>
       </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfContains2EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Contains2EditPart" id="Contains_3061"/>
+         <context elements="Contains_3061"/>
+      </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfAnd2EditPart">
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.And2EditPart" id="And_3003"/>
@@ -517,6 +557,36 @@
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.Not2EditPart" id="Not_3005"/>
          <context elements="Not_3005"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfUnion2EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Union2EditPart" id="Union_3062"/>
+         <context elements="Union_3062"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntesection2EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Intesection2EditPart" id="Intesection_3063"/>
+         <context elements="Intesection_3063"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfDiference2EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Diference2EditPart" id="Diference_3064"/>
+         <context elements="Diference_3064"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfDistance2EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Distance2EditPart" id="Distance_3065"/>
+         <context elements="Distance_3065"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfEquals2EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Equals2EditPart" id="Equals_3066"/>
+         <context elements="Equals_3066"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntersects2EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Intersects2EditPart" id="Intersects_3067"/>
+         <context elements="Intersects_3067"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfAddition2EditPart">
          <Priority name="Lowest"/>
@@ -623,6 +693,11 @@
          <object class="eventpattern.diagram.edit.parts.Value2EditPart" id="Value_3026"/>
          <context elements="Value_3026"/>
       </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfContains3EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Contains3EditPart" id="Contains_3068"/>
+         <context elements="Contains_3068"/>
+      </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfAnd3EditPart">
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.And3EditPart" id="And_3027"/>
@@ -637,6 +712,36 @@
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.Not3EditPart" id="Not_3029"/>
          <context elements="Not_3029"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfUnion3EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Union3EditPart" id="Union_3069"/>
+         <context elements="Union_3069"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntesection3EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Intesection3EditPart" id="Intesection_3070"/>
+         <context elements="Intesection_3070"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfDiference3EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Diference3EditPart" id="Diference_3071"/>
+         <context elements="Diference_3071"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfDistance3EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Distance3EditPart" id="Distance_3072"/>
+         <context elements="Distance_3072"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfEquals3EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Equals3EditPart" id="Equals_3073"/>
+         <context elements="Equals_3073"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntersects3EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Intersects3EditPart" id="Intersects_3074"/>
+         <context elements="Intersects_3074"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfAddition3EditPart">
          <Priority name="Lowest"/>
@@ -815,7 +920,7 @@
       <decoratorProvider class="eventpattern.diagram.providers.EventpatternShortcutsDecoratorProvider">
          <Priority name="Lowest"/>
          <object class="org.eclipse.gmf.runtime.notation.Node(org.eclipse.gmf.runtime.notation)" id="generated-top-nodes">
-            <method name="getType()" value="2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038"/>
+            <method name="getType()" value="2041,2001,2002,2003,2042,2043,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038"/>
          </object>
          <context decoratorTargets="generated-top-nodes"/>
       </decoratorProvider>
@@ -831,6 +936,16 @@
                eclass="CEPEventPattern"
                edithelper="eventpattern.diagram.edit.helpers.CEPEventPatternEditHelper">
             <param name="semanticHint" value="1000"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <metamodelType
+               id="es.uca.modeling.cep.eventpattern.diagram.Contains_2041"
+               name="%metatype.name.Contains_2041"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Contains"
+               edithelper="eventpattern.diagram.edit.helpers.ContainsEditHelper">
+            <param name="semanticHint" value="2041"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
@@ -861,6 +976,66 @@
                eclass="Not"
                edithelper="eventpattern.diagram.edit.helpers.NotEditHelper">
             <param name="semanticHint" value="2003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <metamodelType
+               id="es.uca.modeling.cep.eventpattern.diagram.Union_2042"
+               name="%metatype.name.Union_2042"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Union"
+               edithelper="eventpattern.diagram.edit.helpers.UnionEditHelper">
+            <param name="semanticHint" value="2042"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <metamodelType
+               id="es.uca.modeling.cep.eventpattern.diagram.Intesection_2043"
+               name="%metatype.name.Intesection_2043"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Intesection"
+               edithelper="eventpattern.diagram.edit.helpers.IntesectionEditHelper">
+            <param name="semanticHint" value="2043"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <metamodelType
+               id="es.uca.modeling.cep.eventpattern.diagram.Diference_2044"
+               name="%metatype.name.Diference_2044"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Diference"
+               edithelper="eventpattern.diagram.edit.helpers.DiferenceEditHelper">
+            <param name="semanticHint" value="2044"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <metamodelType
+               id="es.uca.modeling.cep.eventpattern.diagram.Distance_2045"
+               name="%metatype.name.Distance_2045"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Distance"
+               edithelper="eventpattern.diagram.edit.helpers.DistanceEditHelper">
+            <param name="semanticHint" value="2045"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <metamodelType
+               id="es.uca.modeling.cep.eventpattern.diagram.Equals_2046"
+               name="%metatype.name.Equals_2046"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Equals"
+               edithelper="eventpattern.diagram.edit.helpers.EqualsEditHelper">
+            <param name="semanticHint" value="2046"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <metamodelType
+               id="es.uca.modeling.cep.eventpattern.diagram.Intersects_2047"
+               name="%metatype.name.Intersects_2047"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Intersects"
+               edithelper="eventpattern.diagram.edit.helpers.IntersectsEditHelper">
+            <param name="semanticHint" value="2047"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
@@ -1253,6 +1428,15 @@
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
          <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Contains_3061"
+               name="%metatype.name.Contains_3061"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Contains_2041"/>
+            <param name="semanticHint" value="3061"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
                id="es.uca.modeling.cep.eventpattern.diagram.And_3003"
                name="%metatype.name.And_3003"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
@@ -1276,6 +1460,60 @@
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
             <specializes id="es.uca.modeling.cep.eventpattern.diagram.Not_2003"/>
             <param name="semanticHint" value="3005"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Union_3062"
+               name="%metatype.name.Union_3062"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Union_2042"/>
+            <param name="semanticHint" value="3062"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Intesection_3063"
+               name="%metatype.name.Intesection_3063"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Intesection_2043"/>
+            <param name="semanticHint" value="3063"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Diference_3064"
+               name="%metatype.name.Diference_3064"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Diference_2044"/>
+            <param name="semanticHint" value="3064"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Distance_3065"
+               name="%metatype.name.Distance_3065"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Distance_2045"/>
+            <param name="semanticHint" value="3065"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Equals_3066"
+               name="%metatype.name.Equals_3066"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Equals_2046"/>
+            <param name="semanticHint" value="3066"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Intersects_3067"
+               name="%metatype.name.Intersects_3067"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Intersects_2047"/>
+            <param name="semanticHint" value="3067"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
@@ -1469,6 +1707,15 @@
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
          <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Contains_3068"
+               name="%metatype.name.Contains_3068"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Contains_2041"/>
+            <param name="semanticHint" value="3068"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
                id="es.uca.modeling.cep.eventpattern.diagram.And_3027"
                name="%metatype.name.And_3027"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
@@ -1492,6 +1739,60 @@
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
             <specializes id="es.uca.modeling.cep.eventpattern.diagram.Not_2003"/>
             <param name="semanticHint" value="3029"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Union_3069"
+               name="%metatype.name.Union_3069"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Union_2042"/>
+            <param name="semanticHint" value="3069"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Intesection_3070"
+               name="%metatype.name.Intesection_3070"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Intesection_2043"/>
+            <param name="semanticHint" value="3070"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Diference_3071"
+               name="%metatype.name.Diference_3071"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Diference_2044"/>
+            <param name="semanticHint" value="3071"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Distance_3072"
+               name="%metatype.name.Distance_3072"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Distance_2045"/>
+            <param name="semanticHint" value="3072"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Equals_3073"
+               name="%metatype.name.Equals_3073"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Equals_2046"/>
+            <param name="semanticHint" value="3073"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Intersects_3074"
+               name="%metatype.name.Intersects_3074"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Intersects_2047"/>
+            <param name="semanticHint" value="3074"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
@@ -1797,9 +2098,16 @@
       </clientContext> 
       <binding context="es.uca.modeling.cep.eventpattern.diagram.TypeContext">
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.CEPEventPattern_1000"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Contains_2041"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.And_2001"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Or_2002"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Not_2003"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Union_2042"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intesection_2043"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Diference_2044"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Distance_2045"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Equals_2046"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intersects_2047"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Addition_2004"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Subtraction_2005"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Multiplication_2006"/>
@@ -1839,9 +2147,16 @@
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.ComplexEvent_2038"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.EventProperty_3001"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.EventProperty_3002"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Contains_3061"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.And_3003"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Or_3004"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Not_3005"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Union_3062"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intesection_3063"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Diference_3064"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Distance_3065"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Equals_3066"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intersects_3067"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Addition_3006"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Subtraction_3007"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Multiplication_3008"/>
@@ -1863,9 +2178,16 @@
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Event_3024"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.EventProperty_3025"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Value_3026"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Contains_3068"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.And_3027"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Or_3028"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Not_3029"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Union_3069"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intesection_3070"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Diference_3071"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Distance_3072"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Equals_3073"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intersects_3074"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Addition_3030"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Subtraction_3031"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Multiplication_3032"/>

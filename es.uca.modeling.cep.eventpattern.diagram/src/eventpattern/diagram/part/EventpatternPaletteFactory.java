@@ -70,6 +70,8 @@ public class EventpatternPaletteFactory {
 		paletteRoot.add(createAggregationOperators9Group());
 		paletteRoot.add(createDataWindows10Group());
 		paletteRoot.add(createActions11Group());
+		paletteRoot.add(createGeoArithmeticOperators12Group());
+		paletteRoot.add(createGeoBooleanOperators13Group());
 	}
 
 	/**
@@ -408,6 +410,33 @@ public class EventpatternPaletteFactory {
 	}
 
 	/**
+	* Creates "Geo Arithmetic Operators" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createGeoArithmeticOperators12Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.GeoArithmeticOperators12Group_title);
+		paletteContainer.setId("createGeoArithmeticOperators12Group"); //$NON-NLS-1$
+		paletteContainer.add(createUnion1CreationTool());
+		paletteContainer.add(createIntersection2CreationTool());
+		paletteContainer.add(createDiference3CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+	* Creates "Geo Boolean Operators" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createGeoBooleanOperators13Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.GeoBooleanOperators13Group_title);
+		paletteContainer.setId("createGeoBooleanOperators13Group"); //$NON-NLS-1$
+		paletteContainer.add(createContains1CreationTool());
+		paletteContainer.add(createEquals2CreationTool());
+		paletteContainer.add(createIntersects3CreationTool());
+		paletteContainer.add(createDistance4CreationTool());
+		return paletteContainer;
+	}
+
+	/**
 	 * @generated
 	 */
 	private ToolEntry createAddition1CreationTool() {
@@ -638,6 +667,118 @@ public class EventpatternPaletteFactory {
 				Messages.Twitter2CreationTool_desc, Collections.singletonList(EventpatternElementTypes.Twitter_2039));
 		entry.setId("createTwitter2CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.Twitter_2039));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	* @generated
+	*/
+	private ToolEntry createUnion1CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(3);
+		types.add(EventpatternElementTypes.Union_2042);
+		types.add(EventpatternElementTypes.Union_3062);
+		types.add(EventpatternElementTypes.Union_3069);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Union1CreationTool_title,
+				Messages.Union1CreationTool_desc, types);
+		entry.setId("createUnion1CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.Union_2042));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	* @generated
+	*/
+	private ToolEntry createIntersection2CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(3);
+		types.add(EventpatternElementTypes.Intesection_2043);
+		types.add(EventpatternElementTypes.Intesection_3063);
+		types.add(EventpatternElementTypes.Intesection_3070);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Intersection2CreationTool_title,
+				Messages.Intersection2CreationTool_desc, types);
+		entry.setId("createIntersection2CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.Intesection_2043));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	* @generated
+	*/
+	private ToolEntry createDiference3CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(3);
+		types.add(EventpatternElementTypes.Diference_2044);
+		types.add(EventpatternElementTypes.Diference_3064);
+		types.add(EventpatternElementTypes.Diference_3071);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Diference3CreationTool_title,
+				Messages.Diference3CreationTool_desc, types);
+		entry.setId("createDiference3CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.Diference_2044));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	* @generated
+	*/
+	private ToolEntry createContains1CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(3);
+		types.add(EventpatternElementTypes.Contains_2041);
+		types.add(EventpatternElementTypes.Contains_3061);
+		types.add(EventpatternElementTypes.Contains_3068);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Contains1CreationTool_title,
+				Messages.Contains1CreationTool_desc, types);
+		entry.setId("createContains1CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.Contains_2041));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	* @generated
+	*/
+	private ToolEntry createEquals2CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(3);
+		types.add(EventpatternElementTypes.Equals_2046);
+		types.add(EventpatternElementTypes.Equals_3066);
+		types.add(EventpatternElementTypes.Equals_3073);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Equals2CreationTool_title,
+				Messages.Equals2CreationTool_desc, types);
+		entry.setId("createEquals2CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.Equals_2046));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	* @generated
+	*/
+	private ToolEntry createIntersects3CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(3);
+		types.add(EventpatternElementTypes.Intersects_2047);
+		types.add(EventpatternElementTypes.Intersects_3067);
+		types.add(EventpatternElementTypes.Intersects_3074);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Intersects3CreationTool_title,
+				Messages.Intersects3CreationTool_desc, types);
+		entry.setId("createIntersects3CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.Intersects_2047));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	* @generated
+	*/
+	private ToolEntry createDistance4CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(3);
+		types.add(EventpatternElementTypes.Distance_2045);
+		types.add(EventpatternElementTypes.Distance_3065);
+		types.add(EventpatternElementTypes.Distance_3072);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Distance4CreationTool_title,
+				Messages.Distance4CreationTool_desc, types);
+		entry.setId("createDistance4CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.Distance_2045));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}

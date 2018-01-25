@@ -299,6 +299,41 @@ public class DataWindowItemProvider
 			(createChildParameter
 				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
 				 EventpatternFactory.eINSTANCE.createValue()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
+				 EventpatternFactory.eINSTANCE.createUnion()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
+				 EventpatternFactory.eINSTANCE.createIntesection()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
+				 EventpatternFactory.eINSTANCE.createDiference()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
+				 EventpatternFactory.eINSTANCE.createContains()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
+				 EventpatternFactory.eINSTANCE.createDistance()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
+				 EventpatternFactory.eINSTANCE.createEquals()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
+				 EventpatternFactory.eINSTANCE.createIntersects()));
 	}
 
 }

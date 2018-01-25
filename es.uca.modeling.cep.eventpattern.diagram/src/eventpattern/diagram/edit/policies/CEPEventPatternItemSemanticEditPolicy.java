@@ -16,10 +16,14 @@ import eventpattern.diagram.edit.commands.AvgCreateCommand;
 import eventpattern.diagram.edit.commands.BatchingEventIntervalCreateCommand;
 import eventpattern.diagram.edit.commands.BatchingTimeIntervalCreateCommand;
 import eventpattern.diagram.edit.commands.ComplexEventCreateCommand;
+import eventpattern.diagram.edit.commands.ContainsCreateCommand;
 import eventpattern.diagram.edit.commands.CountCreateCommand;
+import eventpattern.diagram.edit.commands.DiferenceCreateCommand;
+import eventpattern.diagram.edit.commands.DistanceCreateCommand;
 import eventpattern.diagram.edit.commands.DivisionCreateCommand;
 import eventpattern.diagram.edit.commands.EmailCreateCommand;
 import eventpattern.diagram.edit.commands.EqualCreateCommand;
+import eventpattern.diagram.edit.commands.EqualsCreateCommand;
 import eventpattern.diagram.edit.commands.EventCreateCommand;
 import eventpattern.diagram.edit.commands.EventPropertyCreateCommand;
 import eventpattern.diagram.edit.commands.EveryCreateCommand;
@@ -28,6 +32,8 @@ import eventpattern.diagram.edit.commands.FollowedByCreateCommand;
 import eventpattern.diagram.edit.commands.GreaterEqualCreateCommand;
 import eventpattern.diagram.edit.commands.GreaterThanCreateCommand;
 import eventpattern.diagram.edit.commands.GroupByCreateCommand;
+import eventpattern.diagram.edit.commands.IntersectsCreateCommand;
+import eventpattern.diagram.edit.commands.IntesectionCreateCommand;
 import eventpattern.diagram.edit.commands.LessEqualCreateCommand;
 import eventpattern.diagram.edit.commands.LessThanCreateCommand;
 import eventpattern.diagram.edit.commands.MaxCreateCommand;
@@ -46,6 +52,7 @@ import eventpattern.diagram.edit.commands.SumCreateCommand;
 import eventpattern.diagram.edit.commands.TimeIntervalCreateCommand;
 import eventpattern.diagram.edit.commands.TimeScheduleCreateCommand;
 import eventpattern.diagram.edit.commands.TwitterCreateCommand;
+import eventpattern.diagram.edit.commands.UnionCreateCommand;
 import eventpattern.diagram.edit.commands.UntilCreateCommand;
 import eventpattern.diagram.edit.commands.ValueCreateCommand;
 import eventpattern.diagram.edit.commands.WhileCreateCommand;
@@ -68,6 +75,9 @@ public class CEPEventPatternItemSemanticEditPolicy extends EventpatternBaseItemS
 	 * @generated
 	 */
 	protected Command getCreateCommand(CreateElementRequest req) {
+		if (EventpatternElementTypes.Contains_2041 == req.getElementType()) {
+			return getGEFWrapper(new ContainsCreateCommand(req));
+		}
 		if (EventpatternElementTypes.And_2001 == req.getElementType()) {
 			return getGEFWrapper(new AndCreateCommand(req));
 		}
@@ -76,6 +86,24 @@ public class CEPEventPatternItemSemanticEditPolicy extends EventpatternBaseItemS
 		}
 		if (EventpatternElementTypes.Not_2003 == req.getElementType()) {
 			return getGEFWrapper(new NotCreateCommand(req));
+		}
+		if (EventpatternElementTypes.Union_2042 == req.getElementType()) {
+			return getGEFWrapper(new UnionCreateCommand(req));
+		}
+		if (EventpatternElementTypes.Intesection_2043 == req.getElementType()) {
+			return getGEFWrapper(new IntesectionCreateCommand(req));
+		}
+		if (EventpatternElementTypes.Diference_2044 == req.getElementType()) {
+			return getGEFWrapper(new DiferenceCreateCommand(req));
+		}
+		if (EventpatternElementTypes.Distance_2045 == req.getElementType()) {
+			return getGEFWrapper(new DistanceCreateCommand(req));
+		}
+		if (EventpatternElementTypes.Equals_2046 == req.getElementType()) {
+			return getGEFWrapper(new EqualsCreateCommand(req));
+		}
+		if (EventpatternElementTypes.Intersects_2047 == req.getElementType()) {
+			return getGEFWrapper(new IntersectsCreateCommand(req));
 		}
 		if (EventpatternElementTypes.Addition_2004 == req.getElementType()) {
 			return getGEFWrapper(new AdditionCreateCommand(req));

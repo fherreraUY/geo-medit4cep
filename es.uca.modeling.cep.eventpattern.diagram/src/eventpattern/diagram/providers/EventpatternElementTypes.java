@@ -54,6 +54,12 @@ public class EventpatternElementTypes {
 	public static final IElementType CEPEventPattern_1000 = getElementType(
 			"es.uca.modeling.cep.eventpattern.diagram.CEPEventPattern_1000"); //$NON-NLS-1$
 	/**
+	* @generated
+	*/
+	public static final IElementType Contains_2041 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Contains_2041"); //$NON-NLS-1$
+
+	/**
 	 * @generated
 	 */
 	public static final IElementType And_2001 = getElementType("es.uca.modeling.cep.eventpattern.diagram.And_2001"); //$NON-NLS-1$
@@ -65,6 +71,41 @@ public class EventpatternElementTypes {
 	 * @generated
 	 */
 	public static final IElementType Not_2003 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Not_2003"); //$NON-NLS-1$
+	/**
+	* @generated
+	*/
+	public static final IElementType Union_2042 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Union_2042"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Intesection_2043 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Intesection_2043"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Diference_2044 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Diference_2044"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Distance_2045 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Distance_2045"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Equals_2046 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Equals_2046"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Intersects_2047 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Intersects_2047"); //$NON-NLS-1$
+
 	/**
 	 * @generated
 	 */
@@ -250,6 +291,12 @@ public class EventpatternElementTypes {
 	public static final IElementType EventProperty_3002 = getElementType(
 			"es.uca.modeling.cep.eventpattern.diagram.EventProperty_3002"); //$NON-NLS-1$
 	/**
+	* @generated
+	*/
+	public static final IElementType Contains_3061 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Contains_3061"); //$NON-NLS-1$
+
+	/**
 	 * @generated
 	 */
 	public static final IElementType And_3003 = getElementType("es.uca.modeling.cep.eventpattern.diagram.And_3003"); //$NON-NLS-1$
@@ -261,6 +308,41 @@ public class EventpatternElementTypes {
 	 * @generated
 	 */
 	public static final IElementType Not_3005 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Not_3005"); //$NON-NLS-1$
+	/**
+	* @generated
+	*/
+	public static final IElementType Union_3062 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Union_3062"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Intesection_3063 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Intesection_3063"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Diference_3064 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Diference_3064"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Distance_3065 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Distance_3065"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Equals_3066 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Equals_3066"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Intersects_3067 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Intersects_3067"); //$NON-NLS-1$
+
 	/**
 	 * @generated
 	 */
@@ -360,6 +442,12 @@ public class EventpatternElementTypes {
 	 */
 	public static final IElementType Value_3026 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Value_3026"); //$NON-NLS-1$
 	/**
+	* @generated
+	*/
+	public static final IElementType Contains_3068 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Contains_3068"); //$NON-NLS-1$
+
+	/**
 	 * @generated
 	 */
 	public static final IElementType And_3027 = getElementType("es.uca.modeling.cep.eventpattern.diagram.And_3027"); //$NON-NLS-1$
@@ -371,6 +459,41 @@ public class EventpatternElementTypes {
 	 * @generated
 	 */
 	public static final IElementType Not_3029 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Not_3029"); //$NON-NLS-1$
+	/**
+	* @generated
+	*/
+	public static final IElementType Union_3069 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Union_3069"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Intesection_3070 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Intesection_3070"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Diference_3071 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Diference_3071"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Distance_3072 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Distance_3072"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Equals_3073 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Equals_3073"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Intersects_3074 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Intersects_3074"); //$NON-NLS-1$
+
 	/**
 	 * @generated
 	 */
@@ -560,11 +683,25 @@ public class EventpatternElementTypes {
 
 			elements.put(CEPEventPattern_1000, EventpatternPackage.eINSTANCE.getCEPEventPattern());
 
+			elements.put(Contains_2041, EventpatternPackage.eINSTANCE.getContains());
+
 			elements.put(And_2001, EventpatternPackage.eINSTANCE.getAnd());
 
 			elements.put(Or_2002, EventpatternPackage.eINSTANCE.getOr());
 
 			elements.put(Not_2003, EventpatternPackage.eINSTANCE.getNot());
+
+			elements.put(Union_2042, EventpatternPackage.eINSTANCE.getUnion());
+
+			elements.put(Intesection_2043, EventpatternPackage.eINSTANCE.getIntesection());
+
+			elements.put(Diference_2044, EventpatternPackage.eINSTANCE.getDiference());
+
+			elements.put(Distance_2045, EventpatternPackage.eINSTANCE.getDistance());
+
+			elements.put(Equals_2046, EventpatternPackage.eINSTANCE.getEquals());
+
+			elements.put(Intersects_2047, EventpatternPackage.eINSTANCE.getIntersects());
 
 			elements.put(Addition_2004, EventpatternPackage.eINSTANCE.getAddition());
 
@@ -644,11 +781,25 @@ public class EventpatternElementTypes {
 
 			elements.put(EventProperty_3002, EventpatternPackage.eINSTANCE.getEventProperty());
 
+			elements.put(Contains_3061, EventpatternPackage.eINSTANCE.getContains());
+
 			elements.put(And_3003, EventpatternPackage.eINSTANCE.getAnd());
 
 			elements.put(Or_3004, EventpatternPackage.eINSTANCE.getOr());
 
 			elements.put(Not_3005, EventpatternPackage.eINSTANCE.getNot());
+
+			elements.put(Union_3062, EventpatternPackage.eINSTANCE.getUnion());
+
+			elements.put(Intesection_3063, EventpatternPackage.eINSTANCE.getIntesection());
+
+			elements.put(Diference_3064, EventpatternPackage.eINSTANCE.getDiference());
+
+			elements.put(Distance_3065, EventpatternPackage.eINSTANCE.getDistance());
+
+			elements.put(Equals_3066, EventpatternPackage.eINSTANCE.getEquals());
+
+			elements.put(Intersects_3067, EventpatternPackage.eINSTANCE.getIntersects());
 
 			elements.put(Addition_3006, EventpatternPackage.eINSTANCE.getAddition());
 
@@ -692,11 +843,25 @@ public class EventpatternElementTypes {
 
 			elements.put(Value_3026, EventpatternPackage.eINSTANCE.getValue());
 
+			elements.put(Contains_3068, EventpatternPackage.eINSTANCE.getContains());
+
 			elements.put(And_3027, EventpatternPackage.eINSTANCE.getAnd());
 
 			elements.put(Or_3028, EventpatternPackage.eINSTANCE.getOr());
 
 			elements.put(Not_3029, EventpatternPackage.eINSTANCE.getNot());
+
+			elements.put(Union_3069, EventpatternPackage.eINSTANCE.getUnion());
+
+			elements.put(Intesection_3070, EventpatternPackage.eINSTANCE.getIntesection());
+
+			elements.put(Diference_3071, EventpatternPackage.eINSTANCE.getDiference());
+
+			elements.put(Distance_3072, EventpatternPackage.eINSTANCE.getDistance());
+
+			elements.put(Equals_3073, EventpatternPackage.eINSTANCE.getEquals());
+
+			elements.put(Intersects_3074, EventpatternPackage.eINSTANCE.getIntersects());
 
 			elements.put(Addition_3030, EventpatternPackage.eINSTANCE.getAddition());
 
@@ -779,9 +944,16 @@ public class EventpatternElementTypes {
 		if (KNOWN_ELEMENT_TYPES == null) {
 			KNOWN_ELEMENT_TYPES = new HashSet<IElementType>();
 			KNOWN_ELEMENT_TYPES.add(CEPEventPattern_1000);
+			KNOWN_ELEMENT_TYPES.add(Contains_2041);
 			KNOWN_ELEMENT_TYPES.add(And_2001);
 			KNOWN_ELEMENT_TYPES.add(Or_2002);
 			KNOWN_ELEMENT_TYPES.add(Not_2003);
+			KNOWN_ELEMENT_TYPES.add(Union_2042);
+			KNOWN_ELEMENT_TYPES.add(Intesection_2043);
+			KNOWN_ELEMENT_TYPES.add(Diference_2044);
+			KNOWN_ELEMENT_TYPES.add(Distance_2045);
+			KNOWN_ELEMENT_TYPES.add(Equals_2046);
+			KNOWN_ELEMENT_TYPES.add(Intersects_2047);
 			KNOWN_ELEMENT_TYPES.add(Addition_2004);
 			KNOWN_ELEMENT_TYPES.add(Subtraction_2005);
 			KNOWN_ELEMENT_TYPES.add(Multiplication_2006);
@@ -821,9 +993,16 @@ public class EventpatternElementTypes {
 			KNOWN_ELEMENT_TYPES.add(ComplexEvent_2038);
 			KNOWN_ELEMENT_TYPES.add(EventProperty_3001);
 			KNOWN_ELEMENT_TYPES.add(EventProperty_3002);
+			KNOWN_ELEMENT_TYPES.add(Contains_3061);
 			KNOWN_ELEMENT_TYPES.add(And_3003);
 			KNOWN_ELEMENT_TYPES.add(Or_3004);
 			KNOWN_ELEMENT_TYPES.add(Not_3005);
+			KNOWN_ELEMENT_TYPES.add(Union_3062);
+			KNOWN_ELEMENT_TYPES.add(Intesection_3063);
+			KNOWN_ELEMENT_TYPES.add(Diference_3064);
+			KNOWN_ELEMENT_TYPES.add(Distance_3065);
+			KNOWN_ELEMENT_TYPES.add(Equals_3066);
+			KNOWN_ELEMENT_TYPES.add(Intersects_3067);
 			KNOWN_ELEMENT_TYPES.add(Addition_3006);
 			KNOWN_ELEMENT_TYPES.add(Subtraction_3007);
 			KNOWN_ELEMENT_TYPES.add(Multiplication_3008);
@@ -845,9 +1024,16 @@ public class EventpatternElementTypes {
 			KNOWN_ELEMENT_TYPES.add(Event_3024);
 			KNOWN_ELEMENT_TYPES.add(EventProperty_3025);
 			KNOWN_ELEMENT_TYPES.add(Value_3026);
+			KNOWN_ELEMENT_TYPES.add(Contains_3068);
 			KNOWN_ELEMENT_TYPES.add(And_3027);
 			KNOWN_ELEMENT_TYPES.add(Or_3028);
 			KNOWN_ELEMENT_TYPES.add(Not_3029);
+			KNOWN_ELEMENT_TYPES.add(Union_3069);
+			KNOWN_ELEMENT_TYPES.add(Intesection_3070);
+			KNOWN_ELEMENT_TYPES.add(Diference_3071);
+			KNOWN_ELEMENT_TYPES.add(Distance_3072);
+			KNOWN_ELEMENT_TYPES.add(Equals_3073);
+			KNOWN_ELEMENT_TYPES.add(Intersects_3074);
 			KNOWN_ELEMENT_TYPES.add(Addition_3030);
 			KNOWN_ELEMENT_TYPES.add(Subtraction_3031);
 			KNOWN_ELEMENT_TYPES.add(Multiplication_3032);
@@ -891,12 +1077,26 @@ public class EventpatternElementTypes {
 		switch (visualID) {
 		case CEPEventPatternEditPart.VISUAL_ID:
 			return CEPEventPattern_1000;
+		case ContainsEditPart.VISUAL_ID:
+			return Contains_2041;
 		case AndEditPart.VISUAL_ID:
 			return And_2001;
 		case OrEditPart.VISUAL_ID:
 			return Or_2002;
 		case NotEditPart.VISUAL_ID:
 			return Not_2003;
+		case UnionEditPart.VISUAL_ID:
+			return Union_2042;
+		case IntesectionEditPart.VISUAL_ID:
+			return Intesection_2043;
+		case DiferenceEditPart.VISUAL_ID:
+			return Diference_2044;
+		case DistanceEditPart.VISUAL_ID:
+			return Distance_2045;
+		case EqualsEditPart.VISUAL_ID:
+			return Equals_2046;
+		case IntersectsEditPart.VISUAL_ID:
+			return Intersects_2047;
 		case AdditionEditPart.VISUAL_ID:
 			return Addition_2004;
 		case SubtractionEditPart.VISUAL_ID:
@@ -975,12 +1175,26 @@ public class EventpatternElementTypes {
 			return EventProperty_3001;
 		case EventProperty3EditPart.VISUAL_ID:
 			return EventProperty_3002;
+		case Contains2EditPart.VISUAL_ID:
+			return Contains_3061;
 		case And2EditPart.VISUAL_ID:
 			return And_3003;
 		case Or2EditPart.VISUAL_ID:
 			return Or_3004;
 		case Not2EditPart.VISUAL_ID:
 			return Not_3005;
+		case Union2EditPart.VISUAL_ID:
+			return Union_3062;
+		case Intesection2EditPart.VISUAL_ID:
+			return Intesection_3063;
+		case Diference2EditPart.VISUAL_ID:
+			return Diference_3064;
+		case Distance2EditPart.VISUAL_ID:
+			return Distance_3065;
+		case Equals2EditPart.VISUAL_ID:
+			return Equals_3066;
+		case Intersects2EditPart.VISUAL_ID:
+			return Intersects_3067;
 		case Addition2EditPart.VISUAL_ID:
 			return Addition_3006;
 		case Subtraction2EditPart.VISUAL_ID:
@@ -1023,12 +1237,26 @@ public class EventpatternElementTypes {
 			return EventProperty_3025;
 		case Value2EditPart.VISUAL_ID:
 			return Value_3026;
+		case Contains3EditPart.VISUAL_ID:
+			return Contains_3068;
 		case And3EditPart.VISUAL_ID:
 			return And_3027;
 		case Or3EditPart.VISUAL_ID:
 			return Or_3028;
 		case Not3EditPart.VISUAL_ID:
 			return Not_3029;
+		case Union3EditPart.VISUAL_ID:
+			return Union_3069;
+		case Intesection3EditPart.VISUAL_ID:
+			return Intesection_3070;
+		case Diference3EditPart.VISUAL_ID:
+			return Diference_3071;
+		case Distance3EditPart.VISUAL_ID:
+			return Distance_3072;
+		case Equals3EditPart.VISUAL_ID:
+			return Equals_3073;
+		case Intersects3EditPart.VISUAL_ID:
+			return Intersects_3074;
 		case Addition3EditPart.VISUAL_ID:
 			return Addition_3030;
 		case Subtraction3EditPart.VISUAL_ID:

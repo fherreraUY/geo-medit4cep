@@ -17,11 +17,15 @@ import eventpattern.ComplexEvent;
 import eventpattern.ComplexEventProperty;
 import eventpattern.ConditionOperand;
 import eventpattern.ConditionOperator;
+import eventpattern.Contains;
 import eventpattern.Count;
 import eventpattern.DataWindow;
+import eventpattern.Diference;
+import eventpattern.Distance;
 import eventpattern.Division;
 import eventpattern.Email;
 import eventpattern.Equal;
+import eventpattern.Equals;
 import eventpattern.Event;
 import eventpattern.EventPatternCondition;
 import eventpattern.EventPatternElement;
@@ -31,9 +35,14 @@ import eventpattern.EventpatternPackage;
 import eventpattern.Every;
 import eventpattern.EveryDistinct;
 import eventpattern.FollowedBy;
+import eventpattern.GeoArithmeticOperator;
+import eventpattern.GeoBooleanOperator;
+import eventpattern.GeoOperator;
 import eventpattern.GreaterEqual;
 import eventpattern.GreaterThan;
 import eventpattern.GroupBy;
+import eventpattern.Intersects;
+import eventpattern.Intesection;
 import eventpattern.LessEqual;
 import eventpattern.LessThan;
 import eventpattern.Link;
@@ -61,6 +70,7 @@ import eventpattern.TimeInterval;
 import eventpattern.TimeSchedule;
 import eventpattern.Twitter;
 import eventpattern.UnaryOperator;
+import eventpattern.Union;
 import eventpattern.Until;
 import eventpattern.Value;
 import eventpattern.While;
@@ -511,6 +521,76 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
   private EClass twitterEClass = null;
 
   /**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass geoOperatorEClass = null;
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass geoArithmeticOperatorEClass = null;
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass geoBooleanOperatorEClass = null;
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass unionEClass = null;
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass intesectionEClass = null;
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass diferenceEClass = null;
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass containsEClass = null;
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass distanceEClass = null;
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass equalsEClass = null;
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass intersectsEClass = null;
+
+		/**
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @generated
@@ -2048,6 +2128,96 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 
   /**
 	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGeoOperator() {
+		return geoOperatorEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGeoArithmeticOperator() {
+		return geoArithmeticOperatorEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGeoBooleanOperator() {
+		return geoBooleanOperatorEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getUnion() {
+		return unionEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getIntesection() {
+		return intesectionEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDiference() {
+		return diferenceEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getContains() {
+		return containsEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getDistance() {
+		return distanceEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEquals() {
+		return equalsEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getIntersects() {
+		return intersectsEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -2294,6 +2464,26 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 
 		twitterEClass = createEClass(TWITTER);
 
+		geoOperatorEClass = createEClass(GEO_OPERATOR);
+
+		geoArithmeticOperatorEClass = createEClass(GEO_ARITHMETIC_OPERATOR);
+
+		geoBooleanOperatorEClass = createEClass(GEO_BOOLEAN_OPERATOR);
+
+		unionEClass = createEClass(UNION);
+
+		intesectionEClass = createEClass(INTESECTION);
+
+		diferenceEClass = createEClass(DIFERENCE);
+
+		containsEClass = createEClass(CONTAINS);
+
+		distanceEClass = createEClass(DISTANCE);
+
+		equalsEClass = createEClass(EQUALS);
+
+		intersectsEClass = createEClass(INTERSECTS);
+
 		// Create enums
 		propertyTypeValueEEnum = createEEnum(PROPERTY_TYPE_VALUE);
 	}
@@ -2409,6 +2599,26 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 		valueEClass.getESuperTypes().add(this.getConditionOperand());
 		emailEClass.getESuperTypes().add(this.getAction());
 		twitterEClass.getESuperTypes().add(this.getAction());
+		geoOperatorEClass.getESuperTypes().add(this.getOperator());
+		geoArithmeticOperatorEClass.getESuperTypes().add(this.getGeoOperator());
+		geoArithmeticOperatorEClass.getESuperTypes().add(this.getConditionOperator());
+		geoBooleanOperatorEClass.getESuperTypes().add(this.getGeoOperator());
+		geoBooleanOperatorEClass.getESuperTypes().add(this.getConditionOperator());
+		unionEClass.getESuperTypes().add(this.getNaryOperator());
+		unionEClass.getESuperTypes().add(this.getGeoArithmeticOperator());
+		intesectionEClass.getESuperTypes().add(this.getNaryOperator());
+		intesectionEClass.getESuperTypes().add(this.getGeoArithmeticOperator());
+		diferenceEClass.getESuperTypes().add(this.getNaryOperator());
+		diferenceEClass.getESuperTypes().add(this.getGeoArithmeticOperator());
+		containsEClass.getESuperTypes().add(this.getBinaryOperator());
+		containsEClass.getESuperTypes().add(this.getGeoBooleanOperator());
+		containsEClass.getESuperTypes().add(this.getLogicalOperator());
+		distanceEClass.getESuperTypes().add(this.getBinaryOperator());
+		distanceEClass.getESuperTypes().add(this.getGeoBooleanOperator());
+		equalsEClass.getESuperTypes().add(this.getBinaryOperator());
+		equalsEClass.getESuperTypes().add(this.getGeoBooleanOperator());
+		intersectsEClass.getESuperTypes().add(this.getBinaryOperator());
+		intersectsEClass.getESuperTypes().add(this.getGeoBooleanOperator());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(cepEventPatternEClass, CEPEventPattern.class, "CEPEventPattern", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2619,6 +2829,26 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 
 		initEClass(twitterEClass, Twitter.class, "Twitter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+		initEClass(geoOperatorEClass, GeoOperator.class, "GeoOperator", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(geoArithmeticOperatorEClass, GeoArithmeticOperator.class, "GeoArithmeticOperator", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(geoBooleanOperatorEClass, GeoBooleanOperator.class, "GeoBooleanOperator", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(unionEClass, Union.class, "Union", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(intesectionEClass, Intesection.class, "Intesection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(diferenceEClass, Diference.class, "Diference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(containsEClass, Contains.class, "Contains", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(distanceEClass, Distance.class, "Distance", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(equalsEClass, Equals.class, "Equals", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(intersectsEClass, Intersects.class, "Intersects", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
 		// Initialize enums and add enum literals
 		initEEnum(propertyTypeValueEEnum, PropertyTypeValue.class, "PropertyTypeValue");
 		addEEnumLiteral(propertyTypeValueEEnum, PropertyTypeValue.UNKNOWN);
@@ -2677,7 +2907,6 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 			 "label", "order",
 			 "source", "operand",
 			 "target", "operator",
-			 "source.constraint", "self <> oppositeEnd \r\n\tand ( \r\n\t   (self.oclIsKindOf(ComplexEvent) and oppositeEnd.oclIsKindOf(Action))\r\n\t   or ((self.oclIsKindOf(Value) or self.oclIsKindOf(EventProperty) or \r\n\t        self.oclIsKindOf(AggregationOperator) or self.oclIsKindOf(ArithmeticOperator)) \r\n\t        and oppositeEnd.oclIsKindOf(ComplexEventProperty)) \r\n\t   or (self.oclIsKindOf(PatternOperand) and oppositeEnd.oclIsKindOf(PatternOperator))\r\n\t   or ((self.oclIsTypeOf(EventProperty) or self.oclIsTypeOf(Value)) \r\n\t      and (oppositeEnd.oclIsKindOf(LogicalOperator) or oppositeEnd.oclIsKindOf(ComparisonOperator) \r\n\t         or oppositeEnd.oclIsKindOf(ArithmeticOperator))) \r\n\t   or (self.oclIsKindOf(ComparisonOperator) and oppositeEnd.oclIsKindOf(LogicalOperator))        \r\n\t   or (self.oclIsKindOf(ArithmeticOperator) and (oppositeEnd.oclIsKindOf(ArithmeticOperator) \r\n\t      or oppositeEnd.oclIsKindOf(ComparisonOperator)))  \r\n\t   or ((self.oclIsTypeOf(EventProperty) or self.oclIsKindOf(ArithmeticOperator)) \r\n\t      and oppositeEnd.oclIsKindOf(AggregationOperator)) \r\n\t   or (self.oclIsKindOf(AggregationOperator) and oppositeEnd.oclIsKindOf(ArithmeticOperator))   \r\n\t   or (self.oclIsKindOf(ComparisonOperator) and oppositeEnd.oclIsTypeOf(While))\r\n\t   or (self.oclIsTypeOf(EventProperty) and oppositeEnd.oclIsTypeOf(EveryDistinct))\r\n\t   or (self.oclIsKindOf(Event) and oppositeEnd.oclIsKindOf(ComplexEvent)) \r\n\t   or (self.oclIsTypeOf(EventProperty) and oppositeEnd.oclIsTypeOf(GroupBy))\r\n\t)",
 			 "target.constraint", "self <> oppositeEnd",
 			 "source.decoration", "none",
 			 "target.decoration", "arrow",
@@ -3251,6 +3480,97 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 			 "margin", "0",
 			 "tool.name", "Twitter",
 			 "tool.description", "Add a twitter action"
+		   });	
+		addAnnotation
+		  (unionEClass, 
+		   source, 
+		   new String[] {
+			 "figure", "svg",
+			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg",
+			 "size", "30,30",
+			 "label.placement", "none",
+			 "resizable", "false",
+			 "margin", "0",
+			 "tool.name", "Union",
+			 "tool.description", "Add an union operator"
+		   });	
+		addAnnotation
+		  (intesectionEClass, 
+		   source, 
+		   new String[] {
+			 "figure", "svg",
+			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg",
+			 "size", "30,30",
+			 "label.placement", "none",
+			 "resizable", "false",
+			 "margin", "0",
+			 "tool.name", "Intersection",
+			 "tool.description", "Add an intersection operator"
+		   });	
+		addAnnotation
+		  (diferenceEClass, 
+		   source, 
+		   new String[] {
+			 "figure", "svg",
+			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg",
+			 "size", "30,30",
+			 "label.placement", "none",
+			 "resizable", "false",
+			 "margin", "0",
+			 "tool.name", "Diference",
+			 "tool.description", "Add an diference operator"
+		   });	
+		addAnnotation
+		  (containsEClass, 
+		   source, 
+		   new String[] {
+			 "figure", "svg",
+			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Contains.svg",
+			 "size", "30,30",
+			 "label.placement", "none",
+			 "resizable", "false",
+			 "margin", "0",
+			 "tool.name", "Contains",
+			 "tool.description", "Add a Contains operator"
+		   });	
+		addAnnotation
+		  (distanceEClass, 
+		   source, 
+		   new String[] {
+			 "figure", "svg",
+			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Distance.svg",
+			 "size", "30,30",
+			 "label.placement", "none",
+			 "resizable", "false",
+			 "margin", "0",
+			 "tool.name", "Distance",
+			 "tool.description", "Add a distance operator"
+		   });	
+		addAnnotation
+		  (equalsEClass, 
+		   source, 
+		   new String[] {
+			 "figure", "svg",
+			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Equals.svg",
+			 "size", "30,30",
+			 "label.placement", "none",
+			 "resizable", "false",
+			 "margin", "0",
+			 "tool.name", "Equals",
+			 "tool.description", "Add a equals operator"
+		   });	
+		addAnnotation
+		  (intersectsEClass, 
+		   source, 
+		   new String[] {
+			 "figure", "svg",
+			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Contains.svg",
+			 "size", "30,30",
+			 "label.placement", "none",
+			 "resizable", "false",
+			 "margin", "0",
+			 "tool.name", "Intersects",
+			 "tool.description", "Add a intersects operator"
 		   });
 	}
 

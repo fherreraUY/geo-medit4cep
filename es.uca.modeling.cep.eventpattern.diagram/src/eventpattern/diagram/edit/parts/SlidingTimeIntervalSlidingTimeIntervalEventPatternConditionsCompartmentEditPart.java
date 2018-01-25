@@ -93,6 +93,9 @@ public class SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompart
 			CreateElementRequestAdapter adapter = ((CreateViewAndElementRequest) request).getViewAndElementDescriptor()
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter.getAdapter(IElementType.class);
+			if (type == EventpatternElementTypes.Contains_3068) {
+				return this;
+			}
 			if (type == EventpatternElementTypes.And_3027) {
 				return this;
 			}
@@ -100,6 +103,24 @@ public class SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompart
 				return this;
 			}
 			if (type == EventpatternElementTypes.Not_3029) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Union_3069) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Intesection_3070) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Diference_3071) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Distance_3072) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Equals_3073) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Intersects_3074) {
 				return this;
 			}
 			if (type == EventpatternElementTypes.Addition_3030) {

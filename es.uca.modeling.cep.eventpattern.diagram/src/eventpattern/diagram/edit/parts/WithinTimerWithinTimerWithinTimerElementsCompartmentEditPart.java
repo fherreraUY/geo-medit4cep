@@ -92,6 +92,9 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart extend
 			CreateElementRequestAdapter adapter = ((CreateViewAndElementRequest) request).getViewAndElementDescriptor()
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter.getAdapter(IElementType.class);
+			if (type == EventpatternElementTypes.Contains_3061) {
+				return this;
+			}
 			if (type == EventpatternElementTypes.And_3003) {
 				return this;
 			}
@@ -99,6 +102,24 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart extend
 				return this;
 			}
 			if (type == EventpatternElementTypes.Not_3005) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Union_3062) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Intesection_3063) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Diference_3064) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Distance_3065) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Equals_3066) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.Intersects_3067) {
 				return this;
 			}
 			if (type == EventpatternElementTypes.Addition_3006) {

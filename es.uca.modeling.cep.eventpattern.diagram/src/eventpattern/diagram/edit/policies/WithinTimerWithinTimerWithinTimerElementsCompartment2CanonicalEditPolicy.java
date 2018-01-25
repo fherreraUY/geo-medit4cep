@@ -27,8 +27,12 @@ import org.eclipse.gmf.runtime.notation.View;
 import eventpattern.EventpatternPackage;
 import eventpattern.diagram.edit.parts.Addition2EditPart;
 import eventpattern.diagram.edit.parts.And2EditPart;
+import eventpattern.diagram.edit.parts.Contains2EditPart;
+import eventpattern.diagram.edit.parts.Diference2EditPart;
+import eventpattern.diagram.edit.parts.Distance2EditPart;
 import eventpattern.diagram.edit.parts.Division2EditPart;
 import eventpattern.diagram.edit.parts.Equal2EditPart;
+import eventpattern.diagram.edit.parts.Equals2EditPart;
 import eventpattern.diagram.edit.parts.Event2EditPart;
 import eventpattern.diagram.edit.parts.EventProperty4EditPart;
 import eventpattern.diagram.edit.parts.Every2EditPart;
@@ -36,6 +40,8 @@ import eventpattern.diagram.edit.parts.EveryDistinct2EditPart;
 import eventpattern.diagram.edit.parts.FollowedBy2EditPart;
 import eventpattern.diagram.edit.parts.GreaterEqual2EditPart;
 import eventpattern.diagram.edit.parts.GreaterThan2EditPart;
+import eventpattern.diagram.edit.parts.Intersects2EditPart;
+import eventpattern.diagram.edit.parts.Intesection2EditPart;
 import eventpattern.diagram.edit.parts.LessEqual2EditPart;
 import eventpattern.diagram.edit.parts.LessThan2EditPart;
 import eventpattern.diagram.edit.parts.Modulus2EditPart;
@@ -46,6 +52,7 @@ import eventpattern.diagram.edit.parts.Or2EditPart;
 import eventpattern.diagram.edit.parts.Range2EditPart;
 import eventpattern.diagram.edit.parts.Repeat2EditPart;
 import eventpattern.diagram.edit.parts.Subtraction2EditPart;
+import eventpattern.diagram.edit.parts.Union2EditPart;
 import eventpattern.diagram.edit.parts.Until2EditPart;
 import eventpattern.diagram.edit.parts.Value2EditPart;
 import eventpattern.diagram.edit.parts.While2EditPart;
@@ -105,9 +112,16 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartment2CanonicalEditP
 	private boolean isMyDiagramElement(View view) {
 		int visualID = EventpatternVisualIDRegistry.getVisualID(view);
 		switch (visualID) {
+		case Contains2EditPart.VISUAL_ID:
 		case And2EditPart.VISUAL_ID:
 		case Or2EditPart.VISUAL_ID:
 		case Not2EditPart.VISUAL_ID:
+		case Union2EditPart.VISUAL_ID:
+		case Intesection2EditPart.VISUAL_ID:
+		case Diference2EditPart.VISUAL_ID:
+		case Distance2EditPart.VISUAL_ID:
+		case Equals2EditPart.VISUAL_ID:
+		case Intersects2EditPart.VISUAL_ID:
 		case Addition2EditPart.VISUAL_ID:
 		case Subtraction2EditPart.VISUAL_ID:
 		case Multiplication2EditPart.VISUAL_ID:

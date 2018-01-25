@@ -233,6 +233,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					parentElement);
 			Collection<View> connectedViews;
 			connectedViews = getChildrenByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(ContainsEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(AndEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv),
@@ -240,6 +243,24 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(NotEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(UnionEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(IntesectionEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(DiferenceEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(DistanceEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(EqualsEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(IntersectsEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(AdditionEditPart.VISUAL_ID));
@@ -1079,6 +1100,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
 					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Contains2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(And2EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
@@ -1090,6 +1116,36 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Not2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Union2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intesection2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Diference2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Distance2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Equals2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intersects2EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
 					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
@@ -1260,6 +1316,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Contains3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(And3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
@@ -1271,6 +1332,36 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Not3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Union3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intesection3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Diference3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Distance3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Equals3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intersects3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
@@ -1432,6 +1523,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Contains3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(And3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
@@ -1443,6 +1539,36 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Not3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Union3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intesection3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Diference3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Distance3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Equals3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intersects3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
@@ -1604,6 +1730,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Contains3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(And3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
@@ -1615,6 +1746,36 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Not3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Union3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intesection3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Diference3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Distance3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Equals3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intersects3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
@@ -1776,6 +1937,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Contains3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(And3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
@@ -1787,6 +1953,36 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Not3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Union3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intesection3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Diference3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Distance3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Equals3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intersects3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
@@ -1999,6 +2195,181 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
 			if (!incominglinks.isEmpty()) {
 				result.add(incominglinks);
+			}
+			return result.toArray();
+		}
+
+		case ContainsEditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Contains_2041_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Contains_2041_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case UnionEditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Union_2042_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Union_2042_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case IntesectionEditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intesection_2043_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intesection_2043_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case DiferenceEditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Diference_2044_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Diference_2044_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case DistanceEditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Distance_2045_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Distance_2045_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case EqualsEditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Equals_2046_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Equals_2046_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case IntersectsEditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intersects_2047_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intersects_2047_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
 			}
 			return result.toArray();
 		}
@@ -3346,6 +3717,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
 					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Contains2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(And2EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
@@ -3357,6 +3733,36 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Not2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Union2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intesection2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Diference2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Distance2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Equals2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Intersects2EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
 					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
@@ -3536,6 +3942,356 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			return result.toArray();
 		}
 
+		case Contains2EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Contains_3061_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Contains_3061_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Union2EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Union_3062_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Union_3062_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Intesection2EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intesection_3063_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intesection_3063_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Diference2EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Diference_3064_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Diference_3064_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Distance2EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Distance_3065_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Distance_3065_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Equals2EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Equals_3066_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Equals_3066_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Intersects2EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intersects_3067_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intersects_3067_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Contains3EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Contains_3068_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Contains_3068_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Union3EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Union_3069_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Union_3069_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Intesection3EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intesection_3070_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intesection_3070_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Diference3EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Diference_3071_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Diference_3071_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Distance3EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Distance_3072_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Distance_3072_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Equals3EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Equals_3073_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Equals_3073_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Intersects3EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup incominglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intersects_3074_incominglinks, "icons/incomingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Intersects_3074_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews, incominglinks, true));
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
 		case LinkEditPart.VISUAL_ID: {
 			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
 			Edge sv = (Edge) view;
@@ -3545,6 +4301,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					Messages.NavigatorGroupName_Link_4001_source, "icons/linkSourceNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(ContainsEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(AndEditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
@@ -3552,6 +4311,24 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(NotEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(UnionEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(IntesectionEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(DiferenceEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(DistanceEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(EqualsEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(IntersectsEditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(AdditionEditPart.VISUAL_ID));
@@ -3635,6 +4412,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					EventpatternVisualIDRegistry.getType(ComplexEventEditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Contains2EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(And2EditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
@@ -3642,6 +4422,24 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Not2EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Union2EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Intesection2EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Diference2EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Distance2EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Equals2EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Intersects2EditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Addition2EditPart.VISUAL_ID));
@@ -3698,6 +4496,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					EventpatternVisualIDRegistry.getType(While2EditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Contains3EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(And3EditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
@@ -3705,6 +4506,24 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Not3EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Union3EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Intesection3EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Diference3EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Distance3EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Equals3EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target, true));
+			connectedViews = getLinksTargetByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Intersects3EditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksTargetByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Addition3EditPart.VISUAL_ID));
@@ -3782,6 +4601,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					EventpatternVisualIDRegistry.getType(ComplexEventPropertyEditPart.VISUAL_ID));
 			target.addChildren(createNavigatorItems(connectedViews, target, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(ContainsEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(AndEditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
@@ -3789,6 +4611,24 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(NotEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(UnionEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(IntesectionEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(DiferenceEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(DistanceEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(EqualsEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(IntersectsEditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(AdditionEditPart.VISUAL_ID));
@@ -3887,6 +4727,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					EventpatternVisualIDRegistry.getType(EventProperty3EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Contains2EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(And2EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
@@ -3894,6 +4737,24 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Not2EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Union2EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Intesection2EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Diference2EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Distance2EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Equals2EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Intersects2EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Addition2EditPart.VISUAL_ID));
@@ -3959,6 +4820,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					EventpatternVisualIDRegistry.getType(Value2EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Contains3EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(And3EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
@@ -3966,6 +4830,24 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Not3EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Union3EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Intesection3EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Diference3EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Distance3EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Equals3EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Intersects3EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Addition3EditPart.VISUAL_ID));

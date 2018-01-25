@@ -304,6 +304,16 @@ public class Messages extends NLS {
 	public static String Actions11Group_title;
 
 	/**
+	* @generated
+	*/
+	public static String GeoArithmeticOperators12Group_title;
+
+	/**
+	* @generated
+	*/
+	public static String GeoBooleanOperators13Group_title;
+
+	/**
 	 * @generated
 	 */
 	public static String Addition1CreationTool_title;
@@ -462,6 +472,76 @@ public class Messages extends NLS {
 	 * @generated
 	 */
 	public static String Twitter2CreationTool_desc;
+
+	/**
+	* @generated
+	*/
+	public static String Union1CreationTool_title;
+
+	/**
+	* @generated
+	*/
+	public static String Union1CreationTool_desc;
+
+	/**
+	* @generated
+	*/
+	public static String Intersection2CreationTool_title;
+
+	/**
+	* @generated
+	*/
+	public static String Intersection2CreationTool_desc;
+
+	/**
+	* @generated
+	*/
+	public static String Diference3CreationTool_title;
+
+	/**
+	* @generated
+	*/
+	public static String Diference3CreationTool_desc;
+
+	/**
+	* @generated
+	*/
+	public static String Contains1CreationTool_title;
+
+	/**
+	* @generated
+	*/
+	public static String Contains1CreationTool_desc;
+
+	/**
+	* @generated
+	*/
+	public static String Equals2CreationTool_title;
+
+	/**
+	* @generated
+	*/
+	public static String Equals2CreationTool_desc;
+
+	/**
+	* @generated
+	*/
+	public static String Intersects3CreationTool_title;
+
+	/**
+	* @generated
+	*/
+	public static String Intersects3CreationTool_desc;
+
+	/**
+	* @generated
+	*/
+	public static String Distance4CreationTool_title;
+
+	/**
+	* @generated
+	*/
+	public static String Distance4CreationTool_desc;
 
 	/**
 	 * @generated
@@ -1124,6 +1204,76 @@ public class Messages extends NLS {
 	public static String NavigatorGroupName_GroupBy_2040_incominglinks;
 
 	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Contains_2041_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Contains_2041_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Union_2042_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Union_2042_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intesection_2043_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intesection_2043_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Diference_2044_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Diference_2044_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Distance_2045_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Distance_2045_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Equals_2046_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Equals_2046_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersects_2047_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersects_2047_outgoinglinks;
+
+	/**
 	 * @generated
 	 */
 	public static String NavigatorGroupName_EventProperty_3001_outgoinglinks;
@@ -1657,6 +1807,146 @@ public class Messages extends NLS {
 	* @generated
 	*/
 	public static String NavigatorGroupName_GroupBy_3060_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Contains_3061_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Contains_3061_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Union_3062_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Union_3062_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intesection_3063_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intesection_3063_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Diference_3064_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Diference_3064_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Distance_3065_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Distance_3065_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Equals_3066_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Equals_3066_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersects_3067_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersects_3067_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Contains_3068_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Contains_3068_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Union_3069_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Union_3069_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intesection_3070_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intesection_3070_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Diference_3071_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Diference_3071_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Distance_3072_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Distance_3072_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Equals_3073_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Equals_3073_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersects_3074_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersects_3074_outgoinglinks;
 
 	/**
 	 * @generated

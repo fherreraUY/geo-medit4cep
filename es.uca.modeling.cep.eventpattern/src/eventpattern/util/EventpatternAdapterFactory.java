@@ -315,6 +315,46 @@ public class EventpatternAdapterFactory extends AdapterFactoryImpl
 				return createTwitterAdapter();
 			}
 			@Override
+			public Adapter caseGeoOperator(GeoOperator object) {
+				return createGeoOperatorAdapter();
+			}
+			@Override
+			public Adapter caseGeoArithmeticOperator(GeoArithmeticOperator object) {
+				return createGeoArithmeticOperatorAdapter();
+			}
+			@Override
+			public Adapter caseGeoBooleanOperator(GeoBooleanOperator object) {
+				return createGeoBooleanOperatorAdapter();
+			}
+			@Override
+			public Adapter caseUnion(Union object) {
+				return createUnionAdapter();
+			}
+			@Override
+			public Adapter caseIntesection(Intesection object) {
+				return createIntesectionAdapter();
+			}
+			@Override
+			public Adapter caseDiference(Diference object) {
+				return createDiferenceAdapter();
+			}
+			@Override
+			public Adapter caseContains(Contains object) {
+				return createContainsAdapter();
+			}
+			@Override
+			public Adapter caseDistance(Distance object) {
+				return createDistanceAdapter();
+			}
+			@Override
+			public Adapter caseEquals(Equals object) {
+				return createEqualsAdapter();
+			}
+			@Override
+			public Adapter caseIntersects(Intersects object) {
+				return createIntersectsAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -1250,6 +1290,146 @@ public class EventpatternAdapterFactory extends AdapterFactoryImpl
 	}
 
   /**
+	 * Creates a new adapter for an object of class '{@link eventpattern.GeoOperator <em>Geo Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.GeoOperator
+	 * @generated
+	 */
+	public Adapter createGeoOperatorAdapter() {
+		return null;
+	}
+
+		/**
+	 * Creates a new adapter for an object of class '{@link eventpattern.GeoArithmeticOperator <em>Geo Arithmetic Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.GeoArithmeticOperator
+	 * @generated
+	 */
+	public Adapter createGeoArithmeticOperatorAdapter() {
+		return null;
+	}
+
+		/**
+	 * Creates a new adapter for an object of class '{@link eventpattern.GeoBooleanOperator <em>Geo Boolean Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.GeoBooleanOperator
+	 * @generated
+	 */
+	public Adapter createGeoBooleanOperatorAdapter() {
+		return null;
+	}
+
+		/**
+	 * Creates a new adapter for an object of class '{@link eventpattern.Union <em>Union</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.Union
+	 * @generated
+	 */
+	public Adapter createUnionAdapter() {
+		return null;
+	}
+
+		/**
+	 * Creates a new adapter for an object of class '{@link eventpattern.Intesection <em>Intesection</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.Intesection
+	 * @generated
+	 */
+	public Adapter createIntesectionAdapter() {
+		return null;
+	}
+
+		/**
+	 * Creates a new adapter for an object of class '{@link eventpattern.Diference <em>Diference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.Diference
+	 * @generated
+	 */
+	public Adapter createDiferenceAdapter() {
+		return null;
+	}
+
+		/**
+	 * Creates a new adapter for an object of class '{@link eventpattern.Contains <em>Contains</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.Contains
+	 * @generated
+	 */
+	public Adapter createContainsAdapter() {
+		return null;
+	}
+
+		/**
+	 * Creates a new adapter for an object of class '{@link eventpattern.Distance <em>Distance</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.Distance
+	 * @generated
+	 */
+	public Adapter createDistanceAdapter() {
+		return null;
+	}
+
+		/**
+	 * Creates a new adapter for an object of class '{@link eventpattern.Equals <em>Equals</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.Equals
+	 * @generated
+	 */
+	public Adapter createEqualsAdapter() {
+		return null;
+	}
+
+		/**
+	 * Creates a new adapter for an object of class '{@link eventpattern.Intersects <em>Intersects</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.Intersects
+	 * @generated
+	 */
+	public Adapter createIntersectsAdapter() {
+		return null;
+	}
+
+		/**
 	 * Creates a new adapter for the default case.
 	 * <!-- begin-user-doc -->
    * This default implementation returns null.

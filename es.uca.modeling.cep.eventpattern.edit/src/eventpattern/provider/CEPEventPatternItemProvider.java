@@ -510,6 +510,41 @@ public class CEPEventPatternItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
+				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__EVENT_PATTERN_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createUnion()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__EVENT_PATTERN_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createIntesection()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__EVENT_PATTERN_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createDiference()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__EVENT_PATTERN_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createContains()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__EVENT_PATTERN_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createDistance()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__EVENT_PATTERN_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createEquals()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__EVENT_PATTERN_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createIntersects()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__COMPLEX_EVENT,
 				 EventpatternFactory.eINSTANCE.createComplexEvent()));
 

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="30"
+   id="svg3316"
+   version="1.1"
+   sodipodi:docname="Distance.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata27">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview25"
+     showgrid="false"
+     inkscape:zoom="7.8666667"
+     inkscape:cx="15"
+     inkscape:cy="30.254237"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3316" />
+  <defs
+     id="defs3318">
+    <pattern
+       id="pattern-0"
+       x="0"
+       y="0"
+       width="20"
+       height="20"
+       patternUnits="userSpaceOnUse"
+       viewBox="0 0 100 100">
+      <path
+         d="M 0 0 L 50 0 L 50 100 L 0 100 Z"
+         style="fill: black;"
+         id="path2" />
+    </pattern>
+    <pattern
+       id="pattern-0-1"
+       patternTransform="matrix(1, 0, 0, 1, -11.207, 0.736)"
+       xlink:href="#pattern-0" />
+    <linearGradient
+       id="gradient-0"
+       gradientUnits="userSpaceOnUse"
+       x1="19.856"
+       y1="0.001"
+       x2="19.856"
+       y2="8.806"
+       spreadMethod="pad">
+      <stop
+         offset="0"
+         style="stop-color: #bada55"
+         id="stop6" />
+      <stop
+         offset="1"
+         style="stop-color: #758d29"
+         id="stop8" />
+    </linearGradient>
+  </defs>
+  <path
+     style="fill: rgb(0, 128, 0); stroke-width: 0.755906px;"
+     id="path12" />
+  <path
+     style="fill: rgb(0, 128, 0); stroke-width: 0.755906px;"
+     id="path14" />
+  <path
+     style="fill: rgb(0, 128, 0); stroke-width: 0.755906px;"
+     id="path16" />
+  <line
+     style="fill:#b3d837;stroke:url(#gradient-0)"
+     x1="9.3048468"
+     y1="18.721254"
+     x2="21.507849"
+     y2="9.916254"
+     id="line18" />
+  <line
+     style="stroke: rgb(0, 0, 0); fill: url(#pattern-0-1);"
+     x1="-1.207"
+     y1="10.736"
+     x2="-1.207"
+     y2="10.736"
+     id="line20" />
+  <text
+     x="11.381492"
+     y="14.256966"
+     style="font-size:2px;font-family:sans-serif;white-space:pre;fill:#333333"
+     id="text22">distance</text>
+</svg>

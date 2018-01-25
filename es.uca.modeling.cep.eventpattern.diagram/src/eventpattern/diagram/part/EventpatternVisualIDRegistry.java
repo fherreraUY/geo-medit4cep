@@ -116,6 +116,9 @@ public class EventpatternVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case CEPEventPatternEditPart.VISUAL_ID:
+			if (EventpatternPackage.eINSTANCE.getContains().isSuperTypeOf(domainElement.eClass())) {
+				return ContainsEditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getAnd().isSuperTypeOf(domainElement.eClass())) {
 				return AndEditPart.VISUAL_ID;
 			}
@@ -124,6 +127,24 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getNot().isSuperTypeOf(domainElement.eClass())) {
 				return NotEditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
+				return UnionEditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
+				return IntesectionEditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
+				return DiferenceEditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDistance().isSuperTypeOf(domainElement.eClass())) {
+				return DistanceEditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getEquals().isSuperTypeOf(domainElement.eClass())) {
+				return EqualsEditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntersects().isSuperTypeOf(domainElement.eClass())) {
+				return IntersectsEditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getAddition().isSuperTypeOf(domainElement.eClass())) {
 				return AdditionEditPart.VISUAL_ID;
@@ -258,6 +279,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID:
+			if (EventpatternPackage.eINSTANCE.getContains().isSuperTypeOf(domainElement.eClass())) {
+				return Contains2EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getAnd().isSuperTypeOf(domainElement.eClass())) {
 				return And2EditPart.VISUAL_ID;
 			}
@@ -266,6 +290,24 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getNot().isSuperTypeOf(domainElement.eClass())) {
 				return Not2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
+				return Union2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
+				return Intesection2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
+				return Diference2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDistance().isSuperTypeOf(domainElement.eClass())) {
+				return Distance2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getEquals().isSuperTypeOf(domainElement.eClass())) {
+				return Equals2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntersects().isSuperTypeOf(domainElement.eClass())) {
+				return Intersects2EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getAddition().isSuperTypeOf(domainElement.eClass())) {
 				return Addition2EditPart.VISUAL_ID;
@@ -342,6 +384,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID:
+			if (EventpatternPackage.eINSTANCE.getContains().isSuperTypeOf(domainElement.eClass())) {
+				return Contains3EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getAnd().isSuperTypeOf(domainElement.eClass())) {
 				return And3EditPart.VISUAL_ID;
 			}
@@ -350,6 +395,24 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getNot().isSuperTypeOf(domainElement.eClass())) {
 				return Not3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
+				return Union3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
+				return Intesection3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
+				return Diference3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDistance().isSuperTypeOf(domainElement.eClass())) {
+				return Distance3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getEquals().isSuperTypeOf(domainElement.eClass())) {
+				return Equals3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntersects().isSuperTypeOf(domainElement.eClass())) {
+				return Intersects3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getAddition().isSuperTypeOf(domainElement.eClass())) {
 				return Addition3EditPart.VISUAL_ID;
@@ -453,6 +516,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID:
+			if (EventpatternPackage.eINSTANCE.getContains().isSuperTypeOf(domainElement.eClass())) {
+				return Contains2EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getAnd().isSuperTypeOf(domainElement.eClass())) {
 				return And2EditPart.VISUAL_ID;
 			}
@@ -461,6 +527,24 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getNot().isSuperTypeOf(domainElement.eClass())) {
 				return Not2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
+				return Union2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
+				return Intesection2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
+				return Diference2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDistance().isSuperTypeOf(domainElement.eClass())) {
+				return Distance2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getEquals().isSuperTypeOf(domainElement.eClass())) {
+				return Equals2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntersects().isSuperTypeOf(domainElement.eClass())) {
+				return Intersects2EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getAddition().isSuperTypeOf(domainElement.eClass())) {
 				return Addition2EditPart.VISUAL_ID;
@@ -527,6 +611,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID:
+			if (EventpatternPackage.eINSTANCE.getContains().isSuperTypeOf(domainElement.eClass())) {
+				return Contains3EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getAnd().isSuperTypeOf(domainElement.eClass())) {
 				return And3EditPart.VISUAL_ID;
 			}
@@ -535,6 +622,24 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getNot().isSuperTypeOf(domainElement.eClass())) {
 				return Not3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
+				return Union3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
+				return Intesection3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
+				return Diference3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDistance().isSuperTypeOf(domainElement.eClass())) {
+				return Distance3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getEquals().isSuperTypeOf(domainElement.eClass())) {
+				return Equals3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntersects().isSuperTypeOf(domainElement.eClass())) {
+				return Intersects3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getAddition().isSuperTypeOf(domainElement.eClass())) {
 				return Addition3EditPart.VISUAL_ID;
@@ -628,6 +733,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID:
+			if (EventpatternPackage.eINSTANCE.getContains().isSuperTypeOf(domainElement.eClass())) {
+				return Contains3EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getAnd().isSuperTypeOf(domainElement.eClass())) {
 				return And3EditPart.VISUAL_ID;
 			}
@@ -636,6 +744,24 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getNot().isSuperTypeOf(domainElement.eClass())) {
 				return Not3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
+				return Union3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
+				return Intesection3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
+				return Diference3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDistance().isSuperTypeOf(domainElement.eClass())) {
+				return Distance3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getEquals().isSuperTypeOf(domainElement.eClass())) {
+				return Equals3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntersects().isSuperTypeOf(domainElement.eClass())) {
+				return Intersects3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getAddition().isSuperTypeOf(domainElement.eClass())) {
 				return Addition3EditPart.VISUAL_ID;
@@ -729,6 +855,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID:
+			if (EventpatternPackage.eINSTANCE.getContains().isSuperTypeOf(domainElement.eClass())) {
+				return Contains3EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getAnd().isSuperTypeOf(domainElement.eClass())) {
 				return And3EditPart.VISUAL_ID;
 			}
@@ -737,6 +866,24 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getNot().isSuperTypeOf(domainElement.eClass())) {
 				return Not3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
+				return Union3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
+				return Intesection3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
+				return Diference3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getDistance().isSuperTypeOf(domainElement.eClass())) {
+				return Distance3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getEquals().isSuperTypeOf(domainElement.eClass())) {
+				return Equals3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getIntersects().isSuperTypeOf(domainElement.eClass())) {
+				return Intersects3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getAddition().isSuperTypeOf(domainElement.eClass())) {
 				return Addition3EditPart.VISUAL_ID;
@@ -858,6 +1005,9 @@ public class EventpatternVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case CEPEventPatternEditPart.VISUAL_ID:
+			if (ContainsEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (AndEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -865,6 +1015,24 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (NotEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (UnionEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (IntesectionEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (DiferenceEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (DistanceEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (EqualsEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (IntersectsEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (AdditionEditPart.VISUAL_ID == nodeVisualID) {
@@ -1195,6 +1363,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID:
+			if (Contains2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (And2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1202,6 +1373,24 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Not2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Union2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intesection2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Diference2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Distance2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Equals2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intersects2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Addition2EditPart.VISUAL_ID == nodeVisualID) {
@@ -1279,6 +1468,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID:
+			if (Contains3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (And3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1286,6 +1478,24 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Not3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Union3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intesection3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Diference3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Distance3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Equals3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intersects3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Addition3EditPart.VISUAL_ID == nodeVisualID) {
@@ -1390,6 +1600,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID:
+			if (Contains2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (And2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1397,6 +1610,24 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Not2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Union2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intesection2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Diference2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Distance2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Equals2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intersects2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Addition2EditPart.VISUAL_ID == nodeVisualID) {
@@ -1464,6 +1695,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID:
+			if (Contains3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (And3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1471,6 +1705,24 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Not3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Union3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intesection3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Diference3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Distance3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Equals3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intersects3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Addition3EditPart.VISUAL_ID == nodeVisualID) {
@@ -1565,6 +1817,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID:
+			if (Contains3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (And3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1572,6 +1827,24 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Not3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Union3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intesection3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Diference3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Distance3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Equals3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intersects3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Addition3EditPart.VISUAL_ID == nodeVisualID) {
@@ -1666,6 +1939,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			break;
 		case BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID:
+			if (Contains3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (And3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1673,6 +1949,24 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Not3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Union3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intesection3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Diference3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Distance3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Equals3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Intersects3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Addition3EditPart.VISUAL_ID == nodeVisualID) {
@@ -1881,6 +2175,13 @@ public class EventpatternVisualIDRegistry {
 		case EmailEditPart.VISUAL_ID:
 		case TwitterEditPart.VISUAL_ID:
 		case GroupByEditPart.VISUAL_ID:
+		case ContainsEditPart.VISUAL_ID:
+		case UnionEditPart.VISUAL_ID:
+		case IntesectionEditPart.VISUAL_ID:
+		case DiferenceEditPart.VISUAL_ID:
+		case DistanceEditPart.VISUAL_ID:
+		case EqualsEditPart.VISUAL_ID:
+		case IntersectsEditPart.VISUAL_ID:
 		case And2EditPart.VISUAL_ID:
 		case Or2EditPart.VISUAL_ID:
 		case Not2EditPart.VISUAL_ID:
@@ -1934,6 +2235,20 @@ public class EventpatternVisualIDRegistry {
 		case TimeSchedule2EditPart.VISUAL_ID:
 		case ComplexEventPropertyEditPart.VISUAL_ID:
 		case GroupBy2EditPart.VISUAL_ID:
+		case Contains2EditPart.VISUAL_ID:
+		case Union2EditPart.VISUAL_ID:
+		case Intesection2EditPart.VISUAL_ID:
+		case Diference2EditPart.VISUAL_ID:
+		case Distance2EditPart.VISUAL_ID:
+		case Equals2EditPart.VISUAL_ID:
+		case Intersects2EditPart.VISUAL_ID:
+		case Contains3EditPart.VISUAL_ID:
+		case Union3EditPart.VISUAL_ID:
+		case Intesection3EditPart.VISUAL_ID:
+		case Diference3EditPart.VISUAL_ID:
+		case Distance3EditPart.VISUAL_ID:
+		case Equals3EditPart.VISUAL_ID:
+		case Intersects3EditPart.VISUAL_ID:
 			return true;
 		default:
 			break;

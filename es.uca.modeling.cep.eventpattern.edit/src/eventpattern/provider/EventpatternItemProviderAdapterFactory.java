@@ -1105,6 +1105,167 @@ public class EventpatternItemProviderAdapterFactory extends EventpatternAdapterF
 	}
 
   /**
+	 * This keeps track of the one adapter used for all {@link eventpattern.Union} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected UnionItemProvider unionItemProvider;
+
+		/**
+	 * This creates an adapter for a {@link eventpattern.Union}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createUnionAdapter() {
+		if (unionItemProvider == null) {
+			unionItemProvider = new UnionItemProvider(this);
+		}
+
+		return unionItemProvider;
+	}
+
+		/**
+	 * This keeps track of the one adapter used for all {@link eventpattern.Intesection} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected IntesectionItemProvider intesectionItemProvider;
+
+		/**
+	 * This creates an adapter for a {@link eventpattern.Intesection}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createIntesectionAdapter() {
+		if (intesectionItemProvider == null) {
+			intesectionItemProvider = new IntesectionItemProvider(this);
+		}
+
+		return intesectionItemProvider;
+	}
+
+		/**
+	 * This keeps track of the one adapter used for all {@link eventpattern.Diference} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DiferenceItemProvider diferenceItemProvider;
+
+		/**
+	 * This creates an adapter for a {@link eventpattern.Diference}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDiferenceAdapter() {
+		if (diferenceItemProvider == null) {
+			diferenceItemProvider = new DiferenceItemProvider(this);
+		}
+
+		return diferenceItemProvider;
+	}
+
+		/**
+	 * This keeps track of the one adapter used for all {@link eventpattern.Contains} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ContainsItemProvider containsItemProvider;
+
+		/**
+	 * This creates an adapter for a {@link eventpattern.Contains}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createContainsAdapter() {
+		if (containsItemProvider == null) {
+			containsItemProvider = new ContainsItemProvider(this);
+		}
+
+		return containsItemProvider;
+	}
+
+		/**
+	 * This keeps track of the one adapter used for all {@link eventpattern.Distance} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DistanceItemProvider distanceItemProvider;
+
+		/**
+	 * This creates an adapter for a {@link eventpattern.Distance}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDistanceAdapter() {
+		if (distanceItemProvider == null) {
+			distanceItemProvider = new DistanceItemProvider(this);
+		}
+
+		return distanceItemProvider;
+	}
+
+		/**
+	 * This keeps track of the one adapter used for all {@link eventpattern.Equals} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected EqualsItemProvider equalsItemProvider;
+
+		/**
+	 * This creates an adapter for a {@link eventpattern.Equals}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createEqualsAdapter() {
+		if (equalsItemProvider == null) {
+			equalsItemProvider = new EqualsItemProvider(this);
+		}
+
+		return equalsItemProvider;
+	}
+
+		/**
+	 * This keeps track of the one adapter used for all {@link eventpattern.Intersects} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected IntersectsItemProvider intersectsItemProvider;
+
+		/**
+	 * This creates an adapter for a {@link eventpattern.Intersects}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createIntersectsAdapter() {
+		if (intersectsItemProvider == null) {
+			intersectsItemProvider = new IntersectsItemProvider(this);
+		}
+
+		return intersectsItemProvider;
+	}
+
+		/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1255,6 +1416,13 @@ public class EventpatternItemProviderAdapterFactory extends EventpatternAdapterF
 		if (valueItemProvider != null) valueItemProvider.dispose();
 		if (emailItemProvider != null) emailItemProvider.dispose();
 		if (twitterItemProvider != null) twitterItemProvider.dispose();
+		if (unionItemProvider != null) unionItemProvider.dispose();
+		if (intesectionItemProvider != null) intesectionItemProvider.dispose();
+		if (diferenceItemProvider != null) diferenceItemProvider.dispose();
+		if (containsItemProvider != null) containsItemProvider.dispose();
+		if (distanceItemProvider != null) distanceItemProvider.dispose();
+		if (equalsItemProvider != null) equalsItemProvider.dispose();
+		if (intersectsItemProvider != null) intersectsItemProvider.dispose();
 	}
 
 }

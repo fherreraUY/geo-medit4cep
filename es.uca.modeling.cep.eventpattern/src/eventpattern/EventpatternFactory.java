@@ -410,6 +410,69 @@ public interface EventpatternFactory extends EFactory
   Twitter createTwitter();
 
   /**
+	 * Returns a new object of class '<em>Union</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Union</em>'.
+	 * @generated
+	 */
+	Union createUnion();
+
+		/**
+	 * Returns a new object of class '<em>Intesection</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Intesection</em>'.
+	 * @generated
+	 */
+	Intesection createIntesection();
+
+		/**
+	 * Returns a new object of class '<em>Diference</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Diference</em>'.
+	 * @generated
+	 */
+	Diference createDiference();
+
+		/**
+	 * Returns a new object of class '<em>Contains</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Contains</em>'.
+	 * @generated
+	 */
+	Contains createContains();
+
+		/**
+	 * Returns a new object of class '<em>Distance</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Distance</em>'.
+	 * @generated
+	 */
+	Distance createDistance();
+
+		/**
+	 * Returns a new object of class '<em>Equals</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Equals</em>'.
+	 * @generated
+	 */
+	Equals createEquals();
+
+		/**
+	 * Returns a new object of class '<em>Intersects</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Intersects</em>'.
+	 * @generated
+	 */
+	Intersects createIntersects();
+
+		/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

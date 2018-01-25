@@ -759,6 +759,156 @@ public class EventpatternSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case EventpatternPackage.GEO_OPERATOR: {
+				GeoOperator geoOperator = (GeoOperator)theEObject;
+				T result = caseGeoOperator(geoOperator);
+				if (result == null) result = caseOperator(geoOperator);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EventpatternPackage.GEO_ARITHMETIC_OPERATOR: {
+				GeoArithmeticOperator geoArithmeticOperator = (GeoArithmeticOperator)theEObject;
+				T result = caseGeoArithmeticOperator(geoArithmeticOperator);
+				if (result == null) result = caseGeoOperator(geoArithmeticOperator);
+				if (result == null) result = caseConditionOperator(geoArithmeticOperator);
+				if (result == null) result = caseOperator(geoArithmeticOperator);
+				if (result == null) result = caseConditionOperand(geoArithmeticOperator);
+				if (result == null) result = caseOperand(geoArithmeticOperator);
+				if (result == null) result = caseEventPatternCondition(geoArithmeticOperator);
+				if (result == null) result = caseWithinTimerElement(geoArithmeticOperator);
+				if (result == null) result = caseEventPatternElement(geoArithmeticOperator);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EventpatternPackage.GEO_BOOLEAN_OPERATOR: {
+				GeoBooleanOperator geoBooleanOperator = (GeoBooleanOperator)theEObject;
+				T result = caseGeoBooleanOperator(geoBooleanOperator);
+				if (result == null) result = caseGeoOperator(geoBooleanOperator);
+				if (result == null) result = caseConditionOperator(geoBooleanOperator);
+				if (result == null) result = caseOperator(geoBooleanOperator);
+				if (result == null) result = caseConditionOperand(geoBooleanOperator);
+				if (result == null) result = caseOperand(geoBooleanOperator);
+				if (result == null) result = caseEventPatternCondition(geoBooleanOperator);
+				if (result == null) result = caseWithinTimerElement(geoBooleanOperator);
+				if (result == null) result = caseEventPatternElement(geoBooleanOperator);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EventpatternPackage.UNION: {
+				Union union = (Union)theEObject;
+				T result = caseUnion(union);
+				if (result == null) result = caseNaryOperator(union);
+				if (result == null) result = caseGeoArithmeticOperator(union);
+				if (result == null) result = caseGeoOperator(union);
+				if (result == null) result = caseConditionOperator(union);
+				if (result == null) result = caseOperator(union);
+				if (result == null) result = caseConditionOperand(union);
+				if (result == null) result = caseOperand(union);
+				if (result == null) result = caseEventPatternCondition(union);
+				if (result == null) result = caseWithinTimerElement(union);
+				if (result == null) result = caseEventPatternElement(union);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EventpatternPackage.INTESECTION: {
+				Intesection intesection = (Intesection)theEObject;
+				T result = caseIntesection(intesection);
+				if (result == null) result = caseNaryOperator(intesection);
+				if (result == null) result = caseGeoArithmeticOperator(intesection);
+				if (result == null) result = caseGeoOperator(intesection);
+				if (result == null) result = caseConditionOperator(intesection);
+				if (result == null) result = caseOperator(intesection);
+				if (result == null) result = caseConditionOperand(intesection);
+				if (result == null) result = caseOperand(intesection);
+				if (result == null) result = caseEventPatternCondition(intesection);
+				if (result == null) result = caseWithinTimerElement(intesection);
+				if (result == null) result = caseEventPatternElement(intesection);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EventpatternPackage.DIFERENCE: {
+				Diference diference = (Diference)theEObject;
+				T result = caseDiference(diference);
+				if (result == null) result = caseNaryOperator(diference);
+				if (result == null) result = caseGeoArithmeticOperator(diference);
+				if (result == null) result = caseGeoOperator(diference);
+				if (result == null) result = caseConditionOperator(diference);
+				if (result == null) result = caseOperator(diference);
+				if (result == null) result = caseConditionOperand(diference);
+				if (result == null) result = caseOperand(diference);
+				if (result == null) result = caseEventPatternCondition(diference);
+				if (result == null) result = caseWithinTimerElement(diference);
+				if (result == null) result = caseEventPatternElement(diference);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EventpatternPackage.CONTAINS: {
+				Contains contains = (Contains)theEObject;
+				T result = caseContains(contains);
+				if (result == null) result = caseBinaryOperator(contains);
+				if (result == null) result = caseGeoBooleanOperator(contains);
+				if (result == null) result = caseLogicalOperator(contains);
+				if (result == null) result = caseGeoOperator(contains);
+				if (result == null) result = caseConditionOperator(contains);
+				if (result == null) result = casePatternOperator(contains);
+				if (result == null) result = caseOperator(contains);
+				if (result == null) result = caseConditionOperand(contains);
+				if (result == null) result = casePatternOperand(contains);
+				if (result == null) result = caseOperand(contains);
+				if (result == null) result = caseEventPatternCondition(contains);
+				if (result == null) result = caseWithinTimerElement(contains);
+				if (result == null) result = caseEventPatternElement(contains);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EventpatternPackage.DISTANCE: {
+				Distance distance = (Distance)theEObject;
+				T result = caseDistance(distance);
+				if (result == null) result = caseBinaryOperator(distance);
+				if (result == null) result = caseGeoBooleanOperator(distance);
+				if (result == null) result = caseGeoOperator(distance);
+				if (result == null) result = caseConditionOperator(distance);
+				if (result == null) result = caseOperator(distance);
+				if (result == null) result = caseConditionOperand(distance);
+				if (result == null) result = caseOperand(distance);
+				if (result == null) result = caseEventPatternCondition(distance);
+				if (result == null) result = caseWithinTimerElement(distance);
+				if (result == null) result = caseEventPatternElement(distance);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EventpatternPackage.EQUALS: {
+				Equals equals = (Equals)theEObject;
+				T result = caseEquals(equals);
+				if (result == null) result = caseBinaryOperator(equals);
+				if (result == null) result = caseGeoBooleanOperator(equals);
+				if (result == null) result = caseGeoOperator(equals);
+				if (result == null) result = caseConditionOperator(equals);
+				if (result == null) result = caseOperator(equals);
+				if (result == null) result = caseConditionOperand(equals);
+				if (result == null) result = caseOperand(equals);
+				if (result == null) result = caseEventPatternCondition(equals);
+				if (result == null) result = caseWithinTimerElement(equals);
+				if (result == null) result = caseEventPatternElement(equals);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EventpatternPackage.INTERSECTS: {
+				Intersects intersects = (Intersects)theEObject;
+				T result = caseIntersects(intersects);
+				if (result == null) result = caseBinaryOperator(intersects);
+				if (result == null) result = caseGeoBooleanOperator(intersects);
+				if (result == null) result = caseGeoOperator(intersects);
+				if (result == null) result = caseConditionOperator(intersects);
+				if (result == null) result = caseOperator(intersects);
+				if (result == null) result = caseConditionOperand(intersects);
+				if (result == null) result = caseOperand(intersects);
+				if (result == null) result = caseEventPatternCondition(intersects);
+				if (result == null) result = caseWithinTimerElement(intersects);
+				if (result == null) result = caseEventPatternElement(intersects);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -1739,6 +1889,156 @@ public class EventpatternSwitch<T> extends Switch<T>
 	}
 
   /**
+	 * Returns the result of interpreting the object as an instance of '<em>Geo Operator</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Geo Operator</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeoOperator(GeoOperator object) {
+		return null;
+	}
+
+		/**
+	 * Returns the result of interpreting the object as an instance of '<em>Geo Arithmetic Operator</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Geo Arithmetic Operator</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeoArithmeticOperator(GeoArithmeticOperator object) {
+		return null;
+	}
+
+		/**
+	 * Returns the result of interpreting the object as an instance of '<em>Geo Boolean Operator</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Geo Boolean Operator</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeoBooleanOperator(GeoBooleanOperator object) {
+		return null;
+	}
+
+		/**
+	 * Returns the result of interpreting the object as an instance of '<em>Union</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Union</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUnion(Union object) {
+		return null;
+	}
+
+		/**
+	 * Returns the result of interpreting the object as an instance of '<em>Intesection</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Intesection</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIntesection(Intesection object) {
+		return null;
+	}
+
+		/**
+	 * Returns the result of interpreting the object as an instance of '<em>Diference</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Diference</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDiference(Diference object) {
+		return null;
+	}
+
+		/**
+	 * Returns the result of interpreting the object as an instance of '<em>Contains</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Contains</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseContains(Contains object) {
+		return null;
+	}
+
+		/**
+	 * Returns the result of interpreting the object as an instance of '<em>Distance</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Distance</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDistance(Distance object) {
+		return null;
+	}
+
+		/**
+	 * Returns the result of interpreting the object as an instance of '<em>Equals</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Equals</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEquals(Equals object) {
+		return null;
+	}
+
+		/**
+	 * Returns the result of interpreting the object as an instance of '<em>Intersects</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Intersects</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIntersects(Intersects object) {
+		return null;
+	}
+
+		/**
 	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
 	 * <!-- begin-user-doc -->
    * This implementation returns null;

@@ -54,9 +54,16 @@ public class EventpatternModelingAssistantProviderOfTwitterEditPart extends Even
 	public List<IElementType> doGetTypesForSource(TwitterEditPart target, IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == EventpatternElementTypes.Link_4001) {
+			types.add(EventpatternElementTypes.Contains_2041);
 			types.add(EventpatternElementTypes.And_2001);
 			types.add(EventpatternElementTypes.Or_2002);
 			types.add(EventpatternElementTypes.Not_2003);
+			types.add(EventpatternElementTypes.Union_2042);
+			types.add(EventpatternElementTypes.Intesection_2043);
+			types.add(EventpatternElementTypes.Diference_2044);
+			types.add(EventpatternElementTypes.Distance_2045);
+			types.add(EventpatternElementTypes.Equals_2046);
+			types.add(EventpatternElementTypes.Intersects_2047);
 			types.add(EventpatternElementTypes.Addition_2004);
 			types.add(EventpatternElementTypes.Subtraction_2005);
 			types.add(EventpatternElementTypes.Multiplication_2006);
@@ -89,9 +96,16 @@ public class EventpatternModelingAssistantProviderOfTwitterEditPart extends Even
 			types.add(EventpatternElementTypes.ComplexEvent_2038);
 			types.add(EventpatternElementTypes.EventProperty_3001);
 			types.add(EventpatternElementTypes.EventProperty_3002);
+			types.add(EventpatternElementTypes.Contains_3061);
 			types.add(EventpatternElementTypes.And_3003);
 			types.add(EventpatternElementTypes.Or_3004);
 			types.add(EventpatternElementTypes.Not_3005);
+			types.add(EventpatternElementTypes.Union_3062);
+			types.add(EventpatternElementTypes.Intesection_3063);
+			types.add(EventpatternElementTypes.Diference_3064);
+			types.add(EventpatternElementTypes.Distance_3065);
+			types.add(EventpatternElementTypes.Equals_3066);
+			types.add(EventpatternElementTypes.Intersects_3067);
 			types.add(EventpatternElementTypes.Addition_3006);
 			types.add(EventpatternElementTypes.Subtraction_3007);
 			types.add(EventpatternElementTypes.Multiplication_3008);
@@ -113,9 +127,16 @@ public class EventpatternModelingAssistantProviderOfTwitterEditPart extends Even
 			types.add(EventpatternElementTypes.Event_3024);
 			types.add(EventpatternElementTypes.EventProperty_3025);
 			types.add(EventpatternElementTypes.Value_3026);
+			types.add(EventpatternElementTypes.Contains_3068);
 			types.add(EventpatternElementTypes.And_3027);
 			types.add(EventpatternElementTypes.Or_3028);
 			types.add(EventpatternElementTypes.Not_3029);
+			types.add(EventpatternElementTypes.Union_3069);
+			types.add(EventpatternElementTypes.Intesection_3070);
+			types.add(EventpatternElementTypes.Diference_3071);
+			types.add(EventpatternElementTypes.Distance_3072);
+			types.add(EventpatternElementTypes.Equals_3073);
+			types.add(EventpatternElementTypes.Intersects_3074);
 			types.add(EventpatternElementTypes.Addition_3030);
 			types.add(EventpatternElementTypes.Subtraction_3031);
 			types.add(EventpatternElementTypes.Multiplication_3032);

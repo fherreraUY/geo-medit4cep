@@ -2765,6 +2765,367 @@ public interface EventpatternPackage extends EPackage
   int TWITTER_FEATURE_COUNT = ACTION_FEATURE_COUNT + 0;
 
   /**
+	 * The meta object id for the '{@link eventpattern.impl.GeoOperatorImpl <em>Geo Operator</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.GeoOperatorImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getGeoOperator()
+	 * @generated
+	 */
+	int GEO_OPERATOR = 61;
+
+		/**
+	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_OPERATOR__INBOUND_LINK = OPERATOR__INBOUND_LINK;
+
+		/**
+	 * The number of structural features of the '<em>Geo Operator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_OPERATOR_FEATURE_COUNT = OPERATOR_FEATURE_COUNT + 0;
+
+		/**
+	 * The meta object id for the '{@link eventpattern.impl.GeoArithmeticOperatorImpl <em>Geo Arithmetic Operator</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.GeoArithmeticOperatorImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getGeoArithmeticOperator()
+	 * @generated
+	 */
+	int GEO_ARITHMETIC_OPERATOR = 62;
+
+		/**
+	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_ARITHMETIC_OPERATOR__INBOUND_LINK = GEO_OPERATOR__INBOUND_LINK;
+
+		/**
+	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_ARITHMETIC_OPERATOR__OUTBOUND_LINK = GEO_OPERATOR_FEATURE_COUNT + 0;
+
+		/**
+	 * The number of structural features of the '<em>Geo Arithmetic Operator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_ARITHMETIC_OPERATOR_FEATURE_COUNT = GEO_OPERATOR_FEATURE_COUNT + 1;
+
+		/**
+	 * The meta object id for the '{@link eventpattern.impl.GeoBooleanOperatorImpl <em>Geo Boolean Operator</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.GeoBooleanOperatorImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getGeoBooleanOperator()
+	 * @generated
+	 */
+	int GEO_BOOLEAN_OPERATOR = 63;
+
+		/**
+	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_BOOLEAN_OPERATOR__INBOUND_LINK = GEO_OPERATOR__INBOUND_LINK;
+
+		/**
+	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_BOOLEAN_OPERATOR__OUTBOUND_LINK = GEO_OPERATOR_FEATURE_COUNT + 0;
+
+		/**
+	 * The number of structural features of the '<em>Geo Boolean Operator</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_BOOLEAN_OPERATOR_FEATURE_COUNT = GEO_OPERATOR_FEATURE_COUNT + 1;
+
+		/**
+	 * The meta object id for the '{@link eventpattern.impl.UnionImpl <em>Union</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.UnionImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getUnion()
+	 * @generated
+	 */
+	int UNION = 64;
+
+		/**
+	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION__INBOUND_LINK = NARY_OPERATOR__INBOUND_LINK;
+
+		/**
+	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION__OUTBOUND_LINK = NARY_OPERATOR_FEATURE_COUNT + 0;
+
+		/**
+	 * The number of structural features of the '<em>Union</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNION_FEATURE_COUNT = NARY_OPERATOR_FEATURE_COUNT + 1;
+
+		/**
+	 * The meta object id for the '{@link eventpattern.impl.IntesectionImpl <em>Intesection</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.IntesectionImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getIntesection()
+	 * @generated
+	 */
+	int INTESECTION = 65;
+
+		/**
+	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTESECTION__INBOUND_LINK = NARY_OPERATOR__INBOUND_LINK;
+
+		/**
+	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTESECTION__OUTBOUND_LINK = NARY_OPERATOR_FEATURE_COUNT + 0;
+
+		/**
+	 * The number of structural features of the '<em>Intesection</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTESECTION_FEATURE_COUNT = NARY_OPERATOR_FEATURE_COUNT + 1;
+
+		/**
+	 * The meta object id for the '{@link eventpattern.impl.DiferenceImpl <em>Diference</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.DiferenceImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getDiference()
+	 * @generated
+	 */
+	int DIFERENCE = 66;
+
+		/**
+	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIFERENCE__INBOUND_LINK = NARY_OPERATOR__INBOUND_LINK;
+
+		/**
+	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIFERENCE__OUTBOUND_LINK = NARY_OPERATOR_FEATURE_COUNT + 0;
+
+		/**
+	 * The number of structural features of the '<em>Diference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIFERENCE_FEATURE_COUNT = NARY_OPERATOR_FEATURE_COUNT + 1;
+
+		/**
+	 * The meta object id for the '{@link eventpattern.impl.ContainsImpl <em>Contains</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.ContainsImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getContains()
+	 * @generated
+	 */
+	int CONTAINS = 67;
+
+		/**
+	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINS__INBOUND_LINK = BINARY_OPERATOR__INBOUND_LINK;
+
+		/**
+	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINS__OUTBOUND_LINK = BINARY_OPERATOR_FEATURE_COUNT + 0;
+
+		/**
+	 * The number of structural features of the '<em>Contains</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINS_FEATURE_COUNT = BINARY_OPERATOR_FEATURE_COUNT + 1;
+
+		/**
+	 * The meta object id for the '{@link eventpattern.impl.DistanceImpl <em>Distance</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.DistanceImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getDistance()
+	 * @generated
+	 */
+	int DISTANCE = 68;
+
+		/**
+	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTANCE__INBOUND_LINK = BINARY_OPERATOR__INBOUND_LINK;
+
+		/**
+	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTANCE__OUTBOUND_LINK = BINARY_OPERATOR_FEATURE_COUNT + 0;
+
+		/**
+	 * The number of structural features of the '<em>Distance</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISTANCE_FEATURE_COUNT = BINARY_OPERATOR_FEATURE_COUNT + 1;
+
+		/**
+	 * The meta object id for the '{@link eventpattern.impl.EqualsImpl <em>Equals</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.EqualsImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getEquals()
+	 * @generated
+	 */
+	int EQUALS = 69;
+
+		/**
+	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUALS__INBOUND_LINK = BINARY_OPERATOR__INBOUND_LINK;
+
+		/**
+	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUALS__OUTBOUND_LINK = BINARY_OPERATOR_FEATURE_COUNT + 0;
+
+		/**
+	 * The number of structural features of the '<em>Equals</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EQUALS_FEATURE_COUNT = BINARY_OPERATOR_FEATURE_COUNT + 1;
+
+		/**
+	 * The meta object id for the '{@link eventpattern.impl.IntersectsImpl <em>Intersects</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.IntersectsImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getIntersects()
+	 * @generated
+	 */
+	int INTERSECTS = 70;
+
+		/**
+	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERSECTS__INBOUND_LINK = BINARY_OPERATOR__INBOUND_LINK;
+
+		/**
+	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERSECTS__OUTBOUND_LINK = BINARY_OPERATOR_FEATURE_COUNT + 0;
+
+		/**
+	 * The number of structural features of the '<em>Intersects</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERSECTS_FEATURE_COUNT = BINARY_OPERATOR_FEATURE_COUNT + 1;
+
+		/**
 	 * The meta object id for the '{@link eventpattern.PropertyTypeValue <em>Property Type Value</em>}' enum.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -2772,7 +3133,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getPropertyTypeValue()
 	 * @generated
 	 */
-  int PROPERTY_TYPE_VALUE = 61;
+  int PROPERTY_TYPE_VALUE = 71;
 
 
   /**
@@ -4332,6 +4693,106 @@ public interface EventpatternPackage extends EPackage
   EClass getTwitter();
 
   /**
+	 * Returns the meta object for class '{@link eventpattern.GeoOperator <em>Geo Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Geo Operator</em>'.
+	 * @see eventpattern.GeoOperator
+	 * @generated
+	 */
+	EClass getGeoOperator();
+
+		/**
+	 * Returns the meta object for class '{@link eventpattern.GeoArithmeticOperator <em>Geo Arithmetic Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Geo Arithmetic Operator</em>'.
+	 * @see eventpattern.GeoArithmeticOperator
+	 * @generated
+	 */
+	EClass getGeoArithmeticOperator();
+
+		/**
+	 * Returns the meta object for class '{@link eventpattern.GeoBooleanOperator <em>Geo Boolean Operator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Geo Boolean Operator</em>'.
+	 * @see eventpattern.GeoBooleanOperator
+	 * @generated
+	 */
+	EClass getGeoBooleanOperator();
+
+		/**
+	 * Returns the meta object for class '{@link eventpattern.Union <em>Union</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Union</em>'.
+	 * @see eventpattern.Union
+	 * @generated
+	 */
+	EClass getUnion();
+
+		/**
+	 * Returns the meta object for class '{@link eventpattern.Intesection <em>Intesection</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Intesection</em>'.
+	 * @see eventpattern.Intesection
+	 * @generated
+	 */
+	EClass getIntesection();
+
+		/**
+	 * Returns the meta object for class '{@link eventpattern.Diference <em>Diference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Diference</em>'.
+	 * @see eventpattern.Diference
+	 * @generated
+	 */
+	EClass getDiference();
+
+		/**
+	 * Returns the meta object for class '{@link eventpattern.Contains <em>Contains</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Contains</em>'.
+	 * @see eventpattern.Contains
+	 * @generated
+	 */
+	EClass getContains();
+
+		/**
+	 * Returns the meta object for class '{@link eventpattern.Distance <em>Distance</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Distance</em>'.
+	 * @see eventpattern.Distance
+	 * @generated
+	 */
+	EClass getDistance();
+
+		/**
+	 * Returns the meta object for class '{@link eventpattern.Equals <em>Equals</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Equals</em>'.
+	 * @see eventpattern.Equals
+	 * @generated
+	 */
+	EClass getEquals();
+
+		/**
+	 * Returns the meta object for class '{@link eventpattern.Intersects <em>Intersects</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Intersects</em>'.
+	 * @see eventpattern.Intersects
+	 * @generated
+	 */
+	EClass getIntersects();
+
+		/**
 	 * Returns the meta object for enum '{@link eventpattern.PropertyTypeValue <em>Property Type Value</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -5663,6 +6124,106 @@ public interface EventpatternPackage extends EPackage
     EClass TWITTER = eINSTANCE.getTwitter();
 
     /**
+		 * The meta object literal for the '{@link eventpattern.impl.GeoOperatorImpl <em>Geo Operator</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.GeoOperatorImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getGeoOperator()
+		 * @generated
+		 */
+		EClass GEO_OPERATOR = eINSTANCE.getGeoOperator();
+
+				/**
+		 * The meta object literal for the '{@link eventpattern.impl.GeoArithmeticOperatorImpl <em>Geo Arithmetic Operator</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.GeoArithmeticOperatorImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getGeoArithmeticOperator()
+		 * @generated
+		 */
+		EClass GEO_ARITHMETIC_OPERATOR = eINSTANCE.getGeoArithmeticOperator();
+
+				/**
+		 * The meta object literal for the '{@link eventpattern.impl.GeoBooleanOperatorImpl <em>Geo Boolean Operator</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.GeoBooleanOperatorImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getGeoBooleanOperator()
+		 * @generated
+		 */
+		EClass GEO_BOOLEAN_OPERATOR = eINSTANCE.getGeoBooleanOperator();
+
+				/**
+		 * The meta object literal for the '{@link eventpattern.impl.UnionImpl <em>Union</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.UnionImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getUnion()
+		 * @generated
+		 */
+		EClass UNION = eINSTANCE.getUnion();
+
+				/**
+		 * The meta object literal for the '{@link eventpattern.impl.IntesectionImpl <em>Intesection</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.IntesectionImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getIntesection()
+		 * @generated
+		 */
+		EClass INTESECTION = eINSTANCE.getIntesection();
+
+				/**
+		 * The meta object literal for the '{@link eventpattern.impl.DiferenceImpl <em>Diference</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.DiferenceImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getDiference()
+		 * @generated
+		 */
+		EClass DIFERENCE = eINSTANCE.getDiference();
+
+				/**
+		 * The meta object literal for the '{@link eventpattern.impl.ContainsImpl <em>Contains</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.ContainsImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getContains()
+		 * @generated
+		 */
+		EClass CONTAINS = eINSTANCE.getContains();
+
+				/**
+		 * The meta object literal for the '{@link eventpattern.impl.DistanceImpl <em>Distance</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.DistanceImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getDistance()
+		 * @generated
+		 */
+		EClass DISTANCE = eINSTANCE.getDistance();
+
+				/**
+		 * The meta object literal for the '{@link eventpattern.impl.EqualsImpl <em>Equals</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.EqualsImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getEquals()
+		 * @generated
+		 */
+		EClass EQUALS = eINSTANCE.getEquals();
+
+				/**
+		 * The meta object literal for the '{@link eventpattern.impl.IntersectsImpl <em>Intersects</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.IntersectsImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getIntersects()
+		 * @generated
+		 */
+		EClass INTERSECTS = eINSTANCE.getIntersects();
+
+				/**
 		 * The meta object literal for the '{@link eventpattern.PropertyTypeValue <em>Property Type Value</em>}' enum.
 		 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->

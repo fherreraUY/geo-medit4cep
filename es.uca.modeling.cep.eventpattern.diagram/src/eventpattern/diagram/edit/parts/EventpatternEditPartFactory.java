@@ -28,6 +28,9 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 			case CEPEventPatternEditPart.VISUAL_ID:
 				return new CEPEventPatternEditPart(view);
 
+			case ContainsEditPart.VISUAL_ID:
+				return new ContainsEditPart(view);
+
 			case AndEditPart.VISUAL_ID:
 				return new AndEditPart(view);
 
@@ -36,6 +39,24 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 
 			case NotEditPart.VISUAL_ID:
 				return new NotEditPart(view);
+
+			case UnionEditPart.VISUAL_ID:
+				return new UnionEditPart(view);
+
+			case IntesectionEditPart.VISUAL_ID:
+				return new IntesectionEditPart(view);
+
+			case DiferenceEditPart.VISUAL_ID:
+				return new DiferenceEditPart(view);
+
+			case DistanceEditPart.VISUAL_ID:
+				return new DistanceEditPart(view);
+
+			case EqualsEditPart.VISUAL_ID:
+				return new EqualsEditPart(view);
+
+			case IntersectsEditPart.VISUAL_ID:
+				return new IntersectsEditPart(view);
 
 			case AdditionEditPart.VISUAL_ID:
 				return new AdditionEditPart(view);
@@ -202,6 +223,9 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 			case EventPropertyName3EditPart.VISUAL_ID:
 				return new EventPropertyName3EditPart(view);
 
+			case Contains2EditPart.VISUAL_ID:
+				return new Contains2EditPart(view);
+
 			case And2EditPart.VISUAL_ID:
 				return new And2EditPart(view);
 
@@ -210,6 +234,24 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 
 			case Not2EditPart.VISUAL_ID:
 				return new Not2EditPart(view);
+
+			case Union2EditPart.VISUAL_ID:
+				return new Union2EditPart(view);
+
+			case Intesection2EditPart.VISUAL_ID:
+				return new Intesection2EditPart(view);
+
+			case Diference2EditPart.VISUAL_ID:
+				return new Diference2EditPart(view);
+
+			case Distance2EditPart.VISUAL_ID:
+				return new Distance2EditPart(view);
+
+			case Equals2EditPart.VISUAL_ID:
+				return new Equals2EditPart(view);
+
+			case Intersects2EditPart.VISUAL_ID:
+				return new Intersects2EditPart(view);
 
 			case Addition2EditPart.VISUAL_ID:
 				return new Addition2EditPart(view);
@@ -289,6 +331,9 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 			case ValueValue2EditPart.VISUAL_ID:
 				return new ValueValue2EditPart(view);
 
+			case Contains3EditPart.VISUAL_ID:
+				return new Contains3EditPart(view);
+
 			case And3EditPart.VISUAL_ID:
 				return new And3EditPart(view);
 
@@ -297,6 +342,24 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 
 			case Not3EditPart.VISUAL_ID:
 				return new Not3EditPart(view);
+
+			case Union3EditPart.VISUAL_ID:
+				return new Union3EditPart(view);
+
+			case Intesection3EditPart.VISUAL_ID:
+				return new Intesection3EditPart(view);
+
+			case Diference3EditPart.VISUAL_ID:
+				return new Diference3EditPart(view);
+
+			case Distance3EditPart.VISUAL_ID:
+				return new Distance3EditPart(view);
+
+			case Equals3EditPart.VISUAL_ID:
+				return new Equals3EditPart(view);
+
+			case Intersects3EditPart.VISUAL_ID:
+				return new Intersects3EditPart(view);
 
 			case Addition3EditPart.VISUAL_ID:
 				return new Addition3EditPart(view);
