@@ -30,6 +30,7 @@ public class TransformEventPatternToCode {
 		
 		final EglFileGeneratingTemplateFactory factory = new EglFileGeneratingTemplateFactory();
 		final EglTemplateFactoryModuleAdapter eglModule = new EglTemplateFactoryModuleAdapter(factory);
+		System.out.println(pathToEGL);
 		eglModule.parse(TransformEventPatternToCode.class.getResource(pathToEGL).toURI());
 
 		EclipseContextManager.setup(eglModule.getContext());

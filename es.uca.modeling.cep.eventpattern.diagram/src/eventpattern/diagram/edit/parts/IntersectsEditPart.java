@@ -219,7 +219,7 @@ public class IntersectsEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		public IntersectsFigure() {
-			this.setURI("platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Contains.svg");
+			this.setURI("platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersects.svg");
 			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(30), getMapMode().DPtoLP(30)));
 		}
 

@@ -3564,7 +3564,7 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 		   source, 
 		   new String[] {
 			 "figure", "svg",
-			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Contains.svg",
+			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersects.svg",
 			 "size", "30,30",
 			 "label.placement", "none",
 			 "resizable", "false",

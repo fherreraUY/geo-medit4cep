@@ -144,7 +144,8 @@ public class GenerateDeployEventPatternHandler extends AbstractHandler {
 			sourceModel.setStoredOnDisposal(false);
 			sourceModel.setReadOnLoad(true);
 			
-			final String patternToEplPath = "/egl/eventpattern-to-epl.egl";			
+		//	final String patternToEplPath = "/egl/eventpattern-to-epl.egl";			
+			final String patternToEplPath = "/egl/geo-eventpattern-to-epl.egl";					
 			final File outputPatternFile = new File(EventPatternsStatus.getGeneratedEventPatternPath(), 
 					eventPatternModel.getPatternName() + ".epl");		
 			System.out.println("\noutputPatternFile.getAbsolutePath(): " + outputPatternFile.getAbsolutePath());

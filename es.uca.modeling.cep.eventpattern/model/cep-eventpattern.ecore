@@ -777,7 +777,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Intersects" eSuperTypes="#//BinaryOperator #//GeoBooleanOperator">
     <eAnnotations source="gmf.node">
       <details key="figure" value="svg"/>
-      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Contains.svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersects.svg"/>
       <details key="size" value="30,30"/>
       <details key="label.placement" value="none"/>
       <details key="resizable" value="false"/>
