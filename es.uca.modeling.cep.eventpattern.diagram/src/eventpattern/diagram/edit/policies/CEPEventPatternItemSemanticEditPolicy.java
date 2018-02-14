@@ -1,6 +1,6 @@
 /*
- * 
- */
+* 
+*/
 package eventpattern.diagram.edit.policies;
 
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
@@ -32,8 +32,8 @@ import eventpattern.diagram.edit.commands.FollowedByCreateCommand;
 import eventpattern.diagram.edit.commands.GreaterEqualCreateCommand;
 import eventpattern.diagram.edit.commands.GreaterThanCreateCommand;
 import eventpattern.diagram.edit.commands.GroupByCreateCommand;
+import eventpattern.diagram.edit.commands.IntersectionCreateCommand;
 import eventpattern.diagram.edit.commands.IntersectsCreateCommand;
-import eventpattern.diagram.edit.commands.IntesectionCreateCommand;
 import eventpattern.diagram.edit.commands.LessEqualCreateCommand;
 import eventpattern.diagram.edit.commands.LessThanCreateCommand;
 import eventpattern.diagram.edit.commands.MaxCreateCommand;
@@ -65,15 +65,15 @@ import eventpattern.diagram.providers.EventpatternElementTypes;
 public class CEPEventPatternItemSemanticEditPolicy extends EventpatternBaseItemSemanticEditPolicy {
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CEPEventPatternItemSemanticEditPolicy() {
 		super(EventpatternElementTypes.CEPEventPattern_1000);
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected Command getCreateCommand(CreateElementRequest req) {
 		if (EventpatternElementTypes.Contains_2041 == req.getElementType()) {
 			return getGEFWrapper(new ContainsCreateCommand(req));
@@ -90,8 +90,8 @@ public class CEPEventPatternItemSemanticEditPolicy extends EventpatternBaseItemS
 		if (EventpatternElementTypes.Union_2042 == req.getElementType()) {
 			return getGEFWrapper(new UnionCreateCommand(req));
 		}
-		if (EventpatternElementTypes.Intesection_2043 == req.getElementType()) {
-			return getGEFWrapper(new IntesectionCreateCommand(req));
+		if (EventpatternElementTypes.Intersection_2048 == req.getElementType()) {
+			return getGEFWrapper(new IntersectionCreateCommand(req));
 		}
 		if (EventpatternElementTypes.Diference_2044 == req.getElementType()) {
 			return getGEFWrapper(new DiferenceCreateCommand(req));
@@ -220,21 +220,21 @@ public class CEPEventPatternItemSemanticEditPolicy extends EventpatternBaseItemS
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected Command getDuplicateCommand(DuplicateElementsRequest req) {
 		TransactionalEditingDomain editingDomain = ((IGraphicalEditPart) getHost()).getEditingDomain();
 		return getGEFWrapper(new DuplicateAnythingCommand(editingDomain, req));
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	private static class DuplicateAnythingCommand extends DuplicateEObjectsCommand {
 
 		/**
-		 * @generated
-		 */
+		* @generated
+		*/
 		public DuplicateAnythingCommand(TransactionalEditingDomain editingDomain, DuplicateElementsRequest req) {
 			super(editingDomain, req.getLabel(), req.getElementsToBeDuplicated(), req.getAllDuplicatedElementsMap());
 		}

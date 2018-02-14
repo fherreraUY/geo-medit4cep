@@ -79,8 +79,8 @@ public class EventpatternElementTypes {
 	/**
 	* @generated
 	*/
-	public static final IElementType Intesection_2043 = getElementType(
-			"es.uca.modeling.cep.eventpattern.diagram.Intesection_2043"); //$NON-NLS-1$
+	public static final IElementType Intersection_2048 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Intersection_2048"); //$NON-NLS-1$
 
 	/**
 	* @generated
@@ -316,8 +316,8 @@ public class EventpatternElementTypes {
 	/**
 	* @generated
 	*/
-	public static final IElementType Intesection_3063 = getElementType(
-			"es.uca.modeling.cep.eventpattern.diagram.Intesection_3063"); //$NON-NLS-1$
+	public static final IElementType Intersection_3075 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Intersection_3075"); //$NON-NLS-1$
 
 	/**
 	* @generated
@@ -467,8 +467,8 @@ public class EventpatternElementTypes {
 	/**
 	* @generated
 	*/
-	public static final IElementType Intesection_3070 = getElementType(
-			"es.uca.modeling.cep.eventpattern.diagram.Intesection_3070"); //$NON-NLS-1$
+	public static final IElementType Intersection_3076 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.Intersection_3076"); //$NON-NLS-1$
 
 	/**
 	* @generated
@@ -693,7 +693,7 @@ public class EventpatternElementTypes {
 
 			elements.put(Union_2042, EventpatternPackage.eINSTANCE.getUnion());
 
-			elements.put(Intesection_2043, EventpatternPackage.eINSTANCE.getIntesection());
+			elements.put(Intersection_2048, EventpatternPackage.eINSTANCE.getIntersection());
 
 			elements.put(Diference_2044, EventpatternPackage.eINSTANCE.getDiference());
 
@@ -791,7 +791,7 @@ public class EventpatternElementTypes {
 
 			elements.put(Union_3062, EventpatternPackage.eINSTANCE.getUnion());
 
-			elements.put(Intesection_3063, EventpatternPackage.eINSTANCE.getIntesection());
+			elements.put(Intersection_3075, EventpatternPackage.eINSTANCE.getIntersection());
 
 			elements.put(Diference_3064, EventpatternPackage.eINSTANCE.getDiference());
 
@@ -853,7 +853,7 @@ public class EventpatternElementTypes {
 
 			elements.put(Union_3069, EventpatternPackage.eINSTANCE.getUnion());
 
-			elements.put(Intesection_3070, EventpatternPackage.eINSTANCE.getIntesection());
+			elements.put(Intersection_3076, EventpatternPackage.eINSTANCE.getIntersection());
 
 			elements.put(Diference_3071, EventpatternPackage.eINSTANCE.getDiference());
 
@@ -949,7 +949,7 @@ public class EventpatternElementTypes {
 			KNOWN_ELEMENT_TYPES.add(Or_2002);
 			KNOWN_ELEMENT_TYPES.add(Not_2003);
 			KNOWN_ELEMENT_TYPES.add(Union_2042);
-			KNOWN_ELEMENT_TYPES.add(Intesection_2043);
+			KNOWN_ELEMENT_TYPES.add(Intersection_2048);
 			KNOWN_ELEMENT_TYPES.add(Diference_2044);
 			KNOWN_ELEMENT_TYPES.add(Distance_2045);
 			KNOWN_ELEMENT_TYPES.add(Equals_2046);
@@ -998,7 +998,7 @@ public class EventpatternElementTypes {
 			KNOWN_ELEMENT_TYPES.add(Or_3004);
 			KNOWN_ELEMENT_TYPES.add(Not_3005);
 			KNOWN_ELEMENT_TYPES.add(Union_3062);
-			KNOWN_ELEMENT_TYPES.add(Intesection_3063);
+			KNOWN_ELEMENT_TYPES.add(Intersection_3075);
 			KNOWN_ELEMENT_TYPES.add(Diference_3064);
 			KNOWN_ELEMENT_TYPES.add(Distance_3065);
 			KNOWN_ELEMENT_TYPES.add(Equals_3066);
@@ -1029,7 +1029,7 @@ public class EventpatternElementTypes {
 			KNOWN_ELEMENT_TYPES.add(Or_3028);
 			KNOWN_ELEMENT_TYPES.add(Not_3029);
 			KNOWN_ELEMENT_TYPES.add(Union_3069);
-			KNOWN_ELEMENT_TYPES.add(Intesection_3070);
+			KNOWN_ELEMENT_TYPES.add(Intersection_3076);
 			KNOWN_ELEMENT_TYPES.add(Diference_3071);
 			KNOWN_ELEMENT_TYPES.add(Distance_3072);
 			KNOWN_ELEMENT_TYPES.add(Equals_3073);
@@ -1087,8 +1087,8 @@ public class EventpatternElementTypes {
 			return Not_2003;
 		case UnionEditPart.VISUAL_ID:
 			return Union_2042;
-		case IntesectionEditPart.VISUAL_ID:
-			return Intesection_2043;
+		case IntersectionEditPart.VISUAL_ID:
+			return Intersection_2048;
 		case DiferenceEditPart.VISUAL_ID:
 			return Diference_2044;
 		case DistanceEditPart.VISUAL_ID:
@@ -1185,8 +1185,8 @@ public class EventpatternElementTypes {
 			return Not_3005;
 		case Union2EditPart.VISUAL_ID:
 			return Union_3062;
-		case Intesection2EditPart.VISUAL_ID:
-			return Intesection_3063;
+		case Intersection2EditPart.VISUAL_ID:
+			return Intersection_3075;
 		case Diference2EditPart.VISUAL_ID:
 			return Diference_3064;
 		case Distance2EditPart.VISUAL_ID:
@@ -1247,8 +1247,8 @@ public class EventpatternElementTypes {
 			return Not_3029;
 		case Union3EditPart.VISUAL_ID:
 			return Union_3069;
-		case Intesection3EditPart.VISUAL_ID:
-			return Intesection_3070;
+		case Intersection3EditPart.VISUAL_ID:
+			return Intersection_3076;
 		case Diference3EditPart.VISUAL_ID:
 			return Diference_3071;
 		case Distance3EditPart.VISUAL_ID:

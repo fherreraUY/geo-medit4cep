@@ -70,7 +70,7 @@ public class EventpatternModelingAssistantProviderOfUnion2EditPart extends Event
 		if (targetEditPart instanceof UnionEditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
-		if (targetEditPart instanceof IntesectionEditPart) {
+		if (targetEditPart instanceof IntersectionEditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof DiferenceEditPart) {
@@ -181,7 +181,7 @@ public class EventpatternModelingAssistantProviderOfUnion2EditPart extends Event
 		if (targetEditPart instanceof Union2EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
-		if (targetEditPart instanceof Intesection2EditPart) {
+		if (targetEditPart instanceof Intersection2EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof Diference2EditPart) {
@@ -265,7 +265,7 @@ public class EventpatternModelingAssistantProviderOfUnion2EditPart extends Event
 		if (targetEditPart instanceof Union3EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
-		if (targetEditPart instanceof Intesection3EditPart) {
+		if (targetEditPart instanceof Intersection3EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof Diference3EditPart) {
@@ -379,7 +379,7 @@ public class EventpatternModelingAssistantProviderOfUnion2EditPart extends Event
 			types.add(EventpatternElementTypes.Or_2002);
 			types.add(EventpatternElementTypes.Not_2003);
 			types.add(EventpatternElementTypes.Union_2042);
-			types.add(EventpatternElementTypes.Intesection_2043);
+			types.add(EventpatternElementTypes.Intersection_2048);
 			types.add(EventpatternElementTypes.Diference_2044);
 			types.add(EventpatternElementTypes.Distance_2045);
 			types.add(EventpatternElementTypes.Equals_2046);
@@ -416,7 +416,7 @@ public class EventpatternModelingAssistantProviderOfUnion2EditPart extends Event
 			types.add(EventpatternElementTypes.Or_3004);
 			types.add(EventpatternElementTypes.Not_3005);
 			types.add(EventpatternElementTypes.Union_3062);
-			types.add(EventpatternElementTypes.Intesection_3063);
+			types.add(EventpatternElementTypes.Intersection_3075);
 			types.add(EventpatternElementTypes.Diference_3064);
 			types.add(EventpatternElementTypes.Distance_3065);
 			types.add(EventpatternElementTypes.Equals_3066);
@@ -444,7 +444,7 @@ public class EventpatternModelingAssistantProviderOfUnion2EditPart extends Event
 			types.add(EventpatternElementTypes.Or_3028);
 			types.add(EventpatternElementTypes.Not_3029);
 			types.add(EventpatternElementTypes.Union_3069);
-			types.add(EventpatternElementTypes.Intesection_3070);
+			types.add(EventpatternElementTypes.Intersection_3076);
 			types.add(EventpatternElementTypes.Diference_3071);
 			types.add(EventpatternElementTypes.Distance_3072);
 			types.add(EventpatternElementTypes.Equals_3073);
@@ -518,7 +518,7 @@ public class EventpatternModelingAssistantProviderOfUnion2EditPart extends Event
 			types.add(EventpatternElementTypes.Or_2002);
 			types.add(EventpatternElementTypes.Not_2003);
 			types.add(EventpatternElementTypes.Union_2042);
-			types.add(EventpatternElementTypes.Intesection_2043);
+			types.add(EventpatternElementTypes.Intersection_2048);
 			types.add(EventpatternElementTypes.Diference_2044);
 			types.add(EventpatternElementTypes.Distance_2045);
 			types.add(EventpatternElementTypes.Equals_2046);
@@ -560,7 +560,7 @@ public class EventpatternModelingAssistantProviderOfUnion2EditPart extends Event
 			types.add(EventpatternElementTypes.Or_3004);
 			types.add(EventpatternElementTypes.Not_3005);
 			types.add(EventpatternElementTypes.Union_3062);
-			types.add(EventpatternElementTypes.Intesection_3063);
+			types.add(EventpatternElementTypes.Intersection_3075);
 			types.add(EventpatternElementTypes.Diference_3064);
 			types.add(EventpatternElementTypes.Distance_3065);
 			types.add(EventpatternElementTypes.Equals_3066);
@@ -591,7 +591,7 @@ public class EventpatternModelingAssistantProviderOfUnion2EditPart extends Event
 			types.add(EventpatternElementTypes.Or_3028);
 			types.add(EventpatternElementTypes.Not_3029);
 			types.add(EventpatternElementTypes.Union_3069);
-			types.add(EventpatternElementTypes.Intesection_3070);
+			types.add(EventpatternElementTypes.Intersection_3076);
 			types.add(EventpatternElementTypes.Diference_3071);
 			types.add(EventpatternElementTypes.Distance_3072);
 			types.add(EventpatternElementTypes.Equals_3073);

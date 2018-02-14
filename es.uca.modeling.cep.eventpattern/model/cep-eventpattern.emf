@@ -558,15 +558,13 @@ class Union extends NaryOperator, GeoArithmeticOperator {
 }
 
 // Intersection Node
-@gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg",
+@gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersection.svg",
 	size="30,30", label.placement="none", resizable="false", margin="0", 
 	tool.name="Intersection", tool.description="Add an intersection operator")
-class Intesection extends NaryOperator, GeoArithmeticOperator {
-
-}
+class Intersection extends NaryOperator, GeoArithmeticOperator {}
 
 // Diference Node
-@gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg",
+@gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Diference.svg",
 	size="30,30", label.placement="none", resizable="false", margin="0", 
 	tool.name="Diference", tool.description="Add an diference operator")
 class Diference extends NaryOperator, GeoArithmeticOperator {

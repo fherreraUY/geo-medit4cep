@@ -714,10 +714,10 @@
       <details key="tool.description" value="Add an union operator"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Intesection" eSuperTypes="#//NaryOperator #//GeoArithmeticOperator">
+  <eClassifiers xsi:type="ecore:EClass" name="Intersection" eSuperTypes="#//NaryOperator #//GeoArithmeticOperator">
     <eAnnotations source="gmf.node">
       <details key="figure" value="svg"/>
-      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersection.svg"/>
       <details key="size" value="30,30"/>
       <details key="label.placement" value="none"/>
       <details key="resizable" value="false"/>
@@ -729,7 +729,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Diference" eSuperTypes="#//NaryOperator #//GeoArithmeticOperator">
     <eAnnotations source="gmf.node">
       <details key="figure" value="svg"/>
-      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Diference.svg"/>
       <details key="size" value="30,30"/>
       <details key="label.placement" value="none"/>
       <details key="resizable" value="false"/>

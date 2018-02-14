@@ -136,7 +136,7 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 				case OrEditPart.VISUAL_ID:
 				case NotEditPart.VISUAL_ID:
 				case UnionEditPart.VISUAL_ID:
-				case IntesectionEditPart.VISUAL_ID:
+				case IntersectionEditPart.VISUAL_ID:
 				case DiferenceEditPart.VISUAL_ID:
 				case DistanceEditPart.VISUAL_ID:
 				case EqualsEditPart.VISUAL_ID:
@@ -186,7 +186,7 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 				case Or2EditPart.VISUAL_ID:
 				case Not2EditPart.VISUAL_ID:
 				case Union2EditPart.VISUAL_ID:
-				case Intesection2EditPart.VISUAL_ID:
+				case Intersection2EditPart.VISUAL_ID:
 				case Diference2EditPart.VISUAL_ID:
 				case Distance2EditPart.VISUAL_ID:
 				case Equals2EditPart.VISUAL_ID:
@@ -217,7 +217,7 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 				case Or3EditPart.VISUAL_ID:
 				case Not3EditPart.VISUAL_ID:
 				case Union3EditPart.VISUAL_ID:
-				case Intesection3EditPart.VISUAL_ID:
+				case Intersection3EditPart.VISUAL_ID:
 				case Diference3EditPart.VISUAL_ID:
 				case Distance3EditPart.VISUAL_ID:
 				case Equals3EditPart.VISUAL_ID:
@@ -264,7 +264,7 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 		}
 		return ContainsEditPart.VISUAL_ID == visualID || AndEditPart.VISUAL_ID == visualID
 				|| OrEditPart.VISUAL_ID == visualID || NotEditPart.VISUAL_ID == visualID
-				|| UnionEditPart.VISUAL_ID == visualID || IntesectionEditPart.VISUAL_ID == visualID
+				|| UnionEditPart.VISUAL_ID == visualID || IntersectionEditPart.VISUAL_ID == visualID
 				|| DiferenceEditPart.VISUAL_ID == visualID || DistanceEditPart.VISUAL_ID == visualID
 				|| EqualsEditPart.VISUAL_ID == visualID || IntersectsEditPart.VISUAL_ID == visualID
 				|| AdditionEditPart.VISUAL_ID == visualID || SubtractionEditPart.VISUAL_ID == visualID
@@ -290,7 +290,7 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 				|| EventProperty2EditPart.VISUAL_ID == visualID || EventProperty3EditPart.VISUAL_ID == visualID
 				|| Contains2EditPart.VISUAL_ID == visualID || And2EditPart.VISUAL_ID == visualID
 				|| Or2EditPart.VISUAL_ID == visualID || Not2EditPart.VISUAL_ID == visualID
-				|| Union2EditPart.VISUAL_ID == visualID || Intesection2EditPart.VISUAL_ID == visualID
+				|| Union2EditPart.VISUAL_ID == visualID || Intersection2EditPart.VISUAL_ID == visualID
 				|| Diference2EditPart.VISUAL_ID == visualID || Distance2EditPart.VISUAL_ID == visualID
 				|| Equals2EditPart.VISUAL_ID == visualID || Intersects2EditPart.VISUAL_ID == visualID
 				|| Addition2EditPart.VISUAL_ID == visualID || Subtraction2EditPart.VISUAL_ID == visualID
@@ -306,7 +306,7 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 				|| Value2EditPart.VISUAL_ID == visualID || Contains3EditPart.VISUAL_ID == visualID
 				|| And3EditPart.VISUAL_ID == visualID || Or3EditPart.VISUAL_ID == visualID
 				|| Not3EditPart.VISUAL_ID == visualID || Union3EditPart.VISUAL_ID == visualID
-				|| Intesection3EditPart.VISUAL_ID == visualID || Diference3EditPart.VISUAL_ID == visualID
+				|| Intersection3EditPart.VISUAL_ID == visualID || Diference3EditPart.VISUAL_ID == visualID
 				|| Distance3EditPart.VISUAL_ID == visualID || Equals3EditPart.VISUAL_ID == visualID
 				|| Intersects3EditPart.VISUAL_ID == visualID || Addition3EditPart.VISUAL_ID == visualID
 				|| Subtraction3EditPart.VISUAL_ID == visualID || Multiplication3EditPart.VISUAL_ID == visualID
@@ -382,8 +382,8 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 			return createNot_2003(domainElement, containerView, index, persisted, preferencesHint);
 		case UnionEditPart.VISUAL_ID:
 			return createUnion_2042(domainElement, containerView, index, persisted, preferencesHint);
-		case IntesectionEditPart.VISUAL_ID:
-			return createIntesection_2043(domainElement, containerView, index, persisted, preferencesHint);
+		case IntersectionEditPart.VISUAL_ID:
+			return createIntersection_2048(domainElement, containerView, index, persisted, preferencesHint);
 		case DiferenceEditPart.VISUAL_ID:
 			return createDiference_2044(domainElement, containerView, index, persisted, preferencesHint);
 		case DistanceEditPart.VISUAL_ID:
@@ -480,8 +480,8 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 			return createNot_3005(domainElement, containerView, index, persisted, preferencesHint);
 		case Union2EditPart.VISUAL_ID:
 			return createUnion_3062(domainElement, containerView, index, persisted, preferencesHint);
-		case Intesection2EditPart.VISUAL_ID:
-			return createIntesection_3063(domainElement, containerView, index, persisted, preferencesHint);
+		case Intersection2EditPart.VISUAL_ID:
+			return createIntersection_3075(domainElement, containerView, index, persisted, preferencesHint);
 		case Diference2EditPart.VISUAL_ID:
 			return createDiference_3064(domainElement, containerView, index, persisted, preferencesHint);
 		case Distance2EditPart.VISUAL_ID:
@@ -542,8 +542,8 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 			return createNot_3029(domainElement, containerView, index, persisted, preferencesHint);
 		case Union3EditPart.VISUAL_ID:
 			return createUnion_3069(domainElement, containerView, index, persisted, preferencesHint);
-		case Intesection3EditPart.VISUAL_ID:
-			return createIntesection_3070(domainElement, containerView, index, persisted, preferencesHint);
+		case Intersection3EditPart.VISUAL_ID:
+			return createIntersection_3076(domainElement, containerView, index, persisted, preferencesHint);
 		case Diference3EditPart.VISUAL_ID:
 			return createDiference_3071(domainElement, containerView, index, persisted, preferencesHint);
 		case Distance3EditPart.VISUAL_ID:
@@ -818,11 +818,11 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 	/**
 	* @generated
 	*/
-	public Node createIntesection_2043(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createIntersection_2048(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(EventpatternVisualIDRegistry.getType(IntesectionEditPart.VISUAL_ID));
+		node.setType(EventpatternVisualIDRegistry.getType(IntersectionEditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		stampShortcut(containerView, node);
@@ -2600,11 +2600,11 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 	/**
 	* @generated
 	*/
-	public Node createIntesection_3063(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createIntersection_3075(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(EventpatternVisualIDRegistry.getType(Intesection2EditPart.VISUAL_ID));
+		node.setType(EventpatternVisualIDRegistry.getType(Intersection2EditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 
@@ -3680,11 +3680,11 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 	/**
 	* @generated
 	*/
-	public Node createIntesection_3070(EObject domainElement, View containerView, int index, boolean persisted,
+	public Node createIntersection_3076(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
-		node.setType(EventpatternVisualIDRegistry.getType(Intesection3EditPart.VISUAL_ID));
+		node.setType(EventpatternVisualIDRegistry.getType(Intersection3EditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		// initializeFromPreferences 

@@ -308,7 +308,7 @@ public class DataWindowItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
-				 EventpatternFactory.eINSTANCE.createIntesection()));
+				 EventpatternFactory.eINSTANCE.createIntersection()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -480,7 +480,7 @@ public class WithinTimerItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
-				 EventpatternFactory.eINSTANCE.createIntesection()));
+				 EventpatternFactory.eINSTANCE.createIntersection()));
 
 		newChildDescriptors.add
 			(createChildParameter

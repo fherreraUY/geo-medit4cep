@@ -25,13 +25,13 @@ import eventpattern.diagram.providers.EventpatternElementTypes;
 /**
  * @generated
  */
-public class Intesection2ItemSemanticEditPolicy extends EventpatternBaseItemSemanticEditPolicy {
+public class IntersectionItemSemanticEditPolicy extends EventpatternBaseItemSemanticEditPolicy {
 
 	/**
 	* @generated
 	*/
-	public Intesection2ItemSemanticEditPolicy() {
-		super(EventpatternElementTypes.Intesection_3063);
+	public IntersectionItemSemanticEditPolicy() {
+		super(EventpatternElementTypes.Intersection_2048);
 	}
 
 	/**

@@ -92,6 +92,29 @@ palette.tools.add(complexEventGroup);
 complexEventGroup.tools.add(complexEventTool);
 complexEventGroup.tools.add(complexEventPropertyTool);
 
+-- Create geoArithmeticOperatorGroup
+var geoArithmeticOperatorGroup = new GmfTool!ToolGroup; 
+geoArithmeticOperatorGroup.title = 'Geo Arithmetic Operators'; 
+geoArithmeticOperatorGroup.collapsible = true; 
+palette.tools.add(geoArithmeticOperatorGroup); 
+
+geoArithmeticOperatorGroup.tools.add(unionTool);
+geoArithmeticOperatorGroup.tools.add(intersectionTool);
+geoArithmeticOperatorGroup.tools.add(diferenceTool);
+
+
+-- Create geoBooleanOperatorGroup
+var geoBooleanOperatorGroup = new GmfTool!ToolGroup; 
+geoBooleanOperatorGroup.title = 'Geo Boolean Operators'; 
+geoBooleanOperatorGroup.collapsible = true; 
+palette.tools.add(geoBooleanOperatorGroup); 
+
+geoBooleanOperatorGroup.tools.add(containsTool);
+geoBooleanOperatorGroup.tools.add(equalsTool);
+geoBooleanOperatorGroup.tools.add(interectsTool);
+geoBooleanOperatorGroup.tools.add(distanceTool);
+
+
 --Create patternTimerGroup
 var patternTimerGroup = new GmfTool!ToolGroup; 
 patternTimerGroup.title = 'Pattern Timers'; 
@@ -177,27 +200,6 @@ actionGroup.tools.add(twitterTool);
 
 
 
--- Create geoArithmeticOperatorGroup
-var geoArithmeticOperatorGroup = new GmfTool!ToolGroup; 
-geoArithmeticOperatorGroup.title = 'Geo Arithmetic Operators'; 
-geoArithmeticOperatorGroup.collapsible = true; 
-palette.tools.add(geoArithmeticOperatorGroup); 
-
-geoArithmeticOperatorGroup.tools.add(unionTool);
-geoArithmeticOperatorGroup.tools.add(intersectionTool);
-geoArithmeticOperatorGroup.tools.add(diferenceTool);
-
-
--- Create geoBooleanOperatorGroup
-var geoBooleanOperatorGroup = new GmfTool!ToolGroup; 
-geoBooleanOperatorGroup.title = 'Geo Boolean Operators'; 
-geoBooleanOperatorGroup.collapsible = true; 
-palette.tools.add(geoBooleanOperatorGroup); 
-
-geoBooleanOperatorGroup.tools.add(containsTool);
-geoBooleanOperatorGroup.tools.add(equalsTool);
-geoBooleanOperatorGroup.tools.add(interectsTool);
-geoBooleanOperatorGroup.tools.add(distanceTool);
 
 
 

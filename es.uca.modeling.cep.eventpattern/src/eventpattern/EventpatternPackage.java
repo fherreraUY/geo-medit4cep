@@ -2904,14 +2904,14 @@ public interface EventpatternPackage extends EPackage
 	int UNION_FEATURE_COUNT = NARY_OPERATOR_FEATURE_COUNT + 1;
 
 		/**
-	 * The meta object id for the '{@link eventpattern.impl.IntesectionImpl <em>Intesection</em>}' class.
+	 * The meta object id for the '{@link eventpattern.impl.IntersectionImpl <em>Intersection</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see eventpattern.impl.IntesectionImpl
-	 * @see eventpattern.impl.EventpatternPackageImpl#getIntesection()
+	 * @see eventpattern.impl.IntersectionImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getIntersection()
 	 * @generated
 	 */
-	int INTESECTION = 65;
+	int INTERSECTION = 65;
 
 		/**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -2920,7 +2920,7 @@ public interface EventpatternPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int INTESECTION__INBOUND_LINK = NARY_OPERATOR__INBOUND_LINK;
+	int INTERSECTION__INBOUND_LINK = NARY_OPERATOR__INBOUND_LINK;
 
 		/**
 	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
@@ -2929,16 +2929,16 @@ public interface EventpatternPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int INTESECTION__OUTBOUND_LINK = NARY_OPERATOR_FEATURE_COUNT + 0;
+	int INTERSECTION__OUTBOUND_LINK = NARY_OPERATOR_FEATURE_COUNT + 0;
 
 		/**
-	 * The number of structural features of the '<em>Intesection</em>' class.
+	 * The number of structural features of the '<em>Intersection</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTESECTION_FEATURE_COUNT = NARY_OPERATOR_FEATURE_COUNT + 1;
+	int INTERSECTION_FEATURE_COUNT = NARY_OPERATOR_FEATURE_COUNT + 1;
 
 		/**
 	 * The meta object id for the '{@link eventpattern.impl.DiferenceImpl <em>Diference</em>}' class.
@@ -4733,14 +4733,14 @@ public interface EventpatternPackage extends EPackage
 	EClass getUnion();
 
 		/**
-	 * Returns the meta object for class '{@link eventpattern.Intesection <em>Intesection</em>}'.
+	 * Returns the meta object for class '{@link eventpattern.Intersection <em>Intersection</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Intesection</em>'.
-	 * @see eventpattern.Intesection
+	 * @return the meta object for class '<em>Intersection</em>'.
+	 * @see eventpattern.Intersection
 	 * @generated
 	 */
-	EClass getIntesection();
+	EClass getIntersection();
 
 		/**
 	 * Returns the meta object for class '{@link eventpattern.Diference <em>Diference</em>}'.
@@ -6164,14 +6164,14 @@ public interface EventpatternPackage extends EPackage
 		EClass UNION = eINSTANCE.getUnion();
 
 				/**
-		 * The meta object literal for the '{@link eventpattern.impl.IntesectionImpl <em>Intesection</em>}' class.
+		 * The meta object literal for the '{@link eventpattern.impl.IntersectionImpl <em>Intersection</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see eventpattern.impl.IntesectionImpl
-		 * @see eventpattern.impl.EventpatternPackageImpl#getIntesection()
+		 * @see eventpattern.impl.IntersectionImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getIntersection()
 		 * @generated
 		 */
-		EClass INTESECTION = eINSTANCE.getIntesection();
+		EClass INTERSECTION = eINSTANCE.getIntersection();
 
 				/**
 		 * The meta object literal for the '{@link eventpattern.impl.DiferenceImpl <em>Diference</em>}' class.

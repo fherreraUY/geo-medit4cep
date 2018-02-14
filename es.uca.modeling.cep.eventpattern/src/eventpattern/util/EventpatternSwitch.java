@@ -810,19 +810,19 @@ public class EventpatternSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case EventpatternPackage.INTESECTION: {
-				Intesection intesection = (Intesection)theEObject;
-				T result = caseIntesection(intesection);
-				if (result == null) result = caseNaryOperator(intesection);
-				if (result == null) result = caseGeoArithmeticOperator(intesection);
-				if (result == null) result = caseGeoOperator(intesection);
-				if (result == null) result = caseConditionOperator(intesection);
-				if (result == null) result = caseOperator(intesection);
-				if (result == null) result = caseConditionOperand(intesection);
-				if (result == null) result = caseOperand(intesection);
-				if (result == null) result = caseEventPatternCondition(intesection);
-				if (result == null) result = caseWithinTimerElement(intesection);
-				if (result == null) result = caseEventPatternElement(intesection);
+			case EventpatternPackage.INTERSECTION: {
+				Intersection intersection = (Intersection)theEObject;
+				T result = caseIntersection(intersection);
+				if (result == null) result = caseNaryOperator(intersection);
+				if (result == null) result = caseGeoArithmeticOperator(intersection);
+				if (result == null) result = caseGeoOperator(intersection);
+				if (result == null) result = caseConditionOperator(intersection);
+				if (result == null) result = caseOperator(intersection);
+				if (result == null) result = caseConditionOperand(intersection);
+				if (result == null) result = caseOperand(intersection);
+				if (result == null) result = caseEventPatternCondition(intersection);
+				if (result == null) result = caseWithinTimerElement(intersection);
+				if (result == null) result = caseEventPatternElement(intersection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1949,17 +1949,17 @@ public class EventpatternSwitch<T> extends Switch<T>
 	}
 
 		/**
-	 * Returns the result of interpreting the object as an instance of '<em>Intesection</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Intersection</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Intesection</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Intersection</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIntesection(Intesection object) {
+	public T caseIntersection(Intersection object) {
 		return null;
 	}
 

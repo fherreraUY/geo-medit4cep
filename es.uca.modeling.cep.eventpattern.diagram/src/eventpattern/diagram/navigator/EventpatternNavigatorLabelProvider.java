@@ -220,9 +220,6 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 		case UnionEditPart.VISUAL_ID:
 			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Union", //$NON-NLS-1$
 					EventpatternElementTypes.Union_2042);
-		case IntesectionEditPart.VISUAL_ID:
-			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Intesection", //$NON-NLS-1$
-					EventpatternElementTypes.Intesection_2043);
 		case DiferenceEditPart.VISUAL_ID:
 			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Diference", //$NON-NLS-1$
 					EventpatternElementTypes.Diference_2044);
@@ -235,6 +232,9 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 		case IntersectsEditPart.VISUAL_ID:
 			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Intersects", //$NON-NLS-1$
 					EventpatternElementTypes.Intersects_2047);
+		case IntersectionEditPart.VISUAL_ID:
+			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Intersection", //$NON-NLS-1$
+					EventpatternElementTypes.Intersection_2048);
 		case EventProperty2EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?EventProperty", //$NON-NLS-1$
 					EventpatternElementTypes.EventProperty_3001);
@@ -419,9 +419,6 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 		case Union2EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Union", //$NON-NLS-1$
 					EventpatternElementTypes.Union_3062);
-		case Intesection2EditPart.VISUAL_ID:
-			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Intesection", //$NON-NLS-1$
-					EventpatternElementTypes.Intesection_3063);
 		case Diference2EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Diference", //$NON-NLS-1$
 					EventpatternElementTypes.Diference_3064);
@@ -440,9 +437,6 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 		case Union3EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Union", //$NON-NLS-1$
 					EventpatternElementTypes.Union_3069);
-		case Intesection3EditPart.VISUAL_ID:
-			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Intesection", //$NON-NLS-1$
-					EventpatternElementTypes.Intesection_3070);
 		case Diference3EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Diference", //$NON-NLS-1$
 					EventpatternElementTypes.Diference_3071);
@@ -455,6 +449,12 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 		case Intersects3EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Intersects", //$NON-NLS-1$
 					EventpatternElementTypes.Intersects_3074);
+		case Intersection2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Intersection", //$NON-NLS-1$
+					EventpatternElementTypes.Intersection_3075);
+		case Intersection3EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Intersection", //$NON-NLS-1$
+					EventpatternElementTypes.Intersection_3076);
 		case LinkEditPart.VISUAL_ID:
 			return getImage("Navigator?Link?www.uca.es/modeling/cep/eventpattern?Link", //$NON-NLS-1$
 					EventpatternElementTypes.Link_4001);
@@ -602,8 +602,6 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 			return getContains_2041Text(view);
 		case UnionEditPart.VISUAL_ID:
 			return getUnion_2042Text(view);
-		case IntesectionEditPart.VISUAL_ID:
-			return getIntesection_2043Text(view);
 		case DiferenceEditPart.VISUAL_ID:
 			return getDiference_2044Text(view);
 		case DistanceEditPart.VISUAL_ID:
@@ -612,6 +610,8 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 			return getEquals_2046Text(view);
 		case IntersectsEditPart.VISUAL_ID:
 			return getIntersects_2047Text(view);
+		case IntersectionEditPart.VISUAL_ID:
+			return getIntersection_2048Text(view);
 		case EventProperty2EditPart.VISUAL_ID:
 			return getEventProperty_3001Text(view);
 		case EventProperty3EditPart.VISUAL_ID:
@@ -736,8 +736,6 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 			return getContains_3061Text(view);
 		case Union2EditPart.VISUAL_ID:
 			return getUnion_3062Text(view);
-		case Intesection2EditPart.VISUAL_ID:
-			return getIntesection_3063Text(view);
 		case Diference2EditPart.VISUAL_ID:
 			return getDiference_3064Text(view);
 		case Distance2EditPart.VISUAL_ID:
@@ -750,8 +748,6 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 			return getContains_3068Text(view);
 		case Union3EditPart.VISUAL_ID:
 			return getUnion_3069Text(view);
-		case Intesection3EditPart.VISUAL_ID:
-			return getIntesection_3070Text(view);
 		case Diference3EditPart.VISUAL_ID:
 			return getDiference_3071Text(view);
 		case Distance3EditPart.VISUAL_ID:
@@ -760,6 +756,10 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 			return getEquals_3073Text(view);
 		case Intersects3EditPart.VISUAL_ID:
 			return getIntersects_3074Text(view);
+		case Intersection2EditPart.VISUAL_ID:
+			return getIntersection_3075Text(view);
+		case Intersection3EditPart.VISUAL_ID:
+			return getIntersection_3076Text(view);
 		case LinkEditPart.VISUAL_ID:
 			return getLink_4001Text(view);
 		}
@@ -1203,13 +1203,6 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 	/**
 	* @generated
 	*/
-	private String getIntesection_2043Text(View view) {
-		return ""; //$NON-NLS-1$
-	}
-
-	/**
-	* @generated
-	*/
 	private String getDiference_2044Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
@@ -1232,6 +1225,13 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 	* @generated
 	*/
 	private String getIntersects_2047Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getIntersection_2048Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
 
@@ -1816,13 +1816,6 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 	/**
 	* @generated
 	*/
-	private String getIntesection_3063Text(View view) {
-		return ""; //$NON-NLS-1$
-	}
-
-	/**
-	* @generated
-	*/
 	private String getDiference_3064Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
@@ -1865,13 +1858,6 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 	/**
 	* @generated
 	*/
-	private String getIntesection_3070Text(View view) {
-		return ""; //$NON-NLS-1$
-	}
-
-	/**
-	* @generated
-	*/
 	private String getDiference_3071Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
@@ -1894,6 +1880,20 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 	* @generated
 	*/
 	private String getIntersects_3074Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getIntersection_3075Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getIntersection_3076Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
 

@@ -3,17 +3,17 @@
 package eventpattern.tests;
 
 import eventpattern.EventpatternFactory;
-import eventpattern.Intesection;
+import eventpattern.Intersection;
 
 import junit.textui.TestRunner;
 
 /**
  * <!-- begin-user-doc -->
- * A test case for the model object '<em><b>Intesection</b></em>'.
+ * A test case for the model object '<em><b>Intersection</b></em>'.
  * <!-- end-user-doc -->
  * @generated
  */
-public class IntesectionTest extends NaryOperatorTest {
+public class IntersectionTest extends NaryOperatorTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -21,28 +21,28 @@ public class IntesectionTest extends NaryOperatorTest {
 	 * @generated
 	 */
 	public static void main(String[] args) {
-		TestRunner.run(IntesectionTest.class);
+		TestRunner.run(IntersectionTest.class);
 	}
 
 	/**
-	 * Constructs a new Intesection test case with the given name.
+	 * Constructs a new Intersection test case with the given name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IntesectionTest(String name) {
+	public IntersectionTest(String name) {
 		super(name);
 	}
 
 	/**
-	 * Returns the fixture for this Intesection test case.
+	 * Returns the fixture for this Intersection test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	protected Intesection getFixture() {
-		return (Intesection)fixture;
+	protected Intersection getFixture() {
+		return (Intersection)fixture;
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class IntesectionTest extends NaryOperatorTest {
 	 */
 	@Override
 	protected void setUp() throws Exception {
-		setFixture(EventpatternFactory.eINSTANCE.createIntesection());
+		setFixture(EventpatternFactory.eINSTANCE.createIntersection());
 	}
 
 	/**
@@ -67,4 +67,4 @@ public class IntesectionTest extends NaryOperatorTest {
 		setFixture(null);
 	}
 
-} //IntesectionTest
+} //IntersectionTest

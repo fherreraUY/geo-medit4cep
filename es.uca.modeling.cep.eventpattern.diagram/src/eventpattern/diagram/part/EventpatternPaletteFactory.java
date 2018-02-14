@@ -62,16 +62,16 @@ public class EventpatternPaletteFactory {
 		paletteRoot.add(createDefault1Group());
 		paletteRoot.add(createSimpleEvents2Group());
 		paletteRoot.add(createComplexEvents3Group());
-		paletteRoot.add(createPatternTimers4Group());
-		paletteRoot.add(createPatternOperators5Group());
-		paletteRoot.add(createLogicalOperators6Group());
-		paletteRoot.add(createComparisonOperators7Group());
-		paletteRoot.add(createArithmeticOperators8Group());
-		paletteRoot.add(createAggregationOperators9Group());
-		paletteRoot.add(createDataWindows10Group());
-		paletteRoot.add(createActions11Group());
-		paletteRoot.add(createGeoArithmeticOperators12Group());
-		paletteRoot.add(createGeoBooleanOperators13Group());
+		paletteRoot.add(createGeoArithmeticOperators4Group());
+		paletteRoot.add(createGeoBooleanOperators5Group());
+		paletteRoot.add(createPatternTimers6Group());
+		paletteRoot.add(createPatternOperators7Group());
+		paletteRoot.add(createLogicalOperators8Group());
+		paletteRoot.add(createComparisonOperators9Group());
+		paletteRoot.add(createArithmeticOperators10Group());
+		paletteRoot.add(createAggregationOperators11Group());
+		paletteRoot.add(createDataWindows12Group());
+		paletteRoot.add(createActions13Group());
 	}
 
 	/**
@@ -214,6 +214,148 @@ public class EventpatternPaletteFactory {
 		return paletteContainer;
 	}
 
+	/**
+	* Creates "Geo Arithmetic Operators" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createGeoArithmeticOperators4Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.GeoArithmeticOperators4Group_title);
+		paletteContainer.setId("createGeoArithmeticOperators4Group"); //$NON-NLS-1$
+		paletteContainer.add(createUnion1CreationTool());
+		paletteContainer.add(createIntersection2CreationTool());
+		paletteContainer.add(createDiference3CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+	* Creates "Geo Boolean Operators" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createGeoBooleanOperators5Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.GeoBooleanOperators5Group_title);
+		paletteContainer.setId("createGeoBooleanOperators5Group"); //$NON-NLS-1$
+		paletteContainer.add(createContains1CreationTool());
+		paletteContainer.add(createEquals2CreationTool());
+		paletteContainer.add(createIntersects3CreationTool());
+		paletteContainer.add(createDistance4CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+	* Creates "Pattern Timers" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createPatternTimers6Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.PatternTimers6Group_title);
+		paletteContainer.setId("createPatternTimers6Group"); //$NON-NLS-1$
+		paletteContainer.add(createTimeInterval1CreationTool());
+		paletteContainer.add(createTimeSchedule2CreationTool());
+		paletteContainer.add(createWithinTimer3CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+	* Creates "Pattern Operators" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createPatternOperators7Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.PatternOperators7Group_title);
+		paletteContainer.setId("createPatternOperators7Group"); //$NON-NLS-1$
+		paletteContainer.add(createEvery1CreationTool());
+		paletteContainer.add(createEveryDistinct2CreationTool());
+		paletteContainer.add(createFollowedBy3CreationTool());
+		paletteContainer.add(createRange4CreationTool());
+		paletteContainer.add(createRepeat5CreationTool());
+		paletteContainer.add(createUntil6CreationTool());
+		paletteContainer.add(createWhile7CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+	* Creates "Logical Operators" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createLogicalOperators8Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.LogicalOperators8Group_title);
+		paletteContainer.setId("createLogicalOperators8Group"); //$NON-NLS-1$
+		paletteContainer.add(createAnd1CreationTool());
+		paletteContainer.add(createNot2CreationTool());
+		paletteContainer.add(createOr3CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+	* Creates "Comparison Operators" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createComparisonOperators9Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.ComparisonOperators9Group_title);
+		paletteContainer.setId("createComparisonOperators9Group"); //$NON-NLS-1$
+		paletteContainer.add(createEqual1CreationTool());
+		paletteContainer.add(createGreaterEqual2CreationTool());
+		paletteContainer.add(createGreaterThan3CreationTool());
+		paletteContainer.add(createLessEqual4CreationTool());
+		paletteContainer.add(createLessThan5CreationTool());
+		paletteContainer.add(createNotEqual6CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+	* Creates "Arithmetic Operators" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createArithmeticOperators10Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.ArithmeticOperators10Group_title);
+		paletteContainer.setId("createArithmeticOperators10Group"); //$NON-NLS-1$
+		paletteContainer.add(createAddition1CreationTool());
+		paletteContainer.add(createDivision2CreationTool());
+		paletteContainer.add(createModulus3CreationTool());
+		paletteContainer.add(createMultiplication4CreationTool());
+		paletteContainer.add(createSubtraction5CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+	* Creates "Aggregation Operators" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createAggregationOperators11Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.AggregationOperators11Group_title);
+		paletteContainer.setId("createAggregationOperators11Group"); //$NON-NLS-1$
+		paletteContainer.add(createAvg1CreationTool());
+		paletteContainer.add(createCount2CreationTool());
+		paletteContainer.add(createMax3CreationTool());
+		paletteContainer.add(createMin4CreationTool());
+		paletteContainer.add(createSum5CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+	* Creates "Data Windows" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createDataWindows12Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.DataWindows12Group_title);
+		paletteContainer.setId("createDataWindows12Group"); //$NON-NLS-1$
+		paletteContainer.add(createBatchingEventInterval1CreationTool());
+		paletteContainer.add(createBatchingTimeInterval2CreationTool());
+		paletteContainer.add(createSlidingEventInterval3CreationTool());
+		paletteContainer.add(createSlidingTimeInterval4CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+	* Creates "Actions" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createActions13Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.Actions13Group_title);
+		paletteContainer.setId("createActions13Group"); //$NON-NLS-1$
+		paletteContainer.add(createEmail1CreationTool());
+		paletteContainer.add(createTwitter2CreationTool());
+		return paletteContainer;
+	}
+
 	protected void addComplexEventTools(PaletteContainer paletteContainer) {
 
 		IWorkspaceRoot myWorkspaceRoot = ResourcesPlugin.getWorkspace().getRoot();
@@ -292,148 +434,6 @@ public class EventpatternPaletteFactory {
 		entry.setLargeIcon(entry.getSmallIcon());
 
 		return entry;
-	}
-
-	/**
-	 * Creates "Pattern Timers" palette tool group
-	 * @generated
-	 */
-	private PaletteContainer createPatternTimers4Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.PatternTimers4Group_title);
-		paletteContainer.setId("createPatternTimers4Group"); //$NON-NLS-1$
-		paletteContainer.add(createTimeInterval1CreationTool());
-		paletteContainer.add(createTimeSchedule2CreationTool());
-		paletteContainer.add(createWithinTimer3CreationTool());
-		return paletteContainer;
-	}
-
-	/**
-	 * Creates "Pattern Operators" palette tool group
-	 * @generated
-	 */
-	private PaletteContainer createPatternOperators5Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.PatternOperators5Group_title);
-		paletteContainer.setId("createPatternOperators5Group"); //$NON-NLS-1$
-		paletteContainer.add(createEvery1CreationTool());
-		paletteContainer.add(createEveryDistinct2CreationTool());
-		paletteContainer.add(createFollowedBy3CreationTool());
-		paletteContainer.add(createRange4CreationTool());
-		paletteContainer.add(createRepeat5CreationTool());
-		paletteContainer.add(createUntil6CreationTool());
-		paletteContainer.add(createWhile7CreationTool());
-		return paletteContainer;
-	}
-
-	/**
-	 * Creates "Logical Operators" palette tool group
-	 * @generated
-	 */
-	private PaletteContainer createLogicalOperators6Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.LogicalOperators6Group_title);
-		paletteContainer.setId("createLogicalOperators6Group"); //$NON-NLS-1$
-		paletteContainer.add(createAnd1CreationTool());
-		paletteContainer.add(createNot2CreationTool());
-		paletteContainer.add(createOr3CreationTool());
-		return paletteContainer;
-	}
-
-	/**
-	 * Creates "Comparison Operators" palette tool group
-	 * @generated
-	 */
-	private PaletteContainer createComparisonOperators7Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.ComparisonOperators7Group_title);
-		paletteContainer.setId("createComparisonOperators7Group"); //$NON-NLS-1$
-		paletteContainer.add(createEqual1CreationTool());
-		paletteContainer.add(createGreaterEqual2CreationTool());
-		paletteContainer.add(createGreaterThan3CreationTool());
-		paletteContainer.add(createLessEqual4CreationTool());
-		paletteContainer.add(createLessThan5CreationTool());
-		paletteContainer.add(createNotEqual6CreationTool());
-		return paletteContainer;
-	}
-
-	/**
-	 * Creates "Arithmetic Operators" palette tool group
-	 * @generated
-	 */
-	private PaletteContainer createArithmeticOperators8Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.ArithmeticOperators8Group_title);
-		paletteContainer.setId("createArithmeticOperators8Group"); //$NON-NLS-1$
-		paletteContainer.add(createAddition1CreationTool());
-		paletteContainer.add(createDivision2CreationTool());
-		paletteContainer.add(createModulus3CreationTool());
-		paletteContainer.add(createMultiplication4CreationTool());
-		paletteContainer.add(createSubtraction5CreationTool());
-		return paletteContainer;
-	}
-
-	/**
-	 * Creates "Aggregation Operators" palette tool group
-	 * @generated
-	 */
-	private PaletteContainer createAggregationOperators9Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.AggregationOperators9Group_title);
-		paletteContainer.setId("createAggregationOperators9Group"); //$NON-NLS-1$
-		paletteContainer.add(createAvg1CreationTool());
-		paletteContainer.add(createCount2CreationTool());
-		paletteContainer.add(createMax3CreationTool());
-		paletteContainer.add(createMin4CreationTool());
-		paletteContainer.add(createSum5CreationTool());
-		return paletteContainer;
-	}
-
-	/**
-	 * Creates "Data Windows" palette tool group
-	 * @generated
-	 */
-	private PaletteContainer createDataWindows10Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.DataWindows10Group_title);
-		paletteContainer.setId("createDataWindows10Group"); //$NON-NLS-1$
-		paletteContainer.add(createBatchingEventInterval1CreationTool());
-		paletteContainer.add(createBatchingTimeInterval2CreationTool());
-		paletteContainer.add(createSlidingEventInterval3CreationTool());
-		paletteContainer.add(createSlidingTimeInterval4CreationTool());
-		return paletteContainer;
-	}
-
-	/**
-	 * Creates "Actions" palette tool group
-	 * @generated
-	 */
-	private PaletteContainer createActions11Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.Actions11Group_title);
-		paletteContainer.setId("createActions11Group"); //$NON-NLS-1$
-		paletteContainer.add(createEmail1CreationTool());
-		paletteContainer.add(createTwitter2CreationTool());
-		return paletteContainer;
-	}
-
-	/**
-	* Creates "Geo Arithmetic Operators" palette tool group
-	* @generated
-	*/
-	private PaletteContainer createGeoArithmeticOperators12Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.GeoArithmeticOperators12Group_title);
-		paletteContainer.setId("createGeoArithmeticOperators12Group"); //$NON-NLS-1$
-		paletteContainer.add(createUnion1CreationTool());
-		paletteContainer.add(createIntersection2CreationTool());
-		paletteContainer.add(createDiference3CreationTool());
-		return paletteContainer;
-	}
-
-	/**
-	* Creates "Geo Boolean Operators" palette tool group
-	* @generated
-	*/
-	private PaletteContainer createGeoBooleanOperators13Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.GeoBooleanOperators13Group_title);
-		paletteContainer.setId("createGeoBooleanOperators13Group"); //$NON-NLS-1$
-		paletteContainer.add(createContains1CreationTool());
-		paletteContainer.add(createEquals2CreationTool());
-		paletteContainer.add(createIntersects3CreationTool());
-		paletteContainer.add(createDistance4CreationTool());
-		return paletteContainer;
 	}
 
 	/**
@@ -692,13 +692,13 @@ public class EventpatternPaletteFactory {
 	*/
 	private ToolEntry createIntersection2CreationTool() {
 		ArrayList<IElementType> types = new ArrayList<IElementType>(3);
-		types.add(EventpatternElementTypes.Intesection_2043);
-		types.add(EventpatternElementTypes.Intesection_3063);
-		types.add(EventpatternElementTypes.Intesection_3070);
+		types.add(EventpatternElementTypes.Intersection_2048);
+		types.add(EventpatternElementTypes.Intersection_3075);
+		types.add(EventpatternElementTypes.Intersection_3076);
 		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Intersection2CreationTool_title,
 				Messages.Intersection2CreationTool_desc, types);
 		entry.setId("createIntersection2CreationTool"); //$NON-NLS-1$
-		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.Intesection_2043));
+		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.Intersection_2048));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}

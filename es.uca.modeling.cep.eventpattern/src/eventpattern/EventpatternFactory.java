@@ -419,13 +419,13 @@ public interface EventpatternFactory extends EFactory
 	Union createUnion();
 
 		/**
-	 * Returns a new object of class '<em>Intesection</em>'.
+	 * Returns a new object of class '<em>Intersection</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Intesection</em>'.
+	 * @return a new object of class '<em>Intersection</em>'.
 	 * @generated
 	 */
-	Intesection createIntesection();
+	Intersection createIntersection();
 
 		/**
 	 * Returns a new object of class '<em>Diference</em>'.

@@ -9,7 +9,7 @@ import eventpattern.EventPatternElement;
 import eventpattern.EventpatternPackage;
 import eventpattern.GeoArithmeticOperator;
 import eventpattern.GeoOperator;
-import eventpattern.Intesection;
+import eventpattern.Intersection;
 import eventpattern.Link;
 import eventpattern.Operand;
 import eventpattern.WithinTimerElement;
@@ -28,18 +28,18 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Intesection</b></em>'.
+ * An implementation of the model object '<em><b>Intersection</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link eventpattern.impl.IntesectionImpl#getOutboundLink <em>Outbound Link</em>}</li>
+ *   <li>{@link eventpattern.impl.IntersectionImpl#getOutboundLink <em>Outbound Link</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
+public class IntersectionImpl extends NaryOperatorImpl implements Intersection {
 	/**
 	 * The cached value of the '{@link #getOutboundLink() <em>Outbound Link</em>}' reference list.
 	 * <!-- begin-user-doc -->
@@ -55,7 +55,7 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IntesectionImpl() {
+	protected IntersectionImpl() {
 		super();
 	}
 
@@ -66,7 +66,7 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return EventpatternPackage.Literals.INTESECTION;
+		return EventpatternPackage.Literals.INTERSECTION;
 	}
 
 	/**
@@ -76,7 +76,7 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 	 */
 	public EList<Link> getOutboundLink() {
 		if (outboundLink == null) {
-			outboundLink = new EObjectWithInverseResolvingEList<Link>(Link.class, this, EventpatternPackage.INTESECTION__OUTBOUND_LINK, EventpatternPackage.LINK__OPERAND);
+			outboundLink = new EObjectWithInverseResolvingEList<Link>(Link.class, this, EventpatternPackage.INTERSECTION__OUTBOUND_LINK, EventpatternPackage.LINK__OPERAND);
 		}
 		return outboundLink;
 	}
@@ -90,7 +90,7 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case EventpatternPackage.INTESECTION__OUTBOUND_LINK:
+			case EventpatternPackage.INTERSECTION__OUTBOUND_LINK:
 				return ((InternalEList<InternalEObject>)(InternalEList<?>)getOutboundLink()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -104,7 +104,7 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case EventpatternPackage.INTESECTION__OUTBOUND_LINK:
+			case EventpatternPackage.INTERSECTION__OUTBOUND_LINK:
 				return ((InternalEList<?>)getOutboundLink()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -118,7 +118,7 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case EventpatternPackage.INTESECTION__OUTBOUND_LINK:
+			case EventpatternPackage.INTERSECTION__OUTBOUND_LINK:
 				return getOutboundLink();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -133,7 +133,7 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case EventpatternPackage.INTESECTION__OUTBOUND_LINK:
+			case EventpatternPackage.INTERSECTION__OUTBOUND_LINK:
 				getOutboundLink().clear();
 				getOutboundLink().addAll((Collection<? extends Link>)newValue);
 				return;
@@ -149,7 +149,7 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case EventpatternPackage.INTESECTION__OUTBOUND_LINK:
+			case EventpatternPackage.INTERSECTION__OUTBOUND_LINK:
 				getOutboundLink().clear();
 				return;
 		}
@@ -164,7 +164,7 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case EventpatternPackage.INTESECTION__OUTBOUND_LINK:
+			case EventpatternPackage.INTERSECTION__OUTBOUND_LINK:
 				return outboundLink != null && !outboundLink.isEmpty();
 		}
 		return super.eIsSet(featureID);
@@ -184,7 +184,7 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 		}
 		if (baseClass == Operand.class) {
 			switch (derivedFeatureID) {
-				case EventpatternPackage.INTESECTION__OUTBOUND_LINK: return EventpatternPackage.OPERAND__OUTBOUND_LINK;
+				case EventpatternPackage.INTERSECTION__OUTBOUND_LINK: return EventpatternPackage.OPERAND__OUTBOUND_LINK;
 				default: return -1;
 			}
 		}
@@ -235,7 +235,7 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 		}
 		if (baseClass == Operand.class) {
 			switch (baseFeatureID) {
-				case EventpatternPackage.OPERAND__OUTBOUND_LINK: return EventpatternPackage.INTESECTION__OUTBOUND_LINK;
+				case EventpatternPackage.OPERAND__OUTBOUND_LINK: return EventpatternPackage.INTERSECTION__OUTBOUND_LINK;
 				default: return -1;
 			}
 		}
@@ -272,4 +272,4 @@ public class IntesectionImpl extends NaryOperatorImpl implements Intesection {
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
-} //IntesectionImpl
+} //IntersectionImpl

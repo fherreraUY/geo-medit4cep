@@ -24,17 +24,17 @@ import org.eclipse.gmf.runtime.lite.svg.SVGFigure;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
 
-import eventpattern.diagram.edit.policies.Intesection2ItemSemanticEditPolicy;
+import eventpattern.diagram.edit.policies.Intersection3ItemSemanticEditPolicy;
 
 /**
  * @generated
  */
-public class Intesection2EditPart extends ShapeNodeEditPart {
+public class Intersection3EditPart extends ShapeNodeEditPart {
 
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 3063;
+	public static final int VISUAL_ID = 3076;
 
 	/**
 	* @generated
@@ -49,7 +49,7 @@ public class Intesection2EditPart extends ShapeNodeEditPart {
 	/**
 	* @generated
 	*/
-	public Intesection2EditPart(View view) {
+	public Intersection3EditPart(View view) {
 		super(view);
 	}
 
@@ -58,7 +58,7 @@ public class Intesection2EditPart extends ShapeNodeEditPart {
 	*/
 	protected void createDefaultEditPolicies() {
 		super.createDefaultEditPolicies();
-		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new Intesection2ItemSemanticEditPolicy());
+		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new Intersection3ItemSemanticEditPolicy());
 		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
 		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
 		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
@@ -93,14 +93,14 @@ public class Intesection2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected IFigure createNodeShape() {
-		return primaryShape = new IntesectionFigure();
+		return primaryShape = new IntersectionFigure();
 	}
 
 	/**
 	* @generated
 	*/
-	public IntesectionFigure getPrimaryShape() {
-		return (IntesectionFigure) primaryShape;
+	public IntersectionFigure getPrimaryShape() {
+		return (IntersectionFigure) primaryShape;
 	}
 
 	/**
@@ -199,13 +199,13 @@ public class Intesection2EditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class IntesectionFigure extends SVGFigure {
+	public class IntersectionFigure extends SVGFigure {
 
 		/**
 		 * @generated
 		 */
-		public IntesectionFigure() {
-			this.setURI("platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg");
+		public IntersectionFigure() {
+			this.setURI("platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersection.svg");
 			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(30), getMapMode().DPtoLP(30)));
 		}
 

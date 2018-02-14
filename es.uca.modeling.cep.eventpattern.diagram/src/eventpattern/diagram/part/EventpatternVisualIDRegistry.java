@@ -131,8 +131,8 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
 				return UnionEditPart.VISUAL_ID;
 			}
-			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
-				return IntesectionEditPart.VISUAL_ID;
+			if (EventpatternPackage.eINSTANCE.getIntersection().isSuperTypeOf(domainElement.eClass())) {
+				return IntersectionEditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
 				return DiferenceEditPart.VISUAL_ID;
@@ -294,8 +294,8 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
 				return Union2EditPart.VISUAL_ID;
 			}
-			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
-				return Intesection2EditPart.VISUAL_ID;
+			if (EventpatternPackage.eINSTANCE.getIntersection().isSuperTypeOf(domainElement.eClass())) {
+				return Intersection2EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
 				return Diference2EditPart.VISUAL_ID;
@@ -399,8 +399,8 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
 				return Union3EditPart.VISUAL_ID;
 			}
-			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
-				return Intesection3EditPart.VISUAL_ID;
+			if (EventpatternPackage.eINSTANCE.getIntersection().isSuperTypeOf(domainElement.eClass())) {
+				return Intersection3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
 				return Diference3EditPart.VISUAL_ID;
@@ -531,8 +531,8 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
 				return Union2EditPart.VISUAL_ID;
 			}
-			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
-				return Intesection2EditPart.VISUAL_ID;
+			if (EventpatternPackage.eINSTANCE.getIntersection().isSuperTypeOf(domainElement.eClass())) {
+				return Intersection2EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
 				return Diference2EditPart.VISUAL_ID;
@@ -626,8 +626,8 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
 				return Union3EditPart.VISUAL_ID;
 			}
-			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
-				return Intesection3EditPart.VISUAL_ID;
+			if (EventpatternPackage.eINSTANCE.getIntersection().isSuperTypeOf(domainElement.eClass())) {
+				return Intersection3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
 				return Diference3EditPart.VISUAL_ID;
@@ -748,8 +748,8 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
 				return Union3EditPart.VISUAL_ID;
 			}
-			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
-				return Intesection3EditPart.VISUAL_ID;
+			if (EventpatternPackage.eINSTANCE.getIntersection().isSuperTypeOf(domainElement.eClass())) {
+				return Intersection3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
 				return Diference3EditPart.VISUAL_ID;
@@ -870,8 +870,8 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getUnion().isSuperTypeOf(domainElement.eClass())) {
 				return Union3EditPart.VISUAL_ID;
 			}
-			if (EventpatternPackage.eINSTANCE.getIntesection().isSuperTypeOf(domainElement.eClass())) {
-				return Intesection3EditPart.VISUAL_ID;
+			if (EventpatternPackage.eINSTANCE.getIntersection().isSuperTypeOf(domainElement.eClass())) {
+				return Intersection3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getDiference().isSuperTypeOf(domainElement.eClass())) {
 				return Diference3EditPart.VISUAL_ID;
@@ -1020,7 +1020,7 @@ public class EventpatternVisualIDRegistry {
 			if (UnionEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (IntesectionEditPart.VISUAL_ID == nodeVisualID) {
+			if (IntersectionEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (DiferenceEditPart.VISUAL_ID == nodeVisualID) {
@@ -1378,7 +1378,7 @@ public class EventpatternVisualIDRegistry {
 			if (Union2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Intesection2EditPart.VISUAL_ID == nodeVisualID) {
+			if (Intersection2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Diference2EditPart.VISUAL_ID == nodeVisualID) {
@@ -1483,7 +1483,7 @@ public class EventpatternVisualIDRegistry {
 			if (Union3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Intesection3EditPart.VISUAL_ID == nodeVisualID) {
+			if (Intersection3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Diference3EditPart.VISUAL_ID == nodeVisualID) {
@@ -1615,7 +1615,7 @@ public class EventpatternVisualIDRegistry {
 			if (Union2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Intesection2EditPart.VISUAL_ID == nodeVisualID) {
+			if (Intersection2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Diference2EditPart.VISUAL_ID == nodeVisualID) {
@@ -1710,7 +1710,7 @@ public class EventpatternVisualIDRegistry {
 			if (Union3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Intesection3EditPart.VISUAL_ID == nodeVisualID) {
+			if (Intersection3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Diference3EditPart.VISUAL_ID == nodeVisualID) {
@@ -1832,7 +1832,7 @@ public class EventpatternVisualIDRegistry {
 			if (Union3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Intesection3EditPart.VISUAL_ID == nodeVisualID) {
+			if (Intersection3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Diference3EditPart.VISUAL_ID == nodeVisualID) {
@@ -1954,7 +1954,7 @@ public class EventpatternVisualIDRegistry {
 			if (Union3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (Intesection3EditPart.VISUAL_ID == nodeVisualID) {
+			if (Intersection3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (Diference3EditPart.VISUAL_ID == nodeVisualID) {
@@ -2177,11 +2177,11 @@ public class EventpatternVisualIDRegistry {
 		case GroupByEditPart.VISUAL_ID:
 		case ContainsEditPart.VISUAL_ID:
 		case UnionEditPart.VISUAL_ID:
-		case IntesectionEditPart.VISUAL_ID:
 		case DiferenceEditPart.VISUAL_ID:
 		case DistanceEditPart.VISUAL_ID:
 		case EqualsEditPart.VISUAL_ID:
 		case IntersectsEditPart.VISUAL_ID:
+		case IntersectionEditPart.VISUAL_ID:
 		case And2EditPart.VISUAL_ID:
 		case Or2EditPart.VISUAL_ID:
 		case Not2EditPart.VISUAL_ID:
@@ -2237,18 +2237,18 @@ public class EventpatternVisualIDRegistry {
 		case GroupBy2EditPart.VISUAL_ID:
 		case Contains2EditPart.VISUAL_ID:
 		case Union2EditPart.VISUAL_ID:
-		case Intesection2EditPart.VISUAL_ID:
 		case Diference2EditPart.VISUAL_ID:
 		case Distance2EditPart.VISUAL_ID:
 		case Equals2EditPart.VISUAL_ID:
 		case Intersects2EditPart.VISUAL_ID:
 		case Contains3EditPart.VISUAL_ID:
 		case Union3EditPart.VISUAL_ID:
-		case Intesection3EditPart.VISUAL_ID:
 		case Diference3EditPart.VISUAL_ID:
 		case Distance3EditPart.VISUAL_ID:
 		case Equals3EditPart.VISUAL_ID:
 		case Intersects3EditPart.VISUAL_ID:
+		case Intersection2EditPart.VISUAL_ID:
+		case Intersection3EditPart.VISUAL_ID:
 			return true;
 		default:
 			break;

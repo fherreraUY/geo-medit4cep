@@ -1,6 +1,6 @@
 /*
- * 
- */
+* 
+*/
 package eventpattern.diagram.edit.policies;
 
 import java.util.Iterator;
@@ -34,8 +34,8 @@ import eventpattern.diagram.edit.parts.FollowedBy3EditPart;
 import eventpattern.diagram.edit.parts.GreaterEqual3EditPart;
 import eventpattern.diagram.edit.parts.GreaterThan3EditPart;
 import eventpattern.diagram.edit.parts.GroupBy2EditPart;
+import eventpattern.diagram.edit.parts.Intersection3EditPart;
 import eventpattern.diagram.edit.parts.Intersects3EditPart;
-import eventpattern.diagram.edit.parts.Intesection3EditPart;
 import eventpattern.diagram.edit.parts.LessEqual3EditPart;
 import eventpattern.diagram.edit.parts.LessThan3EditPart;
 import eventpattern.diagram.edit.parts.LinkEditPart;
@@ -67,15 +67,15 @@ import eventpattern.diagram.providers.EventpatternElementTypes;
 public class SlidingEventIntervalItemSemanticEditPolicy extends EventpatternBaseItemSemanticEditPolicy {
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SlidingEventIntervalItemSemanticEditPolicy() {
 		super(EventpatternElementTypes.SlidingEventInterval_2034);
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected Command getDestroyElementCommand(DestroyElementRequest req) {
 		View view = (View) getHost().getModel();
 		CompositeTransactionalCommand cmd = new CompositeTransactionalCommand(getEditingDomain(), null);
@@ -94,8 +94,8 @@ public class SlidingEventIntervalItemSemanticEditPolicy extends EventpatternBase
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	private void addDestroyChildNodesCommand(ICompositeCommand cmd) {
 		View view = (View) getHost().getModel();
 		for (Iterator<?> nit = view.getChildren().iterator(); nit.hasNext();) {
@@ -225,7 +225,7 @@ public class SlidingEventIntervalItemSemanticEditPolicy extends EventpatternBase
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
-					case Intesection3EditPart.VISUAL_ID:
+					case Intersection3EditPart.VISUAL_ID:
 						for (Iterator<?> it = cnode.getTargetEdges().iterator(); it.hasNext();) {
 							Edge incomingLink = (Edge) it.next();
 							if (EventpatternVisualIDRegistry.getVisualID(incomingLink) == LinkEditPart.VISUAL_ID) {

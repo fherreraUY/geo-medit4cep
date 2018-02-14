@@ -1128,26 +1128,26 @@ public class EventpatternItemProviderAdapterFactory extends EventpatternAdapterF
 	}
 
 		/**
-	 * This keeps track of the one adapter used for all {@link eventpattern.Intesection} instances.
+	 * This keeps track of the one adapter used for all {@link eventpattern.Intersection} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected IntesectionItemProvider intesectionItemProvider;
+	protected IntersectionItemProvider intersectionItemProvider;
 
 		/**
-	 * This creates an adapter for a {@link eventpattern.Intesection}.
+	 * This creates an adapter for a {@link eventpattern.Intersection}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createIntesectionAdapter() {
-		if (intesectionItemProvider == null) {
-			intesectionItemProvider = new IntesectionItemProvider(this);
+	public Adapter createIntersectionAdapter() {
+		if (intersectionItemProvider == null) {
+			intersectionItemProvider = new IntersectionItemProvider(this);
 		}
 
-		return intesectionItemProvider;
+		return intersectionItemProvider;
 	}
 
 		/**
@@ -1417,7 +1417,7 @@ public class EventpatternItemProviderAdapterFactory extends EventpatternAdapterF
 		if (emailItemProvider != null) emailItemProvider.dispose();
 		if (twitterItemProvider != null) twitterItemProvider.dispose();
 		if (unionItemProvider != null) unionItemProvider.dispose();
-		if (intesectionItemProvider != null) intesectionItemProvider.dispose();
+		if (intersectionItemProvider != null) intersectionItemProvider.dispose();
 		if (diferenceItemProvider != null) diferenceItemProvider.dispose();
 		if (containsItemProvider != null) containsItemProvider.dispose();
 		if (distanceItemProvider != null) distanceItemProvider.dispose();

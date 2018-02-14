@@ -1,6 +1,6 @@
 /*
- * 
- */
+* 
+*/
 package eventpattern.diagram.edit.policies;
 
 import java.util.ArrayList;
@@ -40,8 +40,8 @@ import eventpattern.diagram.edit.parts.EveryDistinct2EditPart;
 import eventpattern.diagram.edit.parts.FollowedBy2EditPart;
 import eventpattern.diagram.edit.parts.GreaterEqual2EditPart;
 import eventpattern.diagram.edit.parts.GreaterThan2EditPart;
+import eventpattern.diagram.edit.parts.Intersection2EditPart;
 import eventpattern.diagram.edit.parts.Intersects2EditPart;
-import eventpattern.diagram.edit.parts.Intesection2EditPart;
 import eventpattern.diagram.edit.parts.LessEqual2EditPart;
 import eventpattern.diagram.edit.parts.LessThan2EditPart;
 import eventpattern.diagram.edit.parts.Modulus2EditPart;
@@ -66,8 +66,8 @@ import eventpattern.diagram.part.EventpatternVisualIDRegistry;
 public class WithinTimerWithinTimerWithinTimerElementsCompartmentCanonicalEditPolicy extends CanonicalEditPolicy {
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected void refreshOnActivate() {
 		// Need to activate editpart children before invoking the canonical refresh for EditParts to add event listeners
 		List<?> c = getHost().getChildren();
@@ -78,16 +78,17 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartmentCanonicalEditPo
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EStructuralFeature getFeatureToSynchronize() {
 		return EventpatternPackage.eINSTANCE.getWithinTimer_WithinTimerElements();
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	@SuppressWarnings("rawtypes")
+
 	protected List getSemanticChildrenList() {
 		View viewObject = (View) getHost().getModel();
 		LinkedList<EObject> result = new LinkedList<EObject>();
@@ -100,15 +101,15 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartmentCanonicalEditPo
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected boolean isOrphaned(Collection<EObject> semanticChildren, final View view) {
 		return isMyDiagramElement(view) && !semanticChildren.contains(view.getElement());
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	private boolean isMyDiagramElement(View view) {
 		int visualID = EventpatternVisualIDRegistry.getVisualID(view);
 		switch (visualID) {
@@ -117,7 +118,7 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartmentCanonicalEditPo
 		case Or2EditPart.VISUAL_ID:
 		case Not2EditPart.VISUAL_ID:
 		case Union2EditPart.VISUAL_ID:
-		case Intesection2EditPart.VISUAL_ID:
+		case Intersection2EditPart.VISUAL_ID:
 		case Diference2EditPart.VISUAL_ID:
 		case Distance2EditPart.VISUAL_ID:
 		case Equals2EditPart.VISUAL_ID:
@@ -149,8 +150,8 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartmentCanonicalEditPo
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected void refreshSemantic() {
 		if (resolveSemanticElement() == null) {
 			return;

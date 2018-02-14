@@ -1,6 +1,6 @@
 /*
- * 
- */
+* 
+*/
 package eventpattern.diagram.edit.policies;
 
 import org.eclipse.gef.commands.Command;
@@ -24,8 +24,8 @@ import eventpattern.diagram.edit.commands.FollowedBy3CreateCommand;
 import eventpattern.diagram.edit.commands.GreaterEqual3CreateCommand;
 import eventpattern.diagram.edit.commands.GreaterThan3CreateCommand;
 import eventpattern.diagram.edit.commands.GroupBy2CreateCommand;
+import eventpattern.diagram.edit.commands.Intersection3CreateCommand;
 import eventpattern.diagram.edit.commands.Intersects3CreateCommand;
-import eventpattern.diagram.edit.commands.Intesection3CreateCommand;
 import eventpattern.diagram.edit.commands.LessEqual3CreateCommand;
 import eventpattern.diagram.edit.commands.LessThan3CreateCommand;
 import eventpattern.diagram.edit.commands.Max2CreateCommand;
@@ -55,15 +55,15 @@ public class BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCom
 		extends EventpatternBaseItemSemanticEditPolicy {
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	public BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentItemSemanticEditPolicy() {
 		super(EventpatternElementTypes.BatchingEventInterval_2035);
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected Command getCreateCommand(CreateElementRequest req) {
 		if (EventpatternElementTypes.Contains_3068 == req.getElementType()) {
 			return getGEFWrapper(new Contains3CreateCommand(req));
@@ -80,8 +80,8 @@ public class BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCom
 		if (EventpatternElementTypes.Union_3069 == req.getElementType()) {
 			return getGEFWrapper(new Union3CreateCommand(req));
 		}
-		if (EventpatternElementTypes.Intesection_3070 == req.getElementType()) {
-			return getGEFWrapper(new Intesection3CreateCommand(req));
+		if (EventpatternElementTypes.Intersection_3076 == req.getElementType()) {
+			return getGEFWrapper(new Intersection3CreateCommand(req));
 		}
 		if (EventpatternElementTypes.Diference_3071 == req.getElementType()) {
 			return getGEFWrapper(new Diference3CreateCommand(req));

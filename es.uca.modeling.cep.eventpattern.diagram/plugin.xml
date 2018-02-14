@@ -258,7 +258,7 @@
          </object>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Eventpattern"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2041,2001,2002,2003,2042,2043,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3061,3003,3004,3005,3062,3063,3064,3065,3066,3067,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3068,3027,3028,3029,3069,3070,3071,3072,3073,3074,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3060,3056,3057,3058,3059"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2041,2001,2002,2003,2042,2048,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3061,3003,3004,3005,3062,3075,3064,3065,3066,3067,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3068,3027,3028,3029,3069,3076,3071,3072,3073,3074,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3060,3056,3057,3058,3059"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001"/>
       </viewProvider>
    </extension>
@@ -271,7 +271,7 @@
             <method name="getType()" value="Eventpattern"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2041,2001,2002,2003,2042,2043,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3061,3003,3004,3005,3062,3063,3064,3065,3066,3067,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3068,3027,3028,3029,3069,3070,3071,3072,3073,3074,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3060,3056,3057,3058,3059"/>
+            <method name="getType()" value="2041,2001,2002,2003,2042,2048,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3061,3003,3004,3005,3062,3075,3064,3065,3066,3067,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3068,3027,3028,3029,3069,3076,3071,3072,3073,3074,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3060,3056,3057,3058,3059"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
             <method name="getType()" value="4001"/>
@@ -318,10 +318,10 @@
          <object class="eventpattern.diagram.edit.parts.UnionEditPart" id="Union_2042"/>
          <context elements="Union_2042"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntesectionEditPart">
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntersectionEditPart">
          <Priority name="Lowest"/>
-         <object class="eventpattern.diagram.edit.parts.IntesectionEditPart" id="Intesection_2043"/>
-         <context elements="Intesection_2043"/>
+         <object class="eventpattern.diagram.edit.parts.IntersectionEditPart" id="Intersection_2048"/>
+         <context elements="Intersection_2048"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfDiferenceEditPart">
          <Priority name="Lowest"/>
@@ -563,10 +563,10 @@
          <object class="eventpattern.diagram.edit.parts.Union2EditPart" id="Union_3062"/>
          <context elements="Union_3062"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntesection2EditPart">
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntersection2EditPart">
          <Priority name="Lowest"/>
-         <object class="eventpattern.diagram.edit.parts.Intesection2EditPart" id="Intesection_3063"/>
-         <context elements="Intesection_3063"/>
+         <object class="eventpattern.diagram.edit.parts.Intersection2EditPart" id="Intersection_3075"/>
+         <context elements="Intersection_3075"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfDiference2EditPart">
          <Priority name="Lowest"/>
@@ -718,10 +718,10 @@
          <object class="eventpattern.diagram.edit.parts.Union3EditPart" id="Union_3069"/>
          <context elements="Union_3069"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntesection3EditPart">
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfIntersection3EditPart">
          <Priority name="Lowest"/>
-         <object class="eventpattern.diagram.edit.parts.Intesection3EditPart" id="Intesection_3070"/>
-         <context elements="Intesection_3070"/>
+         <object class="eventpattern.diagram.edit.parts.Intersection3EditPart" id="Intersection_3076"/>
+         <context elements="Intersection_3076"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfDiference3EditPart">
          <Priority name="Lowest"/>
@@ -920,7 +920,7 @@
       <decoratorProvider class="eventpattern.diagram.providers.EventpatternShortcutsDecoratorProvider">
          <Priority name="Lowest"/>
          <object class="org.eclipse.gmf.runtime.notation.Node(org.eclipse.gmf.runtime.notation)" id="generated-top-nodes">
-            <method name="getType()" value="2041,2001,2002,2003,2042,2043,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038"/>
+            <method name="getType()" value="2041,2001,2002,2003,2042,2048,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038"/>
          </object>
          <context decoratorTargets="generated-top-nodes"/>
       </decoratorProvider>
@@ -990,12 +990,12 @@
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
          <metamodelType
-               id="es.uca.modeling.cep.eventpattern.diagram.Intesection_2043"
-               name="%metatype.name.Intesection_2043"
+               id="es.uca.modeling.cep.eventpattern.diagram.Intersection_2048"
+               name="%metatype.name.Intersection_2048"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Intesection"
-               edithelper="eventpattern.diagram.edit.helpers.IntesectionEditHelper">
-            <param name="semanticHint" value="2043"/>
+               eclass="Intersection"
+               edithelper="eventpattern.diagram.edit.helpers.IntersectionEditHelper">
+            <param name="semanticHint" value="2048"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
@@ -1473,11 +1473,11 @@
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
          <specializationType
-               id="es.uca.modeling.cep.eventpattern.diagram.Intesection_3063"
-               name="%metatype.name.Intesection_3063"
+               id="es.uca.modeling.cep.eventpattern.diagram.Intersection_3075"
+               name="%metatype.name.Intersection_3075"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Intesection_2043"/>
-            <param name="semanticHint" value="3063"/>
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Intersection_2048"/>
+            <param name="semanticHint" value="3075"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
@@ -1752,11 +1752,11 @@
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
          <specializationType
-               id="es.uca.modeling.cep.eventpattern.diagram.Intesection_3070"
-               name="%metatype.name.Intesection_3070"
+               id="es.uca.modeling.cep.eventpattern.diagram.Intersection_3076"
+               name="%metatype.name.Intersection_3076"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Intesection_2043"/>
-            <param name="semanticHint" value="3070"/>
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Intersection_2048"/>
+            <param name="semanticHint" value="3076"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
@@ -2103,7 +2103,7 @@
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Or_2002"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Not_2003"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Union_2042"/>
-         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intesection_2043"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intersection_2048"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Diference_2044"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Distance_2045"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Equals_2046"/>
@@ -2152,7 +2152,7 @@
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Or_3004"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Not_3005"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Union_3062"/>
-         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intesection_3063"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intersection_3075"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Diference_3064"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Distance_3065"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Equals_3066"/>
@@ -2183,7 +2183,7 @@
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Or_3028"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Not_3029"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Union_3069"/>
-         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intesection_3070"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Intersection_3076"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Diference_3071"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Distance_3072"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Equals_3073"/>

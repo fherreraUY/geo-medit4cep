@@ -108,7 +108,7 @@ public class BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompa
 			if (type == EventpatternElementTypes.Union_3069) {
 				return this;
 			}
-			if (type == EventpatternElementTypes.Intesection_3070) {
+			if (type == EventpatternElementTypes.Intersection_3076) {
 				return this;
 			}
 			if (type == EventpatternElementTypes.Diference_3071) {

@@ -1,6 +1,6 @@
 /*
- * 
- */
+* 
+*/
 package eventpattern.diagram.edit.policies;
 
 import java.util.ArrayList;
@@ -43,8 +43,8 @@ import eventpattern.diagram.edit.parts.FollowedBy3EditPart;
 import eventpattern.diagram.edit.parts.GreaterEqual3EditPart;
 import eventpattern.diagram.edit.parts.GreaterThan3EditPart;
 import eventpattern.diagram.edit.parts.GroupBy2EditPart;
+import eventpattern.diagram.edit.parts.Intersection3EditPart;
 import eventpattern.diagram.edit.parts.Intersects3EditPart;
-import eventpattern.diagram.edit.parts.Intesection3EditPart;
 import eventpattern.diagram.edit.parts.LessEqual3EditPart;
 import eventpattern.diagram.edit.parts.LessThan3EditPart;
 import eventpattern.diagram.edit.parts.Max2EditPart;
@@ -76,8 +76,8 @@ public class SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompa
 		extends CanonicalEditPolicy {
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected void refreshOnActivate() {
 		// Need to activate editpart children before invoking the canonical refresh for EditParts to add event listeners
 		List<?> c = getHost().getChildren();
@@ -88,16 +88,17 @@ public class SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompa
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EStructuralFeature getFeatureToSynchronize() {
 		return EventpatternPackage.eINSTANCE.getDataWindow_EventPatternConditions();
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	@SuppressWarnings("rawtypes")
+
 	protected List getSemanticChildrenList() {
 		View viewObject = (View) getHost().getModel();
 		LinkedList<EObject> result = new LinkedList<EObject>();
@@ -111,15 +112,15 @@ public class SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompa
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected boolean isOrphaned(Collection<EObject> semanticChildren, final View view) {
 		return isMyDiagramElement(view) && !semanticChildren.contains(view.getElement());
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	private boolean isMyDiagramElement(View view) {
 		int visualID = EventpatternVisualIDRegistry.getVisualID(view);
 		switch (visualID) {
@@ -128,7 +129,7 @@ public class SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompa
 		case Or3EditPart.VISUAL_ID:
 		case Not3EditPart.VISUAL_ID:
 		case Union3EditPart.VISUAL_ID:
-		case Intesection3EditPart.VISUAL_ID:
+		case Intersection3EditPart.VISUAL_ID:
 		case Diference3EditPart.VISUAL_ID:
 		case Distance3EditPart.VISUAL_ID:
 		case Equals3EditPart.VISUAL_ID:
@@ -169,8 +170,8 @@ public class SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompa
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected void refreshSemantic() {
 		if (resolveSemanticElement() == null) {
 			return;

@@ -30,7 +30,7 @@ public class EventpatternModelingAssistantProviderOfCEPEventPatternEditPart
 		types.add(EventpatternElementTypes.Or_2002);
 		types.add(EventpatternElementTypes.Not_2003);
 		types.add(EventpatternElementTypes.Union_2042);
-		types.add(EventpatternElementTypes.Intesection_2043);
+		types.add(EventpatternElementTypes.Intersection_2048);
 		types.add(EventpatternElementTypes.Diference_2044);
 		types.add(EventpatternElementTypes.Distance_2045);
 		types.add(EventpatternElementTypes.Equals_2046);

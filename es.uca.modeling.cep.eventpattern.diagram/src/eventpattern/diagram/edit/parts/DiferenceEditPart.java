@@ -219,7 +219,7 @@ public class DiferenceEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		public DiferenceFigure() {
-			this.setURI("platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg");
+			this.setURI("platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Diference.svg");
 			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(30), getMapMode().DPtoLP(30)));
 		}
 

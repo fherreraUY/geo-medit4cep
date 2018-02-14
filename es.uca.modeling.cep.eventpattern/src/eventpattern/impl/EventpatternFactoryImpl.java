@@ -105,7 +105,7 @@ public class EventpatternFactoryImpl extends EFactoryImpl implements Eventpatter
 			case EventpatternPackage.EMAIL: return createEmail();
 			case EventpatternPackage.TWITTER: return createTwitter();
 			case EventpatternPackage.UNION: return createUnion();
-			case EventpatternPackage.INTESECTION: return createIntesection();
+			case EventpatternPackage.INTERSECTION: return createIntersection();
 			case EventpatternPackage.DIFERENCE: return createDiference();
 			case EventpatternPackage.CONTAINS: return createContains();
 			case EventpatternPackage.DISTANCE: return createDistance();
@@ -635,9 +635,9 @@ public class EventpatternFactoryImpl extends EFactoryImpl implements Eventpatter
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Intesection createIntesection() {
-		IntesectionImpl intesection = new IntesectionImpl();
-		return intesection;
+	public Intersection createIntersection() {
+		IntersectionImpl intersection = new IntersectionImpl();
+		return intersection;
 	}
 
 		/**

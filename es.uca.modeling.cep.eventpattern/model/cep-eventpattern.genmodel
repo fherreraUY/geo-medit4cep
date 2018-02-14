@@ -185,7 +185,7 @@
     <genClasses image="false" ecoreClass="cep-eventpattern.ecore#//GeoArithmeticOperator"/>
     <genClasses image="false" ecoreClass="cep-eventpattern.ecore#//GeoBooleanOperator"/>
     <genClasses ecoreClass="cep-eventpattern.ecore#//Union"/>
-    <genClasses ecoreClass="cep-eventpattern.ecore#//Intesection"/>
+    <genClasses ecoreClass="cep-eventpattern.ecore#//Intersection"/>
     <genClasses ecoreClass="cep-eventpattern.ecore#//Diference"/>
     <genClasses ecoreClass="cep-eventpattern.ecore#//Contains"/>
     <genClasses ecoreClass="cep-eventpattern.ecore#//Distance"/>

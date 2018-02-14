@@ -52,8 +52,8 @@ import eventpattern.FollowedBy;
 import eventpattern.GreaterEqual;
 import eventpattern.GreaterThan;
 import eventpattern.GroupBy;
+import eventpattern.Intersection;
 import eventpattern.Intersects;
-import eventpattern.Intesection;
 import eventpattern.LessEqual;
 import eventpattern.LessThan;
 import eventpattern.Link;
@@ -173,7 +173,7 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == IntesectionEditPart.VISUAL_ID) {
+			if (visualID == IntersectionEditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -489,7 +489,7 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == Intesection2EditPart.VISUAL_ID) {
+			if (visualID == Intersection2EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -684,7 +684,7 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == Intesection3EditPart.VISUAL_ID) {
+			if (visualID == Intersection3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -915,7 +915,7 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == Intesection2EditPart.VISUAL_ID) {
+			if (visualID == Intersection2EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -1060,7 +1060,7 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == Intesection3EditPart.VISUAL_ID) {
+			if (visualID == Intersection3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -1241,7 +1241,7 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == Intesection3EditPart.VISUAL_ID) {
+			if (visualID == Intersection3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -1422,7 +1422,7 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == Intesection3EditPart.VISUAL_ID) {
+			if (visualID == Intersection3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -1608,8 +1608,8 @@ public class EventpatternDiagramUpdater {
 			return getNot_2003ContainedLinks(view);
 		case UnionEditPart.VISUAL_ID:
 			return getUnion_2042ContainedLinks(view);
-		case IntesectionEditPart.VISUAL_ID:
-			return getIntesection_2043ContainedLinks(view);
+		case IntersectionEditPart.VISUAL_ID:
+			return getIntersection_2048ContainedLinks(view);
 		case DiferenceEditPart.VISUAL_ID:
 			return getDiference_2044ContainedLinks(view);
 		case DistanceEditPart.VISUAL_ID:
@@ -1706,8 +1706,8 @@ public class EventpatternDiagramUpdater {
 			return getNot_3005ContainedLinks(view);
 		case Union2EditPart.VISUAL_ID:
 			return getUnion_3062ContainedLinks(view);
-		case Intesection2EditPart.VISUAL_ID:
-			return getIntesection_3063ContainedLinks(view);
+		case Intersection2EditPart.VISUAL_ID:
+			return getIntersection_3075ContainedLinks(view);
 		case Diference2EditPart.VISUAL_ID:
 			return getDiference_3064ContainedLinks(view);
 		case Distance2EditPart.VISUAL_ID:
@@ -1768,8 +1768,8 @@ public class EventpatternDiagramUpdater {
 			return getNot_3029ContainedLinks(view);
 		case Union3EditPart.VISUAL_ID:
 			return getUnion_3069ContainedLinks(view);
-		case Intesection3EditPart.VISUAL_ID:
-			return getIntesection_3070ContainedLinks(view);
+		case Intersection3EditPart.VISUAL_ID:
+			return getIntersection_3076ContainedLinks(view);
 		case Diference3EditPart.VISUAL_ID:
 			return getDiference_3071ContainedLinks(view);
 		case Distance3EditPart.VISUAL_ID:
@@ -1861,8 +1861,8 @@ public class EventpatternDiagramUpdater {
 			return getNot_2003IncomingLinks(view);
 		case UnionEditPart.VISUAL_ID:
 			return getUnion_2042IncomingLinks(view);
-		case IntesectionEditPart.VISUAL_ID:
-			return getIntesection_2043IncomingLinks(view);
+		case IntersectionEditPart.VISUAL_ID:
+			return getIntersection_2048IncomingLinks(view);
 		case DiferenceEditPart.VISUAL_ID:
 			return getDiference_2044IncomingLinks(view);
 		case DistanceEditPart.VISUAL_ID:
@@ -1959,8 +1959,8 @@ public class EventpatternDiagramUpdater {
 			return getNot_3005IncomingLinks(view);
 		case Union2EditPart.VISUAL_ID:
 			return getUnion_3062IncomingLinks(view);
-		case Intesection2EditPart.VISUAL_ID:
-			return getIntesection_3063IncomingLinks(view);
+		case Intersection2EditPart.VISUAL_ID:
+			return getIntersection_3075IncomingLinks(view);
 		case Diference2EditPart.VISUAL_ID:
 			return getDiference_3064IncomingLinks(view);
 		case Distance2EditPart.VISUAL_ID:
@@ -2021,8 +2021,8 @@ public class EventpatternDiagramUpdater {
 			return getNot_3029IncomingLinks(view);
 		case Union3EditPart.VISUAL_ID:
 			return getUnion_3069IncomingLinks(view);
-		case Intesection3EditPart.VISUAL_ID:
-			return getIntesection_3070IncomingLinks(view);
+		case Intersection3EditPart.VISUAL_ID:
+			return getIntersection_3076IncomingLinks(view);
 		case Diference3EditPart.VISUAL_ID:
 			return getDiference_3071IncomingLinks(view);
 		case Distance3EditPart.VISUAL_ID:
@@ -2114,8 +2114,8 @@ public class EventpatternDiagramUpdater {
 			return getNot_2003OutgoingLinks(view);
 		case UnionEditPart.VISUAL_ID:
 			return getUnion_2042OutgoingLinks(view);
-		case IntesectionEditPart.VISUAL_ID:
-			return getIntesection_2043OutgoingLinks(view);
+		case IntersectionEditPart.VISUAL_ID:
+			return getIntersection_2048OutgoingLinks(view);
 		case DiferenceEditPart.VISUAL_ID:
 			return getDiference_2044OutgoingLinks(view);
 		case DistanceEditPart.VISUAL_ID:
@@ -2212,8 +2212,8 @@ public class EventpatternDiagramUpdater {
 			return getNot_3005OutgoingLinks(view);
 		case Union2EditPart.VISUAL_ID:
 			return getUnion_3062OutgoingLinks(view);
-		case Intesection2EditPart.VISUAL_ID:
-			return getIntesection_3063OutgoingLinks(view);
+		case Intersection2EditPart.VISUAL_ID:
+			return getIntersection_3075OutgoingLinks(view);
 		case Diference2EditPart.VISUAL_ID:
 			return getDiference_3064OutgoingLinks(view);
 		case Distance2EditPart.VISUAL_ID:
@@ -2274,8 +2274,8 @@ public class EventpatternDiagramUpdater {
 			return getNot_3029OutgoingLinks(view);
 		case Union3EditPart.VISUAL_ID:
 			return getUnion_3069OutgoingLinks(view);
-		case Intesection3EditPart.VISUAL_ID:
-			return getIntesection_3070OutgoingLinks(view);
+		case Intersection3EditPart.VISUAL_ID:
+			return getIntersection_3076OutgoingLinks(view);
 		case Diference3EditPart.VISUAL_ID:
 			return getDiference_3071OutgoingLinks(view);
 		case Distance3EditPart.VISUAL_ID:
@@ -2400,7 +2400,7 @@ public class EventpatternDiagramUpdater {
 	/**
 	* @generated
 	*/
-	public static List<EventpatternLinkDescriptor> getIntesection_2043ContainedLinks(View view) {
+	public static List<EventpatternLinkDescriptor> getIntersection_2048ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -2743,7 +2743,7 @@ public class EventpatternDiagramUpdater {
 	/**
 	* @generated
 	*/
-	public static List<EventpatternLinkDescriptor> getIntesection_3063ContainedLinks(View view) {
+	public static List<EventpatternLinkDescriptor> getIntersection_3075ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -2960,7 +2960,7 @@ public class EventpatternDiagramUpdater {
 	/**
 	* @generated
 	*/
-	public static List<EventpatternLinkDescriptor> getIntesection_3070ContainedLinks(View view) {
+	public static List<EventpatternLinkDescriptor> getIntersection_3076ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -3279,8 +3279,8 @@ public class EventpatternDiagramUpdater {
 	/**
 	* @generated
 	*/
-	public static List<EventpatternLinkDescriptor> getIntesection_2043IncomingLinks(View view) {
-		Intesection modelElement = (Intesection) view.getElement();
+	public static List<EventpatternLinkDescriptor> getIntersection_2048IncomingLinks(View view) {
+		Intersection modelElement = (Intersection) view.getElement();
 		Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences = EcoreUtil.CrossReferencer
 				.find(view.eResource().getResourceSet().getResources());
 		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
@@ -3807,8 +3807,8 @@ public class EventpatternDiagramUpdater {
 	/**
 	* @generated
 	*/
-	public static List<EventpatternLinkDescriptor> getIntesection_3063IncomingLinks(View view) {
-		Intesection modelElement = (Intesection) view.getElement();
+	public static List<EventpatternLinkDescriptor> getIntersection_3075IncomingLinks(View view) {
+		Intersection modelElement = (Intersection) view.getElement();
 		Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences = EcoreUtil.CrossReferencer
 				.find(view.eResource().getResourceSet().getResources());
 		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
@@ -4164,8 +4164,8 @@ public class EventpatternDiagramUpdater {
 	/**
 	* @generated
 	*/
-	public static List<EventpatternLinkDescriptor> getIntesection_3070IncomingLinks(View view) {
-		Intesection modelElement = (Intesection) view.getElement();
+	public static List<EventpatternLinkDescriptor> getIntersection_3076IncomingLinks(View view) {
+		Intersection modelElement = (Intersection) view.getElement();
 		Map<EObject, Collection<EStructuralFeature.Setting>> crossReferences = EcoreUtil.CrossReferencer
 				.find(view.eResource().getResourceSet().getResources());
 		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
@@ -4623,8 +4623,8 @@ public class EventpatternDiagramUpdater {
 	/**
 	* @generated
 	*/
-	public static List<EventpatternLinkDescriptor> getIntesection_2043OutgoingLinks(View view) {
-		Intesection modelElement = (Intesection) view.getElement();
+	public static List<EventpatternLinkDescriptor> getIntersection_2048OutgoingLinks(View view) {
+		Intersection modelElement = (Intersection) view.getElement();
 		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
 		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
 		return result;
@@ -5092,8 +5092,8 @@ public class EventpatternDiagramUpdater {
 	/**
 	* @generated
 	*/
-	public static List<EventpatternLinkDescriptor> getIntesection_3063OutgoingLinks(View view) {
-		Intesection modelElement = (Intesection) view.getElement();
+	public static List<EventpatternLinkDescriptor> getIntersection_3075OutgoingLinks(View view) {
+		Intersection modelElement = (Intersection) view.getElement();
 		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
 		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
 		return result;
@@ -5402,8 +5402,8 @@ public class EventpatternDiagramUpdater {
 	/**
 	* @generated
 	*/
-	public static List<EventpatternLinkDescriptor> getIntesection_3070OutgoingLinks(View view) {
-		Intesection modelElement = (Intesection) view.getElement();
+	public static List<EventpatternLinkDescriptor> getIntersection_3076OutgoingLinks(View view) {
+		Intersection modelElement = (Intersection) view.getElement();
 		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
 		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
 		return result;

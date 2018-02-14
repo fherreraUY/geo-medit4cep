@@ -516,7 +516,7 @@ public class CEPEventPatternItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__EVENT_PATTERN_ELEMENTS,
-				 EventpatternFactory.eINSTANCE.createIntesection()));
+				 EventpatternFactory.eINSTANCE.createIntersection()));
 
 		newChildDescriptors.add
 			(createChildParameter

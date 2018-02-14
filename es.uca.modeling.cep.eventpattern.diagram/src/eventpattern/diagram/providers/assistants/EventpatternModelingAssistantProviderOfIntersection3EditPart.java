@@ -18,7 +18,8 @@ import eventpattern.diagram.providers.EventpatternModelingAssistantProvider;
 /**
  * @generated
  */
-public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends EventpatternModelingAssistantProvider {
+public class EventpatternModelingAssistantProviderOfIntersection3EditPart
+		extends EventpatternModelingAssistantProvider {
 
 	/**
 	* @generated
@@ -27,13 +28,13 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 
 	public List<IElementType> getRelTypesOnSource(IAdaptable source) {
 		IGraphicalEditPart sourceEditPart = (IGraphicalEditPart) source.getAdapter(IGraphicalEditPart.class);
-		return doGetRelTypesOnSource((Intesection3EditPart) sourceEditPart);
+		return doGetRelTypesOnSource((Intersection3EditPart) sourceEditPart);
 	}
 
 	/**
 	* @generated
 	*/
-	public List<IElementType> doGetRelTypesOnSource(Intesection3EditPart source) {
+	public List<IElementType> doGetRelTypesOnSource(Intersection3EditPart source) {
 		List<IElementType> types = new ArrayList<IElementType>(1);
 		types.add(EventpatternElementTypes.Link_4001);
 		return types;
@@ -47,13 +48,13 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 	public List<IElementType> getRelTypesOnSourceAndTarget(IAdaptable source, IAdaptable target) {
 		IGraphicalEditPart sourceEditPart = (IGraphicalEditPart) source.getAdapter(IGraphicalEditPart.class);
 		IGraphicalEditPart targetEditPart = (IGraphicalEditPart) target.getAdapter(IGraphicalEditPart.class);
-		return doGetRelTypesOnSourceAndTarget((Intesection3EditPart) sourceEditPart, targetEditPart);
+		return doGetRelTypesOnSourceAndTarget((Intersection3EditPart) sourceEditPart, targetEditPart);
 	}
 
 	/**
 	* @generated
 	*/
-	public List<IElementType> doGetRelTypesOnSourceAndTarget(Intesection3EditPart source,
+	public List<IElementType> doGetRelTypesOnSourceAndTarget(Intersection3EditPart source,
 			IGraphicalEditPart targetEditPart) {
 		List<IElementType> types = new LinkedList<IElementType>();
 		if (targetEditPart instanceof ContainsEditPart) {
@@ -71,7 +72,7 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 		if (targetEditPart instanceof UnionEditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
-		if (targetEditPart instanceof IntesectionEditPart) {
+		if (targetEditPart instanceof IntersectionEditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof DiferenceEditPart) {
@@ -182,7 +183,7 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 		if (targetEditPart instanceof Union2EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
-		if (targetEditPart instanceof Intesection2EditPart) {
+		if (targetEditPart instanceof Intersection2EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof Diference2EditPart) {
@@ -266,7 +267,7 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 		if (targetEditPart instanceof Union3EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
-		if (targetEditPart instanceof Intesection3EditPart) {
+		if (targetEditPart instanceof Intersection3EditPart) {
 			types.add(EventpatternElementTypes.Link_4001);
 		}
 		if (targetEditPart instanceof Diference3EditPart) {
@@ -366,13 +367,13 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 
 	public List<IElementType> getTypesForTarget(IAdaptable source, IElementType relationshipType) {
 		IGraphicalEditPart sourceEditPart = (IGraphicalEditPart) source.getAdapter(IGraphicalEditPart.class);
-		return doGetTypesForTarget((Intesection3EditPart) sourceEditPart, relationshipType);
+		return doGetTypesForTarget((Intersection3EditPart) sourceEditPart, relationshipType);
 	}
 
 	/**
 	* @generated
 	*/
-	public List<IElementType> doGetTypesForTarget(Intesection3EditPart source, IElementType relationshipType) {
+	public List<IElementType> doGetTypesForTarget(Intersection3EditPart source, IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == EventpatternElementTypes.Link_4001) {
 			types.add(EventpatternElementTypes.Contains_2041);
@@ -380,7 +381,7 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 			types.add(EventpatternElementTypes.Or_2002);
 			types.add(EventpatternElementTypes.Not_2003);
 			types.add(EventpatternElementTypes.Union_2042);
-			types.add(EventpatternElementTypes.Intesection_2043);
+			types.add(EventpatternElementTypes.Intersection_2048);
 			types.add(EventpatternElementTypes.Diference_2044);
 			types.add(EventpatternElementTypes.Distance_2045);
 			types.add(EventpatternElementTypes.Equals_2046);
@@ -417,7 +418,7 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 			types.add(EventpatternElementTypes.Or_3004);
 			types.add(EventpatternElementTypes.Not_3005);
 			types.add(EventpatternElementTypes.Union_3062);
-			types.add(EventpatternElementTypes.Intesection_3063);
+			types.add(EventpatternElementTypes.Intersection_3075);
 			types.add(EventpatternElementTypes.Diference_3064);
 			types.add(EventpatternElementTypes.Distance_3065);
 			types.add(EventpatternElementTypes.Equals_3066);
@@ -445,7 +446,7 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 			types.add(EventpatternElementTypes.Or_3028);
 			types.add(EventpatternElementTypes.Not_3029);
 			types.add(EventpatternElementTypes.Union_3069);
-			types.add(EventpatternElementTypes.Intesection_3070);
+			types.add(EventpatternElementTypes.Intersection_3076);
 			types.add(EventpatternElementTypes.Diference_3071);
 			types.add(EventpatternElementTypes.Distance_3072);
 			types.add(EventpatternElementTypes.Equals_3073);
@@ -486,13 +487,13 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 
 	public List<IElementType> getRelTypesOnTarget(IAdaptable target) {
 		IGraphicalEditPart targetEditPart = (IGraphicalEditPart) target.getAdapter(IGraphicalEditPart.class);
-		return doGetRelTypesOnTarget((Intesection3EditPart) targetEditPart);
+		return doGetRelTypesOnTarget((Intersection3EditPart) targetEditPart);
 	}
 
 	/**
 	* @generated
 	*/
-	public List<IElementType> doGetRelTypesOnTarget(Intesection3EditPart target) {
+	public List<IElementType> doGetRelTypesOnTarget(Intersection3EditPart target) {
 		List<IElementType> types = new ArrayList<IElementType>(1);
 		types.add(EventpatternElementTypes.Link_4001);
 		return types;
@@ -505,13 +506,13 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 
 	public List<IElementType> getTypesForSource(IAdaptable target, IElementType relationshipType) {
 		IGraphicalEditPart targetEditPart = (IGraphicalEditPart) target.getAdapter(IGraphicalEditPart.class);
-		return doGetTypesForSource((Intesection3EditPart) targetEditPart, relationshipType);
+		return doGetTypesForSource((Intersection3EditPart) targetEditPart, relationshipType);
 	}
 
 	/**
 	* @generated
 	*/
-	public List<IElementType> doGetTypesForSource(Intesection3EditPart target, IElementType relationshipType) {
+	public List<IElementType> doGetTypesForSource(Intersection3EditPart target, IElementType relationshipType) {
 		List<IElementType> types = new ArrayList<IElementType>();
 		if (relationshipType == EventpatternElementTypes.Link_4001) {
 			types.add(EventpatternElementTypes.Contains_2041);
@@ -519,7 +520,7 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 			types.add(EventpatternElementTypes.Or_2002);
 			types.add(EventpatternElementTypes.Not_2003);
 			types.add(EventpatternElementTypes.Union_2042);
-			types.add(EventpatternElementTypes.Intesection_2043);
+			types.add(EventpatternElementTypes.Intersection_2048);
 			types.add(EventpatternElementTypes.Diference_2044);
 			types.add(EventpatternElementTypes.Distance_2045);
 			types.add(EventpatternElementTypes.Equals_2046);
@@ -561,7 +562,7 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 			types.add(EventpatternElementTypes.Or_3004);
 			types.add(EventpatternElementTypes.Not_3005);
 			types.add(EventpatternElementTypes.Union_3062);
-			types.add(EventpatternElementTypes.Intesection_3063);
+			types.add(EventpatternElementTypes.Intersection_3075);
 			types.add(EventpatternElementTypes.Diference_3064);
 			types.add(EventpatternElementTypes.Distance_3065);
 			types.add(EventpatternElementTypes.Equals_3066);
@@ -592,7 +593,7 @@ public class EventpatternModelingAssistantProviderOfIntesection3EditPart extends
 			types.add(EventpatternElementTypes.Or_3028);
 			types.add(EventpatternElementTypes.Not_3029);
 			types.add(EventpatternElementTypes.Union_3069);
-			types.add(EventpatternElementTypes.Intesection_3070);
+			types.add(EventpatternElementTypes.Intersection_3076);
 			types.add(EventpatternElementTypes.Diference_3071);
 			types.add(EventpatternElementTypes.Distance_3072);
 			types.add(EventpatternElementTypes.Equals_3073);

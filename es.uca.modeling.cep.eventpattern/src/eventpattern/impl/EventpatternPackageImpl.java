@@ -41,8 +41,8 @@ import eventpattern.GeoOperator;
 import eventpattern.GreaterEqual;
 import eventpattern.GreaterThan;
 import eventpattern.GroupBy;
+import eventpattern.Intersection;
 import eventpattern.Intersects;
-import eventpattern.Intesection;
 import eventpattern.LessEqual;
 import eventpattern.LessThan;
 import eventpattern.Link;
@@ -553,7 +553,7 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass intesectionEClass = null;
+	private EClass intersectionEClass = null;
 
 		/**
 	 * <!-- begin-user-doc -->
@@ -2167,8 +2167,8 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getIntesection() {
-		return intesectionEClass;
+	public EClass getIntersection() {
+		return intersectionEClass;
 	}
 
 		/**
@@ -2472,7 +2472,7 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 
 		unionEClass = createEClass(UNION);
 
-		intesectionEClass = createEClass(INTESECTION);
+		intersectionEClass = createEClass(INTERSECTION);
 
 		diferenceEClass = createEClass(DIFERENCE);
 
@@ -2606,8 +2606,8 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 		geoBooleanOperatorEClass.getESuperTypes().add(this.getConditionOperator());
 		unionEClass.getESuperTypes().add(this.getNaryOperator());
 		unionEClass.getESuperTypes().add(this.getGeoArithmeticOperator());
-		intesectionEClass.getESuperTypes().add(this.getNaryOperator());
-		intesectionEClass.getESuperTypes().add(this.getGeoArithmeticOperator());
+		intersectionEClass.getESuperTypes().add(this.getNaryOperator());
+		intersectionEClass.getESuperTypes().add(this.getGeoArithmeticOperator());
 		diferenceEClass.getESuperTypes().add(this.getNaryOperator());
 		diferenceEClass.getESuperTypes().add(this.getGeoArithmeticOperator());
 		containsEClass.getESuperTypes().add(this.getBinaryOperator());
@@ -2837,7 +2837,7 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 
 		initEClass(unionEClass, Union.class, "Union", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(intesectionEClass, Intesection.class, "Intesection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(intersectionEClass, Intersection.class, "Intersection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(diferenceEClass, Diference.class, "Diference", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -3495,11 +3495,11 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 			 "tool.description", "Add an union operator"
 		   });	
 		addAnnotation
-		  (intesectionEClass, 
+		  (intersectionEClass, 
 		   source, 
 		   new String[] {
 			 "figure", "svg",
-			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg",
+			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersection.svg",
 			 "size", "30,30",
 			 "label.placement", "none",
 			 "resizable", "false",
@@ -3512,7 +3512,7 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 		   source, 
 		   new String[] {
 			 "figure", "svg",
-			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg",
+			 "svg.uri", "platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Diference.svg",
 			 "size", "30,30",
 			 "label.placement", "none",
 			 "resizable", "false",

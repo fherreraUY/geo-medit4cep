@@ -330,13 +330,13 @@
           <preferredSize dx="30" dy="30"/>
         </actualFigure>
       </descriptors>
-      <descriptors name="IntesectionFigure">
-        <actualFigure xsi:type="gmfgraph:SVGFigure" name="IntesectionFigure" documentURI="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg">
+      <descriptors name="IntersectionFigure">
+        <actualFigure xsi:type="gmfgraph:SVGFigure" name="IntersectionFigure" documentURI="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersection.svg">
           <preferredSize dx="30" dy="30"/>
         </actualFigure>
       </descriptors>
       <descriptors name="DiferenceFigure">
-        <actualFigure xsi:type="gmfgraph:SVGFigure" name="DiferenceFigure" documentURI="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg">
+        <actualFigure xsi:type="gmfgraph:SVGFigure" name="DiferenceFigure" documentURI="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Diference.svg">
           <preferredSize dx="30" dy="30"/>
         </actualFigure>
       </descriptors>
@@ -543,7 +543,7 @@
         <defaultSize dx="30" dy="30"/>
       </facets>
     </nodes>
-    <nodes name="Intesection" figure="IntesectionFigure">
+    <nodes name="Intersection" figure="IntersectionFigure">
       <facets xsi:type="gmfgraph:DefaultSizeFacet">
         <defaultSize dx="30" dy="30"/>
       </facets>
@@ -629,7 +629,7 @@
   <gmfgraph:Label name="SumLabelFigure" text="Sum"/>
   <gmfgraph:Label name="TwitterLabelFigure" text="Twitter"/>
   <gmfgraph:Label name="UnionLabelFigure" text="Union"/>
-  <gmfgraph:Label name="IntesectionLabelFigure" text="Intesection"/>
+  <gmfgraph:Label name="IntersectionLabelFigure" text="Intersection"/>
   <gmfgraph:Label name="DiferenceLabelFigure" text="Diference"/>
   <gmfgraph:Label name="ContainsLabelFigure" text="Contains"/>
   <gmfgraph:Label name="DistanceLabelFigure" text="Distance"/>

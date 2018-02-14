@@ -264,54 +264,54 @@ public class Messages extends NLS {
 	public static String ComplexEvents3Group_title;
 
 	/**
-	 * @generated
-	 */
-	public static String PatternTimers4Group_title;
-
-	/**
-	 * @generated
-	 */
-	public static String PatternOperators5Group_title;
-
-	/**
-	 * @generated
-	 */
-	public static String LogicalOperators6Group_title;
-
-	/**
-	 * @generated
-	 */
-	public static String ComparisonOperators7Group_title;
-
-	/**
-	 * @generated
-	 */
-	public static String ArithmeticOperators8Group_title;
-
-	/**
-	 * @generated
-	 */
-	public static String AggregationOperators9Group_title;
-
-	/**
-	 * @generated
-	 */
-	public static String DataWindows10Group_title;
-
-	/**
-	 * @generated
-	 */
-	public static String Actions11Group_title;
+	* @generated
+	*/
+	public static String GeoArithmeticOperators4Group_title;
 
 	/**
 	* @generated
 	*/
-	public static String GeoArithmeticOperators12Group_title;
+	public static String GeoBooleanOperators5Group_title;
 
 	/**
 	* @generated
 	*/
-	public static String GeoBooleanOperators13Group_title;
+	public static String PatternTimers6Group_title;
+
+	/**
+	* @generated
+	*/
+	public static String PatternOperators7Group_title;
+
+	/**
+	* @generated
+	*/
+	public static String LogicalOperators8Group_title;
+
+	/**
+	* @generated
+	*/
+	public static String ComparisonOperators9Group_title;
+
+	/**
+	* @generated
+	*/
+	public static String ArithmeticOperators10Group_title;
+
+	/**
+	* @generated
+	*/
+	public static String AggregationOperators11Group_title;
+
+	/**
+	* @generated
+	*/
+	public static String DataWindows12Group_title;
+
+	/**
+	* @generated
+	*/
+	public static String Actions13Group_title;
 
 	/**
 	 * @generated
@@ -1226,16 +1226,6 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String NavigatorGroupName_Intesection_2043_incominglinks;
-
-	/**
-	* @generated
-	*/
-	public static String NavigatorGroupName_Intesection_2043_outgoinglinks;
-
-	/**
-	* @generated
-	*/
 	public static String NavigatorGroupName_Diference_2044_incominglinks;
 
 	/**
@@ -1272,6 +1262,16 @@ public class Messages extends NLS {
 	* @generated
 	*/
 	public static String NavigatorGroupName_Intersects_2047_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersection_2048_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersection_2048_outgoinglinks;
 
 	/**
 	 * @generated
@@ -1831,16 +1831,6 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String NavigatorGroupName_Intesection_3063_incominglinks;
-
-	/**
-	* @generated
-	*/
-	public static String NavigatorGroupName_Intesection_3063_outgoinglinks;
-
-	/**
-	* @generated
-	*/
 	public static String NavigatorGroupName_Diference_3064_incominglinks;
 
 	/**
@@ -1901,16 +1891,6 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String NavigatorGroupName_Intesection_3070_incominglinks;
-
-	/**
-	* @generated
-	*/
-	public static String NavigatorGroupName_Intesection_3070_outgoinglinks;
-
-	/**
-	* @generated
-	*/
 	public static String NavigatorGroupName_Diference_3071_incominglinks;
 
 	/**
@@ -1947,6 +1927,26 @@ public class Messages extends NLS {
 	* @generated
 	*/
 	public static String NavigatorGroupName_Intersects_3074_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersection_3075_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersection_3075_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersection_3076_incominglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Intersection_3076_outgoinglinks;
 
 	/**
 	 * @generated

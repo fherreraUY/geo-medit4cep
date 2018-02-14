@@ -43,8 +43,8 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 			case UnionEditPart.VISUAL_ID:
 				return new UnionEditPart(view);
 
-			case IntesectionEditPart.VISUAL_ID:
-				return new IntesectionEditPart(view);
+			case IntersectionEditPart.VISUAL_ID:
+				return new IntersectionEditPart(view);
 
 			case DiferenceEditPart.VISUAL_ID:
 				return new DiferenceEditPart(view);
@@ -238,8 +238,8 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 			case Union2EditPart.VISUAL_ID:
 				return new Union2EditPart(view);
 
-			case Intesection2EditPart.VISUAL_ID:
-				return new Intesection2EditPart(view);
+			case Intersection2EditPart.VISUAL_ID:
+				return new Intersection2EditPart(view);
 
 			case Diference2EditPart.VISUAL_ID:
 				return new Diference2EditPart(view);
@@ -346,8 +346,8 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 			case Union3EditPart.VISUAL_ID:
 				return new Union3EditPart(view);
 
-			case Intesection3EditPart.VISUAL_ID:
-				return new Intesection3EditPart(view);
+			case Intersection3EditPart.VISUAL_ID:
+				return new Intersection3EditPart(view);
 
 			case Diference3EditPart.VISUAL_ID:
 				return new Diference3EditPart(view);

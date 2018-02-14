@@ -21,8 +21,8 @@ import eventpattern.diagram.edit.commands.EveryDistinct2CreateCommand;
 import eventpattern.diagram.edit.commands.FollowedBy2CreateCommand;
 import eventpattern.diagram.edit.commands.GreaterEqual2CreateCommand;
 import eventpattern.diagram.edit.commands.GreaterThan2CreateCommand;
+import eventpattern.diagram.edit.commands.Intersection2CreateCommand;
 import eventpattern.diagram.edit.commands.Intersects2CreateCommand;
-import eventpattern.diagram.edit.commands.Intesection2CreateCommand;
 import eventpattern.diagram.edit.commands.LessEqual2CreateCommand;
 import eventpattern.diagram.edit.commands.LessThan2CreateCommand;
 import eventpattern.diagram.edit.commands.Modulus2CreateCommand;
@@ -71,8 +71,8 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartmentItemSemanticEdi
 		if (EventpatternElementTypes.Union_3062 == req.getElementType()) {
 			return getGEFWrapper(new Union2CreateCommand(req));
 		}
-		if (EventpatternElementTypes.Intesection_3063 == req.getElementType()) {
-			return getGEFWrapper(new Intesection2CreateCommand(req));
+		if (EventpatternElementTypes.Intersection_3075 == req.getElementType()) {
+			return getGEFWrapper(new Intersection2CreateCommand(req));
 		}
 		if (EventpatternElementTypes.Diference_3064 == req.getElementType()) {
 			return getGEFWrapper(new Diference2CreateCommand(req));

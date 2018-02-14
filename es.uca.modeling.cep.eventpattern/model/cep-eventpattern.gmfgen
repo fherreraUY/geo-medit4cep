@@ -114,15 +114,15 @@
         <childMetaFeature href="cep-eventpattern.genmodel#//eventpattern/WithinTimer/withinTimerElements"/>
       </modelFacet>
     </childNodes>
-    <childNodes visualID="3063" editPartClassName="Intesection2EditPart" itemSemanticEditPolicyClassName="Intesection2ItemSemanticEditPolicy" canonicalEditPolicyClassName="Intesection2CanonicalEditPolicy" graphicalNodeEditPolicyClassName="Intesection2GraphicalNodeEditPolicy" createCommandClassName="Intesection2CreateCommand" containers="//@diagram/@compartments.4 //@diagram/@compartments.10">
+    <childNodes visualID="3075" editPartClassName="Intersection2EditPart" itemSemanticEditPolicyClassName="Intersection2ItemSemanticEditPolicy" canonicalEditPolicyClassName="Intersection2CanonicalEditPolicy" graphicalNodeEditPolicyClassName="Intersection2GraphicalNodeEditPolicy" createCommandClassName="Intersection2CreateCommand" containers="//@diagram/@compartments.4 //@diagram/@compartments.10">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@topLevelNodes.5/@elementType"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="IntesectionFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class IntesectionFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public IntesectionFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="IntersectionFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class IntersectionFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public IntersectionFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersection.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
         <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="30"/>
         <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
       </viewmap>
       <modelFacet>
-        <metaClass href="cep-eventpattern.genmodel#//eventpattern/Intesection"/>
+        <metaClass href="cep-eventpattern.genmodel#//eventpattern/Intersection"/>
         <containmentMetaFeature href="cep-eventpattern.genmodel#//eventpattern/WithinTimer/withinTimerElements"/>
         <childMetaFeature href="cep-eventpattern.genmodel#//eventpattern/WithinTimer/withinTimerElements"/>
       </modelFacet>
@@ -130,7 +130,7 @@
     <childNodes visualID="3064" editPartClassName="Diference2EditPart" itemSemanticEditPolicyClassName="Diference2ItemSemanticEditPolicy" canonicalEditPolicyClassName="Diference2CanonicalEditPolicy" graphicalNodeEditPolicyClassName="Diference2GraphicalNodeEditPolicy" createCommandClassName="Diference2CreateCommand" containers="//@diagram/@compartments.4 //@diagram/@compartments.10">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@topLevelNodes.6/@elementType"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="DiferenceFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DiferenceFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DiferenceFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="DiferenceFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DiferenceFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DiferenceFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Diference.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
         <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="30"/>
         <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
       </viewmap>
@@ -557,15 +557,15 @@
         <childMetaFeature href="cep-eventpattern.genmodel#//eventpattern/DataWindow/eventPatternConditions"/>
       </modelFacet>
     </childNodes>
-    <childNodes visualID="3070" editPartClassName="Intesection3EditPart" itemSemanticEditPolicyClassName="Intesection3ItemSemanticEditPolicy" canonicalEditPolicyClassName="Intesection3CanonicalEditPolicy" graphicalNodeEditPolicyClassName="Intesection3GraphicalNodeEditPolicy" createCommandClassName="Intesection3CreateCommand" containers="//@diagram/@compartments.7 //@diagram/@compartments.11 //@diagram/@compartments.12 //@diagram/@compartments.13">
+    <childNodes visualID="3076" editPartClassName="Intersection3EditPart" itemSemanticEditPolicyClassName="Intersection3ItemSemanticEditPolicy" canonicalEditPolicyClassName="Intersection3CanonicalEditPolicy" graphicalNodeEditPolicyClassName="Intersection3GraphicalNodeEditPolicy" createCommandClassName="Intersection3CreateCommand" containers="//@diagram/@compartments.7 //@diagram/@compartments.11 //@diagram/@compartments.12 //@diagram/@compartments.13">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@topLevelNodes.5/@elementType"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="IntesectionFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class IntesectionFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public IntesectionFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="IntersectionFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class IntersectionFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public IntersectionFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersection.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
         <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="30"/>
         <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
       </viewmap>
       <modelFacet>
-        <metaClass href="cep-eventpattern.genmodel#//eventpattern/Intesection"/>
+        <metaClass href="cep-eventpattern.genmodel#//eventpattern/Intersection"/>
         <containmentMetaFeature href="cep-eventpattern.genmodel#//eventpattern/DataWindow/eventPatternConditions"/>
         <childMetaFeature href="cep-eventpattern.genmodel#//eventpattern/DataWindow/eventPatternConditions"/>
       </modelFacet>
@@ -573,7 +573,7 @@
     <childNodes visualID="3071" editPartClassName="Diference3EditPart" itemSemanticEditPolicyClassName="Diference3ItemSemanticEditPolicy" canonicalEditPolicyClassName="Diference3CanonicalEditPolicy" graphicalNodeEditPolicyClassName="Diference3GraphicalNodeEditPolicy" createCommandClassName="Diference3CreateCommand" containers="//@diagram/@compartments.7 //@diagram/@compartments.11 //@diagram/@compartments.12 //@diagram/@compartments.13">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType xsi:type="gmfgen:SpecializationType" metamodelType="//@diagram/@topLevelNodes.6/@elementType"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="DiferenceFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DiferenceFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DiferenceFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="DiferenceFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DiferenceFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DiferenceFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Diference.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
         <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="30"/>
         <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
       </viewmap>
@@ -1176,15 +1176,15 @@
         <childMetaFeature href="cep-eventpattern.genmodel#//eventpattern/CEPEventPattern/eventPatternElements"/>
       </modelFacet>
     </topLevelNodes>
-    <topLevelNodes visualID="2043" editPartClassName="IntesectionEditPart" itemSemanticEditPolicyClassName="IntesectionItemSemanticEditPolicy" canonicalEditPolicyClassName="IntesectionCanonicalEditPolicy" graphicalNodeEditPolicyClassName="IntesectionGraphicalNodeEditPolicy" createCommandClassName="IntesectionCreateCommand">
+    <topLevelNodes visualID="2048" editPartClassName="IntersectionEditPart" itemSemanticEditPolicyClassName="IntersectionItemSemanticEditPolicy" canonicalEditPolicyClassName="IntersectionCanonicalEditPolicy" graphicalNodeEditPolicyClassName="IntersectionGraphicalNodeEditPolicy" createCommandClassName="IntersectionCreateCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="IntesectionEditHelper"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="IntesectionFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class IntesectionFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public IntesectionFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="IntersectionEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="IntersectionFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class IntersectionFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public IntersectionFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersection.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
         <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="30"/>
         <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
       </viewmap>
       <modelFacet>
-        <metaClass href="cep-eventpattern.genmodel#//eventpattern/Intesection"/>
+        <metaClass href="cep-eventpattern.genmodel#//eventpattern/Intersection"/>
         <containmentMetaFeature href="cep-eventpattern.genmodel#//eventpattern/CEPEventPattern/eventPatternElements"/>
         <childMetaFeature href="cep-eventpattern.genmodel#//eventpattern/CEPEventPattern/eventPatternElements"/>
       </modelFacet>
@@ -1192,7 +1192,7 @@
     <topLevelNodes visualID="2044" editPartClassName="DiferenceEditPart" itemSemanticEditPolicyClassName="DiferenceItemSemanticEditPolicy" canonicalEditPolicyClassName="DiferenceCanonicalEditPolicy" graphicalNodeEditPolicyClassName="DiferenceGraphicalNodeEditPolicy" createCommandClassName="DiferenceCreateCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="DiferenceEditHelper"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="DiferenceFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DiferenceFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DiferenceFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="DiferenceFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DiferenceFigure extends org.eclipse.gmf.runtime.lite.svg.SVGFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DiferenceFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setURI(&quot;platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Diference.svg&quot;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
         <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="30"/>
         <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
       </viewmap>
@@ -1956,6 +1956,17 @@
         <entries xsi:type="gmfgen:ToolEntry" title="New Complex Event" description="Add a new complex event" genNodes="//@diagram/@topLevelNodes.46"/>
         <entries xsi:type="gmfgen:ToolEntry" title="New Complex Event Property" description="Add a new complex event property" genNodes="//@diagram/@childNodes.73"/>
       </groups>
+      <groups title="Geo Arithmetic Operators" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="Union" description="Add an union operator" genNodes="//@diagram/@topLevelNodes.4 //@diagram/@childNodes.6 //@diagram/@childNodes.37"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Intersection" description="Add an intersection operator" genNodes="//@diagram/@topLevelNodes.5 //@diagram/@childNodes.7 //@diagram/@childNodes.38"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Diference" description="Add an diference operator" genNodes="//@diagram/@topLevelNodes.6 //@diagram/@childNodes.8 //@diagram/@childNodes.39"/>
+      </groups>
+      <groups title="Geo Boolean Operators" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="Contains" description="Add a Contains operator" genNodes="//@diagram/@topLevelNodes.0 //@diagram/@childNodes.2 //@diagram/@childNodes.33"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Equals" description="Add a equals operator" genNodes="//@diagram/@topLevelNodes.8 //@diagram/@childNodes.10 //@diagram/@childNodes.41"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Intersects" description="Add a intersects operator" genNodes="//@diagram/@topLevelNodes.9 //@diagram/@childNodes.11 //@diagram/@childNodes.42"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Distance" description="Add a distance operator" genNodes="//@diagram/@topLevelNodes.7 //@diagram/@childNodes.9 //@diagram/@childNodes.40"/>
+      </groups>
       <groups title="Pattern Timers" collapse="true">
         <entries xsi:type="gmfgen:ToolEntry" title="Time Interval" description="Add a time interval" genNodes="//@diagram/@topLevelNodes.38 //@diagram/@childNodes.71"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Time Schedule" description="Add a time schedule" genNodes="//@diagram/@topLevelNodes.39 //@diagram/@childNodes.72"/>
@@ -2006,17 +2017,6 @@
       <groups title="Actions" collapse="true">
         <entries xsi:type="gmfgen:ToolEntry" title="Email" description="Add an email action" genNodes="//@diagram/@topLevelNodes.40"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Twitter" description="Add a twitter action" genNodes="//@diagram/@topLevelNodes.41"/>
-      </groups>
-      <groups title="Geo Arithmetic Operators" collapse="true">
-        <entries xsi:type="gmfgen:ToolEntry" title="Union" description="Add an union operator" genNodes="//@diagram/@topLevelNodes.4 //@diagram/@childNodes.6 //@diagram/@childNodes.37"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Intersection" description="Add an intersection operator" genNodes="//@diagram/@topLevelNodes.5 //@diagram/@childNodes.7 //@diagram/@childNodes.38"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Diference" description="Add an diference operator" genNodes="//@diagram/@topLevelNodes.6 //@diagram/@childNodes.8 //@diagram/@childNodes.39"/>
-      </groups>
-      <groups title="Geo Boolean Operators" collapse="true">
-        <entries xsi:type="gmfgen:ToolEntry" title="Contains" description="Add a Contains operator" genNodes="//@diagram/@topLevelNodes.0 //@diagram/@childNodes.2 //@diagram/@childNodes.33"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Equals" description="Add a equals operator" genNodes="//@diagram/@topLevelNodes.8 //@diagram/@childNodes.10 //@diagram/@childNodes.41"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Intersects" description="Add a intersects operator" genNodes="//@diagram/@topLevelNodes.9 //@diagram/@childNodes.11 //@diagram/@childNodes.42"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Distance" description="Add a distance operator" genNodes="//@diagram/@topLevelNodes.7 //@diagram/@childNodes.9 //@diagram/@childNodes.40"/>
       </groups>
     </palette>
     <preferencePages xsi:type="gmfgen:GenStandardPreferencePage" iD="es.uca.modeling.cep.eventpattern.diagram.general" name="Eventpattern Diagram">

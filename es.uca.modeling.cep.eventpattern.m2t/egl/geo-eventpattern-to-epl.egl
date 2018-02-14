@@ -238,7 +238,7 @@ operation isFromPatternExpression(eventPatternElements) : Boolean {
 	    		
 		    --if ((epe.isKindOf(PatternOperator) and not epe.isKindOf(LogicalOperator)) 
 		    if (epe.isKindOf(PatternOperator) 
-		    		or epe.isTypeOf(TimeInterval) or epe.isTypeOf(TimeSchedule) or epe.isTypeOf(WithinTimer)) {
+		    		or epe.isTypeOf(TimeInterval) or epe.isTypeOf(TimeSchedule) or epe.isTypeOf(WithinTimer) or epe.isTypeOf(Intersects) or epe.isTypeOf(Contains)) {
 		    	patternOpNum = patternOpNum + 1;
 		    }    		
 		}
@@ -544,6 +544,8 @@ operation getFullEventPropertyName(property, name : String) : String {
 
 
 operation traversal(r) : String {
+	
+
 
     --System.out.println("traversal(r):" + r);
     var PATTERN = CEPEventPattern.all.first;
@@ -682,7 +684,21 @@ operation traversal(r) : String {
         else {
             return 'interseccionMultiPoligono('+ traversal(getOperand(r,1)) + ',' + traversal(getOperand(r,0)) +')';               
         }
-   	}                    
+   	}              
+   	
+   	// Operador Contains
+   	    if(r.isTypeOf(Contains)) {        
+    	-- interseccionMultiPoligono(geom, '"+multipoligono+"')";	
+       	if (r.inboundLink.at(0).order == 1) { 
+        	return 'contains('+ traversal(getOperand(r,0)) + ',' + traversal(getOperand(r,1)) +')';
+        }
+        else {
+            return 'contains('+ traversal(getOperand(r,1)) + ',' + traversal(getOperand(r,0)) +')';               
+        }
+   	}              
+   	
+   	
+   	      
     if(r.isTypeOf(Equal)) {        
     	--System.out.println("r.isTypeOf(Equal):" + ' = ');
        	if (r.inboundLink.at(0).order == 1) { 
@@ -898,6 +914,8 @@ operation traversal(r) : String {
 
         return groupByExpression; 
    	}
+   	else
+   		{ return 'No se reconoce el operador';}
 }   
     
 %]

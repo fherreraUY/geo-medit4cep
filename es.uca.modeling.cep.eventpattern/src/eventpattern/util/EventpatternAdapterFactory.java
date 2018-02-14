@@ -331,8 +331,8 @@ public class EventpatternAdapterFactory extends AdapterFactoryImpl
 				return createUnionAdapter();
 			}
 			@Override
-			public Adapter caseIntesection(Intesection object) {
-				return createIntesectionAdapter();
+			public Adapter caseIntersection(Intersection object) {
+				return createIntersectionAdapter();
 			}
 			@Override
 			public Adapter caseDiference(Diference object) {
@@ -1346,16 +1346,16 @@ public class EventpatternAdapterFactory extends AdapterFactoryImpl
 	}
 
 		/**
-	 * Creates a new adapter for an object of class '{@link eventpattern.Intesection <em>Intesection</em>}'.
+	 * Creates a new adapter for an object of class '{@link eventpattern.Intersection <em>Intersection</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see eventpattern.Intesection
+	 * @see eventpattern.Intersection
 	 * @generated
 	 */
-	public Adapter createIntesectionAdapter() {
+	public Adapter createIntersectionAdapter() {
 		return null;
 	}
 

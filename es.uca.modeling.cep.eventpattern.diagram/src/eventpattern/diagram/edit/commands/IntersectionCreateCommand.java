@@ -15,19 +15,19 @@ import org.eclipse.gmf.runtime.emf.type.core.requests.ConfigureRequest;
 import org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest;
 import org.eclipse.gmf.runtime.notation.View;
 
-import eventpattern.DataWindow;
+import eventpattern.CEPEventPattern;
 import eventpattern.EventpatternFactory;
-import eventpattern.Intesection;
+import eventpattern.Intersection;
 
 /**
  * @generated
  */
-public class Intesection3CreateCommand extends EditElementCommand {
+public class IntersectionCreateCommand extends EditElementCommand {
 
 	/**
 	* @generated
 	*/
-	public Intesection3CreateCommand(CreateElementRequest req) {
+	public IntersectionCreateCommand(CreateElementRequest req) {
 		super(req.getLabel(), null, req);
 	}
 
@@ -55,10 +55,10 @@ public class Intesection3CreateCommand extends EditElementCommand {
 	* @generated
 	*/
 	protected CommandResult doExecuteWithResult(IProgressMonitor monitor, IAdaptable info) throws ExecutionException {
-		Intesection newElement = EventpatternFactory.eINSTANCE.createIntesection();
+		Intersection newElement = EventpatternFactory.eINSTANCE.createIntersection();
 
-		DataWindow owner = (DataWindow) getElementToEdit();
-		owner.getEventPatternConditions().add(newElement);
+		CEPEventPattern owner = (CEPEventPattern) getElementToEdit();
+		owner.getEventPatternElements().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 
@@ -69,7 +69,7 @@ public class Intesection3CreateCommand extends EditElementCommand {
 	/**
 	* @generated
 	*/
-	protected void doConfigure(Intesection newElement, IProgressMonitor monitor, IAdaptable info)
+	protected void doConfigure(Intersection newElement, IProgressMonitor monitor, IAdaptable info)
 			throws ExecutionException {
 		IElementType elementType = ((CreateElementRequest) getRequest()).getElementType();
 		ConfigureRequest configureRequest = new ConfigureRequest(getEditingDomain(), newElement, elementType);

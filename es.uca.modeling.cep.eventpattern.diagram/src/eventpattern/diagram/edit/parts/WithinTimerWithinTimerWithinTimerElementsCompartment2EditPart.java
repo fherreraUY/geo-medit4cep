@@ -33,27 +33,27 @@ import eventpattern.diagram.providers.EventpatternElementTypes;
 public class WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart extends ShapeCompartmentEditPart {
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	public static final int VISUAL_ID = 7011;
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	public WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart(View view) {
 		super(view);
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	public String getCompartmentName() {
 		return Messages.WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart_title;
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	public IFigure createFigure() {
 		ResizableCompartmentFigure result = (ResizableCompartmentFigure) super.createFigure();
 		result.setTitleVisibility(false);
@@ -61,8 +61,8 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart exten
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected void createDefaultEditPolicies() {
 		super.createDefaultEditPolicies();
 		installEditPolicy(EditPolicy.PRIMARY_DRAG_ROLE, new ResizableCompartmentEditPolicy());
@@ -76,8 +76,8 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart exten
 	}
 
 	/**
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected void setRatio(Double ratio) {
 		if (getFigure().getParent().getLayoutManager() instanceof ConstrainedToolbarLayout) {
 			super.setRatio(ratio);
@@ -107,7 +107,7 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart exten
 			if (type == EventpatternElementTypes.Union_3062) {
 				return this;
 			}
-			if (type == EventpatternElementTypes.Intesection_3063) {
+			if (type == EventpatternElementTypes.Intersection_3075) {
 				return this;
 			}
 			if (type == EventpatternElementTypes.Diference_3064) {
