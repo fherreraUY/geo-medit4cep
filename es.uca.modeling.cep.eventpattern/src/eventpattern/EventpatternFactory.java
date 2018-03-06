@@ -392,6 +392,24 @@ public interface EventpatternFactory extends EFactory
   Value createValue();
 
   /**
+	 * Returns a new object of class '<em>Geo Value</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Geo Value</em>'.
+	 * @generated
+	 */
+	GeoValue createGeoValue();
+
+		/**
+	 * Returns a new object of class '<em>Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Point</em>'.
+	 * @generated
+	 */
+	Point createPoint();
+
+		/**
 	 * Returns a new object of class '<em>Email</em>'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

@@ -30,6 +30,14 @@ public enum PropertyTypeValue implements Enumerator
   UNKNOWN(0, "Unknown", "Unknown"),
 
   /**
+	 * The '<em><b>Object</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #OBJECT_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	OBJECT(1, "Object", "Object"), /**
 	 * The '<em><b>Boolean</b></em>' literal object.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -37,7 +45,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  BOOLEAN(1, "Boolean", "Boolean"),
+  BOOLEAN(2, "Boolean", "Boolean"),
 
   /**
 	 * The '<em><b>Integer</b></em>' literal object.
@@ -47,7 +55,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  INTEGER(2, "Integer", "Integer"),
+  INTEGER(3, "Integer", "Integer"),
 
   /**
 	 * The '<em><b>Long</b></em>' literal object.
@@ -57,7 +65,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  LONG(3, "Long", "Long"),
+  LONG(4, "Long", "Long"),
 
   /**
 	 * The '<em><b>Double</b></em>' literal object.
@@ -67,7 +75,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  DOUBLE(4, "Double", "Double"),
+  DOUBLE(5, "Double", "Double"),
 
   /**
 	 * The '<em><b>Float</b></em>' literal object.
@@ -77,7 +85,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  FLOAT(5, "Float", "Float"),
+  FLOAT(6, "Float", "Float"),
 
   /**
 	 * The '<em><b>String</b></em>' literal object.
@@ -87,7 +95,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  STRING(6, "String", "String");
+  STRING(7, "String", "String");
 
   /**
 	 * The '<em><b>Unknown</b></em>' literal value.
@@ -105,6 +113,21 @@ public enum PropertyTypeValue implements Enumerator
   public static final int UNKNOWN_VALUE = 0;
 
   /**
+	 * The '<em><b>Object</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of '<em><b>Object</b></em>' literal object isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @see #OBJECT
+	 * @model name="Object"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int OBJECT_VALUE = 1;
+
+		/**
 	 * The '<em><b>Boolean</b></em>' literal value.
 	 * <!-- begin-user-doc -->
    * <p>
@@ -117,7 +140,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  public static final int BOOLEAN_VALUE = 1;
+  public static final int BOOLEAN_VALUE = 2;
 
   /**
 	 * The '<em><b>Integer</b></em>' literal value.
@@ -132,7 +155,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  public static final int INTEGER_VALUE = 2;
+  public static final int INTEGER_VALUE = 3;
 
   /**
 	 * The '<em><b>Long</b></em>' literal value.
@@ -147,7 +170,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  public static final int LONG_VALUE = 3;
+  public static final int LONG_VALUE = 4;
 
   /**
 	 * The '<em><b>Double</b></em>' literal value.
@@ -162,7 +185,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  public static final int DOUBLE_VALUE = 4;
+  public static final int DOUBLE_VALUE = 5;
 
   /**
 	 * The '<em><b>Float</b></em>' literal value.
@@ -177,7 +200,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  public static final int FLOAT_VALUE = 5;
+  public static final int FLOAT_VALUE = 6;
 
   /**
 	 * The '<em><b>String</b></em>' literal value.
@@ -192,7 +215,7 @@ public enum PropertyTypeValue implements Enumerator
 	 * @generated
 	 * @ordered
 	 */
-  public static final int STRING_VALUE = 6;
+  public static final int STRING_VALUE = 7;
 
   /**
 	 * An array of all the '<em><b>Property Type Value</b></em>' enumerators.
@@ -203,6 +226,7 @@ public enum PropertyTypeValue implements Enumerator
   private static final PropertyTypeValue[] VALUES_ARRAY =
     new PropertyTypeValue[] {
 			UNKNOWN,
+			OBJECT,
 			BOOLEAN,
 			INTEGER,
 			LONG,
@@ -269,6 +293,7 @@ public enum PropertyTypeValue implements Enumerator
   {
 		switch (value) {
 			case UNKNOWN_VALUE: return UNKNOWN;
+			case OBJECT_VALUE: return OBJECT;
 			case BOOLEAN_VALUE: return BOOLEAN;
 			case INTEGER_VALUE: return INTEGER;
 			case LONG_VALUE: return LONG;

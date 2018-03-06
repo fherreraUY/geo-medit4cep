@@ -212,6 +212,11 @@ public class EventpatternElementTypes {
 	 */
 	public static final IElementType Sum_2026 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Sum_2026"); //$NON-NLS-1$
 	/**
+	* @generated
+	*/
+	public static final IElementType Point_2050 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Point_2050"); //$NON-NLS-1$
+
+	/**
 	 * @generated
 	 */
 	public static final IElementType Event_2027 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Event_2027"); //$NON-NLS-1$
@@ -224,6 +229,12 @@ public class EventpatternElementTypes {
 	 * @generated
 	 */
 	public static final IElementType Value_2029 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Value_2029"); //$NON-NLS-1$
+	/**
+	* @generated
+	*/
+	public static final IElementType GeoValue_2049 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.GeoValue_2049"); //$NON-NLS-1$
+
 	/**
 	* @generated
 	*/
@@ -429,6 +440,11 @@ public class EventpatternElementTypes {
 	 */
 	public static final IElementType While_3023 = getElementType("es.uca.modeling.cep.eventpattern.diagram.While_3023"); //$NON-NLS-1$
 	/**
+	* @generated
+	*/
+	public static final IElementType Point_3079 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Point_3079"); //$NON-NLS-1$
+
+	/**
 	 * @generated
 	 */
 	public static final IElementType Event_3024 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Event_3024"); //$NON-NLS-1$
@@ -441,6 +457,12 @@ public class EventpatternElementTypes {
 	 * @generated
 	 */
 	public static final IElementType Value_3026 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Value_3026"); //$NON-NLS-1$
+	/**
+	* @generated
+	*/
+	public static final IElementType GeoValue_3077 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.GeoValue_3077"); //$NON-NLS-1$
+
 	/**
 	* @generated
 	*/
@@ -600,6 +622,11 @@ public class EventpatternElementTypes {
 	 */
 	public static final IElementType Sum_3052 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Sum_3052"); //$NON-NLS-1$
 	/**
+	* @generated
+	*/
+	public static final IElementType Point_3080 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Point_3080"); //$NON-NLS-1$
+
+	/**
 	 * @generated
 	 */
 	public static final IElementType Event_3053 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Event_3053"); //$NON-NLS-1$
@@ -612,6 +639,12 @@ public class EventpatternElementTypes {
 	 * @generated
 	 */
 	public static final IElementType Value_3055 = getElementType("es.uca.modeling.cep.eventpattern.diagram.Value_3055"); //$NON-NLS-1$
+	/**
+	* @generated
+	*/
+	public static final IElementType GeoValue_3078 = getElementType(
+			"es.uca.modeling.cep.eventpattern.diagram.GeoValue_3078"); //$NON-NLS-1$
+
 	/**
 	* @generated
 	*/
@@ -749,11 +782,15 @@ public class EventpatternElementTypes {
 
 			elements.put(Sum_2026, EventpatternPackage.eINSTANCE.getSum());
 
+			elements.put(Point_2050, EventpatternPackage.eINSTANCE.getPoint());
+
 			elements.put(Event_2027, EventpatternPackage.eINSTANCE.getEvent());
 
 			elements.put(EventProperty_2028, EventpatternPackage.eINSTANCE.getEventProperty());
 
 			elements.put(Value_2029, EventpatternPackage.eINSTANCE.getValue());
+
+			elements.put(GeoValue_2049, EventpatternPackage.eINSTANCE.getGeoValue());
 
 			elements.put(GroupBy_2040, EventpatternPackage.eINSTANCE.getGroupBy());
 
@@ -837,11 +874,15 @@ public class EventpatternElementTypes {
 
 			elements.put(While_3023, EventpatternPackage.eINSTANCE.getWhile());
 
+			elements.put(Point_3079, EventpatternPackage.eINSTANCE.getPoint());
+
 			elements.put(Event_3024, EventpatternPackage.eINSTANCE.getEvent());
 
 			elements.put(EventProperty_3025, EventpatternPackage.eINSTANCE.getEventProperty());
 
 			elements.put(Value_3026, EventpatternPackage.eINSTANCE.getValue());
+
+			elements.put(GeoValue_3077, EventpatternPackage.eINSTANCE.getGeoValue());
 
 			elements.put(Contains_3068, EventpatternPackage.eINSTANCE.getContains());
 
@@ -909,11 +950,15 @@ public class EventpatternElementTypes {
 
 			elements.put(Sum_3052, EventpatternPackage.eINSTANCE.getSum());
 
+			elements.put(Point_3080, EventpatternPackage.eINSTANCE.getPoint());
+
 			elements.put(Event_3053, EventpatternPackage.eINSTANCE.getEvent());
 
 			elements.put(EventProperty_3054, EventpatternPackage.eINSTANCE.getEventProperty());
 
 			elements.put(Value_3055, EventpatternPackage.eINSTANCE.getValue());
+
+			elements.put(GeoValue_3078, EventpatternPackage.eINSTANCE.getGeoValue());
 
 			elements.put(GroupBy_3060, EventpatternPackage.eINSTANCE.getGroupBy());
 
@@ -977,9 +1022,11 @@ public class EventpatternElementTypes {
 			KNOWN_ELEMENT_TYPES.add(Avg_2024);
 			KNOWN_ELEMENT_TYPES.add(Count_2025);
 			KNOWN_ELEMENT_TYPES.add(Sum_2026);
+			KNOWN_ELEMENT_TYPES.add(Point_2050);
 			KNOWN_ELEMENT_TYPES.add(Event_2027);
 			KNOWN_ELEMENT_TYPES.add(EventProperty_2028);
 			KNOWN_ELEMENT_TYPES.add(Value_2029);
+			KNOWN_ELEMENT_TYPES.add(GeoValue_2049);
 			KNOWN_ELEMENT_TYPES.add(GroupBy_2040);
 			KNOWN_ELEMENT_TYPES.add(WithinTimer_2030);
 			KNOWN_ELEMENT_TYPES.add(TimeInterval_2031);
@@ -1021,9 +1068,11 @@ public class EventpatternElementTypes {
 			KNOWN_ELEMENT_TYPES.add(Range_3021);
 			KNOWN_ELEMENT_TYPES.add(FollowedBy_3022);
 			KNOWN_ELEMENT_TYPES.add(While_3023);
+			KNOWN_ELEMENT_TYPES.add(Point_3079);
 			KNOWN_ELEMENT_TYPES.add(Event_3024);
 			KNOWN_ELEMENT_TYPES.add(EventProperty_3025);
 			KNOWN_ELEMENT_TYPES.add(Value_3026);
+			KNOWN_ELEMENT_TYPES.add(GeoValue_3077);
 			KNOWN_ELEMENT_TYPES.add(Contains_3068);
 			KNOWN_ELEMENT_TYPES.add(And_3027);
 			KNOWN_ELEMENT_TYPES.add(Or_3028);
@@ -1057,9 +1106,11 @@ public class EventpatternElementTypes {
 			KNOWN_ELEMENT_TYPES.add(Avg_3050);
 			KNOWN_ELEMENT_TYPES.add(Count_3051);
 			KNOWN_ELEMENT_TYPES.add(Sum_3052);
+			KNOWN_ELEMENT_TYPES.add(Point_3080);
 			KNOWN_ELEMENT_TYPES.add(Event_3053);
 			KNOWN_ELEMENT_TYPES.add(EventProperty_3054);
 			KNOWN_ELEMENT_TYPES.add(Value_3055);
+			KNOWN_ELEMENT_TYPES.add(GeoValue_3078);
 			KNOWN_ELEMENT_TYPES.add(GroupBy_3060);
 			KNOWN_ELEMENT_TYPES.add(WithinTimer_3056);
 			KNOWN_ELEMENT_TYPES.add(TimeInterval_3057);
@@ -1143,12 +1194,16 @@ public class EventpatternElementTypes {
 			return Count_2025;
 		case SumEditPart.VISUAL_ID:
 			return Sum_2026;
+		case PointEditPart.VISUAL_ID:
+			return Point_2050;
 		case EventEditPart.VISUAL_ID:
 			return Event_2027;
 		case EventPropertyEditPart.VISUAL_ID:
 			return EventProperty_2028;
 		case ValueEditPart.VISUAL_ID:
 			return Value_2029;
+		case GeoValueEditPart.VISUAL_ID:
+			return GeoValue_2049;
 		case GroupByEditPart.VISUAL_ID:
 			return GroupBy_2040;
 		case WithinTimerEditPart.VISUAL_ID:
@@ -1231,12 +1286,16 @@ public class EventpatternElementTypes {
 			return FollowedBy_3022;
 		case While2EditPart.VISUAL_ID:
 			return While_3023;
+		case Point2EditPart.VISUAL_ID:
+			return Point_3079;
 		case Event2EditPart.VISUAL_ID:
 			return Event_3024;
 		case EventProperty4EditPart.VISUAL_ID:
 			return EventProperty_3025;
 		case Value2EditPart.VISUAL_ID:
 			return Value_3026;
+		case GeoValue2EditPart.VISUAL_ID:
+			return GeoValue_3077;
 		case Contains3EditPart.VISUAL_ID:
 			return Contains_3068;
 		case And3EditPart.VISUAL_ID:
@@ -1303,12 +1362,16 @@ public class EventpatternElementTypes {
 			return Count_3051;
 		case Sum2EditPart.VISUAL_ID:
 			return Sum_3052;
+		case Point3EditPart.VISUAL_ID:
+			return Point_3080;
 		case Event3EditPart.VISUAL_ID:
 			return Event_3053;
 		case EventProperty5EditPart.VISUAL_ID:
 			return EventProperty_3054;
 		case Value3EditPart.VISUAL_ID:
 			return Value_3055;
+		case GeoValue3EditPart.VISUAL_ID:
+			return GeoValue_3078;
 		case GroupBy2EditPart.VISUAL_ID:
 			return GroupBy_3060;
 		case WithinTimer2EditPart.VISUAL_ID:

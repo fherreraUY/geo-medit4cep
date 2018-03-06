@@ -215,6 +215,9 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getSum().isSuperTypeOf(domainElement.eClass())) {
 				return SumEditPart.VISUAL_ID;
 			}
+			if (EventpatternPackage.eINSTANCE.getPoint().isSuperTypeOf(domainElement.eClass())) {
+				return PointEditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getEvent().isSuperTypeOf(domainElement.eClass())) {
 				return EventEditPart.VISUAL_ID;
 			}
@@ -223,6 +226,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getValue().isSuperTypeOf(domainElement.eClass())) {
 				return ValueEditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getGeoValue().isSuperTypeOf(domainElement.eClass())) {
+				return GeoValueEditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getGroupBy().isSuperTypeOf(domainElement.eClass())) {
 				return GroupByEditPart.VISUAL_ID;
@@ -363,6 +369,9 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getWhile().isSuperTypeOf(domainElement.eClass())) {
 				return While2EditPart.VISUAL_ID;
 			}
+			if (EventpatternPackage.eINSTANCE.getPoint().isSuperTypeOf(domainElement.eClass())) {
+				return Point2EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getEvent().isSuperTypeOf(domainElement.eClass())) {
 				return Event2EditPart.VISUAL_ID;
 			}
@@ -371,6 +380,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getValue().isSuperTypeOf(domainElement.eClass())) {
 				return Value2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getGeoValue().isSuperTypeOf(domainElement.eClass())) {
+				return GeoValue2EditPart.VISUAL_ID;
 			}
 			break;
 		case EventEventEventPropertiesCompartment2EditPart.VISUAL_ID:
@@ -483,6 +495,9 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getSum().isSuperTypeOf(domainElement.eClass())) {
 				return Sum2EditPart.VISUAL_ID;
 			}
+			if (EventpatternPackage.eINSTANCE.getPoint().isSuperTypeOf(domainElement.eClass())) {
+				return Point3EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getEvent().isSuperTypeOf(domainElement.eClass())) {
 				return Event3EditPart.VISUAL_ID;
 			}
@@ -491,6 +506,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getValue().isSuperTypeOf(domainElement.eClass())) {
 				return Value3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getGeoValue().isSuperTypeOf(domainElement.eClass())) {
+				return GeoValue3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getGroupBy().isSuperTypeOf(domainElement.eClass())) {
 				return GroupBy2EditPart.VISUAL_ID;
@@ -600,6 +618,9 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getWhile().isSuperTypeOf(domainElement.eClass())) {
 				return While2EditPart.VISUAL_ID;
 			}
+			if (EventpatternPackage.eINSTANCE.getPoint().isSuperTypeOf(domainElement.eClass())) {
+				return Point2EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getEvent().isSuperTypeOf(domainElement.eClass())) {
 				return Event2EditPart.VISUAL_ID;
 			}
@@ -608,6 +629,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getValue().isSuperTypeOf(domainElement.eClass())) {
 				return Value2EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getGeoValue().isSuperTypeOf(domainElement.eClass())) {
+				return GeoValue2EditPart.VISUAL_ID;
 			}
 			break;
 		case BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID:
@@ -710,6 +734,9 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getSum().isSuperTypeOf(domainElement.eClass())) {
 				return Sum2EditPart.VISUAL_ID;
 			}
+			if (EventpatternPackage.eINSTANCE.getPoint().isSuperTypeOf(domainElement.eClass())) {
+				return Point3EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getEvent().isSuperTypeOf(domainElement.eClass())) {
 				return Event3EditPart.VISUAL_ID;
 			}
@@ -718,6 +745,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getValue().isSuperTypeOf(domainElement.eClass())) {
 				return Value3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getGeoValue().isSuperTypeOf(domainElement.eClass())) {
+				return GeoValue3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getGroupBy().isSuperTypeOf(domainElement.eClass())) {
 				return GroupBy2EditPart.VISUAL_ID;
@@ -832,6 +862,9 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getSum().isSuperTypeOf(domainElement.eClass())) {
 				return Sum2EditPart.VISUAL_ID;
 			}
+			if (EventpatternPackage.eINSTANCE.getPoint().isSuperTypeOf(domainElement.eClass())) {
+				return Point3EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getEvent().isSuperTypeOf(domainElement.eClass())) {
 				return Event3EditPart.VISUAL_ID;
 			}
@@ -840,6 +873,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getValue().isSuperTypeOf(domainElement.eClass())) {
 				return Value3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getGeoValue().isSuperTypeOf(domainElement.eClass())) {
+				return GeoValue3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getGroupBy().isSuperTypeOf(domainElement.eClass())) {
 				return GroupBy2EditPart.VISUAL_ID;
@@ -954,6 +990,9 @@ public class EventpatternVisualIDRegistry {
 			if (EventpatternPackage.eINSTANCE.getSum().isSuperTypeOf(domainElement.eClass())) {
 				return Sum2EditPart.VISUAL_ID;
 			}
+			if (EventpatternPackage.eINSTANCE.getPoint().isSuperTypeOf(domainElement.eClass())) {
+				return Point3EditPart.VISUAL_ID;
+			}
 			if (EventpatternPackage.eINSTANCE.getEvent().isSuperTypeOf(domainElement.eClass())) {
 				return Event3EditPart.VISUAL_ID;
 			}
@@ -962,6 +1001,9 @@ public class EventpatternVisualIDRegistry {
 			}
 			if (EventpatternPackage.eINSTANCE.getValue().isSuperTypeOf(domainElement.eClass())) {
 				return Value3EditPart.VISUAL_ID;
+			}
+			if (EventpatternPackage.eINSTANCE.getGeoValue().isSuperTypeOf(domainElement.eClass())) {
+				return GeoValue3EditPart.VISUAL_ID;
 			}
 			if (EventpatternPackage.eINSTANCE.getGroupBy().isSuperTypeOf(domainElement.eClass())) {
 				return GroupBy2EditPart.VISUAL_ID;
@@ -1104,6 +1146,9 @@ public class EventpatternVisualIDRegistry {
 			if (SumEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
+			if (PointEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (EventEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1111,6 +1156,9 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (ValueEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (GeoValueEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (GroupByEditPart.VISUAL_ID == nodeVisualID) {
@@ -1157,6 +1205,11 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			break;
+		case PointEditPart.VISUAL_ID:
+			if (PointValueEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
 		case EventEditPart.VISUAL_ID:
 			if (EventTypeNameEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
@@ -1175,6 +1228,11 @@ public class EventpatternVisualIDRegistry {
 			break;
 		case ValueEditPart.VISUAL_ID:
 			if (ValueValueEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case GeoValueEditPart.VISUAL_ID:
+			if (GeoValueValueEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -1267,6 +1325,11 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			break;
+		case Point2EditPart.VISUAL_ID:
+			if (PointValue2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
 		case Event2EditPart.VISUAL_ID:
 			if (EventTypeName2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
@@ -1288,6 +1351,11 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			break;
+		case GeoValue2EditPart.VISUAL_ID:
+			if (GeoValueValue2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
 		case Repeat3EditPart.VISUAL_ID:
 			if (RepeatCount3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
@@ -1295,6 +1363,11 @@ public class EventpatternVisualIDRegistry {
 			break;
 		case Range3EditPart.VISUAL_ID:
 			if (RangeLowEndpointHighEndpoint3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case Point3EditPart.VISUAL_ID:
+			if (PointValue3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -1316,6 +1389,11 @@ public class EventpatternVisualIDRegistry {
 			break;
 		case Value3EditPart.VISUAL_ID:
 			if (ValueValue3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
+		case GeoValue3EditPart.VISUAL_ID:
+			if (GeoValueValue3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -1447,6 +1525,9 @@ public class EventpatternVisualIDRegistry {
 			if (While2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
+			if (Point2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (Event2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1454,6 +1535,9 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Value2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (GeoValue2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -1567,6 +1651,9 @@ public class EventpatternVisualIDRegistry {
 			if (Sum2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
+			if (Point3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (Event3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1574,6 +1661,9 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Value3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (GeoValue3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (GroupBy2EditPart.VISUAL_ID == nodeVisualID) {
@@ -1684,6 +1774,9 @@ public class EventpatternVisualIDRegistry {
 			if (While2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
+			if (Point2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (Event2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1691,6 +1784,9 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Value2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (GeoValue2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -1794,6 +1890,9 @@ public class EventpatternVisualIDRegistry {
 			if (Sum2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
+			if (Point3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (Event3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1801,6 +1900,9 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Value3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (GeoValue3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (GroupBy2EditPart.VISUAL_ID == nodeVisualID) {
@@ -1916,6 +2018,9 @@ public class EventpatternVisualIDRegistry {
 			if (Sum2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
+			if (Point3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (Event3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -1923,6 +2028,9 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Value3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (GeoValue3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (GroupBy2EditPart.VISUAL_ID == nodeVisualID) {
@@ -2038,6 +2146,9 @@ public class EventpatternVisualIDRegistry {
 			if (Sum2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
+			if (Point3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			if (Event3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
@@ -2045,6 +2156,9 @@ public class EventpatternVisualIDRegistry {
 				return true;
 			}
 			if (Value3EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (GeoValue3EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (GroupBy2EditPart.VISUAL_ID == nodeVisualID) {
@@ -2182,6 +2296,8 @@ public class EventpatternVisualIDRegistry {
 		case EqualsEditPart.VISUAL_ID:
 		case IntersectsEditPart.VISUAL_ID:
 		case IntersectionEditPart.VISUAL_ID:
+		case GeoValueEditPart.VISUAL_ID:
+		case PointEditPart.VISUAL_ID:
 		case And2EditPart.VISUAL_ID:
 		case Or2EditPart.VISUAL_ID:
 		case Not2EditPart.VISUAL_ID:
@@ -2249,6 +2365,10 @@ public class EventpatternVisualIDRegistry {
 		case Intersects3EditPart.VISUAL_ID:
 		case Intersection2EditPart.VISUAL_ID:
 		case Intersection3EditPart.VISUAL_ID:
+		case GeoValue2EditPart.VISUAL_ID:
+		case GeoValue3EditPart.VISUAL_ID:
+		case Point2EditPart.VISUAL_ID:
+		case Point3EditPart.VISUAL_ID:
 			return true;
 		default:
 			break;

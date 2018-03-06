@@ -307,6 +307,14 @@ public class EventpatternAdapterFactory extends AdapterFactoryImpl
 				return createValueAdapter();
 			}
 			@Override
+			public Adapter caseGeoValue(GeoValue object) {
+				return createGeoValueAdapter();
+			}
+			@Override
+			public Adapter casePoint(Point object) {
+				return createPointAdapter();
+			}
+			@Override
 			public Adapter caseEmail(Email object) {
 				return createEmailAdapter();
 			}
@@ -1260,6 +1268,34 @@ public class EventpatternAdapterFactory extends AdapterFactoryImpl
 	}
 
   /**
+	 * Creates a new adapter for an object of class '{@link eventpattern.GeoValue <em>Geo Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.GeoValue
+	 * @generated
+	 */
+	public Adapter createGeoValueAdapter() {
+		return null;
+	}
+
+		/**
+	 * Creates a new adapter for an object of class '{@link eventpattern.Point <em>Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see eventpattern.Point
+	 * @generated
+	 */
+	public Adapter createPointAdapter() {
+		return null;
+	}
+
+		/**
 	 * Creates a new adapter for an object of class '{@link eventpattern.Email <em>Email</em>}'.
 	 * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;

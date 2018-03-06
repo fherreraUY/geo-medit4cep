@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class DiferenceImpl extends NaryOperatorImpl implements Diference {
+public class DiferenceImpl extends BinaryOperatorImpl implements Diference {
 	/**
 	 * The cached value of the '{@link #getOutboundLink() <em>Outbound Link</em>}' reference list.
 	 * <!-- begin-user-doc -->

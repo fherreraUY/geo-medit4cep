@@ -303,6 +303,16 @@ public class DataWindowItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
+				 EventpatternFactory.eINSTANCE.createGeoValue()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
+				 EventpatternFactory.eINSTANCE.createPoint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.DATA_WINDOW__EVENT_PATTERN_CONDITIONS,
 				 EventpatternFactory.eINSTANCE.createUnion()));
 
 		newChildDescriptors.add

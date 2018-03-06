@@ -61,5 +61,6 @@
     <eLiterals name="Double" value="4"/>
     <eLiterals name="Float" value="5"/>
     <eLiterals name="String" value="6"/>
+    <eLiterals name="Object" value="7"/>
   </eClassifiers>
 </ecore:EPackage>

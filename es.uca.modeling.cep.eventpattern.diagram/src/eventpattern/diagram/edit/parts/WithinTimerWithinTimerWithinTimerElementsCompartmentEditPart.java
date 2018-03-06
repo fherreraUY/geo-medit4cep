@@ -176,6 +176,9 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart extend
 			if (type == EventpatternElementTypes.While_3023) {
 				return this;
 			}
+			if (type == EventpatternElementTypes.Point_3079) {
+				return this;
+			}
 			if (type == EventpatternElementTypes.Event_3024) {
 				return this;
 			}
@@ -183,6 +186,9 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart extend
 				return this;
 			}
 			if (type == EventpatternElementTypes.Value_3026) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.GeoValue_3077) {
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

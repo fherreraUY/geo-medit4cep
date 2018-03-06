@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class UnionImpl extends NaryOperatorImpl implements Union {
+public class UnionImpl extends BinaryOperatorImpl implements Union {
 	/**
 	 * The cached value of the '{@link #getOutboundLink() <em>Outbound Link</em>}' reference list.
 	 * <!-- begin-user-doc -->

@@ -574,6 +574,26 @@ public class Messages extends NLS {
 	public static String GroupBy3CreationTool_desc;
 
 	/**
+	* @generated
+	*/
+	public static String GeoValue4CreationTool_title;
+
+	/**
+	* @generated
+	*/
+	public static String GeoValue4CreationTool_desc;
+
+	/**
+	* @generated
+	*/
+	public static String Point5CreationTool_title;
+
+	/**
+	* @generated
+	*/
+	public static String Point5CreationTool_desc;
+
+	/**
 	 * @generated
 	 */
 	public static String Event1CreationTool_title;
@@ -1274,6 +1294,16 @@ public class Messages extends NLS {
 	public static String NavigatorGroupName_Intersection_2048_outgoinglinks;
 
 	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_GeoValue_2049_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Point_2050_outgoinglinks;
+
+	/**
 	 * @generated
 	 */
 	public static String NavigatorGroupName_EventProperty_3001_outgoinglinks;
@@ -1947,6 +1977,26 @@ public class Messages extends NLS {
 	* @generated
 	*/
 	public static String NavigatorGroupName_Intersection_3076_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_GeoValue_3077_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_GeoValue_3078_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Point_3079_outgoinglinks;
+
+	/**
+	* @generated
+	*/
+	public static String NavigatorGroupName_Point_3080_outgoinglinks;
 
 	/**
 	 * @generated

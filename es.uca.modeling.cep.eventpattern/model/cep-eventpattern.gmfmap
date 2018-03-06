@@ -14,7 +14,7 @@
           href="cep-eventpattern.ecore#//Contains"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.6/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.8/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Contains"/>
     </ownedChild>
@@ -27,7 +27,7 @@
           href="cep-eventpattern.ecore#//And"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.9/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.11/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#And"/>
     </ownedChild>
@@ -40,7 +40,7 @@
           href="cep-eventpattern.ecore#//Or"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.9/@tools.2"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.11/@tools.2"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Or"/>
     </ownedChild>
@@ -53,7 +53,7 @@
           href="cep-eventpattern.ecore#//Not"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.9/@tools.1"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.11/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Not"/>
     </ownedChild>
@@ -66,7 +66,7 @@
           href="cep-eventpattern.ecore#//Union"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.5/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.7/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Union"/>
     </ownedChild>
@@ -79,7 +79,7 @@
           href="cep-eventpattern.ecore#//Intersection"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.5/@tools.1"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.7/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Intersection"/>
     </ownedChild>
@@ -92,7 +92,7 @@
           href="cep-eventpattern.ecore#//Diference"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.5/@tools.2"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.7/@tools.2"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Diference"/>
     </ownedChild>
@@ -105,7 +105,7 @@
           href="cep-eventpattern.ecore#//Distance"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.6/@tools.3"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.8/@tools.3"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Distance"/>
     </ownedChild>
@@ -118,7 +118,7 @@
           href="cep-eventpattern.ecore#//Equals"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.6/@tools.1"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.8/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Equals"/>
     </ownedChild>
@@ -131,7 +131,7 @@
           href="cep-eventpattern.ecore#//Intersects"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.6/@tools.2"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.8/@tools.2"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Intersects"/>
     </ownedChild>
@@ -144,7 +144,7 @@
           href="cep-eventpattern.ecore#//Addition"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.11/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.13/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Addition"/>
     </ownedChild>
@@ -157,7 +157,7 @@
           href="cep-eventpattern.ecore#//Subtraction"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.11/@tools.4"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.13/@tools.4"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Subtraction"/>
     </ownedChild>
@@ -170,7 +170,7 @@
           href="cep-eventpattern.ecore#//Multiplication"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.11/@tools.3"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.13/@tools.3"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Multiplication"/>
     </ownedChild>
@@ -183,7 +183,7 @@
           href="cep-eventpattern.ecore#//Division"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.11/@tools.1"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.13/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Division"/>
     </ownedChild>
@@ -196,7 +196,7 @@
           href="cep-eventpattern.ecore#//Modulus"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.11/@tools.2"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.13/@tools.2"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Modulus"/>
     </ownedChild>
@@ -209,7 +209,7 @@
           href="cep-eventpattern.ecore#//Equal"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.12/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Equal"/>
     </ownedChild>
@@ -222,7 +222,7 @@
           href="cep-eventpattern.ecore#//NotEqual"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.5"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.12/@tools.5"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#NotEqual"/>
     </ownedChild>
@@ -235,7 +235,7 @@
           href="cep-eventpattern.ecore#//LessThan"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.4"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.12/@tools.4"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#LessThan"/>
     </ownedChild>
@@ -248,7 +248,7 @@
           href="cep-eventpattern.ecore#//GreaterThan"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.2"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.12/@tools.2"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#GreaterThan"/>
     </ownedChild>
@@ -261,7 +261,7 @@
           href="cep-eventpattern.ecore#//LessEqual"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.3"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.12/@tools.3"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#LessEqual"/>
     </ownedChild>
@@ -274,7 +274,7 @@
           href="cep-eventpattern.ecore#//GreaterEqual"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.1"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.12/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#GreaterEqual"/>
     </ownedChild>
@@ -287,7 +287,7 @@
           href="cep-eventpattern.ecore#//Every"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.8/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Every"/>
     </ownedChild>
@@ -300,7 +300,7 @@
           href="cep-eventpattern.ecore#//EveryDistinct"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.8/@tools.1"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#EveryDistinct"/>
     </ownedChild>
@@ -323,7 +323,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.8/@tools.4"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.4"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Repeat"/>
     </ownedChild>
@@ -336,7 +336,7 @@
           href="cep-eventpattern.ecore#//Until"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.8/@tools.5"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.5"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Until"/>
     </ownedChild>
@@ -361,7 +361,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.8/@tools.3"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.3"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Range"/>
     </ownedChild>
@@ -374,7 +374,7 @@
           href="cep-eventpattern.ecore#//FollowedBy"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.8/@tools.2"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.2"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#FollowedBy"/>
     </ownedChild>
@@ -387,7 +387,7 @@
           href="cep-eventpattern.ecore#//While"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.8/@tools.6"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.10/@tools.6"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#While"/>
     </ownedChild>
@@ -400,7 +400,7 @@
           href="cep-eventpattern.ecore#//Max"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.12/@tools.2"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.14/@tools.2"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Max"/>
     </ownedChild>
@@ -413,7 +413,7 @@
           href="cep-eventpattern.ecore#//Min"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.12/@tools.3"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.14/@tools.3"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Min"/>
     </ownedChild>
@@ -426,7 +426,7 @@
           href="cep-eventpattern.ecore#//Avg"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.12/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.14/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Avg"/>
     </ownedChild>
@@ -439,7 +439,7 @@
           href="cep-eventpattern.ecore#//Count"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.12/@tools.1"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.14/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Count"/>
     </ownedChild>
@@ -452,9 +452,29 @@
           href="cep-eventpattern.ecore#//Sum"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.12/@tools.4"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.14/@tools.4"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Sum"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="cep-eventpattern.ecore#//CEPEventPattern/eventPatternElements"/>
+    <ownedChild>
+      <domainMetaElement
+          href="cep-eventpattern.ecore#//Point"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="cep-eventpattern.gmfgraph#PointLabel"/>
+        <features
+            href="cep-eventpattern.ecore#//GeoValue/value"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="cep-eventpattern.gmftool#//@palette/@tools.4"/>
+      <diagramNode
+          href="cep-eventpattern.gmfgraph#Point"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -474,17 +494,17 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.3/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.5/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Event"/>
       <children
-          compartment="//@nodes.33/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.34/@ownedChild">
+          compartment="//@nodes.34/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.35/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//Event/eventProperties"/>
       </children>
       <compartments
-          children="//@nodes.33/@ownedChild/@children.0">
+          children="//@nodes.34/@ownedChild/@children.0">
         <compartment
             href="cep-eventpattern.gmfgraph#EventEventPropertiesCompartment"/>
       </compartments>
@@ -507,17 +527,17 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.3/@tools.1"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.5/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#EventProperty"/>
       <children
-          compartment="//@nodes.34/@ownedChild/@compartments.0"
-          referencedChild="//@nodes.34/@ownedChild">
+          compartment="//@nodes.35/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.35/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//EventProperty/eventProperties"/>
       </children>
       <compartments
-          children="//@nodes.34/@ownedChild/@children.0">
+          children="//@nodes.35/@ownedChild/@children.0">
         <compartment
             href="cep-eventpattern.gmfgraph#EventPropertyEventPropertiesCompartment"/>
       </compartments>
@@ -541,6 +561,26 @@
           href="cep-eventpattern.gmftool#//@palette/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Value"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="cep-eventpattern.ecore#//CEPEventPattern/eventPatternElements"/>
+    <ownedChild>
+      <domainMetaElement
+          href="cep-eventpattern.ecore#//GeoValue"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="cep-eventpattern.gmfgraph#GeoValueLabel"/>
+        <features
+            href="cep-eventpattern.ecore#//GeoValue/value"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="cep-eventpattern.gmftool#//@palette/@tools.3"/>
+      <diagramNode
+          href="cep-eventpattern.gmfgraph#GeoValue"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -588,197 +628,209 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.7/@tools.2"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.9/@tools.2"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#WithinTimer"/>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.0/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.1/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.2/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.3/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.4/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.5/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.6/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.7/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.8/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.9/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.10/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.11/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.12/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.13/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.14/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.15/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.16/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.17/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.18/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.19/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.20/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.21/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.22/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.23/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.24/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.25/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.26/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.27/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.33/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.34/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
       <children
-          compartment="//@nodes.37/@ownedChild/@compartments.0"
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
           referencedChild="//@nodes.35/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
       </children>
+      <children
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.36/@ownedChild">
+        <containmentFeature
+            href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
+      </children>
+      <children
+          compartment="//@nodes.39/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.37/@ownedChild">
+        <containmentFeature
+            href="cep-eventpattern.ecore#//WithinTimer/withinTimerElements"/>
+      </children>
       <compartments
-          children="//@nodes.37/@ownedChild/@children.0 //@nodes.37/@ownedChild/@children.1 //@nodes.37/@ownedChild/@children.2 //@nodes.37/@ownedChild/@children.3 //@nodes.37/@ownedChild/@children.4 //@nodes.37/@ownedChild/@children.5 //@nodes.37/@ownedChild/@children.6 //@nodes.37/@ownedChild/@children.7 //@nodes.37/@ownedChild/@children.8 //@nodes.37/@ownedChild/@children.9 //@nodes.37/@ownedChild/@children.10 //@nodes.37/@ownedChild/@children.11 //@nodes.37/@ownedChild/@children.12 //@nodes.37/@ownedChild/@children.13 //@nodes.37/@ownedChild/@children.14 //@nodes.37/@ownedChild/@children.15 //@nodes.37/@ownedChild/@children.16 //@nodes.37/@ownedChild/@children.17 //@nodes.37/@ownedChild/@children.18 //@nodes.37/@ownedChild/@children.19 //@nodes.37/@ownedChild/@children.20 //@nodes.37/@ownedChild/@children.21 //@nodes.37/@ownedChild/@children.22 //@nodes.37/@ownedChild/@children.23 //@nodes.37/@ownedChild/@children.24 //@nodes.37/@ownedChild/@children.25 //@nodes.37/@ownedChild/@children.26 //@nodes.37/@ownedChild/@children.27 //@nodes.37/@ownedChild/@children.28 //@nodes.37/@ownedChild/@children.29 //@nodes.37/@ownedChild/@children.30">
+          children="//@nodes.39/@ownedChild/@children.0 //@nodes.39/@ownedChild/@children.1 //@nodes.39/@ownedChild/@children.2 //@nodes.39/@ownedChild/@children.3 //@nodes.39/@ownedChild/@children.4 //@nodes.39/@ownedChild/@children.5 //@nodes.39/@ownedChild/@children.6 //@nodes.39/@ownedChild/@children.7 //@nodes.39/@ownedChild/@children.8 //@nodes.39/@ownedChild/@children.9 //@nodes.39/@ownedChild/@children.10 //@nodes.39/@ownedChild/@children.11 //@nodes.39/@ownedChild/@children.12 //@nodes.39/@ownedChild/@children.13 //@nodes.39/@ownedChild/@children.14 //@nodes.39/@ownedChild/@children.15 //@nodes.39/@ownedChild/@children.16 //@nodes.39/@ownedChild/@children.17 //@nodes.39/@ownedChild/@children.18 //@nodes.39/@ownedChild/@children.19 //@nodes.39/@ownedChild/@children.20 //@nodes.39/@ownedChild/@children.21 //@nodes.39/@ownedChild/@children.22 //@nodes.39/@ownedChild/@children.23 //@nodes.39/@ownedChild/@children.24 //@nodes.39/@ownedChild/@children.25 //@nodes.39/@ownedChild/@children.26 //@nodes.39/@ownedChild/@children.27 //@nodes.39/@ownedChild/@children.28 //@nodes.39/@ownedChild/@children.29 //@nodes.39/@ownedChild/@children.30 //@nodes.39/@ownedChild/@children.31 //@nodes.39/@ownedChild/@children.32">
         <compartment
             href="cep-eventpattern.gmfgraph#WithinTimerWithinTimerElementsCompartment"/>
       </compartments>
@@ -815,7 +867,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.7/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.9/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#TimeInterval"/>
     </ownedChild>
@@ -847,7 +899,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.7/@tools.1"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.9/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#TimeSchedule"/>
     </ownedChild>
@@ -867,7 +919,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.14/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.16/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Email"/>
     </ownedChild>
@@ -880,7 +932,7 @@
           href="cep-eventpattern.ecore#//Twitter"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.14/@tools.1"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.16/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#Twitter"/>
     </ownedChild>
@@ -904,251 +956,263 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.13/@tools.2"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.15/@tools.2"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#SlidingEventInterval"/>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.0/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.1/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.2/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.3/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.4/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.5/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.6/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.7/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.8/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.9/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.10/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.11/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.12/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.13/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.14/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.15/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.16/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.17/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.18/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.19/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.20/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.21/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.22/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.23/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.24/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.25/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.26/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.27/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.28/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.29/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.30/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.31/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.32/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.33/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.34/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.35/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.36/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.37/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.38/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.42/@ownedChild/@compartments.0"
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
           referencedChild="//@nodes.39/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
+      <children
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.40/@ownedChild">
+        <containmentFeature
+            href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
+      </children>
+      <children
+          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.41/@ownedChild">
+        <containmentFeature
+            href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
+      </children>
       <compartments
-          children="//@nodes.42/@ownedChild/@children.0 //@nodes.42/@ownedChild/@children.1 //@nodes.42/@ownedChild/@children.2 //@nodes.42/@ownedChild/@children.3 //@nodes.42/@ownedChild/@children.4 //@nodes.42/@ownedChild/@children.5 //@nodes.42/@ownedChild/@children.6 //@nodes.42/@ownedChild/@children.7 //@nodes.42/@ownedChild/@children.8 //@nodes.42/@ownedChild/@children.9 //@nodes.42/@ownedChild/@children.10 //@nodes.42/@ownedChild/@children.11 //@nodes.42/@ownedChild/@children.12 //@nodes.42/@ownedChild/@children.13 //@nodes.42/@ownedChild/@children.14 //@nodes.42/@ownedChild/@children.15 //@nodes.42/@ownedChild/@children.16 //@nodes.42/@ownedChild/@children.17 //@nodes.42/@ownedChild/@children.18 //@nodes.42/@ownedChild/@children.19 //@nodes.42/@ownedChild/@children.20 //@nodes.42/@ownedChild/@children.21 //@nodes.42/@ownedChild/@children.22 //@nodes.42/@ownedChild/@children.23 //@nodes.42/@ownedChild/@children.24 //@nodes.42/@ownedChild/@children.25 //@nodes.42/@ownedChild/@children.26 //@nodes.42/@ownedChild/@children.27 //@nodes.42/@ownedChild/@children.28 //@nodes.42/@ownedChild/@children.29 //@nodes.42/@ownedChild/@children.30 //@nodes.42/@ownedChild/@children.31 //@nodes.42/@ownedChild/@children.32 //@nodes.42/@ownedChild/@children.33 //@nodes.42/@ownedChild/@children.34 //@nodes.42/@ownedChild/@children.35 //@nodes.42/@ownedChild/@children.36 //@nodes.42/@ownedChild/@children.37 //@nodes.42/@ownedChild/@children.38 //@nodes.42/@ownedChild/@children.39">
+          children="//@nodes.44/@ownedChild/@children.0 //@nodes.44/@ownedChild/@children.1 //@nodes.44/@ownedChild/@children.2 //@nodes.44/@ownedChild/@children.3 //@nodes.44/@ownedChild/@children.4 //@nodes.44/@ownedChild/@children.5 //@nodes.44/@ownedChild/@children.6 //@nodes.44/@ownedChild/@children.7 //@nodes.44/@ownedChild/@children.8 //@nodes.44/@ownedChild/@children.9 //@nodes.44/@ownedChild/@children.10 //@nodes.44/@ownedChild/@children.11 //@nodes.44/@ownedChild/@children.12 //@nodes.44/@ownedChild/@children.13 //@nodes.44/@ownedChild/@children.14 //@nodes.44/@ownedChild/@children.15 //@nodes.44/@ownedChild/@children.16 //@nodes.44/@ownedChild/@children.17 //@nodes.44/@ownedChild/@children.18 //@nodes.44/@ownedChild/@children.19 //@nodes.44/@ownedChild/@children.20 //@nodes.44/@ownedChild/@children.21 //@nodes.44/@ownedChild/@children.22 //@nodes.44/@ownedChild/@children.23 //@nodes.44/@ownedChild/@children.24 //@nodes.44/@ownedChild/@children.25 //@nodes.44/@ownedChild/@children.26 //@nodes.44/@ownedChild/@children.27 //@nodes.44/@ownedChild/@children.28 //@nodes.44/@ownedChild/@children.29 //@nodes.44/@ownedChild/@children.30 //@nodes.44/@ownedChild/@children.31 //@nodes.44/@ownedChild/@children.32 //@nodes.44/@ownedChild/@children.33 //@nodes.44/@ownedChild/@children.34 //@nodes.44/@ownedChild/@children.35 //@nodes.44/@ownedChild/@children.36 //@nodes.44/@ownedChild/@children.37 //@nodes.44/@ownedChild/@children.38 //@nodes.44/@ownedChild/@children.39 //@nodes.44/@ownedChild/@children.40 //@nodes.44/@ownedChild/@children.41">
         <compartment
             href="cep-eventpattern.gmfgraph#SlidingEventIntervalEventPatternConditionsCompartment"/>
       </compartments>
@@ -1173,251 +1237,263 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.13/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.15/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#BatchingEventInterval"/>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.0/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.1/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.2/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.3/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.4/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.5/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.6/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.7/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.8/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.9/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.10/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.11/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.12/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.13/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.14/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.15/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.16/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.17/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.18/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.19/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.20/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.21/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.22/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.23/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.24/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.25/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.26/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.27/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.28/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.29/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.30/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.31/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.32/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.33/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.34/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.35/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.36/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.37/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.38/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.43/@ownedChild/@compartments.0"
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
           referencedChild="//@nodes.39/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
+      <children
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.40/@ownedChild">
+        <containmentFeature
+            href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
+      </children>
+      <children
+          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.41/@ownedChild">
+        <containmentFeature
+            href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
+      </children>
       <compartments
-          children="//@nodes.43/@ownedChild/@children.0 //@nodes.43/@ownedChild/@children.1 //@nodes.43/@ownedChild/@children.2 //@nodes.43/@ownedChild/@children.3 //@nodes.43/@ownedChild/@children.4 //@nodes.43/@ownedChild/@children.5 //@nodes.43/@ownedChild/@children.6 //@nodes.43/@ownedChild/@children.7 //@nodes.43/@ownedChild/@children.8 //@nodes.43/@ownedChild/@children.9 //@nodes.43/@ownedChild/@children.10 //@nodes.43/@ownedChild/@children.11 //@nodes.43/@ownedChild/@children.12 //@nodes.43/@ownedChild/@children.13 //@nodes.43/@ownedChild/@children.14 //@nodes.43/@ownedChild/@children.15 //@nodes.43/@ownedChild/@children.16 //@nodes.43/@ownedChild/@children.17 //@nodes.43/@ownedChild/@children.18 //@nodes.43/@ownedChild/@children.19 //@nodes.43/@ownedChild/@children.20 //@nodes.43/@ownedChild/@children.21 //@nodes.43/@ownedChild/@children.22 //@nodes.43/@ownedChild/@children.23 //@nodes.43/@ownedChild/@children.24 //@nodes.43/@ownedChild/@children.25 //@nodes.43/@ownedChild/@children.26 //@nodes.43/@ownedChild/@children.27 //@nodes.43/@ownedChild/@children.28 //@nodes.43/@ownedChild/@children.29 //@nodes.43/@ownedChild/@children.30 //@nodes.43/@ownedChild/@children.31 //@nodes.43/@ownedChild/@children.32 //@nodes.43/@ownedChild/@children.33 //@nodes.43/@ownedChild/@children.34 //@nodes.43/@ownedChild/@children.35 //@nodes.43/@ownedChild/@children.36 //@nodes.43/@ownedChild/@children.37 //@nodes.43/@ownedChild/@children.38 //@nodes.43/@ownedChild/@children.39">
+          children="//@nodes.45/@ownedChild/@children.0 //@nodes.45/@ownedChild/@children.1 //@nodes.45/@ownedChild/@children.2 //@nodes.45/@ownedChild/@children.3 //@nodes.45/@ownedChild/@children.4 //@nodes.45/@ownedChild/@children.5 //@nodes.45/@ownedChild/@children.6 //@nodes.45/@ownedChild/@children.7 //@nodes.45/@ownedChild/@children.8 //@nodes.45/@ownedChild/@children.9 //@nodes.45/@ownedChild/@children.10 //@nodes.45/@ownedChild/@children.11 //@nodes.45/@ownedChild/@children.12 //@nodes.45/@ownedChild/@children.13 //@nodes.45/@ownedChild/@children.14 //@nodes.45/@ownedChild/@children.15 //@nodes.45/@ownedChild/@children.16 //@nodes.45/@ownedChild/@children.17 //@nodes.45/@ownedChild/@children.18 //@nodes.45/@ownedChild/@children.19 //@nodes.45/@ownedChild/@children.20 //@nodes.45/@ownedChild/@children.21 //@nodes.45/@ownedChild/@children.22 //@nodes.45/@ownedChild/@children.23 //@nodes.45/@ownedChild/@children.24 //@nodes.45/@ownedChild/@children.25 //@nodes.45/@ownedChild/@children.26 //@nodes.45/@ownedChild/@children.27 //@nodes.45/@ownedChild/@children.28 //@nodes.45/@ownedChild/@children.29 //@nodes.45/@ownedChild/@children.30 //@nodes.45/@ownedChild/@children.31 //@nodes.45/@ownedChild/@children.32 //@nodes.45/@ownedChild/@children.33 //@nodes.45/@ownedChild/@children.34 //@nodes.45/@ownedChild/@children.35 //@nodes.45/@ownedChild/@children.36 //@nodes.45/@ownedChild/@children.37 //@nodes.45/@ownedChild/@children.38 //@nodes.45/@ownedChild/@children.39 //@nodes.45/@ownedChild/@children.40 //@nodes.45/@ownedChild/@children.41">
         <compartment
             href="cep-eventpattern.gmfgraph#BatchingEventIntervalEventPatternConditionsCompartment"/>
       </compartments>
@@ -1455,251 +1531,263 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.13/@tools.3"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.15/@tools.3"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#SlidingTimeInterval"/>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.0/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.1/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.2/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.3/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.4/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.5/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.6/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.7/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.8/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.9/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.10/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.11/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.12/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.13/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.14/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.15/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.16/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.17/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.18/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.19/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.20/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.21/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.22/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.23/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.24/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.25/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.26/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.27/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.28/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.29/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.30/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.31/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.32/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.33/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.34/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.35/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.36/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.37/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.38/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.44/@ownedChild/@compartments.0"
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
           referencedChild="//@nodes.39/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
+      <children
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.40/@ownedChild">
+        <containmentFeature
+            href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
+      </children>
+      <children
+          compartment="//@nodes.46/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.41/@ownedChild">
+        <containmentFeature
+            href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
+      </children>
       <compartments
-          children="//@nodes.44/@ownedChild/@children.0 //@nodes.44/@ownedChild/@children.1 //@nodes.44/@ownedChild/@children.2 //@nodes.44/@ownedChild/@children.3 //@nodes.44/@ownedChild/@children.4 //@nodes.44/@ownedChild/@children.5 //@nodes.44/@ownedChild/@children.6 //@nodes.44/@ownedChild/@children.7 //@nodes.44/@ownedChild/@children.8 //@nodes.44/@ownedChild/@children.9 //@nodes.44/@ownedChild/@children.10 //@nodes.44/@ownedChild/@children.11 //@nodes.44/@ownedChild/@children.12 //@nodes.44/@ownedChild/@children.13 //@nodes.44/@ownedChild/@children.14 //@nodes.44/@ownedChild/@children.15 //@nodes.44/@ownedChild/@children.16 //@nodes.44/@ownedChild/@children.17 //@nodes.44/@ownedChild/@children.18 //@nodes.44/@ownedChild/@children.19 //@nodes.44/@ownedChild/@children.20 //@nodes.44/@ownedChild/@children.21 //@nodes.44/@ownedChild/@children.22 //@nodes.44/@ownedChild/@children.23 //@nodes.44/@ownedChild/@children.24 //@nodes.44/@ownedChild/@children.25 //@nodes.44/@ownedChild/@children.26 //@nodes.44/@ownedChild/@children.27 //@nodes.44/@ownedChild/@children.28 //@nodes.44/@ownedChild/@children.29 //@nodes.44/@ownedChild/@children.30 //@nodes.44/@ownedChild/@children.31 //@nodes.44/@ownedChild/@children.32 //@nodes.44/@ownedChild/@children.33 //@nodes.44/@ownedChild/@children.34 //@nodes.44/@ownedChild/@children.35 //@nodes.44/@ownedChild/@children.36 //@nodes.44/@ownedChild/@children.37 //@nodes.44/@ownedChild/@children.38 //@nodes.44/@ownedChild/@children.39">
+          children="//@nodes.46/@ownedChild/@children.0 //@nodes.46/@ownedChild/@children.1 //@nodes.46/@ownedChild/@children.2 //@nodes.46/@ownedChild/@children.3 //@nodes.46/@ownedChild/@children.4 //@nodes.46/@ownedChild/@children.5 //@nodes.46/@ownedChild/@children.6 //@nodes.46/@ownedChild/@children.7 //@nodes.46/@ownedChild/@children.8 //@nodes.46/@ownedChild/@children.9 //@nodes.46/@ownedChild/@children.10 //@nodes.46/@ownedChild/@children.11 //@nodes.46/@ownedChild/@children.12 //@nodes.46/@ownedChild/@children.13 //@nodes.46/@ownedChild/@children.14 //@nodes.46/@ownedChild/@children.15 //@nodes.46/@ownedChild/@children.16 //@nodes.46/@ownedChild/@children.17 //@nodes.46/@ownedChild/@children.18 //@nodes.46/@ownedChild/@children.19 //@nodes.46/@ownedChild/@children.20 //@nodes.46/@ownedChild/@children.21 //@nodes.46/@ownedChild/@children.22 //@nodes.46/@ownedChild/@children.23 //@nodes.46/@ownedChild/@children.24 //@nodes.46/@ownedChild/@children.25 //@nodes.46/@ownedChild/@children.26 //@nodes.46/@ownedChild/@children.27 //@nodes.46/@ownedChild/@children.28 //@nodes.46/@ownedChild/@children.29 //@nodes.46/@ownedChild/@children.30 //@nodes.46/@ownedChild/@children.31 //@nodes.46/@ownedChild/@children.32 //@nodes.46/@ownedChild/@children.33 //@nodes.46/@ownedChild/@children.34 //@nodes.46/@ownedChild/@children.35 //@nodes.46/@ownedChild/@children.36 //@nodes.46/@ownedChild/@children.37 //@nodes.46/@ownedChild/@children.38 //@nodes.46/@ownedChild/@children.39 //@nodes.46/@ownedChild/@children.40 //@nodes.46/@ownedChild/@children.41">
         <compartment
             href="cep-eventpattern.gmfgraph#SlidingTimeIntervalEventPatternConditionsCompartment"/>
       </compartments>
@@ -1737,251 +1825,263 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.13/@tools.1"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.15/@tools.1"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#BatchingTimeInterval"/>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.0/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.1/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.2/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.3/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.4/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.5/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.6/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.7/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.8/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.9/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.10/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.11/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.12/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.13/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.14/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.15/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.16/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.17/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.18/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.19/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.20/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.21/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.22/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.23/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.24/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.25/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.26/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.27/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.28/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.29/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.30/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.31/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.32/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.33/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.34/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.35/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.36/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.37/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.38/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
       <children
-          compartment="//@nodes.45/@ownedChild/@compartments.0"
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
           referencedChild="//@nodes.39/@ownedChild">
         <containmentFeature
             href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
       </children>
+      <children
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.40/@ownedChild">
+        <containmentFeature
+            href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
+      </children>
+      <children
+          compartment="//@nodes.47/@ownedChild/@compartments.0"
+          referencedChild="//@nodes.41/@ownedChild">
+        <containmentFeature
+            href="cep-eventpattern.ecore#//DataWindow/eventPatternConditions"/>
+      </children>
       <compartments
-          children="//@nodes.45/@ownedChild/@children.0 //@nodes.45/@ownedChild/@children.1 //@nodes.45/@ownedChild/@children.2 //@nodes.45/@ownedChild/@children.3 //@nodes.45/@ownedChild/@children.4 //@nodes.45/@ownedChild/@children.5 //@nodes.45/@ownedChild/@children.6 //@nodes.45/@ownedChild/@children.7 //@nodes.45/@ownedChild/@children.8 //@nodes.45/@ownedChild/@children.9 //@nodes.45/@ownedChild/@children.10 //@nodes.45/@ownedChild/@children.11 //@nodes.45/@ownedChild/@children.12 //@nodes.45/@ownedChild/@children.13 //@nodes.45/@ownedChild/@children.14 //@nodes.45/@ownedChild/@children.15 //@nodes.45/@ownedChild/@children.16 //@nodes.45/@ownedChild/@children.17 //@nodes.45/@ownedChild/@children.18 //@nodes.45/@ownedChild/@children.19 //@nodes.45/@ownedChild/@children.20 //@nodes.45/@ownedChild/@children.21 //@nodes.45/@ownedChild/@children.22 //@nodes.45/@ownedChild/@children.23 //@nodes.45/@ownedChild/@children.24 //@nodes.45/@ownedChild/@children.25 //@nodes.45/@ownedChild/@children.26 //@nodes.45/@ownedChild/@children.27 //@nodes.45/@ownedChild/@children.28 //@nodes.45/@ownedChild/@children.29 //@nodes.45/@ownedChild/@children.30 //@nodes.45/@ownedChild/@children.31 //@nodes.45/@ownedChild/@children.32 //@nodes.45/@ownedChild/@children.33 //@nodes.45/@ownedChild/@children.34 //@nodes.45/@ownedChild/@children.35 //@nodes.45/@ownedChild/@children.36 //@nodes.45/@ownedChild/@children.37 //@nodes.45/@ownedChild/@children.38 //@nodes.45/@ownedChild/@children.39">
+          children="//@nodes.47/@ownedChild/@children.0 //@nodes.47/@ownedChild/@children.1 //@nodes.47/@ownedChild/@children.2 //@nodes.47/@ownedChild/@children.3 //@nodes.47/@ownedChild/@children.4 //@nodes.47/@ownedChild/@children.5 //@nodes.47/@ownedChild/@children.6 //@nodes.47/@ownedChild/@children.7 //@nodes.47/@ownedChild/@children.8 //@nodes.47/@ownedChild/@children.9 //@nodes.47/@ownedChild/@children.10 //@nodes.47/@ownedChild/@children.11 //@nodes.47/@ownedChild/@children.12 //@nodes.47/@ownedChild/@children.13 //@nodes.47/@ownedChild/@children.14 //@nodes.47/@ownedChild/@children.15 //@nodes.47/@ownedChild/@children.16 //@nodes.47/@ownedChild/@children.17 //@nodes.47/@ownedChild/@children.18 //@nodes.47/@ownedChild/@children.19 //@nodes.47/@ownedChild/@children.20 //@nodes.47/@ownedChild/@children.21 //@nodes.47/@ownedChild/@children.22 //@nodes.47/@ownedChild/@children.23 //@nodes.47/@ownedChild/@children.24 //@nodes.47/@ownedChild/@children.25 //@nodes.47/@ownedChild/@children.26 //@nodes.47/@ownedChild/@children.27 //@nodes.47/@ownedChild/@children.28 //@nodes.47/@ownedChild/@children.29 //@nodes.47/@ownedChild/@children.30 //@nodes.47/@ownedChild/@children.31 //@nodes.47/@ownedChild/@children.32 //@nodes.47/@ownedChild/@children.33 //@nodes.47/@ownedChild/@children.34 //@nodes.47/@ownedChild/@children.35 //@nodes.47/@ownedChild/@children.36 //@nodes.47/@ownedChild/@children.37 //@nodes.47/@ownedChild/@children.38 //@nodes.47/@ownedChild/@children.39 //@nodes.47/@ownedChild/@children.40 //@nodes.47/@ownedChild/@children.41">
         <compartment
             href="cep-eventpattern.gmfgraph#BatchingTimeIntervalEventPatternConditionsCompartment"/>
       </compartments>
@@ -2005,11 +2105,11 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="cep-eventpattern.gmftool#//@palette/@tools.4/@tools.0"/>
+          href="cep-eventpattern.gmftool#//@palette/@tools.6/@tools.0"/>
       <diagramNode
           href="cep-eventpattern.gmfgraph#ComplexEvent"/>
       <children
-          compartment="//@nodes.46/@ownedChild/@compartments.0">
+          compartment="//@nodes.48/@ownedChild/@compartments.0">
         <containmentFeature
             href="cep-eventpattern.ecore#//ComplexEvent/complexEventProperties"/>
         <ownedChild>
@@ -2024,13 +2124,13 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="cep-eventpattern.gmftool#//@palette/@tools.4/@tools.1"/>
+              href="cep-eventpattern.gmftool#//@palette/@tools.6/@tools.1"/>
           <diagramNode
               href="cep-eventpattern.gmfgraph#ComplexEventProperty"/>
         </ownedChild>
       </children>
       <compartments
-          children="//@nodes.46/@ownedChild/@children.0">
+          children="//@nodes.48/@ownedChild/@children.0">
         <compartment
             href="cep-eventpattern.gmfgraph#ComplexEventComplexEventPropertiesCompartment"/>
       </compartments>

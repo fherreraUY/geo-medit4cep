@@ -1057,6 +1057,52 @@ public class EventpatternItemProviderAdapterFactory extends EventpatternAdapterF
 	}
 
   /**
+	 * This keeps track of the one adapter used for all {@link eventpattern.GeoValue} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected GeoValueItemProvider geoValueItemProvider;
+
+		/**
+	 * This creates an adapter for a {@link eventpattern.GeoValue}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createGeoValueAdapter() {
+		if (geoValueItemProvider == null) {
+			geoValueItemProvider = new GeoValueItemProvider(this);
+		}
+
+		return geoValueItemProvider;
+	}
+
+		/**
+	 * This keeps track of the one adapter used for all {@link eventpattern.Point} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PointItemProvider pointItemProvider;
+
+		/**
+	 * This creates an adapter for a {@link eventpattern.Point}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createPointAdapter() {
+		if (pointItemProvider == null) {
+			pointItemProvider = new PointItemProvider(this);
+		}
+
+		return pointItemProvider;
+	}
+
+		/**
 	 * This keeps track of the one adapter used for all {@link eventpattern.Email} instances.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1414,6 +1460,8 @@ public class EventpatternItemProviderAdapterFactory extends EventpatternAdapterF
 		if (eventItemProvider != null) eventItemProvider.dispose();
 		if (eventPropertyItemProvider != null) eventPropertyItemProvider.dispose();
 		if (valueItemProvider != null) valueItemProvider.dispose();
+		if (geoValueItemProvider != null) geoValueItemProvider.dispose();
+		if (pointItemProvider != null) pointItemProvider.dispose();
 		if (emailItemProvider != null) emailItemProvider.dispose();
 		if (twitterItemProvider != null) twitterItemProvider.dispose();
 		if (unionItemProvider != null) unionItemProvider.dispose();

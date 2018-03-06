@@ -31,6 +31,7 @@ import eventpattern.diagram.edit.parts.EventProperty5EditPart;
 import eventpattern.diagram.edit.parts.Every3EditPart;
 import eventpattern.diagram.edit.parts.EveryDistinct3EditPart;
 import eventpattern.diagram.edit.parts.FollowedBy3EditPart;
+import eventpattern.diagram.edit.parts.GeoValue3EditPart;
 import eventpattern.diagram.edit.parts.GreaterEqual3EditPart;
 import eventpattern.diagram.edit.parts.GreaterThan3EditPart;
 import eventpattern.diagram.edit.parts.GroupBy2EditPart;
@@ -46,6 +47,7 @@ import eventpattern.diagram.edit.parts.Multiplication3EditPart;
 import eventpattern.diagram.edit.parts.Not3EditPart;
 import eventpattern.diagram.edit.parts.NotEqual3EditPart;
 import eventpattern.diagram.edit.parts.Or3EditPart;
+import eventpattern.diagram.edit.parts.Point3EditPart;
 import eventpattern.diagram.edit.parts.Range3EditPart;
 import eventpattern.diagram.edit.parts.Repeat3EditPart;
 import eventpattern.diagram.edit.parts.SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart;
@@ -897,6 +899,21 @@ public class SlidingEventIntervalItemSemanticEditPolicy extends EventpatternBase
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
+					case Point3EditPart.VISUAL_ID:
+						for (Iterator<?> it = cnode.getSourceEdges().iterator(); it.hasNext();) {
+							Edge outgoingLink = (Edge) it.next();
+							if (EventpatternVisualIDRegistry.getVisualID(outgoingLink) == LinkEditPart.VISUAL_ID) {
+								DestroyElementRequest r = new DestroyElementRequest(outgoingLink.getElement(), false);
+								cmd.add(new DestroyElementCommand(r));
+								cmd.add(new DeleteCommand(getEditingDomain(), outgoingLink));
+								continue;
+							}
+						}
+						cmd.add(new DestroyElementCommand(
+								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
+						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
+						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
+						break;
 					case Event3EditPart.VISUAL_ID:
 						for (Iterator<?> it = cnode.getSourceEdges().iterator(); it.hasNext();) {
 							Edge outgoingLink = (Edge) it.next();
@@ -928,6 +945,21 @@ public class SlidingEventIntervalItemSemanticEditPolicy extends EventpatternBase
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
 					case Value3EditPart.VISUAL_ID:
+						for (Iterator<?> it = cnode.getSourceEdges().iterator(); it.hasNext();) {
+							Edge outgoingLink = (Edge) it.next();
+							if (EventpatternVisualIDRegistry.getVisualID(outgoingLink) == LinkEditPart.VISUAL_ID) {
+								DestroyElementRequest r = new DestroyElementRequest(outgoingLink.getElement(), false);
+								cmd.add(new DestroyElementCommand(r));
+								cmd.add(new DeleteCommand(getEditingDomain(), outgoingLink));
+								continue;
+							}
+						}
+						cmd.add(new DestroyElementCommand(
+								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
+						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
+						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
+						break;
+					case GeoValue3EditPart.VISUAL_ID:
 						for (Iterator<?> it = cnode.getSourceEdges().iterator(); it.hasNext();) {
 							Edge outgoingLink = (Edge) it.next();
 							if (EventpatternVisualIDRegistry.getVisualID(outgoingLink) == LinkEditPart.VISUAL_ID) {

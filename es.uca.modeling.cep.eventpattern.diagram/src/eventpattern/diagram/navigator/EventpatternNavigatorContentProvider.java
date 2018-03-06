@@ -332,6 +332,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					EventpatternVisualIDRegistry.getType(SumEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(PointEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(EventEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv),
@@ -339,6 +342,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(ValueEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(GeoValueEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(GroupByEditPart.VISUAL_ID));
@@ -1240,6 +1246,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
 					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Point2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Event2EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
@@ -1251,6 +1262,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Value2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(GeoValue2EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
@@ -1481,6 +1497,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Point3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Event3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
@@ -1492,6 +1513,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Value3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(GeoValue3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					SlidingEventIntervalSlidingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
@@ -1688,6 +1714,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Point3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Event3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
@@ -1699,6 +1730,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Value3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(GeoValue3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
@@ -1895,6 +1931,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Point3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Event3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
@@ -1906,6 +1947,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Value3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(GeoValue3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
@@ -2102,6 +2148,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Point3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Event3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
@@ -2113,6 +2164,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Value3EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
+					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(GeoValue3EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry.getType(
 					BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompartmentEditPart.VISUAL_ID));
@@ -2368,6 +2424,38 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			if (!incominglinks.isEmpty()) {
 				result.add(incominglinks);
 			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case GeoValueEditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_GeoValue_2049_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case PointEditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Point_2050_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
 			if (!outgoinglinks.isEmpty()) {
 				result.add(outgoinglinks);
 			}
@@ -3857,6 +3945,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
 					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(Point2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Event2EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
@@ -3868,6 +3961,11 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					EventpatternVisualIDRegistry.getType(Value2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), EventpatternVisualIDRegistry
+					.getType(WithinTimerWithinTimerWithinTimerElementsCompartment2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					EventpatternVisualIDRegistry.getType(GeoValue2EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
@@ -4292,6 +4390,70 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			return result.toArray();
 		}
 
+		case GeoValue2EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_GeoValue_3077_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case GeoValue3EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_GeoValue_3078_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Point2EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Point_3079_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case Point3EditPart.VISUAL_ID: {
+			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			EventpatternNavigatorGroup outgoinglinks = new EventpatternNavigatorGroup(
+					Messages.NavigatorGroupName_Point_3080_outgoinglinks, "icons/outgoingLinksNavigatorGroup.gif", //$NON-NLS-1$
+					parentElement);
+			Collection<View> connectedViews;
+			connectedViews = getOutgoingLinksByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(LinkEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews, outgoinglinks, true));
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
 		case LinkEditPart.VISUAL_ID: {
 			LinkedList<EventpatternAbstractNavigatorItem> result = new LinkedList<EventpatternAbstractNavigatorItem>();
 			Edge sv = (Edge) view;
@@ -4700,6 +4862,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					EventpatternVisualIDRegistry.getType(SumEditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(PointEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(EventEditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
@@ -4707,6 +4872,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(ValueEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(GeoValueEditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(WithinTimerEditPart.VISUAL_ID));
@@ -4811,6 +4979,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					EventpatternVisualIDRegistry.getType(While2EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Point2EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Event2EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
@@ -4818,6 +4989,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Value2EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(GeoValue2EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Contains3EditPart.VISUAL_ID));
@@ -4919,6 +5093,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 					EventpatternVisualIDRegistry.getType(Sum2EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(Point3EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Event3EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
@@ -4926,6 +5103,9 @@ public class EventpatternNavigatorContentProvider implements ICommonContentProvi
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(Value3EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source, true));
+			connectedViews = getLinksSourceByType(Collections.singleton(sv),
+					EventpatternVisualIDRegistry.getType(GeoValue3EditPart.VISUAL_ID));
 			source.addChildren(createNavigatorItems(connectedViews, source, true));
 			connectedViews = getLinksSourceByType(Collections.singleton(sv),
 					EventpatternVisualIDRegistry.getType(WithinTimer2EditPart.VISUAL_ID));

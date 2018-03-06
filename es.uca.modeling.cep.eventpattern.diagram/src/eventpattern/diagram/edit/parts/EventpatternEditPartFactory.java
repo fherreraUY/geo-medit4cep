@@ -133,6 +133,12 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 			case SumEditPart.VISUAL_ID:
 				return new SumEditPart(view);
 
+			case PointEditPart.VISUAL_ID:
+				return new PointEditPart(view);
+
+			case PointValueEditPart.VISUAL_ID:
+				return new PointValueEditPart(view);
+
 			case EventEditPart.VISUAL_ID:
 				return new EventEditPart(view);
 
@@ -150,6 +156,12 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 
 			case ValueValueEditPart.VISUAL_ID:
 				return new ValueValueEditPart(view);
+
+			case GeoValueEditPart.VISUAL_ID:
+				return new GeoValueEditPart(view);
+
+			case GeoValueValueEditPart.VISUAL_ID:
+				return new GeoValueValueEditPart(view);
 
 			case GroupByEditPart.VISUAL_ID:
 				return new GroupByEditPart(view);
@@ -313,6 +325,12 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 			case While2EditPart.VISUAL_ID:
 				return new While2EditPart(view);
 
+			case Point2EditPart.VISUAL_ID:
+				return new Point2EditPart(view);
+
+			case PointValue2EditPart.VISUAL_ID:
+				return new PointValue2EditPart(view);
+
 			case Event2EditPart.VISUAL_ID:
 				return new Event2EditPart(view);
 
@@ -330,6 +348,12 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 
 			case ValueValue2EditPart.VISUAL_ID:
 				return new ValueValue2EditPart(view);
+
+			case GeoValue2EditPart.VISUAL_ID:
+				return new GeoValue2EditPart(view);
+
+			case GeoValueValue2EditPart.VISUAL_ID:
+				return new GeoValueValue2EditPart(view);
 
 			case Contains3EditPart.VISUAL_ID:
 				return new Contains3EditPart(view);
@@ -436,6 +460,12 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 			case Sum2EditPart.VISUAL_ID:
 				return new Sum2EditPart(view);
 
+			case Point3EditPart.VISUAL_ID:
+				return new Point3EditPart(view);
+
+			case PointValue3EditPart.VISUAL_ID:
+				return new PointValue3EditPart(view);
+
 			case Event3EditPart.VISUAL_ID:
 				return new Event3EditPart(view);
 
@@ -453,6 +483,12 @@ public class EventpatternEditPartFactory implements EditPartFactory {
 
 			case ValueValue3EditPart.VISUAL_ID:
 				return new ValueValue3EditPart(view);
+
+			case GeoValue3EditPart.VISUAL_ID:
+				return new GeoValue3EditPart(view);
+
+			case GeoValueValue3EditPart.VISUAL_ID:
+				return new GeoValueValue3EditPart(view);
 
 			case GroupBy2EditPart.VISUAL_ID:
 				return new GroupBy2EditPart(view);

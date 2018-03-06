@@ -57,7 +57,6 @@ class CEPEventPattern {
 	
 
 	
-	
 class Link {
    attr int order;
    
@@ -493,6 +492,7 @@ class EventProperty extends ConditionOperand {
 
 enum PropertyTypeValue {
    Unknown;
+   Object;
    Boolean;
    Integer;
    Long;  
@@ -507,6 +507,24 @@ class Value extends ConditionOperand {
    attr String value = " ";
    attr PropertyTypeValue type;
 }
+
+
+@gmf.node(figure="rounded", label="value", label.text="", label.icon="false", margin="0", border.color="110,110,110",
+	border.width="3", size="30,30", tool.name="GeoValue", tool.description="Add a geo value")
+class GeoValue extends ConditionOperand {
+   attr String value = " ";
+   attr Object type;
+ 
+}
+
+@gmf.node(figure="rounded", label="value", label.text="", label.icon="false", margin="0", border.color="110,110,110",
+	border.width="3", size="30,30", tool.name="Point", tool.description="Add a Point")
+class Point extends GeoValue{
+   attr Double x;
+   attr Double y;
+   attr String srs;
+}
+
 
 
 /* ACTIONS */
@@ -553,7 +571,7 @@ abstract class GeoBooleanOperator extends GeoOperator, ConditionOperator {
 @gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg",
 	size="30,30", label.placement="none", resizable="false", margin="0", 
 	tool.name="Union", tool.description="Add an union operator")
-class Union extends NaryOperator, GeoArithmeticOperator {
+class Union extends BinaryOperator, GeoArithmeticOperator {
 
 }
 
@@ -561,13 +579,13 @@ class Union extends NaryOperator, GeoArithmeticOperator {
 @gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersection.svg",
 	size="30,30", label.placement="none", resizable="false", margin="0", 
 	tool.name="Intersection", tool.description="Add an intersection operator")
-class Intersection extends NaryOperator, GeoArithmeticOperator {}
+class Intersection extends BinaryOperator, GeoArithmeticOperator {}
 
 // Diference Node
 @gmf.node(figure="svg", svg.uri="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Diference.svg",
 	size="30,30", label.placement="none", resizable="false", margin="0", 
 	tool.name="Diference", tool.description="Add an diference operator")
-class Diference extends NaryOperator, GeoArithmeticOperator {
+class Diference extends BinaryOperator, GeoArithmeticOperator {
 
 }
 

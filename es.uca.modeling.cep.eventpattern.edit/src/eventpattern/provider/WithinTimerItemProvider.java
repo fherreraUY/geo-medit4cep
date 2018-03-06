@@ -475,6 +475,16 @@ public class WithinTimerItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createGeoValue()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createPoint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.WITHIN_TIMER__WITHIN_TIMER_ELEMENTS,
 				 EventpatternFactory.eINSTANCE.createUnion()));
 
 		newChildDescriptors.add

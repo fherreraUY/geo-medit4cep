@@ -38,6 +38,7 @@ import eventpattern.FollowedBy;
 import eventpattern.GeoArithmeticOperator;
 import eventpattern.GeoBooleanOperator;
 import eventpattern.GeoOperator;
+import eventpattern.GeoValue;
 import eventpattern.GreaterEqual;
 import eventpattern.GreaterThan;
 import eventpattern.GroupBy;
@@ -59,6 +60,7 @@ import eventpattern.Operator;
 import eventpattern.Or;
 import eventpattern.PatternOperand;
 import eventpattern.PatternOperator;
+import eventpattern.Point;
 import eventpattern.PropertyTypeValue;
 import eventpattern.Range;
 import eventpattern.Repeat;
@@ -507,6 +509,20 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
   private EClass valueEClass = null;
 
   /**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass geoValueEClass = null;
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass pointEClass = null;
+
+		/**
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @generated
@@ -2019,6 +2035,69 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 
   /**
 	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getGeoValue() {
+		return geoValueEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getGeoValue_Value() {
+		return (EAttribute)geoValueEClass.getEStructuralFeatures().get(0);
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getGeoValue_Type() {
+		return (EAttribute)geoValueEClass.getEStructuralFeatures().get(1);
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getPoint() {
+		return pointEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPoint_X() {
+		return (EAttribute)pointEClass.getEStructuralFeatures().get(0);
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPoint_Y() {
+		return (EAttribute)pointEClass.getEStructuralFeatures().get(1);
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPoint_Srs() {
+		return (EAttribute)pointEClass.getEStructuralFeatures().get(2);
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -2451,6 +2530,15 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 		createEAttribute(valueEClass, VALUE__VALUE);
 		createEAttribute(valueEClass, VALUE__TYPE);
 
+		geoValueEClass = createEClass(GEO_VALUE);
+		createEAttribute(geoValueEClass, GEO_VALUE__VALUE);
+		createEAttribute(geoValueEClass, GEO_VALUE__TYPE);
+
+		pointEClass = createEClass(POINT);
+		createEAttribute(pointEClass, POINT__X);
+		createEAttribute(pointEClass, POINT__Y);
+		createEAttribute(pointEClass, POINT__SRS);
+
 		emailEClass = createEClass(EMAIL);
 		createEAttribute(emailEClass, EMAIL__TO);
 		createEAttribute(emailEClass, EMAIL__CC);
@@ -2597,6 +2685,8 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 		eventEClass.getESuperTypes().add(this.getWithinTimerElement());
 		eventPropertyEClass.getESuperTypes().add(this.getConditionOperand());
 		valueEClass.getESuperTypes().add(this.getConditionOperand());
+		geoValueEClass.getESuperTypes().add(this.getConditionOperand());
+		pointEClass.getESuperTypes().add(this.getGeoValue());
 		emailEClass.getESuperTypes().add(this.getAction());
 		twitterEClass.getESuperTypes().add(this.getAction());
 		geoOperatorEClass.getESuperTypes().add(this.getOperator());
@@ -2604,11 +2694,11 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 		geoArithmeticOperatorEClass.getESuperTypes().add(this.getConditionOperator());
 		geoBooleanOperatorEClass.getESuperTypes().add(this.getGeoOperator());
 		geoBooleanOperatorEClass.getESuperTypes().add(this.getConditionOperator());
-		unionEClass.getESuperTypes().add(this.getNaryOperator());
+		unionEClass.getESuperTypes().add(this.getBinaryOperator());
 		unionEClass.getESuperTypes().add(this.getGeoArithmeticOperator());
-		intersectionEClass.getESuperTypes().add(this.getNaryOperator());
+		intersectionEClass.getESuperTypes().add(this.getBinaryOperator());
 		intersectionEClass.getESuperTypes().add(this.getGeoArithmeticOperator());
-		diferenceEClass.getESuperTypes().add(this.getNaryOperator());
+		diferenceEClass.getESuperTypes().add(this.getBinaryOperator());
 		diferenceEClass.getESuperTypes().add(this.getGeoArithmeticOperator());
 		containsEClass.getESuperTypes().add(this.getBinaryOperator());
 		containsEClass.getESuperTypes().add(this.getGeoBooleanOperator());
@@ -2816,6 +2906,15 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 		initEAttribute(getValue_Value(), ecorePackage.getEString(), "value", " ", 0, 1, Value.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getValue_Type(), this.getPropertyTypeValue(), "type", null, 0, 1, Value.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(geoValueEClass, GeoValue.class, "GeoValue", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getGeoValue_Value(), ecorePackage.getEString(), "value", " ", 0, 1, GeoValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGeoValue_Type(), ecorePackage.getEJavaObject(), "type", null, 0, 1, GeoValue.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(pointEClass, Point.class, "Point", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPoint_X(), ecorePackage.getEDoubleObject(), "x", null, 0, 1, Point.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPoint_Y(), ecorePackage.getEDoubleObject(), "y", null, 0, 1, Point.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPoint_Srs(), ecorePackage.getEString(), "srs", null, 0, 1, Point.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(emailEClass, Email.class, "Email", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getEmail_To(), ecorePackage.getEString(), "to", null, 0, 1, Email.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getEmail_Cc(), ecorePackage.getEString(), "cc", null, 0, 1, Email.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2852,6 +2951,7 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 		// Initialize enums and add enum literals
 		initEEnum(propertyTypeValueEEnum, PropertyTypeValue.class, "PropertyTypeValue");
 		addEEnumLiteral(propertyTypeValueEEnum, PropertyTypeValue.UNKNOWN);
+		addEEnumLiteral(propertyTypeValueEEnum, PropertyTypeValue.OBJECT);
 		addEEnumLiteral(propertyTypeValueEEnum, PropertyTypeValue.BOOLEAN);
 		addEEnumLiteral(propertyTypeValueEEnum, PropertyTypeValue.INTEGER);
 		addEEnumLiteral(propertyTypeValueEEnum, PropertyTypeValue.LONG);
@@ -3452,6 +3552,36 @@ public class EventpatternPackageImpl extends EPackageImpl implements Eventpatter
 			 "size", "30,30",
 			 "tool.name", "Value",
 			 "tool.description", "Add a value"
+		   });	
+		addAnnotation
+		  (geoValueEClass, 
+		   source, 
+		   new String[] {
+			 "figure", "rounded",
+			 "label", "value",
+			 "label.text", "",
+			 "label.icon", "false",
+			 "margin", "0",
+			 "border.color", "110,110,110",
+			 "border.width", "3",
+			 "size", "30,30",
+			 "tool.name", "GeoValue",
+			 "tool.description", "Add a geo value"
+		   });	
+		addAnnotation
+		  (pointEClass, 
+		   source, 
+		   new String[] {
+			 "figure", "rounded",
+			 "label", "value",
+			 "label.text", "",
+			 "label.icon", "false",
+			 "margin", "0",
+			 "border.color", "110,110,110",
+			 "border.width", "3",
+			 "size", "30,30",
+			 "tool.name", "Point",
+			 "tool.description", "Add a Point"
 		   });	
 		addAnnotation
 		  (emailEClass, 

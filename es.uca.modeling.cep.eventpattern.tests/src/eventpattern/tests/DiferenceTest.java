@@ -13,7 +13,7 @@ import junit.textui.TestRunner;
  * <!-- end-user-doc -->
  * @generated
  */
-public class DiferenceTest extends NaryOperatorTest {
+public class DiferenceTest extends BinaryOperatorTest {
 
 	/**
 	 * <!-- begin-user-doc -->

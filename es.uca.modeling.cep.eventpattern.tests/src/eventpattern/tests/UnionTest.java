@@ -13,7 +13,7 @@ import junit.textui.TestRunner;
  * <!-- end-user-doc -->
  * @generated
  */
-public class UnionTest extends NaryOperatorTest {
+public class UnionTest extends BinaryOperatorTest {
 
 	/**
 	 * <!-- begin-user-doc -->

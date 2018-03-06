@@ -626,9 +626,11 @@ public class EventpatternModelingAssistantProviderOfAddition3EditPart extends Ev
 			types.add(EventpatternElementTypes.Avg_2024);
 			types.add(EventpatternElementTypes.Count_2025);
 			types.add(EventpatternElementTypes.Sum_2026);
+			types.add(EventpatternElementTypes.Point_2050);
 			types.add(EventpatternElementTypes.Event_2027);
 			types.add(EventpatternElementTypes.EventProperty_2028);
 			types.add(EventpatternElementTypes.Value_2029);
+			types.add(EventpatternElementTypes.GeoValue_2049);
 			types.add(EventpatternElementTypes.WithinTimer_2030);
 			types.add(EventpatternElementTypes.TimeInterval_2031);
 			types.add(EventpatternElementTypes.TimeSchedule_2032);
@@ -663,9 +665,11 @@ public class EventpatternModelingAssistantProviderOfAddition3EditPart extends Ev
 			types.add(EventpatternElementTypes.Range_3021);
 			types.add(EventpatternElementTypes.FollowedBy_3022);
 			types.add(EventpatternElementTypes.While_3023);
+			types.add(EventpatternElementTypes.Point_3079);
 			types.add(EventpatternElementTypes.Event_3024);
 			types.add(EventpatternElementTypes.EventProperty_3025);
 			types.add(EventpatternElementTypes.Value_3026);
+			types.add(EventpatternElementTypes.GeoValue_3077);
 			types.add(EventpatternElementTypes.Contains_3068);
 			types.add(EventpatternElementTypes.And_3027);
 			types.add(EventpatternElementTypes.Or_3028);
@@ -699,9 +703,11 @@ public class EventpatternModelingAssistantProviderOfAddition3EditPart extends Ev
 			types.add(EventpatternElementTypes.Avg_3050);
 			types.add(EventpatternElementTypes.Count_3051);
 			types.add(EventpatternElementTypes.Sum_3052);
+			types.add(EventpatternElementTypes.Point_3080);
 			types.add(EventpatternElementTypes.Event_3053);
 			types.add(EventpatternElementTypes.EventProperty_3054);
 			types.add(EventpatternElementTypes.Value_3055);
+			types.add(EventpatternElementTypes.GeoValue_3078);
 			types.add(EventpatternElementTypes.WithinTimer_3056);
 			types.add(EventpatternElementTypes.TimeInterval_3057);
 			types.add(EventpatternElementTypes.TimeSchedule_3058);

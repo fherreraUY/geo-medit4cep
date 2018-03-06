@@ -141,9 +141,11 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 		case AvgEditPart.VISUAL_ID:
 		case CountEditPart.VISUAL_ID:
 		case SumEditPart.VISUAL_ID:
+		case PointEditPart.VISUAL_ID:
 		case EventEditPart.VISUAL_ID:
 		case EventPropertyEditPart.VISUAL_ID:
 		case ValueEditPart.VISUAL_ID:
+		case GeoValueEditPart.VISUAL_ID:
 		case GroupByEditPart.VISUAL_ID:
 		case WithinTimerEditPart.VISUAL_ID:
 		case TimeIntervalEditPart.VISUAL_ID:
@@ -545,6 +547,13 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
+		case PointEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getPoint_2050ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
 		case EventEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getEvent_2027ContainedLinks(view));
@@ -562,6 +571,13 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 		case ValueEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getValue_2029ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case GeoValueEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getGeoValue_2049ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
@@ -853,6 +869,13 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
+		case Point2EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getPoint_3079ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
 		case Event2EditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getEvent_3024ContainedLinks(view));
@@ -870,6 +893,13 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 		case Value2EditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getValue_3026ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case GeoValue2EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getGeoValue_3077ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
@@ -1105,6 +1135,13 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
+		case Point3EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getPoint_3080ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
 		case Event3EditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getEvent_3053ContainedLinks(view));
@@ -1122,6 +1159,13 @@ public class CEPEventPatternCanonicalEditPolicy extends CanonicalEditPolicy {
 		case Value3EditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(EventpatternDiagramUpdater.getValue_3055ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case GeoValue3EditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(EventpatternDiagramUpdater.getGeoValue_3078ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;

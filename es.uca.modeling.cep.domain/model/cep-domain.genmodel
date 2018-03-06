@@ -13,6 +13,7 @@
       <genEnumLiterals ecoreEnumLiteral="cep-domain.ecore#//PropertyTypeValue/Double"/>
       <genEnumLiterals ecoreEnumLiteral="cep-domain.ecore#//PropertyTypeValue/Float"/>
       <genEnumLiterals ecoreEnumLiteral="cep-domain.ecore#//PropertyTypeValue/String"/>
+      <genEnumLiterals ecoreEnumLiteral="cep-domain.ecore#//PropertyTypeValue/Object"/>
     </genEnums>
     <genClasses ecoreClass="cep-domain.ecore#//CEPDomain">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cep-domain.ecore#//CEPDomain/domainName"/>

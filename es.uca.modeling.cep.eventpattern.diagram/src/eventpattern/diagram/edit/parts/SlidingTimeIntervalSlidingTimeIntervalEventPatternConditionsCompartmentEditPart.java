@@ -192,6 +192,9 @@ public class SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompart
 			if (type == EventpatternElementTypes.Sum_3052) {
 				return this;
 			}
+			if (type == EventpatternElementTypes.Point_3080) {
+				return this;
+			}
 			if (type == EventpatternElementTypes.Event_3053) {
 				return this;
 			}
@@ -199,6 +202,9 @@ public class SlidingTimeIntervalSlidingTimeIntervalEventPatternConditionsCompart
 				return this;
 			}
 			if (type == EventpatternElementTypes.Value_3055) {
+				return this;
+			}
+			if (type == EventpatternElementTypes.GeoValue_3078) {
 				return this;
 			}
 			if (type == EventpatternElementTypes.GroupBy_3060) {

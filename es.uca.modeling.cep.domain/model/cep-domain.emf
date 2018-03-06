@@ -43,6 +43,8 @@ class EventProperty {
    ref EventProperty#eventProperties referencedEventProperty; 
 }
 
+
+
 enum PropertyTypeValue {
    Unknown;
    Boolean;
@@ -51,4 +53,5 @@ enum PropertyTypeValue {
    Double;
    Float; 
    String;
+   Object;
 }

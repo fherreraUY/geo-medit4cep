@@ -70,11 +70,14 @@ var distanceTool = objectGroup.tools.selectOne(o|o.title='Distance');
 var intersectionTool = objectGroup.tools.selectOne(o|o.title='Intersection');
 var diferenceTool = objectGroup.tools.selectOne(o|o.title='Diference');
 
-
-
+var geoValueTool  = objectGroup.tools.selectOne(o|o.title='GeoValue');  
+var pointTool  = objectGroup.tools.selectOne(o|o.title='Point');  
+   
 palette.tools.add(linkTool);
 palette.tools.add(valueTool);
 palette.tools.add(groupByTool);
+palette.tools.add(geoValueTool);
+palette.tools.add(pointTool);
 
 --Create simpleEventGroup
 var simpleEventGroup = new GmfTool!ToolGroup; 
@@ -197,10 +200,6 @@ actionGroup.collapsible = true;
 palette.tools.add(actionGroup); 
 actionGroup.tools.add(emailTool);
 actionGroup.tools.add(twitterTool);
-
-
-
-
 
 
 --Delete default groups 

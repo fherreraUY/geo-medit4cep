@@ -258,7 +258,7 @@
          </object>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Eventpattern"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2041,2001,2002,2003,2042,2048,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3061,3003,3004,3005,3062,3075,3064,3065,3066,3067,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3068,3027,3028,3029,3069,3076,3071,3072,3073,3074,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3060,3056,3057,3058,3059"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2041,2001,2002,2003,2042,2048,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2050,2027,2028,2029,2049,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3061,3003,3004,3005,3062,3075,3064,3065,3066,3067,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3079,3024,3025,3026,3077,3068,3027,3028,3029,3069,3076,3071,3072,3073,3074,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3080,3053,3054,3055,3078,3060,3056,3057,3058,3059"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001"/>
       </viewProvider>
    </extension>
@@ -271,13 +271,13 @@
             <method name="getType()" value="Eventpattern"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2041,2001,2002,2003,2042,2048,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3061,3003,3004,3005,3062,3075,3064,3065,3066,3067,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3068,3027,3028,3029,3069,3076,3071,3072,3073,3074,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3053,3054,3055,3060,3056,3057,3058,3059"/>
+            <method name="getType()" value="2041,2001,2002,2003,2042,2048,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2050,2027,2028,2029,2049,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038,3001,3002,3061,3003,3004,3005,3062,3075,3064,3065,3066,3067,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3017,3018,3019,3020,3021,3022,3023,3079,3024,3025,3026,3077,3068,3027,3028,3029,3069,3076,3071,3072,3073,3074,3030,3031,3032,3033,3034,3035,3036,3037,3038,3039,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3050,3051,3052,3080,3053,3054,3055,3078,3060,3056,3057,3058,3059"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
             <method name="getType()" value="4001"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
-            <method name="getType()" value="5017,5019,5029,5030,5031,5056,5057,5058,5098,5092,5093,5094,5095,5097,5028,5027,5048,5050,5053,5054,5055,5076,5078,5086,5087,5088,5089,5090,5091,5096"/>
+            <method name="getType()" value="5017,5019,5102,5029,5030,5031,5099,5056,5057,5058,5098,5092,5093,5094,5095,5097,5028,5027,5048,5050,5103,5053,5054,5055,5100,5076,5078,5104,5086,5087,5088,5101,5089,5090,5091,5096"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
             <method name="getType()" value="7001,7002,7003,7004,7005,7006,7007,7008,7009,7010,7011,7012,7013,7014,7015"/>
@@ -458,6 +458,11 @@
          <object class="eventpattern.diagram.edit.parts.SumEditPart" id="Sum_2026"/>
          <context elements="Sum_2026"/>
       </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfPointEditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.PointEditPart" id="Point_2050"/>
+         <context elements="Point_2050"/>
+      </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfEventEditPart">
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.EventEditPart" id="Event_2027"/>
@@ -472,6 +477,11 @@
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.ValueEditPart" id="Value_2029"/>
          <context elements="Value_2029"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfGeoValueEditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.GeoValueEditPart" id="GeoValue_2049"/>
+         <context elements="GeoValue_2049"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfGroupByEditPart">
          <Priority name="Lowest"/>
@@ -678,6 +688,11 @@
          <object class="eventpattern.diagram.edit.parts.While2EditPart" id="While_3023"/>
          <context elements="While_3023"/>
       </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfPoint2EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Point2EditPart" id="Point_3079"/>
+         <context elements="Point_3079"/>
+      </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfEvent2EditPart">
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.Event2EditPart" id="Event_3024"/>
@@ -692,6 +707,11 @@
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.Value2EditPart" id="Value_3026"/>
          <context elements="Value_3026"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfGeoValue2EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.GeoValue2EditPart" id="GeoValue_3077"/>
+         <context elements="GeoValue_3077"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfContains3EditPart">
          <Priority name="Lowest"/>
@@ -858,6 +878,11 @@
          <object class="eventpattern.diagram.edit.parts.Sum2EditPart" id="Sum_3052"/>
          <context elements="Sum_3052"/>
       </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfPoint3EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.Point3EditPart" id="Point_3080"/>
+         <context elements="Point_3080"/>
+      </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfEvent3EditPart">
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.Event3EditPart" id="Event_3053"/>
@@ -872,6 +897,11 @@
          <Priority name="Lowest"/>
          <object class="eventpattern.diagram.edit.parts.Value3EditPart" id="Value_3055"/>
          <context elements="Value_3055"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfGeoValue3EditPart">
+         <Priority name="Lowest"/>
+         <object class="eventpattern.diagram.edit.parts.GeoValue3EditPart" id="GeoValue_3078"/>
+         <context elements="GeoValue_3078"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="eventpattern.diagram.providers.assistants.EventpatternModelingAssistantProviderOfGroupBy2EditPart">
          <Priority name="Lowest"/>
@@ -920,7 +950,7 @@
       <decoratorProvider class="eventpattern.diagram.providers.EventpatternShortcutsDecoratorProvider">
          <Priority name="Lowest"/>
          <object class="org.eclipse.gmf.runtime.notation.Node(org.eclipse.gmf.runtime.notation)" id="generated-top-nodes">
-            <method name="getType()" value="2041,2001,2002,2003,2042,2048,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038"/>
+            <method name="getType()" value="2041,2001,2002,2003,2042,2048,2044,2045,2046,2047,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2050,2027,2028,2029,2049,2040,2030,2031,2032,2033,2039,2034,2035,2036,2037,2038"/>
          </object>
          <context decoratorTargets="generated-top-nodes"/>
       </decoratorProvider>
@@ -1270,6 +1300,16 @@
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
          <metamodelType
+               id="es.uca.modeling.cep.eventpattern.diagram.Point_2050"
+               name="%metatype.name.Point_2050"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Point"
+               edithelper="eventpattern.diagram.edit.helpers.PointEditHelper">
+            <param name="semanticHint" value="2050"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <metamodelType
                id="es.uca.modeling.cep.eventpattern.diagram.Event_2027"
                name="%metatype.name.Event_2027"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
@@ -1295,6 +1335,16 @@
                eclass="Value"
                edithelper="eventpattern.diagram.edit.helpers.ValueEditHelper">
             <param name="semanticHint" value="2029"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <metamodelType
+               id="es.uca.modeling.cep.eventpattern.diagram.GeoValue_2049"
+               name="%metatype.name.GeoValue_2049"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="GeoValue"
+               edithelper="eventpattern.diagram.edit.helpers.GeoValueEditHelper">
+            <param name="semanticHint" value="2049"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
@@ -1680,6 +1730,15 @@
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
          <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Point_3079"
+               name="%metatype.name.Point_3079"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Point_2050"/>
+            <param name="semanticHint" value="3079"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
                id="es.uca.modeling.cep.eventpattern.diagram.Event_3024"
                name="%metatype.name.Event_3024"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
@@ -1703,6 +1762,15 @@
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
             <specializes id="es.uca.modeling.cep.eventpattern.diagram.Value_2029"/>
             <param name="semanticHint" value="3026"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.GeoValue_3077"
+               name="%metatype.name.GeoValue_3077"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.GeoValue_2049"/>
+            <param name="semanticHint" value="3077"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
@@ -2004,6 +2072,15 @@
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
          <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.Point_3080"
+               name="%metatype.name.Point_3080"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.Point_2050"/>
+            <param name="semanticHint" value="3080"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
                id="es.uca.modeling.cep.eventpattern.diagram.Event_3053"
                name="%metatype.name.Event_3053"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
@@ -2027,6 +2104,15 @@
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
             <specializes id="es.uca.modeling.cep.eventpattern.diagram.Value_2029"/>
             <param name="semanticHint" value="3055"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
+         <specializationType
+               id="es.uca.modeling.cep.eventpattern.diagram.GeoValue_3078"
+               name="%metatype.name.GeoValue_3078"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="es.uca.modeling.cep.eventpattern.diagram.GeoValue_2049"/>
+            <param name="semanticHint" value="3078"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="www.uca.es/modeling/cep/eventpattern">
@@ -2131,9 +2217,11 @@
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Avg_2024"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Count_2025"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Sum_2026"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Point_2050"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Event_2027"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.EventProperty_2028"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Value_2029"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.GeoValue_2049"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.GroupBy_2040"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.WithinTimer_2030"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.TimeInterval_2031"/>
@@ -2175,9 +2263,11 @@
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Range_3021"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.FollowedBy_3022"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.While_3023"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Point_3079"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Event_3024"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.EventProperty_3025"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Value_3026"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.GeoValue_3077"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Contains_3068"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.And_3027"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Or_3028"/>
@@ -2211,9 +2301,11 @@
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Avg_3050"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Count_3051"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Sum_3052"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Point_3080"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Event_3053"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.EventProperty_3054"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.Value_3055"/>
+         <elementType ref="es.uca.modeling.cep.eventpattern.diagram.GeoValue_3078"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.GroupBy_3060"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.WithinTimer_3056"/>
          <elementType ref="es.uca.modeling.cep.eventpattern.diagram.TimeInterval_3057"/>

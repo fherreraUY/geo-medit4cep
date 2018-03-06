@@ -511,6 +511,16 @@ public class CEPEventPatternItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__EVENT_PATTERN_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createGeoValue()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__EVENT_PATTERN_ELEMENTS,
+				 EventpatternFactory.eINSTANCE.createPoint()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(EventpatternPackage.Literals.CEP_EVENT_PATTERN__EVENT_PATTERN_ELEMENTS,
 				 EventpatternFactory.eINSTANCE.createUnion()));
 
 		newChildDescriptors.add

@@ -166,6 +166,23 @@ public class EventpatternParserProvider extends AbstractProvider implements IPar
 	}
 
 	/**
+	* @generated
+	*/
+	private IParser pointValue_5102Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getPointValue_5102Parser() {
+		if (pointValue_5102Parser == null) {
+			EAttribute[] features = new EAttribute[] { EventpatternPackage.eINSTANCE.getGeoValue_Value() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			pointValue_5102Parser = parser;
+		}
+		return pointValue_5102Parser;
+	}
+
+	/**
 	 * @generated
 	 */
 	private IParser eventTypeName_5029Parser;
@@ -214,6 +231,23 @@ public class EventpatternParserProvider extends AbstractProvider implements IPar
 			valueValue_5031Parser = parser;
 		}
 		return valueValue_5031Parser;
+	}
+
+	/**
+	* @generated
+	*/
+	private IParser geoValueValue_5099Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getGeoValueValue_5099Parser() {
+		if (geoValueValue_5099Parser == null) {
+			EAttribute[] features = new EAttribute[] { EventpatternPackage.eINSTANCE.getGeoValue_Value() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			geoValueValue_5099Parser = parser;
+		}
+		return geoValueValue_5099Parser;
 	}
 
 	/**
@@ -517,6 +551,23 @@ public class EventpatternParserProvider extends AbstractProvider implements IPar
 	}
 
 	/**
+	* @generated
+	*/
+	private IParser pointValue_5103Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getPointValue_5103Parser() {
+		if (pointValue_5103Parser == null) {
+			EAttribute[] features = new EAttribute[] { EventpatternPackage.eINSTANCE.getGeoValue_Value() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			pointValue_5103Parser = parser;
+		}
+		return pointValue_5103Parser;
+	}
+
+	/**
 	 * @generated
 	 */
 	private IParser eventTypeName_5053Parser;
@@ -568,6 +619,23 @@ public class EventpatternParserProvider extends AbstractProvider implements IPar
 	}
 
 	/**
+	* @generated
+	*/
+	private IParser geoValueValue_5100Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getGeoValueValue_5100Parser() {
+		if (geoValueValue_5100Parser == null) {
+			EAttribute[] features = new EAttribute[] { EventpatternPackage.eINSTANCE.getGeoValue_Value() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			geoValueValue_5100Parser = parser;
+		}
+		return geoValueValue_5100Parser;
+	}
+
+	/**
 	 * @generated
 	 */
 	private IParser repeatCount_5076Parser;
@@ -606,6 +674,23 @@ public class EventpatternParserProvider extends AbstractProvider implements IPar
 			rangeLowEndpointHighEndpoint_5078Parser = parser;
 		}
 		return rangeLowEndpointHighEndpoint_5078Parser;
+	}
+
+	/**
+	* @generated
+	*/
+	private IParser pointValue_5104Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getPointValue_5104Parser() {
+		if (pointValue_5104Parser == null) {
+			EAttribute[] features = new EAttribute[] { EventpatternPackage.eINSTANCE.getGeoValue_Value() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			pointValue_5104Parser = parser;
+		}
+		return pointValue_5104Parser;
 	}
 
 	/**
@@ -657,6 +742,23 @@ public class EventpatternParserProvider extends AbstractProvider implements IPar
 			valueValue_5088Parser = parser;
 		}
 		return valueValue_5088Parser;
+	}
+
+	/**
+	* @generated
+	*/
+	private IParser geoValueValue_5101Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getGeoValueValue_5101Parser() {
+		if (geoValueValue_5101Parser == null) {
+			EAttribute[] features = new EAttribute[] { EventpatternPackage.eINSTANCE.getGeoValue_Value() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			geoValueValue_5101Parser = parser;
+		}
+		return geoValueValue_5101Parser;
 	}
 
 	/**
@@ -790,12 +892,16 @@ public class EventpatternParserProvider extends AbstractProvider implements IPar
 			return getRepeatCount_5017Parser();
 		case RangeLowEndpointHighEndpointEditPart.VISUAL_ID:
 			return getRangeLowEndpointHighEndpoint_5019Parser();
+		case PointValueEditPart.VISUAL_ID:
+			return getPointValue_5102Parser();
 		case EventTypeNameEditPart.VISUAL_ID:
 			return getEventTypeName_5029Parser();
 		case EventPropertyNameEditPart.VISUAL_ID:
 			return getEventPropertyName_5030Parser();
 		case ValueValueEditPart.VISUAL_ID:
 			return getValueValue_5031Parser();
+		case GeoValueValueEditPart.VISUAL_ID:
+			return getGeoValueValue_5099Parser();
 		case WithinTimerYearsMonthsWeeksDaysHouEditPart.VISUAL_ID:
 			return getWithinTimerYearsMonthsWeeksDaysHoursMinutesSecondsMilliseconds_5056Parser();
 		case TimeIntervalYearsMonthsWeeksDaysHouEditPart.VISUAL_ID:
@@ -822,22 +928,30 @@ public class EventpatternParserProvider extends AbstractProvider implements IPar
 			return getRepeatCount_5048Parser();
 		case RangeLowEndpointHighEndpoint2EditPart.VISUAL_ID:
 			return getRangeLowEndpointHighEndpoint_5050Parser();
+		case PointValue2EditPart.VISUAL_ID:
+			return getPointValue_5103Parser();
 		case EventTypeName2EditPart.VISUAL_ID:
 			return getEventTypeName_5053Parser();
 		case EventPropertyName4EditPart.VISUAL_ID:
 			return getEventPropertyName_5054Parser();
 		case ValueValue2EditPart.VISUAL_ID:
 			return getValueValue_5055Parser();
+		case GeoValueValue2EditPart.VISUAL_ID:
+			return getGeoValueValue_5100Parser();
 		case RepeatCount3EditPart.VISUAL_ID:
 			return getRepeatCount_5076Parser();
 		case RangeLowEndpointHighEndpoint3EditPart.VISUAL_ID:
 			return getRangeLowEndpointHighEndpoint_5078Parser();
+		case PointValue3EditPart.VISUAL_ID:
+			return getPointValue_5104Parser();
 		case EventTypeName3EditPart.VISUAL_ID:
 			return getEventTypeName_5086Parser();
 		case EventPropertyName5EditPart.VISUAL_ID:
 			return getEventPropertyName_5087Parser();
 		case ValueValue3EditPart.VISUAL_ID:
 			return getValueValue_5088Parser();
+		case GeoValueValue3EditPart.VISUAL_ID:
+			return getGeoValueValue_5101Parser();
 		case WithinTimerYearsMonthsWeeksDaysHou2EditPart.VISUAL_ID:
 			return getWithinTimerYearsMonthsWeeksDaysHoursMinutesSecondsMilliseconds_5089Parser();
 		case TimeIntervalYearsMonthsWeeksDaysHou2EditPart.VISUAL_ID:

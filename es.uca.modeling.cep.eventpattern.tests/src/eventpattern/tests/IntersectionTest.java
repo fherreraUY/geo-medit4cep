@@ -13,7 +13,7 @@ import junit.textui.TestRunner;
  * <!-- end-user-doc -->
  * @generated
  */
-public class IntersectionTest extends NaryOperatorTest {
+public class IntersectionTest extends BinaryOperatorTest {
 
 	/**
 	 * <!-- begin-user-doc -->

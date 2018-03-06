@@ -21,6 +21,7 @@ import eventpattern.diagram.edit.commands.EventProperty5CreateCommand;
 import eventpattern.diagram.edit.commands.Every3CreateCommand;
 import eventpattern.diagram.edit.commands.EveryDistinct3CreateCommand;
 import eventpattern.diagram.edit.commands.FollowedBy3CreateCommand;
+import eventpattern.diagram.edit.commands.GeoValue3CreateCommand;
 import eventpattern.diagram.edit.commands.GreaterEqual3CreateCommand;
 import eventpattern.diagram.edit.commands.GreaterThan3CreateCommand;
 import eventpattern.diagram.edit.commands.GroupBy2CreateCommand;
@@ -35,6 +36,7 @@ import eventpattern.diagram.edit.commands.Multiplication3CreateCommand;
 import eventpattern.diagram.edit.commands.Not3CreateCommand;
 import eventpattern.diagram.edit.commands.NotEqual3CreateCommand;
 import eventpattern.diagram.edit.commands.Or3CreateCommand;
+import eventpattern.diagram.edit.commands.Point3CreateCommand;
 import eventpattern.diagram.edit.commands.Range3CreateCommand;
 import eventpattern.diagram.edit.commands.Repeat3CreateCommand;
 import eventpattern.diagram.edit.commands.Subtraction3CreateCommand;
@@ -164,6 +166,9 @@ public class BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompa
 		if (EventpatternElementTypes.Sum_3052 == req.getElementType()) {
 			return getGEFWrapper(new Sum2CreateCommand(req));
 		}
+		if (EventpatternElementTypes.Point_3080 == req.getElementType()) {
+			return getGEFWrapper(new Point3CreateCommand(req));
+		}
 		if (EventpatternElementTypes.Event_3053 == req.getElementType()) {
 			return getGEFWrapper(new Event3CreateCommand(req));
 		}
@@ -172,6 +177,9 @@ public class BatchingTimeIntervalBatchingTimeIntervalEventPatternConditionsCompa
 		}
 		if (EventpatternElementTypes.Value_3055 == req.getElementType()) {
 			return getGEFWrapper(new Value3CreateCommand(req));
+		}
+		if (EventpatternElementTypes.GeoValue_3078 == req.getElementType()) {
+			return getGEFWrapper(new GeoValue3CreateCommand(req));
 		}
 		if (EventpatternElementTypes.GroupBy_3060 == req.getElementType()) {
 			return getGEFWrapper(new GroupBy2CreateCommand(req));

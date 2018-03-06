@@ -49,6 +49,7 @@ import eventpattern.EventpatternPackage;
 import eventpattern.Every;
 import eventpattern.EveryDistinct;
 import eventpattern.FollowedBy;
+import eventpattern.GeoValue;
 import eventpattern.GreaterEqual;
 import eventpattern.GreaterThan;
 import eventpattern.GroupBy;
@@ -66,6 +67,7 @@ import eventpattern.NotEqual;
 import eventpattern.Operand;
 import eventpattern.Operator;
 import eventpattern.Or;
+import eventpattern.Point;
 import eventpattern.Range;
 import eventpattern.Repeat;
 import eventpattern.SlidingEventInterval;
@@ -285,6 +287,10 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
+			if (visualID == PointEditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
 			if (visualID == EventEditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
@@ -294,6 +300,10 @@ public class EventpatternDiagramUpdater {
 				continue;
 			}
 			if (visualID == ValueEditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == GeoValueEditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -581,6 +591,10 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
+			if (visualID == Point2EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
 			if (visualID == Event2EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
@@ -590,6 +604,10 @@ public class EventpatternDiagramUpdater {
 				continue;
 			}
 			if (visualID == Value2EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == GeoValue2EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -796,6 +814,10 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
+			if (visualID == Point3EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
 			if (visualID == Event3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
@@ -805,6 +827,10 @@ public class EventpatternDiagramUpdater {
 				continue;
 			}
 			if (visualID == Value3EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == GeoValue3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -1007,6 +1033,10 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
+			if (visualID == Point2EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
 			if (visualID == Event2EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
@@ -1016,6 +1046,10 @@ public class EventpatternDiagramUpdater {
 				continue;
 			}
 			if (visualID == Value2EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == GeoValue2EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -1172,6 +1206,10 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
+			if (visualID == Point3EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
 			if (visualID == Event3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
@@ -1181,6 +1219,10 @@ public class EventpatternDiagramUpdater {
 				continue;
 			}
 			if (visualID == Value3EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == GeoValue3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -1353,6 +1395,10 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
+			if (visualID == Point3EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
 			if (visualID == Event3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
@@ -1362,6 +1408,10 @@ public class EventpatternDiagramUpdater {
 				continue;
 			}
 			if (visualID == Value3EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == GeoValue3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -1534,6 +1584,10 @@ public class EventpatternDiagramUpdater {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
+			if (visualID == Point3EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
 			if (visualID == Event3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
@@ -1543,6 +1597,10 @@ public class EventpatternDiagramUpdater {
 				continue;
 			}
 			if (visualID == Value3EditPart.VISUAL_ID) {
+				result.add(new EventpatternNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == GeoValue3EditPart.VISUAL_ID) {
 				result.add(new EventpatternNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -1664,12 +1722,16 @@ public class EventpatternDiagramUpdater {
 			return getCount_2025ContainedLinks(view);
 		case SumEditPart.VISUAL_ID:
 			return getSum_2026ContainedLinks(view);
+		case PointEditPart.VISUAL_ID:
+			return getPoint_2050ContainedLinks(view);
 		case EventEditPart.VISUAL_ID:
 			return getEvent_2027ContainedLinks(view);
 		case EventPropertyEditPart.VISUAL_ID:
 			return getEventProperty_2028ContainedLinks(view);
 		case ValueEditPart.VISUAL_ID:
 			return getValue_2029ContainedLinks(view);
+		case GeoValueEditPart.VISUAL_ID:
+			return getGeoValue_2049ContainedLinks(view);
 		case GroupByEditPart.VISUAL_ID:
 			return getGroupBy_2040ContainedLinks(view);
 		case WithinTimerEditPart.VISUAL_ID:
@@ -1752,12 +1814,16 @@ public class EventpatternDiagramUpdater {
 			return getFollowedBy_3022ContainedLinks(view);
 		case While2EditPart.VISUAL_ID:
 			return getWhile_3023ContainedLinks(view);
+		case Point2EditPart.VISUAL_ID:
+			return getPoint_3079ContainedLinks(view);
 		case Event2EditPart.VISUAL_ID:
 			return getEvent_3024ContainedLinks(view);
 		case EventProperty4EditPart.VISUAL_ID:
 			return getEventProperty_3025ContainedLinks(view);
 		case Value2EditPart.VISUAL_ID:
 			return getValue_3026ContainedLinks(view);
+		case GeoValue2EditPart.VISUAL_ID:
+			return getGeoValue_3077ContainedLinks(view);
 		case Contains3EditPart.VISUAL_ID:
 			return getContains_3068ContainedLinks(view);
 		case And3EditPart.VISUAL_ID:
@@ -1824,12 +1890,16 @@ public class EventpatternDiagramUpdater {
 			return getCount_3051ContainedLinks(view);
 		case Sum2EditPart.VISUAL_ID:
 			return getSum_3052ContainedLinks(view);
+		case Point3EditPart.VISUAL_ID:
+			return getPoint_3080ContainedLinks(view);
 		case Event3EditPart.VISUAL_ID:
 			return getEvent_3053ContainedLinks(view);
 		case EventProperty5EditPart.VISUAL_ID:
 			return getEventProperty_3054ContainedLinks(view);
 		case Value3EditPart.VISUAL_ID:
 			return getValue_3055ContainedLinks(view);
+		case GeoValue3EditPart.VISUAL_ID:
+			return getGeoValue_3078ContainedLinks(view);
 		case GroupBy2EditPart.VISUAL_ID:
 			return getGroupBy_3060ContainedLinks(view);
 		case WithinTimer2EditPart.VISUAL_ID:
@@ -1917,12 +1987,16 @@ public class EventpatternDiagramUpdater {
 			return getCount_2025IncomingLinks(view);
 		case SumEditPart.VISUAL_ID:
 			return getSum_2026IncomingLinks(view);
+		case PointEditPart.VISUAL_ID:
+			return getPoint_2050IncomingLinks(view);
 		case EventEditPart.VISUAL_ID:
 			return getEvent_2027IncomingLinks(view);
 		case EventPropertyEditPart.VISUAL_ID:
 			return getEventProperty_2028IncomingLinks(view);
 		case ValueEditPart.VISUAL_ID:
 			return getValue_2029IncomingLinks(view);
+		case GeoValueEditPart.VISUAL_ID:
+			return getGeoValue_2049IncomingLinks(view);
 		case GroupByEditPart.VISUAL_ID:
 			return getGroupBy_2040IncomingLinks(view);
 		case WithinTimerEditPart.VISUAL_ID:
@@ -2005,12 +2079,16 @@ public class EventpatternDiagramUpdater {
 			return getFollowedBy_3022IncomingLinks(view);
 		case While2EditPart.VISUAL_ID:
 			return getWhile_3023IncomingLinks(view);
+		case Point2EditPart.VISUAL_ID:
+			return getPoint_3079IncomingLinks(view);
 		case Event2EditPart.VISUAL_ID:
 			return getEvent_3024IncomingLinks(view);
 		case EventProperty4EditPart.VISUAL_ID:
 			return getEventProperty_3025IncomingLinks(view);
 		case Value2EditPart.VISUAL_ID:
 			return getValue_3026IncomingLinks(view);
+		case GeoValue2EditPart.VISUAL_ID:
+			return getGeoValue_3077IncomingLinks(view);
 		case Contains3EditPart.VISUAL_ID:
 			return getContains_3068IncomingLinks(view);
 		case And3EditPart.VISUAL_ID:
@@ -2077,12 +2155,16 @@ public class EventpatternDiagramUpdater {
 			return getCount_3051IncomingLinks(view);
 		case Sum2EditPart.VISUAL_ID:
 			return getSum_3052IncomingLinks(view);
+		case Point3EditPart.VISUAL_ID:
+			return getPoint_3080IncomingLinks(view);
 		case Event3EditPart.VISUAL_ID:
 			return getEvent_3053IncomingLinks(view);
 		case EventProperty5EditPart.VISUAL_ID:
 			return getEventProperty_3054IncomingLinks(view);
 		case Value3EditPart.VISUAL_ID:
 			return getValue_3055IncomingLinks(view);
+		case GeoValue3EditPart.VISUAL_ID:
+			return getGeoValue_3078IncomingLinks(view);
 		case GroupBy2EditPart.VISUAL_ID:
 			return getGroupBy_3060IncomingLinks(view);
 		case WithinTimer2EditPart.VISUAL_ID:
@@ -2170,12 +2252,16 @@ public class EventpatternDiagramUpdater {
 			return getCount_2025OutgoingLinks(view);
 		case SumEditPart.VISUAL_ID:
 			return getSum_2026OutgoingLinks(view);
+		case PointEditPart.VISUAL_ID:
+			return getPoint_2050OutgoingLinks(view);
 		case EventEditPart.VISUAL_ID:
 			return getEvent_2027OutgoingLinks(view);
 		case EventPropertyEditPart.VISUAL_ID:
 			return getEventProperty_2028OutgoingLinks(view);
 		case ValueEditPart.VISUAL_ID:
 			return getValue_2029OutgoingLinks(view);
+		case GeoValueEditPart.VISUAL_ID:
+			return getGeoValue_2049OutgoingLinks(view);
 		case GroupByEditPart.VISUAL_ID:
 			return getGroupBy_2040OutgoingLinks(view);
 		case WithinTimerEditPart.VISUAL_ID:
@@ -2258,12 +2344,16 @@ public class EventpatternDiagramUpdater {
 			return getFollowedBy_3022OutgoingLinks(view);
 		case While2EditPart.VISUAL_ID:
 			return getWhile_3023OutgoingLinks(view);
+		case Point2EditPart.VISUAL_ID:
+			return getPoint_3079OutgoingLinks(view);
 		case Event2EditPart.VISUAL_ID:
 			return getEvent_3024OutgoingLinks(view);
 		case EventProperty4EditPart.VISUAL_ID:
 			return getEventProperty_3025OutgoingLinks(view);
 		case Value2EditPart.VISUAL_ID:
 			return getValue_3026OutgoingLinks(view);
+		case GeoValue2EditPart.VISUAL_ID:
+			return getGeoValue_3077OutgoingLinks(view);
 		case Contains3EditPart.VISUAL_ID:
 			return getContains_3068OutgoingLinks(view);
 		case And3EditPart.VISUAL_ID:
@@ -2330,12 +2420,16 @@ public class EventpatternDiagramUpdater {
 			return getCount_3051OutgoingLinks(view);
 		case Sum2EditPart.VISUAL_ID:
 			return getSum_3052OutgoingLinks(view);
+		case Point3EditPart.VISUAL_ID:
+			return getPoint_3080OutgoingLinks(view);
 		case Event3EditPart.VISUAL_ID:
 			return getEvent_3053OutgoingLinks(view);
 		case EventProperty5EditPart.VISUAL_ID:
 			return getEventProperty_3054OutgoingLinks(view);
 		case Value3EditPart.VISUAL_ID:
 			return getValue_3055OutgoingLinks(view);
+		case GeoValue3EditPart.VISUAL_ID:
+			return getGeoValue_3078OutgoingLinks(view);
 		case GroupBy2EditPart.VISUAL_ID:
 			return getGroupBy_3060OutgoingLinks(view);
 		case WithinTimer2EditPart.VISUAL_ID:
@@ -2594,6 +2688,13 @@ public class EventpatternDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getPoint_2050ContainedLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getEvent_2027ContainedLinks(View view) {
@@ -2611,6 +2712,13 @@ public class EventpatternDiagramUpdater {
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getValue_2029ContainedLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getGeoValue_2049ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -2902,6 +3010,13 @@ public class EventpatternDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getPoint_3079ContainedLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getEvent_3024ContainedLinks(View view) {
@@ -2919,6 +3034,13 @@ public class EventpatternDiagramUpdater {
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getValue_3026ContainedLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getGeoValue_3077ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -3154,6 +3276,13 @@ public class EventpatternDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getPoint_3080ContainedLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getEvent_3053ContainedLinks(View view) {
@@ -3171,6 +3300,13 @@ public class EventpatternDiagramUpdater {
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getValue_3055ContainedLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getGeoValue_3078ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -3613,6 +3749,13 @@ public class EventpatternDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getPoint_2050IncomingLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getEvent_2027IncomingLinks(View view) {
@@ -3630,6 +3773,13 @@ public class EventpatternDiagramUpdater {
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getValue_2029IncomingLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getGeoValue_2049IncomingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -4081,6 +4231,13 @@ public class EventpatternDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getPoint_3079IncomingLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getEvent_3024IncomingLinks(View view) {
@@ -4098,6 +4255,13 @@ public class EventpatternDiagramUpdater {
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getValue_3026IncomingLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getGeoValue_3077IncomingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -4498,6 +4662,13 @@ public class EventpatternDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getPoint_3080IncomingLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getEvent_3053IncomingLinks(View view) {
@@ -4515,6 +4686,13 @@ public class EventpatternDiagramUpdater {
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getValue_3055IncomingLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getGeoValue_3078IncomingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -4901,6 +5079,16 @@ public class EventpatternDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getPoint_2050OutgoingLinks(View view) {
+		Point modelElement = (Point) view.getElement();
+		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
+		return result;
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getEvent_2027OutgoingLinks(View view) {
@@ -4925,6 +5113,16 @@ public class EventpatternDiagramUpdater {
 	 */
 	public static List<EventpatternLinkDescriptor> getValue_2029OutgoingLinks(View view) {
 		Value modelElement = (Value) view.getElement();
+		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
+		return result;
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getGeoValue_2049OutgoingLinks(View view) {
+		GeoValue modelElement = (GeoValue) view.getElement();
 		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
 		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
 		return result;
@@ -5320,6 +5518,16 @@ public class EventpatternDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getPoint_3079OutgoingLinks(View view) {
+		Point modelElement = (Point) view.getElement();
+		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
+		return result;
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getEvent_3024OutgoingLinks(View view) {
@@ -5344,6 +5552,16 @@ public class EventpatternDiagramUpdater {
 	 */
 	public static List<EventpatternLinkDescriptor> getValue_3026OutgoingLinks(View view) {
 		Value modelElement = (Value) view.getElement();
+		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
+		return result;
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getGeoValue_3077OutgoingLinks(View view) {
+		GeoValue modelElement = (GeoValue) view.getElement();
 		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
 		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
 		return result;
@@ -5680,6 +5898,16 @@ public class EventpatternDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getPoint_3080OutgoingLinks(View view) {
+		Point modelElement = (Point) view.getElement();
+		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
+		return result;
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<EventpatternLinkDescriptor> getEvent_3053OutgoingLinks(View view) {
@@ -5704,6 +5932,16 @@ public class EventpatternDiagramUpdater {
 	 */
 	public static List<EventpatternLinkDescriptor> getValue_3055OutgoingLinks(View view) {
 		Value modelElement = (Value) view.getElement();
+		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
+		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
+		return result;
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<EventpatternLinkDescriptor> getGeoValue_3078OutgoingLinks(View view) {
+		GeoValue modelElement = (GeoValue) view.getElement();
 		LinkedList<EventpatternLinkDescriptor> result = new LinkedList<EventpatternLinkDescriptor>();
 		result.addAll(getOutgoingTypeModelFacetLinks_Link_4001(modelElement));
 		return result;

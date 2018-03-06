@@ -13,5 +13,5 @@ package eventpattern;
  * @model annotation="gmf.node figure='svg' svg.uri='platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg' size='30,30' label.placement='none' resizable='false' margin='0' tool.name='Union' tool.description='Add an union operator'"
  * @generated
  */
-public interface Union extends NaryOperator, GeoArithmeticOperator {
+public interface Union extends BinaryOperator, GeoArithmeticOperator {
 } // Union

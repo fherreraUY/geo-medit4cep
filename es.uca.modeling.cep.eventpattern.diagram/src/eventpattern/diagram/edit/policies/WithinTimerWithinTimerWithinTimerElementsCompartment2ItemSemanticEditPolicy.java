@@ -19,6 +19,7 @@ import eventpattern.diagram.edit.commands.EventProperty4CreateCommand;
 import eventpattern.diagram.edit.commands.Every2CreateCommand;
 import eventpattern.diagram.edit.commands.EveryDistinct2CreateCommand;
 import eventpattern.diagram.edit.commands.FollowedBy2CreateCommand;
+import eventpattern.diagram.edit.commands.GeoValue2CreateCommand;
 import eventpattern.diagram.edit.commands.GreaterEqual2CreateCommand;
 import eventpattern.diagram.edit.commands.GreaterThan2CreateCommand;
 import eventpattern.diagram.edit.commands.Intersection2CreateCommand;
@@ -30,6 +31,7 @@ import eventpattern.diagram.edit.commands.Multiplication2CreateCommand;
 import eventpattern.diagram.edit.commands.Not2CreateCommand;
 import eventpattern.diagram.edit.commands.NotEqual2CreateCommand;
 import eventpattern.diagram.edit.commands.Or2CreateCommand;
+import eventpattern.diagram.edit.commands.Point2CreateCommand;
 import eventpattern.diagram.edit.commands.Range2CreateCommand;
 import eventpattern.diagram.edit.commands.Repeat2CreateCommand;
 import eventpattern.diagram.edit.commands.Subtraction2CreateCommand;
@@ -140,6 +142,9 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartment2ItemSemanticEd
 		if (EventpatternElementTypes.While_3023 == req.getElementType()) {
 			return getGEFWrapper(new While2CreateCommand(req));
 		}
+		if (EventpatternElementTypes.Point_3079 == req.getElementType()) {
+			return getGEFWrapper(new Point2CreateCommand(req));
+		}
 		if (EventpatternElementTypes.Event_3024 == req.getElementType()) {
 			return getGEFWrapper(new Event2CreateCommand(req));
 		}
@@ -148,6 +153,9 @@ public class WithinTimerWithinTimerWithinTimerElementsCompartment2ItemSemanticEd
 		}
 		if (EventpatternElementTypes.Value_3026 == req.getElementType()) {
 			return getGEFWrapper(new Value2CreateCommand(req));
+		}
+		if (EventpatternElementTypes.GeoValue_3077 == req.getElementType()) {
+			return getGEFWrapper(new GeoValue2CreateCommand(req));
 		}
 		return super.getCreateCommand(req);
 	}

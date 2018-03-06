@@ -235,6 +235,12 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 		case IntersectionEditPart.VISUAL_ID:
 			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Intersection", //$NON-NLS-1$
 					EventpatternElementTypes.Intersection_2048);
+		case GeoValueEditPart.VISUAL_ID:
+			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?GeoValue", //$NON-NLS-1$
+					EventpatternElementTypes.GeoValue_2049);
+		case PointEditPart.VISUAL_ID:
+			return getImage("Navigator?TopLevelNode?www.uca.es/modeling/cep/eventpattern?Point", //$NON-NLS-1$
+					EventpatternElementTypes.Point_2050);
 		case EventProperty2EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?EventProperty", //$NON-NLS-1$
 					EventpatternElementTypes.EventProperty_3001);
@@ -455,6 +461,18 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 		case Intersection3EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Intersection", //$NON-NLS-1$
 					EventpatternElementTypes.Intersection_3076);
+		case GeoValue2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?GeoValue", //$NON-NLS-1$
+					EventpatternElementTypes.GeoValue_3077);
+		case GeoValue3EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?GeoValue", //$NON-NLS-1$
+					EventpatternElementTypes.GeoValue_3078);
+		case Point2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Point", //$NON-NLS-1$
+					EventpatternElementTypes.Point_3079);
+		case Point3EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?www.uca.es/modeling/cep/eventpattern?Point", //$NON-NLS-1$
+					EventpatternElementTypes.Point_3080);
 		case LinkEditPart.VISUAL_ID:
 			return getImage("Navigator?Link?www.uca.es/modeling/cep/eventpattern?Link", //$NON-NLS-1$
 					EventpatternElementTypes.Link_4001);
@@ -612,6 +630,10 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 			return getIntersects_2047Text(view);
 		case IntersectionEditPart.VISUAL_ID:
 			return getIntersection_2048Text(view);
+		case GeoValueEditPart.VISUAL_ID:
+			return getGeoValue_2049Text(view);
+		case PointEditPart.VISUAL_ID:
+			return getPoint_2050Text(view);
 		case EventProperty2EditPart.VISUAL_ID:
 			return getEventProperty_3001Text(view);
 		case EventProperty3EditPart.VISUAL_ID:
@@ -760,6 +782,14 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 			return getIntersection_3075Text(view);
 		case Intersection3EditPart.VISUAL_ID:
 			return getIntersection_3076Text(view);
+		case GeoValue2EditPart.VISUAL_ID:
+			return getGeoValue_3077Text(view);
+		case GeoValue3EditPart.VISUAL_ID:
+			return getGeoValue_3078Text(view);
+		case Point2EditPart.VISUAL_ID:
+			return getPoint_3079Text(view);
+		case Point3EditPart.VISUAL_ID:
+			return getPoint_3080Text(view);
 		case LinkEditPart.VISUAL_ID:
 			return getLink_4001Text(view);
 		}
@@ -1233,6 +1263,38 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 	*/
 	private String getIntersection_2048Text(View view) {
 		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getGeoValue_2049Text(View view) {
+		IParser parser = EventpatternParserProvider.getParser(EventpatternElementTypes.GeoValue_2049,
+				view.getElement() != null ? view.getElement() : view,
+				EventpatternVisualIDRegistry.getType(GeoValueValueEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			EventpatternDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5099); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	* @generated
+	*/
+	private String getPoint_2050Text(View view) {
+		IParser parser = EventpatternParserProvider.getParser(EventpatternElementTypes.Point_2050,
+				view.getElement() != null ? view.getElement() : view,
+				EventpatternVisualIDRegistry.getType(PointValueEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			EventpatternDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5102); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
 	}
 
 	/**
@@ -1895,6 +1957,70 @@ public class EventpatternNavigatorLabelProvider extends LabelProvider
 	*/
 	private String getIntersection_3076Text(View view) {
 		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	* @generated
+	*/
+	private String getGeoValue_3077Text(View view) {
+		IParser parser = EventpatternParserProvider.getParser(EventpatternElementTypes.GeoValue_3077,
+				view.getElement() != null ? view.getElement() : view,
+				EventpatternVisualIDRegistry.getType(GeoValueValue2EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			EventpatternDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5100); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	* @generated
+	*/
+	private String getGeoValue_3078Text(View view) {
+		IParser parser = EventpatternParserProvider.getParser(EventpatternElementTypes.GeoValue_3078,
+				view.getElement() != null ? view.getElement() : view,
+				EventpatternVisualIDRegistry.getType(GeoValueValue3EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			EventpatternDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5101); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	* @generated
+	*/
+	private String getPoint_3079Text(View view) {
+		IParser parser = EventpatternParserProvider.getParser(EventpatternElementTypes.Point_3079,
+				view.getElement() != null ? view.getElement() : view,
+				EventpatternVisualIDRegistry.getType(PointValue2EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			EventpatternDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5103); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	* @generated
+	*/
+	private String getPoint_3080Text(View view) {
+		IParser parser = EventpatternParserProvider.getParser(EventpatternElementTypes.Point_3080,
+				view.getElement() != null ? view.getElement() : view,
+				EventpatternVisualIDRegistry.getType(PointValue3EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			EventpatternDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5104); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
 	}
 
 	/**

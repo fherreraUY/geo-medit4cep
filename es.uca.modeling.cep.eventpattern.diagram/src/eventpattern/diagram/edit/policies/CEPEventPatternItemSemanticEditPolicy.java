@@ -29,6 +29,7 @@ import eventpattern.diagram.edit.commands.EventPropertyCreateCommand;
 import eventpattern.diagram.edit.commands.EveryCreateCommand;
 import eventpattern.diagram.edit.commands.EveryDistinctCreateCommand;
 import eventpattern.diagram.edit.commands.FollowedByCreateCommand;
+import eventpattern.diagram.edit.commands.GeoValueCreateCommand;
 import eventpattern.diagram.edit.commands.GreaterEqualCreateCommand;
 import eventpattern.diagram.edit.commands.GreaterThanCreateCommand;
 import eventpattern.diagram.edit.commands.GroupByCreateCommand;
@@ -43,6 +44,7 @@ import eventpattern.diagram.edit.commands.MultiplicationCreateCommand;
 import eventpattern.diagram.edit.commands.NotCreateCommand;
 import eventpattern.diagram.edit.commands.NotEqualCreateCommand;
 import eventpattern.diagram.edit.commands.OrCreateCommand;
+import eventpattern.diagram.edit.commands.PointCreateCommand;
 import eventpattern.diagram.edit.commands.RangeCreateCommand;
 import eventpattern.diagram.edit.commands.RepeatCreateCommand;
 import eventpattern.diagram.edit.commands.SlidingEventIntervalCreateCommand;
@@ -174,6 +176,9 @@ public class CEPEventPatternItemSemanticEditPolicy extends EventpatternBaseItemS
 		if (EventpatternElementTypes.Sum_2026 == req.getElementType()) {
 			return getGEFWrapper(new SumCreateCommand(req));
 		}
+		if (EventpatternElementTypes.Point_2050 == req.getElementType()) {
+			return getGEFWrapper(new PointCreateCommand(req));
+		}
 		if (EventpatternElementTypes.Event_2027 == req.getElementType()) {
 			return getGEFWrapper(new EventCreateCommand(req));
 		}
@@ -182,6 +187,9 @@ public class CEPEventPatternItemSemanticEditPolicy extends EventpatternBaseItemS
 		}
 		if (EventpatternElementTypes.Value_2029 == req.getElementType()) {
 			return getGEFWrapper(new ValueCreateCommand(req));
+		}
+		if (EventpatternElementTypes.GeoValue_2049 == req.getElementType()) {
+			return getGEFWrapper(new GeoValueCreateCommand(req));
 		}
 		if (EventpatternElementTypes.GroupBy_2040 == req.getElementType()) {
 			return getGEFWrapper(new GroupByCreateCommand(req));

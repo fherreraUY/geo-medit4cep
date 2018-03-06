@@ -40,6 +40,7 @@ import eventpattern.diagram.edit.parts.EventProperty5EditPart;
 import eventpattern.diagram.edit.parts.Every3EditPart;
 import eventpattern.diagram.edit.parts.EveryDistinct3EditPart;
 import eventpattern.diagram.edit.parts.FollowedBy3EditPart;
+import eventpattern.diagram.edit.parts.GeoValue3EditPart;
 import eventpattern.diagram.edit.parts.GreaterEqual3EditPart;
 import eventpattern.diagram.edit.parts.GreaterThan3EditPart;
 import eventpattern.diagram.edit.parts.GroupBy2EditPart;
@@ -54,6 +55,7 @@ import eventpattern.diagram.edit.parts.Multiplication3EditPart;
 import eventpattern.diagram.edit.parts.Not3EditPart;
 import eventpattern.diagram.edit.parts.NotEqual3EditPart;
 import eventpattern.diagram.edit.parts.Or3EditPart;
+import eventpattern.diagram.edit.parts.Point3EditPart;
 import eventpattern.diagram.edit.parts.Range3EditPart;
 import eventpattern.diagram.edit.parts.Repeat3EditPart;
 import eventpattern.diagram.edit.parts.Subtraction3EditPart;
@@ -157,9 +159,11 @@ public class BatchingEventIntervalBatchingEventIntervalEventPatternConditionsCom
 		case Avg2EditPart.VISUAL_ID:
 		case Count2EditPart.VISUAL_ID:
 		case Sum2EditPart.VISUAL_ID:
+		case Point3EditPart.VISUAL_ID:
 		case Event3EditPart.VISUAL_ID:
 		case EventProperty5EditPart.VISUAL_ID:
 		case Value3EditPart.VISUAL_ID:
+		case GeoValue3EditPart.VISUAL_ID:
 		case GroupBy2EditPart.VISUAL_ID:
 		case WithinTimer2EditPart.VISUAL_ID:
 		case TimeInterval2EditPart.VISUAL_ID:

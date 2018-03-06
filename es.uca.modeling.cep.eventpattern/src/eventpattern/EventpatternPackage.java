@@ -2628,6 +2628,125 @@ public interface EventpatternPackage extends EPackage
   int VALUE_FEATURE_COUNT = CONDITION_OPERAND_FEATURE_COUNT + 2;
 
   /**
+	 * The meta object id for the '{@link eventpattern.impl.GeoValueImpl <em>Geo Value</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.GeoValueImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getGeoValue()
+	 * @generated
+	 */
+	int GEO_VALUE = 59;
+
+		/**
+	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_VALUE__OUTBOUND_LINK = CONDITION_OPERAND__OUTBOUND_LINK;
+
+		/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_VALUE__VALUE = CONDITION_OPERAND_FEATURE_COUNT + 0;
+
+		/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_VALUE__TYPE = CONDITION_OPERAND_FEATURE_COUNT + 1;
+
+		/**
+	 * The number of structural features of the '<em>Geo Value</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GEO_VALUE_FEATURE_COUNT = CONDITION_OPERAND_FEATURE_COUNT + 2;
+
+		/**
+	 * The meta object id for the '{@link eventpattern.impl.PointImpl <em>Point</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see eventpattern.impl.PointImpl
+	 * @see eventpattern.impl.EventpatternPackageImpl#getPoint()
+	 * @generated
+	 */
+	int POINT = 60;
+
+		/**
+	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POINT__OUTBOUND_LINK = GEO_VALUE__OUTBOUND_LINK;
+
+		/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POINT__VALUE = GEO_VALUE__VALUE;
+
+		/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POINT__TYPE = GEO_VALUE__TYPE;
+
+		/**
+	 * The feature id for the '<em><b>X</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POINT__X = GEO_VALUE_FEATURE_COUNT + 0;
+
+		/**
+	 * The feature id for the '<em><b>Y</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POINT__Y = GEO_VALUE_FEATURE_COUNT + 1;
+
+		/**
+	 * The feature id for the '<em><b>Srs</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POINT__SRS = GEO_VALUE_FEATURE_COUNT + 2;
+
+		/**
+	 * The number of structural features of the '<em>Point</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POINT_FEATURE_COUNT = GEO_VALUE_FEATURE_COUNT + 3;
+
+		/**
 	 * The meta object id for the '{@link eventpattern.impl.EmailImpl <em>Email</em>}' class.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -2635,7 +2754,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getEmail()
 	 * @generated
 	 */
-  int EMAIL = 59;
+  int EMAIL = 61;
 
   /**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -2744,7 +2863,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getTwitter()
 	 * @generated
 	 */
-  int TWITTER = 60;
+  int TWITTER = 62;
 
   /**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -2772,7 +2891,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getGeoOperator()
 	 * @generated
 	 */
-	int GEO_OPERATOR = 61;
+	int GEO_OPERATOR = 63;
 
 		/**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -2800,7 +2919,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getGeoArithmeticOperator()
 	 * @generated
 	 */
-	int GEO_ARITHMETIC_OPERATOR = 62;
+	int GEO_ARITHMETIC_OPERATOR = 64;
 
 		/**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -2837,7 +2956,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getGeoBooleanOperator()
 	 * @generated
 	 */
-	int GEO_BOOLEAN_OPERATOR = 63;
+	int GEO_BOOLEAN_OPERATOR = 65;
 
 		/**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -2874,7 +2993,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getUnion()
 	 * @generated
 	 */
-	int UNION = 64;
+	int UNION = 66;
 
 		/**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -2883,7 +3002,7 @@ public interface EventpatternPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int UNION__INBOUND_LINK = NARY_OPERATOR__INBOUND_LINK;
+	int UNION__INBOUND_LINK = BINARY_OPERATOR__INBOUND_LINK;
 
 		/**
 	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
@@ -2892,7 +3011,7 @@ public interface EventpatternPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int UNION__OUTBOUND_LINK = NARY_OPERATOR_FEATURE_COUNT + 0;
+	int UNION__OUTBOUND_LINK = BINARY_OPERATOR_FEATURE_COUNT + 0;
 
 		/**
 	 * The number of structural features of the '<em>Union</em>' class.
@@ -2901,7 +3020,7 @@ public interface EventpatternPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int UNION_FEATURE_COUNT = NARY_OPERATOR_FEATURE_COUNT + 1;
+	int UNION_FEATURE_COUNT = BINARY_OPERATOR_FEATURE_COUNT + 1;
 
 		/**
 	 * The meta object id for the '{@link eventpattern.impl.IntersectionImpl <em>Intersection</em>}' class.
@@ -2911,7 +3030,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getIntersection()
 	 * @generated
 	 */
-	int INTERSECTION = 65;
+	int INTERSECTION = 67;
 
 		/**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -2920,7 +3039,7 @@ public interface EventpatternPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int INTERSECTION__INBOUND_LINK = NARY_OPERATOR__INBOUND_LINK;
+	int INTERSECTION__INBOUND_LINK = BINARY_OPERATOR__INBOUND_LINK;
 
 		/**
 	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
@@ -2929,7 +3048,7 @@ public interface EventpatternPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int INTERSECTION__OUTBOUND_LINK = NARY_OPERATOR_FEATURE_COUNT + 0;
+	int INTERSECTION__OUTBOUND_LINK = BINARY_OPERATOR_FEATURE_COUNT + 0;
 
 		/**
 	 * The number of structural features of the '<em>Intersection</em>' class.
@@ -2938,7 +3057,7 @@ public interface EventpatternPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int INTERSECTION_FEATURE_COUNT = NARY_OPERATOR_FEATURE_COUNT + 1;
+	int INTERSECTION_FEATURE_COUNT = BINARY_OPERATOR_FEATURE_COUNT + 1;
 
 		/**
 	 * The meta object id for the '{@link eventpattern.impl.DiferenceImpl <em>Diference</em>}' class.
@@ -2948,7 +3067,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getDiference()
 	 * @generated
 	 */
-	int DIFERENCE = 66;
+	int DIFERENCE = 68;
 
 		/**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -2957,7 +3076,7 @@ public interface EventpatternPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int DIFERENCE__INBOUND_LINK = NARY_OPERATOR__INBOUND_LINK;
+	int DIFERENCE__INBOUND_LINK = BINARY_OPERATOR__INBOUND_LINK;
 
 		/**
 	 * The feature id for the '<em><b>Outbound Link</b></em>' reference list.
@@ -2966,7 +3085,7 @@ public interface EventpatternPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int DIFERENCE__OUTBOUND_LINK = NARY_OPERATOR_FEATURE_COUNT + 0;
+	int DIFERENCE__OUTBOUND_LINK = BINARY_OPERATOR_FEATURE_COUNT + 0;
 
 		/**
 	 * The number of structural features of the '<em>Diference</em>' class.
@@ -2975,7 +3094,7 @@ public interface EventpatternPackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int DIFERENCE_FEATURE_COUNT = NARY_OPERATOR_FEATURE_COUNT + 1;
+	int DIFERENCE_FEATURE_COUNT = BINARY_OPERATOR_FEATURE_COUNT + 1;
 
 		/**
 	 * The meta object id for the '{@link eventpattern.impl.ContainsImpl <em>Contains</em>}' class.
@@ -2985,7 +3104,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getContains()
 	 * @generated
 	 */
-	int CONTAINS = 67;
+	int CONTAINS = 69;
 
 		/**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -3022,7 +3141,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getDistance()
 	 * @generated
 	 */
-	int DISTANCE = 68;
+	int DISTANCE = 70;
 
 		/**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -3059,7 +3178,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getEquals()
 	 * @generated
 	 */
-	int EQUALS = 69;
+	int EQUALS = 71;
 
 		/**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -3096,7 +3215,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getIntersects()
 	 * @generated
 	 */
-	int INTERSECTS = 70;
+	int INTERSECTS = 72;
 
 		/**
 	 * The feature id for the '<em><b>Inbound Link</b></em>' reference list.
@@ -3133,7 +3252,7 @@ public interface EventpatternPackage extends EPackage
 	 * @see eventpattern.impl.EventpatternPackageImpl#getPropertyTypeValue()
 	 * @generated
 	 */
-  int PROPERTY_TYPE_VALUE = 71;
+  int PROPERTY_TYPE_VALUE = 73;
 
 
   /**
@@ -4574,6 +4693,81 @@ public interface EventpatternPackage extends EPackage
   EAttribute getValue_Type();
 
   /**
+	 * Returns the meta object for class '{@link eventpattern.GeoValue <em>Geo Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Geo Value</em>'.
+	 * @see eventpattern.GeoValue
+	 * @generated
+	 */
+	EClass getGeoValue();
+
+		/**
+	 * Returns the meta object for the attribute '{@link eventpattern.GeoValue#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Value</em>'.
+	 * @see eventpattern.GeoValue#getValue()
+	 * @see #getGeoValue()
+	 * @generated
+	 */
+	EAttribute getGeoValue_Value();
+
+		/**
+	 * Returns the meta object for the attribute '{@link eventpattern.GeoValue#getType <em>Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Type</em>'.
+	 * @see eventpattern.GeoValue#getType()
+	 * @see #getGeoValue()
+	 * @generated
+	 */
+	EAttribute getGeoValue_Type();
+
+		/**
+	 * Returns the meta object for class '{@link eventpattern.Point <em>Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Point</em>'.
+	 * @see eventpattern.Point
+	 * @generated
+	 */
+	EClass getPoint();
+
+		/**
+	 * Returns the meta object for the attribute '{@link eventpattern.Point#getX <em>X</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>X</em>'.
+	 * @see eventpattern.Point#getX()
+	 * @see #getPoint()
+	 * @generated
+	 */
+	EAttribute getPoint_X();
+
+		/**
+	 * Returns the meta object for the attribute '{@link eventpattern.Point#getY <em>Y</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Y</em>'.
+	 * @see eventpattern.Point#getY()
+	 * @see #getPoint()
+	 * @generated
+	 */
+	EAttribute getPoint_Y();
+
+		/**
+	 * Returns the meta object for the attribute '{@link eventpattern.Point#getSrs <em>Srs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Srs</em>'.
+	 * @see eventpattern.Point#getSrs()
+	 * @see #getPoint()
+	 * @generated
+	 */
+	EAttribute getPoint_Srs();
+
+		/**
 	 * Returns the meta object for class '{@link eventpattern.Email <em>Email</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -6032,6 +6226,66 @@ public interface EventpatternPackage extends EPackage
     EAttribute VALUE__TYPE = eINSTANCE.getValue_Type();
 
     /**
+		 * The meta object literal for the '{@link eventpattern.impl.GeoValueImpl <em>Geo Value</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.GeoValueImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getGeoValue()
+		 * @generated
+		 */
+		EClass GEO_VALUE = eINSTANCE.getGeoValue();
+
+				/**
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GEO_VALUE__VALUE = eINSTANCE.getGeoValue_Value();
+
+				/**
+		 * The meta object literal for the '<em><b>Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GEO_VALUE__TYPE = eINSTANCE.getGeoValue_Type();
+
+				/**
+		 * The meta object literal for the '{@link eventpattern.impl.PointImpl <em>Point</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see eventpattern.impl.PointImpl
+		 * @see eventpattern.impl.EventpatternPackageImpl#getPoint()
+		 * @generated
+		 */
+		EClass POINT = eINSTANCE.getPoint();
+
+				/**
+		 * The meta object literal for the '<em><b>X</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute POINT__X = eINSTANCE.getPoint_X();
+
+				/**
+		 * The meta object literal for the '<em><b>Y</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute POINT__Y = eINSTANCE.getPoint_Y();
+
+				/**
+		 * The meta object literal for the '<em><b>Srs</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute POINT__SRS = eINSTANCE.getPoint_Srs();
+
+				/**
 		 * The meta object literal for the '{@link eventpattern.impl.EmailImpl <em>Email</em>}' class.
 		 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->

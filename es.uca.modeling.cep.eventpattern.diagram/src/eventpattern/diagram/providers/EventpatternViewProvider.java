@@ -164,8 +164,10 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 				case AvgEditPart.VISUAL_ID:
 				case CountEditPart.VISUAL_ID:
 				case SumEditPart.VISUAL_ID:
+				case PointEditPart.VISUAL_ID:
 				case EventEditPart.VISUAL_ID:
 				case ValueEditPart.VISUAL_ID:
+				case GeoValueEditPart.VISUAL_ID:
 				case GroupByEditPart.VISUAL_ID:
 				case WithinTimerEditPart.VISUAL_ID:
 				case TimeIntervalEditPart.VISUAL_ID:
@@ -209,9 +211,11 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 				case Range2EditPart.VISUAL_ID:
 				case FollowedBy2EditPart.VISUAL_ID:
 				case While2EditPart.VISUAL_ID:
+				case Point2EditPart.VISUAL_ID:
 				case Event2EditPart.VISUAL_ID:
 				case EventProperty4EditPart.VISUAL_ID:
 				case Value2EditPart.VISUAL_ID:
+				case GeoValue2EditPart.VISUAL_ID:
 				case Contains3EditPart.VISUAL_ID:
 				case And3EditPart.VISUAL_ID:
 				case Or3EditPart.VISUAL_ID:
@@ -245,9 +249,11 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 				case Avg2EditPart.VISUAL_ID:
 				case Count2EditPart.VISUAL_ID:
 				case Sum2EditPart.VISUAL_ID:
+				case Point3EditPart.VISUAL_ID:
 				case Event3EditPart.VISUAL_ID:
 				case EventProperty5EditPart.VISUAL_ID:
 				case Value3EditPart.VISUAL_ID:
+				case GeoValue3EditPart.VISUAL_ID:
 				case GroupBy2EditPart.VISUAL_ID:
 				case WithinTimer2EditPart.VISUAL_ID:
 				case TimeInterval2EditPart.VISUAL_ID:
@@ -278,8 +284,9 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 				|| FollowedByEditPart.VISUAL_ID == visualID || WhileEditPart.VISUAL_ID == visualID
 				|| MaxEditPart.VISUAL_ID == visualID || MinEditPart.VISUAL_ID == visualID
 				|| AvgEditPart.VISUAL_ID == visualID || CountEditPart.VISUAL_ID == visualID
-				|| SumEditPart.VISUAL_ID == visualID || EventEditPart.VISUAL_ID == visualID
-				|| EventPropertyEditPart.VISUAL_ID == visualID || ValueEditPart.VISUAL_ID == visualID
+				|| SumEditPart.VISUAL_ID == visualID || PointEditPart.VISUAL_ID == visualID
+				|| EventEditPart.VISUAL_ID == visualID || EventPropertyEditPart.VISUAL_ID == visualID
+				|| ValueEditPart.VISUAL_ID == visualID || GeoValueEditPart.VISUAL_ID == visualID
 				|| GroupByEditPart.VISUAL_ID == visualID || WithinTimerEditPart.VISUAL_ID == visualID
 				|| TimeIntervalEditPart.VISUAL_ID == visualID || TimeScheduleEditPart.VISUAL_ID == visualID
 				|| EmailEditPart.VISUAL_ID == visualID || TwitterEditPart.VISUAL_ID == visualID
@@ -302,8 +309,9 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 				|| EveryDistinct2EditPart.VISUAL_ID == visualID || Repeat2EditPart.VISUAL_ID == visualID
 				|| Until2EditPart.VISUAL_ID == visualID || Range2EditPart.VISUAL_ID == visualID
 				|| FollowedBy2EditPart.VISUAL_ID == visualID || While2EditPart.VISUAL_ID == visualID
-				|| Event2EditPart.VISUAL_ID == visualID || EventProperty4EditPart.VISUAL_ID == visualID
-				|| Value2EditPart.VISUAL_ID == visualID || Contains3EditPart.VISUAL_ID == visualID
+				|| Point2EditPart.VISUAL_ID == visualID || Event2EditPart.VISUAL_ID == visualID
+				|| EventProperty4EditPart.VISUAL_ID == visualID || Value2EditPart.VISUAL_ID == visualID
+				|| GeoValue2EditPart.VISUAL_ID == visualID || Contains3EditPart.VISUAL_ID == visualID
 				|| And3EditPart.VISUAL_ID == visualID || Or3EditPart.VISUAL_ID == visualID
 				|| Not3EditPart.VISUAL_ID == visualID || Union3EditPart.VISUAL_ID == visualID
 				|| Intersection3EditPart.VISUAL_ID == visualID || Diference3EditPart.VISUAL_ID == visualID
@@ -320,8 +328,9 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 				|| While3EditPart.VISUAL_ID == visualID || Max2EditPart.VISUAL_ID == visualID
 				|| Min2EditPart.VISUAL_ID == visualID || Avg2EditPart.VISUAL_ID == visualID
 				|| Count2EditPart.VISUAL_ID == visualID || Sum2EditPart.VISUAL_ID == visualID
-				|| Event3EditPart.VISUAL_ID == visualID || EventProperty5EditPart.VISUAL_ID == visualID
-				|| Value3EditPart.VISUAL_ID == visualID || GroupBy2EditPart.VISUAL_ID == visualID
+				|| Point3EditPart.VISUAL_ID == visualID || Event3EditPart.VISUAL_ID == visualID
+				|| EventProperty5EditPart.VISUAL_ID == visualID || Value3EditPart.VISUAL_ID == visualID
+				|| GeoValue3EditPart.VISUAL_ID == visualID || GroupBy2EditPart.VISUAL_ID == visualID
 				|| WithinTimer2EditPart.VISUAL_ID == visualID || TimeInterval2EditPart.VISUAL_ID == visualID
 				|| TimeSchedule2EditPart.VISUAL_ID == visualID || ComplexEventPropertyEditPart.VISUAL_ID == visualID;
 	}
@@ -438,12 +447,16 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 			return createCount_2025(domainElement, containerView, index, persisted, preferencesHint);
 		case SumEditPart.VISUAL_ID:
 			return createSum_2026(domainElement, containerView, index, persisted, preferencesHint);
+		case PointEditPart.VISUAL_ID:
+			return createPoint_2050(domainElement, containerView, index, persisted, preferencesHint);
 		case EventEditPart.VISUAL_ID:
 			return createEvent_2027(domainElement, containerView, index, persisted, preferencesHint);
 		case EventPropertyEditPart.VISUAL_ID:
 			return createEventProperty_2028(domainElement, containerView, index, persisted, preferencesHint);
 		case ValueEditPart.VISUAL_ID:
 			return createValue_2029(domainElement, containerView, index, persisted, preferencesHint);
+		case GeoValueEditPart.VISUAL_ID:
+			return createGeoValue_2049(domainElement, containerView, index, persisted, preferencesHint);
 		case GroupByEditPart.VISUAL_ID:
 			return createGroupBy_2040(domainElement, containerView, index, persisted, preferencesHint);
 		case WithinTimerEditPart.VISUAL_ID:
@@ -526,12 +539,16 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 			return createFollowedBy_3022(domainElement, containerView, index, persisted, preferencesHint);
 		case While2EditPart.VISUAL_ID:
 			return createWhile_3023(domainElement, containerView, index, persisted, preferencesHint);
+		case Point2EditPart.VISUAL_ID:
+			return createPoint_3079(domainElement, containerView, index, persisted, preferencesHint);
 		case Event2EditPart.VISUAL_ID:
 			return createEvent_3024(domainElement, containerView, index, persisted, preferencesHint);
 		case EventProperty4EditPart.VISUAL_ID:
 			return createEventProperty_3025(domainElement, containerView, index, persisted, preferencesHint);
 		case Value2EditPart.VISUAL_ID:
 			return createValue_3026(domainElement, containerView, index, persisted, preferencesHint);
+		case GeoValue2EditPart.VISUAL_ID:
+			return createGeoValue_3077(domainElement, containerView, index, persisted, preferencesHint);
 		case Contains3EditPart.VISUAL_ID:
 			return createContains_3068(domainElement, containerView, index, persisted, preferencesHint);
 		case And3EditPart.VISUAL_ID:
@@ -598,12 +615,16 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 			return createCount_3051(domainElement, containerView, index, persisted, preferencesHint);
 		case Sum2EditPart.VISUAL_ID:
 			return createSum_3052(domainElement, containerView, index, persisted, preferencesHint);
+		case Point3EditPart.VISUAL_ID:
+			return createPoint_3080(domainElement, containerView, index, persisted, preferencesHint);
 		case Event3EditPart.VISUAL_ID:
 			return createEvent_3053(domainElement, containerView, index, persisted, preferencesHint);
 		case EventProperty5EditPart.VISUAL_ID:
 			return createEventProperty_3054(domainElement, containerView, index, persisted, preferencesHint);
 		case Value3EditPart.VISUAL_ID:
 			return createValue_3055(domainElement, containerView, index, persisted, preferencesHint);
+		case GeoValue3EditPart.VISUAL_ID:
+			return createGeoValue_3078(domainElement, containerView, index, persisted, preferencesHint);
 		case GroupBy2EditPart.VISUAL_ID:
 			return createGroupBy_3060(domainElement, containerView, index, persisted, preferencesHint);
 		case WithinTimer2EditPart.VISUAL_ID:
@@ -1813,6 +1834,41 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 	}
 
 	/**
+	* @generated
+	*/
+	public Node createPoint_2050(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Node node = NotationFactory.eINSTANCE.createNode();
+		node.getStyles().add(NotationFactory.eINSTANCE.createDescriptionStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFontStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFillStyle());
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(EventpatternVisualIDRegistry.getType(PointEditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5102 = createLabel(node, EventpatternVisualIDRegistry.getType(PointValueEditPart.VISUAL_ID));
+		return node;
+	}
+
+	/**
 	 * @generated
 	 */
 	public Node createEvent_2027(EObject domainElement, View containerView, int index, boolean persisted,
@@ -1923,6 +1979,41 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
 		Node label5031 = createLabel(node, EventpatternVisualIDRegistry.getType(ValueValueEditPart.VISUAL_ID));
+		return node;
+	}
+
+	/**
+	* @generated
+	*/
+	public Node createGeoValue_2049(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Node node = NotationFactory.eINSTANCE.createNode();
+		node.getStyles().add(NotationFactory.eINSTANCE.createDescriptionStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFontStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFillStyle());
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(EventpatternVisualIDRegistry.getType(GeoValueEditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5099 = createLabel(node, EventpatternVisualIDRegistry.getType(GeoValueValueEditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -3392,6 +3483,40 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 	}
 
 	/**
+	* @generated
+	*/
+	public Node createPoint_3079(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Node node = NotationFactory.eINSTANCE.createNode();
+		node.getStyles().add(NotationFactory.eINSTANCE.createDescriptionStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFontStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFillStyle());
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(EventpatternVisualIDRegistry.getType(Point2EditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5103 = createLabel(node, EventpatternVisualIDRegistry.getType(PointValue2EditPart.VISUAL_ID));
+		return node;
+	}
+
+	/**
 	 * @generated
 	 */
 	public Node createEvent_3024(EObject domainElement, View containerView, int index, boolean persisted,
@@ -3499,6 +3624,40 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
 		Node label5055 = createLabel(node, EventpatternVisualIDRegistry.getType(ValueValue2EditPart.VISUAL_ID));
+		return node;
+	}
+
+	/**
+	* @generated
+	*/
+	public Node createGeoValue_3077(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Node node = NotationFactory.eINSTANCE.createNode();
+		node.getStyles().add(NotationFactory.eINSTANCE.createDescriptionStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFontStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFillStyle());
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(EventpatternVisualIDRegistry.getType(GeoValue2EditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5100 = createLabel(node, EventpatternVisualIDRegistry.getType(GeoValueValue2EditPart.VISUAL_ID));
 		return node;
 	}
 
@@ -4647,6 +4806,40 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 	}
 
 	/**
+	* @generated
+	*/
+	public Node createPoint_3080(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Node node = NotationFactory.eINSTANCE.createNode();
+		node.getStyles().add(NotationFactory.eINSTANCE.createDescriptionStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFontStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFillStyle());
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(EventpatternVisualIDRegistry.getType(Point3EditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5104 = createLabel(node, EventpatternVisualIDRegistry.getType(PointValue3EditPart.VISUAL_ID));
+		return node;
+	}
+
+	/**
 	 * @generated
 	 */
 	public Node createEvent_3053(EObject domainElement, View containerView, int index, boolean persisted,
@@ -4754,6 +4947,40 @@ public class EventpatternViewProvider extends AbstractProvider implements IViewP
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
 		Node label5088 = createLabel(node, EventpatternVisualIDRegistry.getType(ValueValue3EditPart.VISUAL_ID));
+		return node;
+	}
+
+	/**
+	* @generated
+	*/
+	public Node createGeoValue_3078(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Node node = NotationFactory.eINSTANCE.createNode();
+		node.getStyles().add(NotationFactory.eINSTANCE.createDescriptionStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFontStyle());
+		node.getStyles().add(NotationFactory.eINSTANCE.createFillStyle());
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(EventpatternVisualIDRegistry.getType(GeoValue3EditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5101 = createLabel(node, EventpatternVisualIDRegistry.getType(GeoValueValue3EditPart.VISUAL_ID));
 		return node;
 	}
 

@@ -85,6 +85,8 @@ public class EventpatternPaletteFactory {
 		paletteContainer.add(createLink1CreationTool());
 		paletteContainer.add(createValue2CreationTool());
 		paletteContainer.add(createGroupBy3CreationTool());
+		paletteContainer.add(createGeoValue4CreationTool());
+		paletteContainer.add(createPoint5CreationTool());
 		return paletteContainer;
 	}
 
@@ -822,6 +824,38 @@ public class EventpatternPaletteFactory {
 				Messages.GroupBy3CreationTool_desc, types);
 		entry.setId("createGroupBy3CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.GroupBy_2040));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	* @generated
+	*/
+	private ToolEntry createGeoValue4CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(3);
+		types.add(EventpatternElementTypes.GeoValue_2049);
+		types.add(EventpatternElementTypes.GeoValue_3077);
+		types.add(EventpatternElementTypes.GeoValue_3078);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.GeoValue4CreationTool_title,
+				Messages.GeoValue4CreationTool_desc, types);
+		entry.setId("createGeoValue4CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.GeoValue_2049));
+		entry.setLargeIcon(entry.getSmallIcon());
+		return entry;
+	}
+
+	/**
+	* @generated
+	*/
+	private ToolEntry createPoint5CreationTool() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(3);
+		types.add(EventpatternElementTypes.Point_2050);
+		types.add(EventpatternElementTypes.Point_3079);
+		types.add(EventpatternElementTypes.Point_3080);
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Point5CreationTool_title,
+				Messages.Point5CreationTool_desc, types);
+		entry.setId("createPoint5CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(EventpatternElementTypes.getImageDescriptor(EventpatternElementTypes.Point_2050));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}

@@ -7,6 +7,7 @@
   <genPackages prefix="Eventpattern" disposableProviderFactory="true" ecorePackage="cep-eventpattern.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="cep-eventpattern.ecore#//PropertyTypeValue">
       <genEnumLiterals ecoreEnumLiteral="cep-eventpattern.ecore#//PropertyTypeValue/Unknown"/>
+      <genEnumLiterals ecoreEnumLiteral="cep-eventpattern.ecore#//PropertyTypeValue/Object"/>
       <genEnumLiterals ecoreEnumLiteral="cep-eventpattern.ecore#//PropertyTypeValue/Boolean"/>
       <genEnumLiterals ecoreEnumLiteral="cep-eventpattern.ecore#//PropertyTypeValue/Integer"/>
       <genEnumLiterals ecoreEnumLiteral="cep-eventpattern.ecore#//PropertyTypeValue/Long"/>
@@ -168,6 +169,15 @@
     <genClasses ecoreClass="cep-eventpattern.ecore#//Value">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cep-eventpattern.ecore#//Value/value"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cep-eventpattern.ecore#//Value/type"/>
+    </genClasses>
+    <genClasses ecoreClass="cep-eventpattern.ecore#//GeoValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cep-eventpattern.ecore#//GeoValue/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cep-eventpattern.ecore#//GeoValue/type"/>
+    </genClasses>
+    <genClasses ecoreClass="cep-eventpattern.ecore#//Point">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cep-eventpattern.ecore#//Point/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cep-eventpattern.ecore#//Point/y"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cep-eventpattern.ecore#//Point/srs"/>
     </genClasses>
     <genClasses ecoreClass="cep-eventpattern.ecore#//Email">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cep-eventpattern.ecore#//Email/to"/>

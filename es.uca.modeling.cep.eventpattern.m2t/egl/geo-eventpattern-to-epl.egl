@@ -238,7 +238,9 @@ operation isFromPatternExpression(eventPatternElements) : Boolean {
 	    		
 		    --if ((epe.isKindOf(PatternOperator) and not epe.isKindOf(LogicalOperator)) 
 		    if (epe.isKindOf(PatternOperator) 
-		    		or epe.isTypeOf(TimeInterval) or epe.isTypeOf(TimeSchedule) or epe.isTypeOf(WithinTimer) or epe.isTypeOf(Intersects) or epe.isTypeOf(Contains)) {
+		    		or epe.isTypeOf(TimeInterval) or epe.isTypeOf(TimeSchedule) or epe.isTypeOf(WithinTimer) 
+		    	--	or epe.isTypeOf(Intersects) or epe.isTypeOf(Contains) or epe.isTypeOf(Equals)
+		    		) {
 		    	patternOpNum = patternOpNum + 1;
 		    }    		
 		}
@@ -297,10 +299,17 @@ operation getPatternConditionRoot(elements) {
 		--System.out.println("elements.selectOne-priority0: " + root); 
 		return root;
 	}
+	
+	
+	
+	
+	
 }
 
 
 -- Priority order:
+-- 5° GeoArithmetic operators
+-- 4° GeoBool operators  
 -- 3º Logical operators
 -- 2º Comparison operators
 -- 1º Arithmetic operators
@@ -309,6 +318,20 @@ operation getPatternConditionRoot(elements) {
 operation getSearchConditionRoot(elements) {
  
  	var root : Any;
+ 	
+ 	
+	root = elements.selectOne(x|(not x.isKindOf(DataWindow) and not x.isTypeOf(GroupBy)) and x.outboundLink.isEmpty() and x.isKindOf(GeoArithmeticOperator));
+	if (root <> null) {
+		--System.out.println("Root-GeoArithmeticOperator: " + root); 
+		return root;
+	}
+	
+	root = elements.selectOne(x|(not x.isKindOf(DataWindow) and not x.isTypeOf(GroupBy)) and x.outboundLink.isEmpty() and x.isKindOf(GeoBooleanOperator));
+	if (root <> null) {
+		--System.out.println("Root-GeoBooleanOperator: " + root); 
+		return root;
+	}
+	
 	
 	root = elements.selectOne(x|(not x.isKindOf(DataWindow) and not x.isTypeOf(GroupBy)) and x.outboundLink.isEmpty() and x.isKindOf(LogicalOperator));
 	if (root <> null) {
@@ -626,6 +649,20 @@ operation traversal(r) : String {
        	}
     }
     
+    if (r.isTypeOf(GeoValue)) {          
+    	if (r.type == PropertyTypeValue#Object) { -- It is aobject
+     	       return "'" + r.value + "'";
+   
+        }
+        else { -- It is not a string value
+        	return r.value;
+       	}
+    }
+    
+    if (r.isTypeOf(Point)) {   
+    	return " Point(" + r.x +','+ r.y +','+ r.srs +  ") " ;
+     }
+    
     // Unary operators
 	if (r.isTypeOf(Every)) {
     	--System.out.println("r.isTypeOf(Every):" + ' every ');
@@ -679,15 +716,15 @@ operation traversal(r) : String {
     if(r.isTypeOf(Intersects)) {        
     	-- interseccionMultiPoligono(geom, '"+multipoligono+"')";	
        	if (r.inboundLink.at(0).order == 1) { 
-        	return 'interseccionMultiPoligono('+ traversal(getOperand(r,0)) + ',' + traversal(getOperand(r,1)) +')';
+        	return 'intesects('+ traversal(getOperand(r,0)) + ',' + traversal(getOperand(r,1)) +')';
         }
         else {
-            return 'interseccionMultiPoligono('+ traversal(getOperand(r,1)) + ',' + traversal(getOperand(r,0)) +')';               
+            return 'intersects('+ traversal(getOperand(r,1)) + ',' + traversal(getOperand(r,0)) +')';               
         }
    	}              
    	
    	// Operador Contains
-   	    if(r.isTypeOf(Contains)) {        
+   	if(r.isTypeOf(Contains)) {        
     	-- interseccionMultiPoligono(geom, '"+multipoligono+"')";	
        	if (r.inboundLink.at(0).order == 1) { 
         	return 'contains('+ traversal(getOperand(r,0)) + ',' + traversal(getOperand(r,1)) +')';
@@ -695,9 +732,55 @@ operation traversal(r) : String {
         else {
             return 'contains('+ traversal(getOperand(r,1)) + ',' + traversal(getOperand(r,0)) +')';               
         }
-   	}              
+   	}       
    	
+   // Operador Equals
+   	if(r.isTypeOf(Equals)) {        
+    	-- interseccionMultiPoligono(geom, '"+multipoligono+"')";	
+       	if (r.inboundLink.at(0).order == 1) { 
+        	return 'equals('+ traversal(getOperand(r,0)) + ',' + traversal(getOperand(r,1)) +')';
+        }
+        else {
+            return 'equals('+ traversal(getOperand(r,1)) + ',' + traversal(getOperand(r,0)) +')';               
+        }
+   	}        
+   		
    	
+   // Operador Diference
+   	if(r.isTypeOf(Diference)) {        
+    	-- interseccionMultiPoligono(geom, '"+multipoligono+"')";	
+       	if (r.inboundLink.at(0).order == 1) { 
+        	return 'diference('+ traversal(getOperand(r,0)) + ',' + traversal(getOperand(r,1)) +')';
+        }
+        else {
+            return 'diference('+ traversal(getOperand(r,1)) + ',' + traversal(getOperand(r,0)) +')';               
+        }
+   	}        
+   	
+   // Operador Union
+   	if(r.isTypeOf(Union)) {        
+    	-- interseccionMultiPoligono(geom, '"+multipoligono+"')";	
+       	if (r.inboundLink.at(0).order == 1) { 
+        	return 'union('+ traversal(getOperand(r,0)) + ',' + traversal(getOperand(r,1)) +')';
+        }
+        else {
+            return 'union('+ traversal(getOperand(r,1)) + ',' + traversal(getOperand(r,0)) +')';               
+        }
+   	} 
+   	
+   // Operador Intesection
+   	if(r.isTypeOf(Union)) {        
+    	-- interseccionMultiPoligono(geom, '"+multipoligono+"')";	
+       	if (r.inboundLink.at(0).order == 1) { 
+        	return 'intesection('+ traversal(getOperand(r,0)) + ',' + traversal(getOperand(r,1)) +')';
+        }
+        else {
+            return 'intesection('+ traversal(getOperand(r,1)) + ',' + traversal(getOperand(r,0)) +')';               
+        }
+   	} 
+   	  	
+   	
+   	//----------------
    	      
     if(r.isTypeOf(Equal)) {        
     	--System.out.println("r.isTypeOf(Equal):" + ' = ');
@@ -830,6 +913,9 @@ operation traversal(r) : String {
    	}
    	   	
     // N-ary operators   
+    
+           
+            
     if(r.isTypeOf(And)) {        
 	    --System.out.println("r.isTypeOf(And):" + ' and ');
 

@@ -102,6 +102,8 @@ public class EventpatternFactoryImpl extends EFactoryImpl implements Eventpatter
 			case EventpatternPackage.EVENT: return createEvent();
 			case EventpatternPackage.EVENT_PROPERTY: return createEventProperty();
 			case EventpatternPackage.VALUE: return createValue();
+			case EventpatternPackage.GEO_VALUE: return createGeoValue();
+			case EventpatternPackage.POINT: return createPoint();
 			case EventpatternPackage.EMAIL: return createEmail();
 			case EventpatternPackage.TWITTER: return createTwitter();
 			case EventpatternPackage.UNION: return createUnion();
@@ -599,6 +601,26 @@ public class EventpatternFactoryImpl extends EFactoryImpl implements Eventpatter
 	}
 
   /**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public GeoValue createGeoValue() {
+		GeoValueImpl geoValue = new GeoValueImpl();
+		return geoValue;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Point createPoint() {
+		PointImpl point = new PointImpl();
+		return point;
+	}
+
+		/**
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @generated

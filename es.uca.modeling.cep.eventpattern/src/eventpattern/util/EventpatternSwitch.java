@@ -741,6 +741,29 @@ public class EventpatternSwitch<T> extends Switch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case EventpatternPackage.GEO_VALUE: {
+				GeoValue geoValue = (GeoValue)theEObject;
+				T result = caseGeoValue(geoValue);
+				if (result == null) result = caseConditionOperand(geoValue);
+				if (result == null) result = caseOperand(geoValue);
+				if (result == null) result = caseEventPatternCondition(geoValue);
+				if (result == null) result = caseWithinTimerElement(geoValue);
+				if (result == null) result = caseEventPatternElement(geoValue);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EventpatternPackage.POINT: {
+				Point point = (Point)theEObject;
+				T result = casePoint(point);
+				if (result == null) result = caseGeoValue(point);
+				if (result == null) result = caseConditionOperand(point);
+				if (result == null) result = caseOperand(point);
+				if (result == null) result = caseEventPatternCondition(point);
+				if (result == null) result = caseWithinTimerElement(point);
+				if (result == null) result = caseEventPatternElement(point);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case EventpatternPackage.EMAIL: {
 				Email email = (Email)theEObject;
 				T result = caseEmail(email);
@@ -797,7 +820,7 @@ public class EventpatternSwitch<T> extends Switch<T>
 			case EventpatternPackage.UNION: {
 				Union union = (Union)theEObject;
 				T result = caseUnion(union);
-				if (result == null) result = caseNaryOperator(union);
+				if (result == null) result = caseBinaryOperator(union);
 				if (result == null) result = caseGeoArithmeticOperator(union);
 				if (result == null) result = caseGeoOperator(union);
 				if (result == null) result = caseConditionOperator(union);
@@ -813,7 +836,7 @@ public class EventpatternSwitch<T> extends Switch<T>
 			case EventpatternPackage.INTERSECTION: {
 				Intersection intersection = (Intersection)theEObject;
 				T result = caseIntersection(intersection);
-				if (result == null) result = caseNaryOperator(intersection);
+				if (result == null) result = caseBinaryOperator(intersection);
 				if (result == null) result = caseGeoArithmeticOperator(intersection);
 				if (result == null) result = caseGeoOperator(intersection);
 				if (result == null) result = caseConditionOperator(intersection);
@@ -829,7 +852,7 @@ public class EventpatternSwitch<T> extends Switch<T>
 			case EventpatternPackage.DIFERENCE: {
 				Diference diference = (Diference)theEObject;
 				T result = caseDiference(diference);
-				if (result == null) result = caseNaryOperator(diference);
+				if (result == null) result = caseBinaryOperator(diference);
 				if (result == null) result = caseGeoArithmeticOperator(diference);
 				if (result == null) result = caseGeoOperator(diference);
 				if (result == null) result = caseConditionOperator(diference);
@@ -1857,6 +1880,36 @@ public class EventpatternSwitch<T> extends Switch<T>
 	}
 
   /**
+	 * Returns the result of interpreting the object as an instance of '<em>Geo Value</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Geo Value</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseGeoValue(GeoValue object) {
+		return null;
+	}
+
+		/**
+	 * Returns the result of interpreting the object as an instance of '<em>Point</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Point</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePoint(Point object) {
+		return null;
+	}
+
+		/**
 	 * Returns the result of interpreting the object as an instance of '<em>Email</em>'.
 	 * <!-- begin-user-doc -->
    * This implementation returns null;

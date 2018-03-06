@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class IntersectionImpl extends NaryOperatorImpl implements Intersection {
+public class IntersectionImpl extends BinaryOperatorImpl implements Intersection {
 	/**
 	 * The cached value of the '{@link #getOutboundLink() <em>Outbound Link</em>}' reference list.
 	 * <!-- begin-user-doc -->
