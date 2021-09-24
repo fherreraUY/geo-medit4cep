@@ -3,6 +3,27 @@
 	<name>es.uca.modeling.cep.domain.tests</name>
 	<comment></comment>
 	<projects>
+		<project>es.uca.modeling.cep.domain</project>
+		<project>es.uca.modeling.cep.domain.diagram</project>
+		<project>es.uca.modeling.cep.domain.edit</project>
+		<project>es.uca.modeling.cep.domain.editor</project>
+		<project>es.uca.modeling.cep.domain.figures</project>
+		<project>es.uca.modeling.cep.domain.validation</project>
+		<project>es.uca.modeling.cep.eventpattern</project>
+		<project>es.uca.modeling.cep.eventpattern.diagram</project>
+		<project>es.uca.modeling.cep.eventpattern.edit</project>
+		<project>es.uca.modeling.cep.eventpattern.editor</project>
+		<project>es.uca.modeling.cep.eventpattern.feature</project>
+		<project>es.uca.modeling.cep.eventpattern.figures</project>
+		<project>es.uca.modeling.cep.eventpattern.help</project>
+		<project>es.uca.modeling.cep.eventpattern.m2t</project>
+		<project>es.uca.modeling.cep.eventpattern.menu</project>
+		<project>es.uca.modeling.cep.eventpattern.product</project>
+		<project>es.uca.modeling.cep.eventpattern.tests</project>
+		<project>es.uca.modeling.cep.eventpattern.validation</project>
+		<project>Logica</project>
+		<project>operadores-geo</project>
+		<project>uy.fing.geocep.gui.openlayers</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
