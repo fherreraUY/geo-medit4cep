@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="eventpattern" nsURI="www.uca.es/modeling/cep/eventpattern" nsPrefix="eventpattern">
+  <eClassifiers xsi:type="ecore:EClass" name="Link">
+    <eAnnotations source="gmf.link">
+      <details key="label" value="order"/>
+      <details key="source" value="operand"/>
+      <details key="target" value="operator"/>
+      <details key="target.constraint" value="self &lt;> oppositeEnd"/>
+      <details key="source.decoration" value="none"/>
+      <details key="target.decoration" value="arrow"/>
+      <details key="color" value="110,110,110"/>
+      <details key="tool.name" value="Link"/>
+      <details key="tool.description" value="Add a link"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="order" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operand" eType="#//Operand"
+        eOpposite="#//Operand/outboundLink"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operator" eType="#//Operator"
+        eOpposite="#//Operator/inboundLink"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Operator" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inboundLink" upperBound="-1"
+        eType="#//Link" eOpposite="#//Link/operator"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UnaryOperator" abstract="true" eSuperTypes="#//Operator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BinaryOperator" abstract="true" eSuperTypes="#//Operator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NaryOperator" abstract="true" eSuperTypes="#//Operator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Operand" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outboundLink" upperBound="-1"
+        eType="#//Link" eOpposite="#//Link/operand"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EventPatternElement" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EventPatternCondition" abstract="true"
+      eSuperTypes="#//EventPatternElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AggregationOperator" abstract="true"
+      eSuperTypes="#//UnaryOperator #//Operand #//EventPatternCondition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ConditionOperator" abstract="true" eSuperTypes="#//Operator #//ConditionOperand #//EventPatternCondition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ConditionOperand" abstract="true" eSuperTypes="#//Operand #//EventPatternCondition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PatternOperator" abstract="true" eSuperTypes="#//Operator #//PatternOperand #//EventPatternCondition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PatternOperand" abstract="true" eSuperTypes="#//Operand #//EventPatternCondition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ArithmeticOperator" abstract="true"
+      eSuperTypes="#//BinaryOperator #//ConditionOperator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LogicalOperator" abstract="true" eSuperTypes="#//ConditionOperator #//PatternOperator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Value" eSuperTypes="#//ConditionOperand">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="rounded"/>
+      <details key="label" value="value"/>
+      <details key="label.text" value=""/>
+      <details key="label.icon" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="border.color" value="110,110,110"/>
+      <details key="border.width" value="3"/>
+      <details key="size" value="30,30"/>
+      <details key="tool.name" value="Value"/>
+      <details key="tool.description" value="Add a value"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=" "/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GeoValue" eSuperTypes="#//ConditionOperand">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="rounded"/>
+      <details key="label" value="value"/>
+      <details key="label.text" value=""/>
+      <details key="label.icon" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="border.color" value="110,110,110"/>
+      <details key="border.width" value="3"/>
+      <details key="size" value="30,30"/>
+      <details key="tool.name" value="GeoValue"/>
+      <details key="tool.description" value="Add a geo value"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=" "/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Point" eSuperTypes="#//GeoValue">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="rounded"/>
+      <details key="label" value="value"/>
+      <details key="label.text" value=""/>
+      <details key="label.icon" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="border.color" value="110,110,110"/>
+      <details key="border.width" value="3"/>
+      <details key="size" value="30,30"/>
+      <details key="tool.name" value="Point"/>
+      <details key="tool.description" value="Add a Point"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="x" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="y" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDoubleObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="srs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GeoOperator" abstract="true" eSuperTypes="#//Operator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GeoArithmeticOperator" abstract="true"
+      eSuperTypes="#//GeoOperator #//ConditionOperator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GeoBooleanOperator" abstract="true"
+      eSuperTypes="#//GeoOperator #//ConditionOperator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Union" eSuperTypes="#//BinaryOperator #//GeoArithmeticOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Union.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Union"/>
+      <details key="tool.description" value="Add an union operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Intersection" eSuperTypes="#//BinaryOperator #//GeoArithmeticOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersection.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Intersection"/>
+      <details key="tool.description" value="Add an intersection operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Diference" eSuperTypes="#//BinaryOperator #//GeoArithmeticOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Diference.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Diference"/>
+      <details key="tool.description" value="Add an diference operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Contains" eSuperTypes="#//BinaryOperator #//GeoBooleanOperator #//LogicalOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Contains.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Contains"/>
+      <details key="tool.description" value="Add a Contains operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Distance" eSuperTypes="#//BinaryOperator #//GeoBooleanOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Distance.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Distance"/>
+      <details key="tool.description" value="Add a distance operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Equals" eSuperTypes="#//BinaryOperator #//GeoBooleanOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Equals.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Equals"/>
+      <details key="tool.description" value="Add a equals operator"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Intersects" eSuperTypes="#//BinaryOperator #//GeoBooleanOperator">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="svg"/>
+      <details key="svg.uri" value="platform:/plugin/es.uca.modeling.cep.eventpattern.figures/svg/Intersects.svg"/>
+      <details key="size" value="30,30"/>
+      <details key="label.placement" value="none"/>
+      <details key="resizable" value="false"/>
+      <details key="margin" value="0"/>
+      <details key="tool.name" value="Intersects"/>
+      <details key="tool.description" value="Add a intersects operator"/>
+    </eAnnotations>
+  </eClassifiers>
+</ecore:EPackage>

@@ -3,6 +3,10 @@
  */
 package eventpattern.diagram.edit.parts;
 
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
+
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
@@ -26,6 +30,9 @@ import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
+import org.eclipse.ui.IWorkbenchPage;
+import org.eclipse.ui.PartInitException;
+import org.eclipse.ui.PlatformUI;
 
 import eventpattern.diagram.edit.policies.GeoValueItemSemanticEditPolicy;
 import eventpattern.diagram.part.EventpatternVisualIDRegistry;
@@ -302,6 +309,31 @@ public class GeoValueEditPart extends ShapeNodeEditPart {
 		}
 
 	}
+	
+	
+	
+	// Open the properties view, when the user has double-clicked on the node.
+		public void performRequest(Request req) {
+
+			if (req.getType() == "direct edit") {
+				mouseDoubleClick();
+			} else {
+				super.performRequest(req);
+			}
+		}
+
+		protected void mouseDoubleClick() {
+
+			String url ="D:\\ownCloud\\workspace\\uy.fing.geocep.gui.openlayers\\src\\selectGeometry.html";
+			File htmlFile = new File(url);
+			try {
+				Desktop.getDesktop().browse(htmlFile.toURI());
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	
 
 	/**
 	 * @generated
