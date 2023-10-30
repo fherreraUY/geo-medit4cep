@@ -10,7 +10,7 @@ Este tutorial guía a través del proceso de extensión del proyecto MEdit4CEP p
 - Eclipse Neon (4.6) con una versión estable de Epsilon (v1.4), EMF, GMF y Emfatic instalados.
 
 ## Pasos Preliminares
-
+Seguir los pasos del tutorial https://ucase.uca.es/medit4cep/download.html
 ### Configuración de Eclipse
 
 1. Descarga y descomprime la distribución de Eclipse Neon (4.6) con Epsilon (v1.4), EMF, GMF y Emfatic.
