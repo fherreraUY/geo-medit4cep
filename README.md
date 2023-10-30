@@ -57,4 +57,3 @@ Este tutorial guía a través del proceso de extensión del proyecto MEdit4CEP p
 
 ## Consideraciones Adicionales
 
-Si deseas incorporar más funcionalidades o modificar aspectos adicionales del proyecto, te recomendamos revisar los archivos modificados en detalle, utilizando herramientas de comparación visual como GitKraken, SourceTree, o las funcionalidades integradas en plataformas como GitHub o GitLab.
